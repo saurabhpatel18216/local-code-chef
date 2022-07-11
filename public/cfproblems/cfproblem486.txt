@@ -1,0 +1,11 @@
+XYMXYM and CQXYM will prepare nn problems for Codeforces. The difficulty of the problem ii will be an integer aiai, where ai≥0ai≥0. The difficulty of the problems must satisfy ai+ai+1<mai+ai+1<m (1≤i<n1≤i<n), and a1+an<ma1+an<m, where mm is a fixed integer. XYMXYM wants to know how many plans of the difficulty of the problems there are modulo 998244353998244353.Two plans of difficulty aa and bb are different only if there is an integer ii (1≤i≤n1≤i≤n) satisfying ai≠biai≠bi.
+InputA single line contains two integers nn and mm (2≤n≤500002≤n≤50000, 1≤m≤1091≤m≤109).
+OutputPrint a single integer — the number of different plans.
+ExamplesInputCopy3 2
+OutputCopy4
+InputCopy5 9
+OutputCopy8105
+InputCopy21038 3942834
+OutputCopy338529212
+
+NoteIn the first test case, the valid aa are: [0,0,0][0,0,0], [0,0,1][0,0,1], [0,1,0][0,1,0], [1,0,0][1,0,0].[1,0,1][1,0,1] is invalid since a1+an≥ma1+an≥m.

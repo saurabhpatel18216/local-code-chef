@@ -1,0 +1,14 @@
+CQXYM is counting permutations length of 2n2n.A permutation is an array consisting of nn distinct integers from 11 to nn in arbitrary order. For example, [2,3,1,5,4][2,3,1,5,4] is a permutation, but [1,2,2][1,2,2] is not a permutation (22 appears twice in the array) and [1,3,4][1,3,4] is also not a permutation (n=3n=3 but there is 44 in the array).A permutation pp(length of 2n2n) will be counted only if the number of ii satisfying pi<pi+1pi<pi+1 is no less than nn. For example:  Permutation [1,2,3,4][1,2,3,4] will count, because the number of such ii that pi<pi+1pi<pi+1 equals 33 (i=1i=1, i=2i=2, i=3i=3). Permutation [3,2,1,4][3,2,1,4] won't count, because the number of such ii that pi<pi+1pi<pi+1 equals 11 (i=3i=3). CQXYM wants you to help him to count the number of such permutations modulo 10000000071000000007 (109+7109+7).In addition, modulo operation is to get the remainder. For example:  7mod3=17mod3=1, because 7=3⋅2+17=3⋅2+1,  15mod4=315mod4=3, because 15=4⋅3+315=4⋅3+3. 
+InputThe input consists of multiple test cases. The first line contains an integer t(t≥1)t(t≥1) — the number of test cases. The description of the test cases follows.Only one line of each test case contains an integer n(1≤n≤105)n(1≤n≤105).It is guaranteed that the sum of nn over all test cases does not exceed 105105
+OutputFor each test case, print the answer in a single line.
+ExampleInputCopy4
+1
+2
+9
+91234
+OutputCopy1
+12
+830455698
+890287984
+
+Noten=1n=1, there is only one permutation that satisfies the condition: [1,2].[1,2].In permutation [1,2][1,2], p1<p2p1<p2, and there is one i=1i=1 satisfy the condition. Since 1≥n1≥n, this permutation should be counted. In permutation [2,1][2,1], p1>p2p1>p2. Because 0<n0<n, this permutation should not be counted.n=2n=2, there are 1212 permutations: [1,2,3,4],[1,2,4,3],[1,3,2,4],[1,3,4,2],[1,4,2,3],[2,1,3,4],[2,3,1,4],[2,3,4,1],[2,4,1,3],[3,1,2,4],[3,4,1,2],[4,1,2,3].[1,2,3,4],[1,2,4,3],[1,3,2,4],[1,3,4,2],[1,4,2,3],[2,1,3,4],[2,3,1,4],[2,3,4,1],[2,4,1,3],[3,1,2,4],[3,4,1,2],[4,1,2,3].

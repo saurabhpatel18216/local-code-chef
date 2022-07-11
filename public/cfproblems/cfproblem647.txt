@@ -1,0 +1,28 @@
+A string ss of length nn (1≤n≤261≤n≤26) is called alphabetical if it can be obtained using the following algorithm:  first, write an empty string to ss (i.e. perform the assignment ss := "");  then perform the next step nn times;  at the ii-th step take ii-th lowercase letter of the Latin alphabet and write it either to the left of the string ss or to the right of the string ss (i.e. perform the assignment ss := c+sc+s or ss := s+cs+c, where cc is the ii-th letter of the Latin alphabet). In other words, iterate over the nn first letters of the Latin alphabet starting from 'a' and etc. Each time we prepend a letter to the left of the string ss or append a letter to the right of the string ss. Strings that can be obtained in that way are alphabetical.For example, the following strings are alphabetical: "a", "ba", "ab", "bac" and "ihfcbadeg". The following strings are not alphabetical: "z", "aa", "ca", "acb", "xyz" and "ddcba".From the given string, determine if it is alphabetical.
+InputThe first line contains one integer tt (1≤t≤1041≤t≤104) — the number of test cases. Then tt test cases follow.Each test case is written on a separate line that contains one string ss. String ss consists of lowercase letters of the Latin alphabet and has a length between 11 and 2626, inclusive.
+OutputOutput tt lines, each of them must contain the answer to the corresponding test case. Output YES if the given string ss is alphabetical and NO otherwise.You can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as a positive answer).
+ExampleInputCopy11
+a
+ba
+ab
+bac
+ihfcbadeg
+z
+aa
+ca
+acb
+xyz
+ddcba
+OutputCopyYES
+YES
+YES
+YES
+YES
+NO
+NO
+NO
+NO
+NO
+NO
+
+NoteThe example contains test cases from the main part of the condition.

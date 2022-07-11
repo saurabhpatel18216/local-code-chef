@@ -1,0 +1,15 @@
+Highway 201 is the most busy street in Rockport. Traffic cars cause a lot of hindrances to races, especially when there are a lot of them. The track which passes through this highway can be divided into nn sub-tracks. You are given an array aa where aiai represents the number of traffic cars in the ii-th sub-track. You define the inconvenience of the track as ∑i=1n∑j=i+1n|ai−aj|∑i=1n∑j=i+1n|ai−aj|, where |x||x| is the absolute value of xx. You can perform the following operation any (possibly zero) number of times: choose a traffic car and move it from its current sub-track to any other sub-track.Find the minimum inconvenience you can achieve.
+InputThe first line of input contains a single integer tt (1≤t≤100001≤t≤10000) — the number of test cases.The first line of each test case contains a single integer nn (1≤n≤2⋅1051≤n≤2⋅105).The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤1090≤ai≤109).It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case, print a single line containing a single integer: the minimum inconvenience you can achieve by applying the given operation any (possibly zero) number of times.
+ExampleInputCopy3
+3
+1 2 3
+4
+0 1 1 0
+10
+8 3 6 11 5 2 1 7 10 4
+OutputCopy0
+4
+21
+
+NoteFor the first test case, you can move a car from the 33-rd sub-track to the 11-st sub-track to obtain 00 inconvenience.For the second test case, moving any car won't decrease the inconvenience of the track.

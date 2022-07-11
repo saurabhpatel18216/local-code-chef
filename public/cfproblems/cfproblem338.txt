@@ -1,0 +1,27 @@
+You have an array of integers (initially empty).You have to perform qq queries. Each query is of one of two types:   "11 xx" — add the element xx to the end of the array;  "22 xx yy" — replace all occurrences of xx in the array with yy. Find the resulting array after performing all the queries.
+InputThe first line contains a single integer qq (1≤q≤5⋅1051≤q≤5⋅105) — the number of queries.Next qq lines contain queries (one per line). Each query is of one of two types:   "11 xx" (1≤x≤5⋅1051≤x≤5⋅105);  "22 xx yy" (1≤x,y≤5⋅1051≤x,y≤5⋅105). It's guaranteed that there is at least one query of the first type.
+OutputIn a single line, print kk integers — the resulting array after performing all the queries, where kk is the number of queries of the first type.
+ExamplesInputCopy7
+1 3
+1 1
+2 1 2
+1 2
+1 1
+1 2
+2 1 3
+OutputCopy3 2 2 3 2 InputCopy4
+1 1
+1 2
+1 1
+2 2 2
+OutputCopy1 2 1 InputCopy8
+2 1 4
+1 1
+1 4
+1 2
+2 2 4
+2 4 3
+1 2
+2 2 7
+OutputCopy1 3 3 7 
+NoteIn the first example, the array changes as follows:[][] →→ [3][3] →→ [3,1][3,1] →→ [3,2][3,2] →→ [3,2,2][3,2,2] →→ [3,2,2,1][3,2,2,1] →→ [3,2,2,1,2][3,2,2,1,2] →→ [3,2,2,3,2][3,2,2,3,2].In the second example, the array changes as follows:[][] →→ [1][1] →→ [1,2][1,2] →→ [1,2,1][1,2,1] →→ [1,2,1][1,2,1].In the third example, the array changes as follows:[][] →→ [][] →→ [1][1] →→ [1,4][1,4] →→ [1,4,2][1,4,2] →→ [1,4,4][1,4,4] →→ [1,3,3][1,3,3] →→ [1,3,3,2][1,3,3,2] →→ [1,3,3,7][1,3,3,7].

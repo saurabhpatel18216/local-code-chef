@@ -1,0 +1,17 @@
+Ashish has a binary string ss of length nn that he wants to sort in non-decreasing order.He can perform the following operation:   Choose a subsequence of any length such that its elements are in non-increasing order. Formally, choose any kk such that 1≤k≤n1≤k≤n and any sequence of kk indices 1≤i1<i2<…<ik≤n1≤i1<i2<…<ik≤n such that si1≥si2≥…≥siksi1≥si2≥…≥sik.  Reverse this subsequence in-place. Formally, swap si1si1 with siksik, swap si2si2 with sik−1sik−1, …… and swap si⌊k/2⌋si⌊k/2⌋ with si⌈k/2⌉+1si⌈k/2⌉+1 (Here ⌊x⌋⌊x⌋ denotes the largest integer not exceeding xx, and ⌈x⌉⌈x⌉ denotes the smallest integer not less than xx) Find the minimum number of operations required to sort the string in non-decreasing order. It can be proven that it is always possible to sort the given binary string in at most nn operations.
+InputThe first line contains a single integer tt (1≤t≤1000)(1≤t≤1000)  — the number of test cases. The description of the test cases follows.The first line of each test case contains an integer nn (1≤n≤1000)(1≤n≤1000)  — the length of the binary string ss.The second line of each test case contains a binary string ss of length nn containing only 00s and 11s.It is guaranteed that the sum of nn over all test cases does not exceed 10001000.
+OutputFor each test case output the following:  The minimum number of operations mm in the first line (0≤m≤n0≤m≤n).  Each of the following mm lines should be of the form: kk i1i1 i2i2 ... ikik, where kk is the length and i1<i2<...<iki1<i2<...<ik are the indices of the chosen subsequence. For them the conditions from the statement must hold. 
+ExampleInputCopy3
+7
+0011111
+5
+10100
+6
+001000
+OutputCopy0
+1
+4 1 3 4 5 
+1
+3 3 5 6 
+
+NoteIn the first test case, the binary string is already sorted in non-decreasing order.In the second test case, we can perform the following operation:   k=4:k=4: choose the indices {1,3,4,5}{1,3,4,5}1–1_ 00 1–1_ 0–0_ 0–0_ →→ 0–0_ 00 0–0_ 1–1_ 1–1_ In the third test case, we can perform the following operation:  k=3:k=3: choose the indices {3,5,6}{3,5,6}00 00 1–1_ 00 0–0_ 0–0_ →→ 00 00 0–0_ 00 0–0_ 1–1_

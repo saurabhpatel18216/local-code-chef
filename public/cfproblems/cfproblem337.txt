@@ -1,0 +1,19 @@
+You are given a permutation pp consisting of nn integers 1,2,…,n1,2,…,n (a permutation is an array where each element from 11 to nn occurs exactly once).Let's call an array aa bipartite if the following undirected graph is bipartite:  the graph consists of nn vertices;  two vertices ii and jj are connected by an edge if i<ji<j and ai>ajai>aj. Your task is to find a bipartite array of integers aa of size nn, such that ai=piai=pi or ai=−piai=−pi, or report that no such array exists. If there are multiple answers, print any of them.
+InputThe first line contains a single integer tt (1≤t≤2⋅1051≤t≤2⋅105) — the number of test cases.The first line of each test case contains a single integer nn (1≤n≤1061≤n≤106) — the size of the permutation.The second line contains nn integers p1,p2,…,pnp1,p2,…,pn.The sum of nn over all test cases doesn't exceed 106106.
+OutputFor each test case, print the answer in the following format. If such an array aa does not exist, print "NO" in a single line. Otherwise, print "YES" in the first line and nn integers — array aa in the second line.
+ExampleInputCopy4
+3
+1 2 3
+6
+1 3 2 6 5 4
+4
+4 1 3 2
+8
+3 2 1 6 7 8 5 4
+OutputCopyYES
+1 2 3
+NO
+YES
+-4 -1 -3 -2
+YES
+-3 -2 1 6 7 -8 -5 -4

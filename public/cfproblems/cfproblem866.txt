@@ -1,0 +1,45 @@
+Touko's favorite sequence of numbers is a permutation a1,a2,…,ana1,a2,…,an of 1,2,…,n1,2,…,n, and she wants some collection of permutations that are similar to her favorite permutation.She has a collection of qq intervals of the form [li,ri][li,ri] with 1≤li≤ri≤n1≤li≤ri≤n. To create permutations that are similar to her favorite permutation, she coined the following definition:  A permutation b1,b2,…,bnb1,b2,…,bn allows an interval [l′,r′][l′,r′] to holds its shape if for any pair of integers (x,y)(x,y) such that l′≤x<y≤r′l′≤x<y≤r′, we have bx<bybx<by if and only if ax<ayax<ay.  A permutation b1,b2,…,bnb1,b2,…,bn is kk-similar if bb allows all intervals [li,ri][li,ri] for all 1≤i≤k1≤i≤k to hold their shapes. Yuu wants to figure out all kk-similar permutations for Touko, but it turns out this is a very hard task; instead, Yuu will encode the set of all kk-similar permutations with directed acylic graphs (DAG). Yuu also coined the following definitions for herself:  A permutation b1,b2,…,bnb1,b2,…,bn satisfies a DAG G′G′ if for all edge u→vu→v in G′G′, we must have bu<bvbu<bv.  A kk-encoding is a DAG GkGk on the set of vertices 1,2,…,n1,2,…,n such that a permutation b1,b2,…,bnb1,b2,…,bn satisfies GkGk if and only if bb is kk-similar. Since Yuu is free today, she wants to figure out the minimum number of edges among all kk-encodings for each kk from 11 to qq.
+InputThe first line contains two integers nn and qq (1≤n≤250001≤n≤25000, 1≤q≤1000001≤q≤100000).The second line contains nn integers a1,a2,…,ana1,a2,…,an which form a permutation of 1,2,…,n1,2,…,n.The ii-th of the following qq lines contains two integers lili and riri. (1≤li≤ri≤n1≤li≤ri≤n).
+OutputPrint qq lines. The kk-th of them should contain a single integer  — The minimum number of edges among all kk-encodings.
+ExamplesInputCopy4 3
+2 4 1 3
+1 3
+2 4
+1 4
+OutputCopy2
+4
+3
+InputCopy8 4
+3 7 4 8 1 5 2 6
+3 6
+1 6
+3 8
+1 8
+OutputCopy3
+5
+9
+7
+InputCopy10 10
+10 5 1 2 7 3 9 4 6 8
+2 2
+4 5
+6 8
+4 10
+4 4
+2 7
+2 2
+7 8
+3 7
+2 10
+OutputCopy0
+1
+3
+6
+6
+9
+9
+9
+9
+8
+
+NoteFor the first test case: All 11-similar permutations must allow the interval [1,3][1,3] to hold its shape. Therefore, the set of all 11-similar permutations is {[3,4,2,1],[3,4,1,2],[2,4,1,3],[2,3,1,4]}{[3,4,2,1],[3,4,1,2],[2,4,1,3],[2,3,1,4]}. The optimal encoding of these permutations is   All 22-similar permutations must allow the intervals [1,3][1,3] and [2,4][2,4] to hold their shapes. Therefore, the set of all 22-similar permutations is {[3,4,1,2],[2,4,1,3]}{[3,4,1,2],[2,4,1,3]}. The optimal encoding of these permutations is   All 33-similar permutations must allow the intervals [1,3][1,3], [2,4][2,4], and [1,4][1,4] to hold their shapes. Therefore, the set of all 33-similar permutations only includes [2,4,1,3][2,4,1,3]. The optimal encoding of this permutation is  

@@ -1,0 +1,15 @@
+  William really likes puzzle kits. For one of his birthdays, his friends gifted him a complete undirected edge-weighted graph consisting of nn vertices.He wants to build a spanning tree of this graph, such that for the first kk vertices the following condition is satisfied: the degree of a vertex with index ii does not exceed didi. Vertices from k+1k+1 to nn may have any degree.William wants you to find the minimum weight of a spanning tree that satisfies all the conditions.A spanning tree is a subset of edges of a graph that forms a tree on all nn vertices of the graph. The weight of a spanning tree is defined as the sum of weights of all the edges included in a spanning tree.
+InputThe first line of input contains two integers nn, kk (2≤n≤502≤n≤50, 1≤k≤min(n−1,5)1≤k≤min(n−1,5)).The second line contains kk integers d1,d2,…,dkd1,d2,…,dk (1≤di≤n1≤di≤n). The ii-th of the next n−1n−1 lines contains n−in−i integers wi,i+1,wi,i+2,…,wi,nwi,i+1,wi,i+2,…,wi,n (1≤wi,j≤1001≤wi,j≤100): weights of edges (i,i+1),(i,i+2),…,(i,n)(i,i+1),(i,i+2),…,(i,n).
+OutputPrint one integer: the minimum weight of a spanning tree under given degree constraints for the first kk vertices. 
+ExampleInputCopy10 5
+5 3 4 2 1
+29 49 33 12 55 15 32 62 37
+61 26 15 58 15 22 8 58
+37 16 9 39 20 14 58
+10 15 40 3 19 55
+53 13 37 44 52
+23 59 58 4
+69 80 29
+89 28
+48
+OutputCopy95

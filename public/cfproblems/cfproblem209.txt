@@ -1,0 +1,18 @@
+ You are given a sequence of nn non-negative integers a1,a2,…,ana1,a2,…,an. Initially, all the elements of the sequence are unpainted. You can paint each number Red–––––Red_ or Blue¯¯¯¯¯¯¯¯¯¯¯Blue¯ (but not both), or leave it unpainted. For a color cc, Count(c)Count(c) is the number of elements in the sequence painted with that color and Sum(c)Sum(c) is the sum of the elements in the sequence painted with that color.For example, if the given sequence is [2,8,6,3,1][2,8,6,3,1] and it is painted this way: [2¯¯¯,8,6––,3¯¯¯,1][2¯,8,6_,3¯,1] (where 66 is painted red, 22 and 33 are painted blue, 11 and 88 are unpainted) then Sum(Red–––––)=6Sum(Red_)=6, Sum(Blue¯¯¯¯¯¯¯¯¯¯¯)=2+3=5Sum(Blue¯)=2+3=5, Count(Red–––––)=1Count(Red_)=1, and Count(Blue¯¯¯¯¯¯¯¯¯¯¯)=2Count(Blue¯)=2.Determine if it is possible to paint the sequence so that Sum(Red–––––)>Sum(Blue¯¯¯¯¯¯¯¯¯¯¯)Sum(Red_)>Sum(Blue¯) and Count(Red–––––)<Count(Blue¯¯¯¯¯¯¯¯¯¯¯)Count(Red_)<Count(Blue¯).
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤10001≤t≤1000). Description of the test cases follows.The first line of each test case contains an integer nn (3≤n≤2⋅1053≤n≤2⋅105) — the length of the given sequence. The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤1090≤ai≤109) — the given sequence.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case, print YES if it is possible to paint the given sequence satisfying the above requirements, and NO otherwise.You can output YES and NO in any case (for example, strings yEs, yes, Yes and YES will be recognized as a positive response).
+ExampleInputCopy4
+3
+1 2 3
+5
+2 8 6 3 1
+4
+3 5 4 2
+5
+1000000000 1000000000 1000000000 1000000000 1000000000
+OutputCopyNO
+YES
+NO
+NO
+
+NoteIn the first test case, there is no possible way to paint the sequence. For example, if you paint the sequence this way: [1¯¯¯,2¯¯¯,3––][1¯,2¯,3_] (where 33 is painted red, 11 and 22 are painted blue) then Count(Red–––––)=1<Count(Blue¯¯¯¯¯¯¯¯¯¯¯)=2Count(Red_)=1<Count(Blue¯)=2, but Sum(Red–––––)=3≯Sum(Blue¯¯¯¯¯¯¯¯¯¯¯)=3Sum(Red_)=3≯Sum(Blue¯)=3. So, this is not a possible way to paint the sequence.In the second test case, a possible way to paint the sequence is described in the statement. We can see that Sum(Red–––––)=6>Sum(Blue¯¯¯¯¯¯¯¯¯¯¯)=5Sum(Red_)=6>Sum(Blue¯)=5 and Count(Red–––––)=1<Count(Blue¯¯¯¯¯¯¯¯¯¯¯)=2Count(Red_)=1<Count(Blue¯)=2.In the third test case, there is no possible way to paint the sequence. For example, if you paint the sequence this way: [3––,5––,4¯¯¯,2¯¯¯][3_,5_,4¯,2¯] (where 33 and 55 are painted red, 44 and 22 are painted blue) then Sum(Red–––––)=8>Sum(Blue¯¯¯¯¯¯¯¯¯¯¯)=6Sum(Red_)=8>Sum(Blue¯)=6 but Count(Red–––––)=2≮Count(Blue¯¯¯¯¯¯¯¯¯¯¯)=2Count(Red_)=2≮Count(Blue¯)=2. So, this is not a possible way to paint the sequence.In the fourth test case, it can be proven that there is no possible way to paint the sequence satisfying sum and count constraints.

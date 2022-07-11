@@ -1,0 +1,18 @@
+You are given a string ss consisting of lowercase letters of the English alphabet. You must perform the following algorithm on ss:  Let xx be the length of the longest prefix of ss which occurs somewhere else in ss as a contiguous substring (the other occurrence may also intersect the prefix). If x=0x=0, break. Otherwise, remove the first xx characters of ss, and repeat. A prefix is a string consisting of several first letters of a given string, without any reorders. An empty prefix is also a valid prefix. For example, the string "abcd" has 5 prefixes: empty string, "a", "ab", "abc" and "abcd".For instance, if we perform the algorithm on s=s= "abcabdc",   Initially, "ab" is the longest prefix that also appears somewhere else as a substring in ss, so s=s= "cabdc" after 11 operation.  Then, "c" is the longest prefix that also appears somewhere else as a substring in ss, so s=s= "abdc" after 22 operations.  Now x=0x=0 (because there are no non-empty prefixes of "abdc" that also appear somewhere else as a substring in ss), so the algorithm terminates. Find the final state of the string after performing the algorithm.
+InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of test cases.This is followed by tt lines, each containing a description of one test case. Each line contains a string ss. The given strings consist only of lowercase letters of the English alphabet and have lengths between 11 and 2⋅1052⋅105 inclusive.It is guaranteed that the sum of the lengths of ss over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case, print a single line containing the string ss after executing the algorithm. It can be shown that such string is non-empty.
+ExampleInputCopy6
+abcabdc
+a
+bbbbbbbbbb
+codeforces
+cffcfccffccfcffcfccfcffccffcfccf
+zyzyzwxxyyxxyyzzyzzxxwzxwywxwzxxyzzw
+OutputCopyabdc
+a
+b
+deforces
+cf
+xyzzw
+
+NoteThe first test case is explained in the statement.In the second test case, no operations can be performed on ss.In the third test case,   Initially, s=s= "bbbbbbbbbb".  After 11 operation, s=s= "b". In the fourth test case,   Initially, s=s= "codeforces".  After 11 operation, s=s= "odeforces".  After 22 operations, s=s= "deforces". 

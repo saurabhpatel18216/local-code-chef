@@ -1,0 +1,12 @@
+Given an integer nn, find the maximum value of integer kk such that the following condition holds:  nn & (n−1n−1) & (n−2n−2) & (n−3n−3) & ... (kk) = 00  where & denotes the bitwise AND operation.
+InputThe first line contains a single integer tt (1≤t≤3⋅1041≤t≤3⋅104). Then tt test cases follow.The first line of each test case contains a single integer nn (1≤n≤1091≤n≤109).
+OutputFor each test case, output a single integer — the required integer kk.
+ExampleInputCopy3
+2
+5
+17
+OutputCopy1
+3
+15
+
+NoteIn the first testcase, the maximum value for which the continuous & operation gives 0 value, is 1.In the second testcase, the maximum value for which the continuous & operation gives 0 value, is 3. No value greater then 3, say for example 4, will give the & sum 0.   5&4≠05&4≠0,  5&4&3=05&4&3=0. Hence, 3 is the answer.

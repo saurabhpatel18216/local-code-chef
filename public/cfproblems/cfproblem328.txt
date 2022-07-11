@@ -1,0 +1,29 @@
+Railway network of one city consists of nn stations connected by n−1n−1 roads. These stations and roads forms a tree. Station 11 is a city center. For each road you know the time trains spend to pass this road. You can assume that trains don't spend time on stops. Let's define dist(v)dist(v) as the time that trains spend to get from the station vv to the station 11.This railway network is splitted into zones named by first kk capital latin letters. The zone of the ii-th station is zizi. City center is in the zone A. For all other stations it is guaranteed that the first station on the road from this station to the city center is either in the same zone or in the zone with lexicographically smaller name. Any road is completely owned by the zone of the most distant end from the city center.Tourist will arrive at the airport soon and then he will go to the city center. Here's how the trip from station vv to station 11 happends:   At the moment 00, tourist enters the train that follows directly from the station vv to the station 11. The trip will last for dist(v)dist(v) minutes.  Tourist can buy tickets for any subset of zones at any moment. Ticket for zone ii costs passipassi euro.  Every TT minutes since the start of the trip (that is, at the moments T,2T,…T,2T,…) the control system will scan tourist. If at the moment of scan tourist is in the zone ii without zone ii ticket, he should pay fineifinei euro. Formally, the zone of tourist is determined in the following way:   If tourist is at the station 11, then he already at the city center so he shouldn't pay fine.  If tourist is at the station u≠1u≠1, then he is in the zone zuzu.  If tourist is moving from the station xx to the station yy that are directly connected by road, then he is in the zone zxzx.  Note, that tourist can pay fine multiple times in the same zone. Tourist always selects such way to buy tickets and pay fines that minimizes the total cost of trip. Let f(v)f(v) be such cost for station vv.Unfortunately, tourist doesn't know the current values of passipassi and fineifinei for different zones and he has forgot the location of the airport. He will ask you queries of 33 types:  11 ii cc — the cost of ticket in zone ii has changed. Now passipassi is cc.  22 ii cc — the cost of fine in zone ii has changed. Now fineifinei is cc.  33 uu — solve the following problem for current values of passpass and finefine:   You are given the station uu. Consider all the stations vv that satisfy the following conditions:   zv=zuzv=zu  The station uu is on the path from the station vv to the station 11.  Find the value of min(f(v))min(f(v)) over all such stations vv with the following assumption: tourist has the ticket for the zone of station zuzu.  
+InputThe first line contains the single integer nn (2≤n≤2⋅1052≤n≤2⋅105) — the number of stations.Each of the next n−1n−1 lines contains three integers vivi, uiui, titi (1≤vi,ui≤n,1≤ti≤1091≤vi,ui≤n,1≤ti≤109) — the ends of the ii-th road and the time it takes a train to pass this road. It is guaranteed that this roads forms a tree.The next line contains the single integer kk (1≤k≤261≤k≤26) — the number of zones.The next line contains nn symbols z1z2…znz1z2…zn — zizi is the name of the zone of the ii-th station. It is guaranteed that the conditions from the second paragraph are satisfied.The next line contains kk integers pass1pass1, pass2pass2, ……, passkpassk (1≤passi≤1091≤passi≤109) — initial costs of tickets.The next line contains kk integers fine1fine1, fine2fine2, ……, finekfinek (1≤finei≤1091≤finei≤109) — initial fines.The next line contains the single integer TT (1≤T≤1091≤T≤109) — the time gap between scans of control system.The next line contains the single integer qq (1≤q≤2⋅1051≤q≤2⋅105) — the number of queries.Next qq lines contains queries as described in the statement. It is guaranteed that in the queries of the first and the second type ii is a correct name of the zone (one of the first kk capital latin letters) and 1≤c≤1091≤c≤109, and in the queries of the third type 1≤u≤n1≤u≤n.
+OutputFor each query of the third type print the answer to it.
+ExampleInputCopy8
+1 2 7
+2 3 4
+2 4 3
+4 5 1
+5 6 6
+4 7 10
+6 8 6
+4
+AABABBDB
+11 12 10 42
+16 15 15 30
+4
+6
+3 2
+1 A 10
+3 3
+2 A 3
+3 7
+3 6
+OutputCopy0
+10
+6
+6
+
+NoteNote, that the fine can be cheaper than the pass.  The railway network from the example. Green color is used for stations and roads of zone A, blue color is used for zone B and red color is used for zone D. The integer near each road is time that trains spend to pass it. In the first query, the airport can be located near the station 22 or near the station 44. During the trip, tourist will always stay in the zone A. He already has the pass for this zone so the answer is 00.After the second query, the cost of the pass in the zone A has become 1010.In the third query, the airport can be located only near the station 33. Optimal solution will be to buy the pass for zone A. During the first 33 seconds of trip tourist will be in the zone B. Then he will move to the zone A and will be scanned there on the 44-th and the 88-th second of his ride. Since he have a pass for this zone, he won't pay fines.After the forth query, the fine in the zone A has become 33.In the fifth query, the airport can be located only near the station 77 and f(7)=6f(7)=6.In the sixth query, the airport can be located near the station 66 or near the station 88. Since f(6)=9f(6)=9 and f(8)=6f(8)=6 the answer is 66.

@@ -1,0 +1,45 @@
+There is a grid with nn rows and mm columns. Some cells are colored black, and the rest of the cells are colored white.In one operation, you can select some black cell and do exactly one of the following:   color all cells in its row black, or  color all cells in its column black. You are given two integers rr and cc. Find the minimum number of operations required to make the cell in row rr and column cc black, or determine that it is impossible.
+InputThe input consists of multiple test cases. The first line contains an integer tt (1≤t≤1001≤t≤100) — the number of test cases. The description of the test cases follows.The first line of each test case contains four integers nn, mm, rr, and cc (1≤n,m≤501≤n,m≤50; 1≤r≤n1≤r≤n; 1≤c≤m1≤c≤m) — the number of rows and the number of columns in the grid, and the row and column of the cell you need to turn black, respectively.Then nn lines follow, each containing mm characters. Each of these characters is either 'B' or 'W' — a black and a white cell, respectively.
+OutputFor each test case, if it is impossible to make the cell in row rr and column cc black, output −1−1. Otherwise, output a single integer — the minimum number of operations required to make the cell in row rr and column cc black. 
+ExampleInputCopy9
+3 5 1 4
+WBWWW
+BBBWB
+WWBBB
+4 3 2 1
+BWW
+BBW
+WBB
+WWB
+2 3 2 2
+WWW
+WWW
+2 2 1 1
+WW
+WB
+5 9 5 9
+WWWWWWWWW
+WBWBWBBBW
+WBBBWWBWW
+WBWBWBBBW
+WWWWWWWWW
+1 1 1 1
+B
+1 1 1 1
+W
+1 2 1 1
+WB
+2 1 1 1
+W
+B
+OutputCopy1
+0
+-1
+2
+2
+0
+-1
+1
+1
+
+NoteThe first test case is pictured below.  We can take the black cell in row 11 and column 22, and make all cells in its row black. Therefore, the cell in row 11 and column 44 will become black.  In the second test case, the cell in row 22 and column 11 is already black.In the third test case, it is impossible to make the cell in row 22 and column 22 black.The fourth test case is pictured below.  We can take the black cell in row 22 and column 22 and make its column black.   Then, we can take the black cell in row 11 and column 22 and make its row black.   Therefore, the cell in row 11 and column 11 will become black.

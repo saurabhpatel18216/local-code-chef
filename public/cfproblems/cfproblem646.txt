@@ -1,0 +1,29 @@
+Monocarp and Polycarp are learning new programming techniques. Now they decided to try pair programming.It's known that they have worked together on the same file for n+mn+m minutes. Every minute exactly one of them made one change to the file. Before they started, there were already kk lines written in the file.Every minute exactly one of them does one of two actions: adds a new line to the end of the file or changes one of its lines.Monocarp worked in total for nn minutes and performed the sequence of actions [a1,a2,…,an][a1,a2,…,an]. If ai=0ai=0, then he adds a new line to the end of the file. If ai>0ai>0, then he changes the line with the number aiai. Monocarp performed actions strictly in this order: a1a1, then a2a2, ..., anan.Polycarp worked in total for mm minutes and performed the sequence of actions [b1,b2,…,bm][b1,b2,…,bm]. If bj=0bj=0, then he adds a new line to the end of the file. If bj>0bj>0, then he changes the line with the number bjbj. Polycarp performed actions strictly in this order: b1b1, then b2b2, ..., bmbm.Restore their common sequence of actions of length n+mn+m such that all actions would be correct — there should be no changes to lines that do not yet exist. Keep in mind that in the common sequence Monocarp's actions should form the subsequence [a1,a2,…,an][a1,a2,…,an] and Polycarp's — subsequence [b1,b2,…,bm][b1,b2,…,bm]. They can replace each other at the computer any number of times.Let's look at an example. Suppose k=3k=3. Monocarp first changed the line with the number 22 and then added a new line (thus, n=2,a=[2,0]n=2,a=[2,0]). Polycarp first added a new line and then changed the line with the number 55 (thus, m=2,b=[0,5]m=2,b=[0,5]).Since the initial length of the file was 33, in order for Polycarp to change line number 55 two new lines must be added beforehand. Examples of correct sequences of changes, in this case, would be [0,2,0,5][0,2,0,5] and [2,0,0,5][2,0,0,5]. Changes [0,0,5,2][0,0,5,2] (wrong order of actions) and [0,5,2,0][0,5,2,0] (line 55 cannot be edited yet) are not correct.
+InputThe first line contains an integer tt (1≤t≤10001≤t≤1000). Then tt test cases follow. Before each test case, there is an empty line.Each test case contains three lines. The first line contains three integers kk, nn, mm (0≤k≤1000≤k≤100, 1≤n,m≤1001≤n,m≤100) — the initial number of lines in file and lengths of Monocarp's and Polycarp's sequences of changes respectively.The second line contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤3000≤ai≤300).The third line contains mm integers b1,b2,…,bmb1,b2,…,bm (0≤bj≤3000≤bj≤300).
+OutputFor each test case print any correct common sequence of Monocarp's and Polycarp's actions of length n+mn+m or -1 if such sequence doesn't exist.
+ExampleInputCopy5
+
+3 2 2
+2 0
+0 5
+
+4 3 2
+2 0 5
+0 6
+
+0 2 2
+1 0
+2 3
+
+5 4 4
+6 0 8 0
+0 7 0 9
+
+5 4 1
+8 7 8 0
+0
+OutputCopy2 0 0 5 
+0 2 0 6 5 
+-1
+0 6 0 7 0 8 0 9
+-1

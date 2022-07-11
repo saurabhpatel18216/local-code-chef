@@ -1,0 +1,41 @@
+Monocarp plays a computer game called "Goblins and Gnomes". In this game, he manages a large underground city of gnomes and defends it from hordes of goblins.The city consists of nn halls and mm one-directional tunnels connecting them. The structure of tunnels has the following property: if a goblin leaves any hall, he cannot return to that hall. The city will be attacked by kk waves of goblins; during the ii-th wave, ii goblins attack the city. Monocarp's goal is to pass all kk waves.The ii-th wave goes as follows: firstly, ii goblins appear in some halls of the city and pillage them; at most one goblin appears in each hall. Then, goblins start moving along the tunnels, pillaging all the halls in their path. Goblins are very greedy and cunning, so they choose their paths so that no two goblins pass through the same hall. Among all possible attack plans, they choose a plan which allows them to pillage the maximum number of halls. After goblins are done pillaging, they leave the city.If all halls are pillaged during the wave — Monocarp loses the game. Otherwise, the city is restored. If some hall is pillaged during a wave, goblins are still interested in pillaging it during the next waves.Before each wave, Monocarp can spend some time preparing to it. Monocarp doesn't have any strict time limits on his preparations (he decides when to call each wave by himself), but the longer he prepares for a wave, the fewer points he gets for passing it. If Monocarp prepares for the ii-th wave for titi minutes, then he gets max(0,xi−ti⋅yi)max(0,xi−ti⋅yi) points for passing it (obviously, if he doesn't lose in the process).While preparing for a wave, Monocarp can block tunnels. He can spend one minute to either block all tunnels leading from some hall or block all tunnels leading to some hall. If Monocarp blocks a tunnel while preparing for a wave, it stays blocked during the next waves as well.Help Monocarp to defend against all kk waves of goblins and get the maximum possible amount of points!
+InputThe first line contains three integers nn, mm and kk (2≤n≤502≤n≤50; 0≤m≤n(n−1)20≤m≤n(n−1)2; 1≤k≤n−11≤k≤n−1) — the number of halls in the city, the number of tunnels and the number of goblin waves, correspondely.Next mm lines describe tunnels. The ii-th line contains two integers uiui and vivi (1≤ui,vi≤n1≤ui,vi≤n; ui≠viui≠vi). It means that the tunnel goes from hall uiui to hall vivi. The structure of tunnels has the following property: if a goblin leaves any hall, he cannot return to that hall. There is at most one tunnel between each pair of halls.Next kk lines describe the scoring system. The ii-th line contains two integers xixi and yiyi (1≤xi≤1091≤xi≤109; 1≤yi≤1091≤yi≤109). If Monocarp prepares for the ii-th wave for titi minutes, then he gets max(0,xi−ti⋅yi)max(0,xi−ti⋅yi) points for passing it.
+OutputPrint the optimal Monocarp's strategy in the following format:At first, print one integer aa (k≤a≤2n+kk≤a≤2n+k) — the number of actions Monocarp will perform. Next, print actions themselves in the order Monocarp performs them. The ii-th action is described by a single integer bibi (−n≤bi≤n−n≤bi≤n) using the following format:  if bi>0bi>0 then Monocarp blocks all tunnels going out from the hall bibi;  if bi<0bi<0 then Monocarp blocks all tunnels going into the hall |bi||bi|;  if bi=0bi=0 then Monocarp calls the next goblin wave. You can't repeat the same block action bibi several times. Monocarp must survive all waves he calls (goblins shouldn't be able to pillage all halls). Monocarp should call exactly kk waves and earn the maximum possible number of points in total.If there are several optimal strategies — print any of them.
+ExamplesInputCopy5 4 4
+1 2
+2 3
+4 3
+5 3
+100 1
+200 5
+10 10
+100 1
+OutputCopy6
+-2 -3 0 0 0 0 
+InputCopy5 4 4
+1 2
+2 3
+4 3
+5 3
+100 100
+200 5
+10 10
+100 1
+OutputCopy6
+0 -3 0 0 1 0
+InputCopy5 10 1
+1 2
+1 3
+1 4
+1 5
+5 2
+5 3
+5 4
+4 2
+4 3
+2 3
+100 100
+OutputCopy6
+1 2 3 4 5 0
+
+NoteIn the first example, Monocarp, firstly, block all tunnels going in hall 22, secondly — all tunnels going in hall 33, and after that calls all waves. He spent two minutes to prepare to wave 11, so he gets 9898 points for it. He didn't prepare after that, that's why he gets maximum scores for each of next waves (200200, 1010 and 100100). In total, Monocarp earns 408408 points.In the second example, Monocarp calls for the first wave immediately and gets 100100 points. Before the second wave he blocks all tunnels going in hall 33. He spent one minute preparing to the wave, so he gets 195195 points. Monocarp didn't prepare for the third wave, so he gets 1010 points by surviving it. Before the fourth wave he blocks all tunnels going out from hall 11. He spent one minute, so he gets 9999 points for the fourth wave. In total, Monocarp earns 404404 points.In the third example, it doesn't matter how many minutes Monocarp will spend before the wave, since he won't get any points for it. That's why he decides to block all tunnels in the city, spending 55 minutes. He survived the wave though without getting any points.

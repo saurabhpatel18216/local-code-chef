@@ -1,0 +1,20 @@
+You are given two integers aa and bb. In one turn, you can do one of the following operations:   Take an integer cc (c>1c>1 and aa should be divisible by cc) and replace aa with acac;  Take an integer cc (c>1c>1 and bb should be divisible by cc) and replace bb with bcbc. Your goal is to make aa equal to bb using exactly kk turns.For example, the numbers a=36a=36 and b=48b=48 can be made equal in 44 moves:   c=6c=6, divide bb by cc ⇒⇒ a=36a=36, b=8b=8;  c=2c=2, divide aa by cc ⇒⇒ a=18a=18, b=8b=8;  c=9c=9, divide aa by cc ⇒⇒ a=2a=2, b=8b=8;  c=4c=4, divide bb by cc ⇒⇒ a=2a=2, b=2b=2. For the given numbers aa and bb, determine whether it is possible to make them equal using exactly kk turns.
+InputThe first line contains one integer tt (1≤t≤1041≤t≤104). Then tt test cases follow.Each test case is contains three integers aa, bb and kk (1≤a,b,k≤1091≤a,b,k≤109).
+OutputFor each test case output:   "Yes", if it is possible to make the numbers aa and bb equal in exactly kk turns;  "No" otherwise. The strings "Yes" and "No" can be output in any case.
+ExampleInputCopy8
+36 48 2
+36 48 3
+36 48 4
+2 8 1
+2 8 2
+1000000000 1000000000 1000000000
+1 2 1
+2 2 1
+OutputCopyYES
+YES
+YES
+YES
+YES
+NO
+YES
+NO

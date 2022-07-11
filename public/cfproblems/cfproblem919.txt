@@ -1,0 +1,26 @@
+Please note the non-standard memory limit.There are nn problems numbered with integers from 11 to nn. ii-th problem has the complexity ci=2ici=2i, tag tagitagi and score sisi.After solving the problem ii it's allowed to solve problem jj if and only if IQ<|ci−cj|IQ<|ci−cj| and tagi≠tagjtagi≠tagj. After solving it your IQIQ changes and becomes IQ=|ci−cj|IQ=|ci−cj| and you gain |si−sj||si−sj| points.Any problem can be the first. You can solve problems in any order and as many times as you want.Initially your IQ=0IQ=0. Find the maximum number of points that can be earned.
+InputThe first line contains a single integer tt (1≤t≤100)(1≤t≤100)  — the number of test cases. The first line of each test case contains an integer nn (1≤n≤5000)(1≤n≤5000)  — the number of problems.The second line of each test case contains nn integers tag1,tag2,…,tagntag1,tag2,…,tagn (1≤tagi≤n)(1≤tagi≤n)  — tags of the problems.The third line of each test case contains nn integers s1,s2,…,sns1,s2,…,sn (1≤si≤109)(1≤si≤109)  — scores of the problems.It's guaranteed that sum of nn over all test cases does not exceed 50005000.
+OutputFor each test case print a single integer  — the maximum number of points that can be earned.
+ExampleInputCopy5
+4
+1 2 3 4
+5 10 15 20
+4
+1 2 1 2
+5 10 15 20
+4
+2 2 4 1
+2 8 19 1
+2
+1 1
+6 9
+1
+1
+666
+OutputCopy35
+30
+42
+0
+0
+
+NoteIn the first test case optimal sequence of solving problems is as follows:   1→21→2, after that total score is 55 and IQ=2IQ=2  2→32→3, after that total score is 1010 and IQ=4IQ=4  3→13→1, after that total score is 2020 and IQ=6IQ=6  1→41→4, after that total score is 3535 and IQ=14IQ=14 In the second test case optimal sequence of solving problems is as follows:   1→21→2, after that total score is 55 and IQ=2IQ=2  2→32→3, after that total score is 1010 and IQ=4IQ=4  3→43→4, after that total score is 1515 and IQ=8IQ=8  4→14→1, after that total score is 3535 and IQ=14IQ=14 In the third test case optimal sequence of solving problems is as follows:   1→31→3, after that total score is 1717 and IQ=6IQ=6  3→43→4, after that total score is 3535 and IQ=8IQ=8  4→24→2, after that total score is 4242 and IQ=12IQ=12 

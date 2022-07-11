@@ -1,0 +1,18 @@
+You are given a sequence of nn integers a1,a2,…,ana1,a2,…,an. You are also given xx integers 1,2,…,x1,2,…,x.You are asked to insert each of the extra integers into the sequence aa. Each integer can be inserted at the beginning of the sequence, at the end of the sequence, or between any elements of the sequence.The score of the resulting sequence a′a′ is the sum of absolute differences of adjacent elements in it (∑i=1n+x−1|a′i−a′i+1|)(∑i=1n+x−1|ai′−ai+1′|).What is the smallest possible score of the resulting sequence a′a′?
+InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of testcases.The first line of each testcase contains two integers nn and xx (1≤n,x≤2⋅1051≤n,x≤2⋅105) — the length of the sequence and the number of extra integers.The second line of each testcase contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤2⋅1051≤ai≤2⋅105).The sum of nn over all testcases doesn't exceed 2⋅1052⋅105.
+OutputFor each testcase, print a single integer — the smallest sum of absolute differences of adjacent elements of the sequence after you insert the extra integers into it.
+ExampleInputCopy4
+1 5
+10
+3 8
+7 2 10
+10 2
+6 1 5 7 3 3 9 10 10 1
+4 10
+1 3 1 2
+OutputCopy9
+15
+31
+13
+
+NoteHere are the sequences with the smallest scores for the example. The underlined elements are the extra integers. Note that there exist other sequences with this smallest score.   1–,2–,3–,4–,5–,101_,2_,3_,4_,5_,10  7–,7,6–,4–,2,2–,1–,3–,5–,8–,107_,7,6_,4_,2,2_,1_,3_,5_,8_,10  6,1–,1,2–,5,7,3,3,9,10,10,16,1_,1,2_,5,7,3,3,9,10,10,1  1,3,1–,1,2,2–,3–,4–,5–,6–,7–,8–,9–,10–––1,3,1_,1,2,2_,3_,4_,5_,6_,7_,8_,9_,10_ 

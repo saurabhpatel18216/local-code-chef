@@ -1,0 +1,18 @@
+For an array cc of nonnegative integers, MEX(c)MEX(c) denotes the smallest nonnegative integer that doesn't appear in it. For example, MEX([0,1,3])=2MEX([0,1,3])=2, MEX([42])=0MEX([42])=0.You are given integers n,kn,k, and an array [b1,b2,…,bn][b1,b2,…,bn].Find the number of arrays [a1,a2,…,an][a1,a2,…,an], for which the following conditions hold:0≤ai≤n0≤ai≤n for each ii for each ii from 11 to nn.|MEX([a1,a2,…,ai])−bi|≤k|MEX([a1,a2,…,ai])−bi|≤k for each ii from 11 to nn.As this number can be very big, output it modulo 998244353998244353.
+InputThe first line of the input contains two integers n,kn,k (1≤n≤20001≤n≤2000, 0≤k≤500≤k≤50).The second line of the input contains nn integers b1,b2,…,bnb1,b2,…,bn (−k≤bi≤n+k−k≤bi≤n+k) — elements of the array bb.
+OutputOutput a single integer — the number of arrays which satisfy the conditions from the statement, modulo 998244353998244353.
+ExamplesInputCopy4 0
+0 0 0 0
+OutputCopy256
+InputCopy4 1
+0 0 0 0
+OutputCopy431
+InputCopy4 1
+0 0 1 1
+OutputCopy509
+InputCopy5 2
+0 0 2 2 0
+OutputCopy6546
+InputCopy3 2
+-2 0 4
+OutputCopy11

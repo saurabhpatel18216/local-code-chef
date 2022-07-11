@@ -1,0 +1,12 @@
+You are given a string ss. You need to find two non-empty strings aa and bb such that the following conditions are satisfied:  Strings aa and bb are both subsequences of ss.  For each index ii, character sisi of string ss must belong to exactly one of strings aa or bb.  String aa is lexicographically minimum possible; string bb may be any possible string. Given string ss, print any valid aa and bb.Reminder:A string aa (bb) is a subsequence of a string ss if aa (bb) can be obtained from ss by deletion of several (possibly, zero) elements. For example, "dores", "cf", and "for" are subsequences of "codeforces", while "decor" and "fork" are not.A string xx is lexicographically smaller than a string yy if and only if one of the following holds:  xx is a prefix of yy, but x≠yx≠y;  in the first position where xx and yy differ, the string xx has a letter that appears earlier in the alphabet than the corresponding letter in yy. 
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤10001≤t≤1000). Description of the test cases follows.The first and only line of each test case contains one string ss (2≤|s|≤1002≤|s|≤100 where |s||s| means the length of ss). String ss consists of lowercase Latin letters.
+OutputFor each test case, print the strings aa and bb that satisfy the given conditions. If there are multiple answers, print any.
+ExampleInputCopy3
+fc
+aaaa
+thebrightboiler
+OutputCopyc f
+a aaa
+b therightboiler
+
+NoteIn the first test case, there are only two choices: either a=a= f and b=b= c or a=a= c and b=b= f. And a=a=c is lexicographically smaller than a=a= f.In the second test case, a is the only character in the string.In the third test case, it can be proven that b is the lexicographically smallest subsequence of ss. The second string can be of two variants; one of them is given here.

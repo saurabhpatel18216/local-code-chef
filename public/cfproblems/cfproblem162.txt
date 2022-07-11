@@ -1,0 +1,29 @@
+You are given two sets of positive integers AA and BB. You have to find two non-empty subsets SA⊆ASA⊆A, SB⊆BSB⊆B so that the least common multiple (LCM) of the elements of SASA is equal to the least common multiple (LCM) of the elements of SBSB.
+InputThe input consists of multiple test cases. The first line of the input contains one integer tt (1≤t≤2001≤t≤200), the number of test cases.For each test case, there is one line containing two integers n,mn,m (1≤n,m≤10001≤n,m≤1000), the sizes of the sets AA and BB, respectively.The next line contains nn distinct integers a1,a2,…,ana1,a2,…,an (1≤ai≤4⋅10361≤ai≤4⋅1036), the elements of AA.The next line contains mm distinct integers b1,b2,…,bmb1,b2,…,bm (1≤bi≤4⋅10361≤bi≤4⋅1036), the elements of BB.The sum of nn for all test cases and the sum of mm for all test cases is at most 10001000.
+OutputFor each test case, if there do not exist two subsets with equal least common multiple, output one line with NO.Otherwise, output one line with YES, followed by a line with two integers |SA|,|SB||SA|,|SB| (1≤|SA|≤n1≤|SA|≤n, 1≤|SB|≤m1≤|SB|≤m), the sizes of the subsets SASA and SBSBThe next line should contain |SA||SA| integers x1,x2,…,x|SA|x1,x2,…,x|SA|, the elements of SASA, followed by a line with |SB||SB| integers y1,y2,…,y|SB|y1,y2,…,y|SB|, the elements of SBSB. If there are multiple possible pairs of subsets, you can print any.
+ExampleInputCopy4
+3 4
+5 6 7
+2 8 9 10
+4 4
+5 6 7 8
+2 3 4 9
+1 3
+1
+1 2 3
+5 6
+3 4 9 7 8
+2 15 11 14 20 12
+OutputCopyNO
+YES
+1 2
+6
+2 3
+YES
+1 1
+1
+1
+YES
+3 2
+3 7 4
+12 14

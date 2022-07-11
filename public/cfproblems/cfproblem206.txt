@@ -1,0 +1,11 @@
+You have a rectangular board of size n×mn×m (nn rows, mm columns). The nn rows are numbered from 11 to nn from top to bottom, and the mm columns are numbered from 11 to mm from left to right. The cell at the intersection of row ii and column jj contains the number ijij (ii raised to the power of jj). For example, if n=3n=3 and m=3m=3 the board is as follows:  Find the number of distinct integers written on the board.
+InputThe only line contains two integers nn and mm (1≤n,m≤1061≤n,m≤106) — the number of rows and columns of the board.
+OutputPrint one integer, the number of distinct integers on the board.
+ExamplesInputCopy3 3
+OutputCopy7
+InputCopy2 4
+OutputCopy5
+InputCopy4 2
+OutputCopy6
+
+NoteThe statement shows the board for the first test case. In this case there are 77 distinct integers: 11, 22, 33, 44, 88, 99, and 2727.In the second test case, the board is as follows:  There are 55 distinct numbers: 11, 22, 44, 88 and 1616.In the third test case, the board is as follows:  There are 66 distinct numbers: 11, 22, 33, 44, 99 and 1616.

@@ -1,0 +1,24 @@
+mm chairs are arranged in a circle sequentially. The chairs are numbered from 00 to m−1m−1. nn people want to sit in these chairs. The ii-th of them wants at least a[i]a[i] empty chairs both on his right and left side. More formally, if the ii-th person sits in the jj-th chair, then no one else should sit in the following chairs: (j−a[i])modm(j−a[i])modm, (j−a[i]+1)modm(j−a[i]+1)modm, ... (j+a[i]−1)modm(j+a[i]−1)modm, (j+a[i])modm(j+a[i])modm.Decide if it is possible to sit down for all of them, under the given limitations.
+InputThe input consists of multiple test cases. The first line contains a single integer tt (1≤t≤5⋅1041≤t≤5⋅104) — the number of test cases. The description of the test cases follows.The first line of each test case contains two integers nn and mm (2≤n≤1052≤n≤105, 1≤m≤1091≤m≤109) — the number of people and the number of chairs.The next line contains nn integers, a1a1, a2a2, ... anan (1≤ai≤1091≤ai≤109) — the minimum number of empty chairs, on both sides of the ii-th person.It is guaranteed that the sum of nn over all test cases will not exceed 105105.
+OutputFor each test case print "YES" (without quotes) if it is possible for everyone to sit down and fulfil the restrictions, and "NO" (without quotes) otherwise.You may print every letter in any case you want (so, for example, the strings "yEs", "yes", "Yes" and "YES" will all be recognized as positive answers).
+ExampleInputCopy6
+3 2
+1 1 1
+2 4
+1 1
+2 5
+2 1
+3 8
+1 2 1
+4 12
+1 2 1 3
+4 19
+1 2 1 3
+OutputCopyNO
+YES
+NO
+YES
+NO
+YES
+
+NoteTest case 11: n>mn>m, so they can not sit down.Test case 22: the first person can sit 22-nd and the second person can sit in the 00-th chair. Both of them want at least 11 empty chair on both sides, chairs 11 and 33 are free, so this is a good solution.Test case 33: if the second person sits down somewhere, he needs 22 empty chairs, both on his right and on his left side, so it is impossible to find a place for the first person, because there are only 55 chairs.Test case 44: they can sit in the 11-st, 44-th, 77-th chairs respectively.

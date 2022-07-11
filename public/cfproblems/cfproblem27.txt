@@ -1,0 +1,26 @@
+Timur's grandfather gifted him a chessboard to practice his chess skills. This chessboard is a grid aa with nn rows and mm columns with each cell having a non-negative integer written on it. Timur's challenge is to place a bishop on the board such that the sum of all cells attacked by the bishop is maximal. The bishop attacks in all directions diagonally, and there is no limit to the distance which the bishop can attack. Note that the cell on which the bishop is placed is also considered attacked. Help him find the maximal sum he can get.
+InputThe first line of the input contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases. The description of test cases follows.The first line of each test case contains the integers nn and mm (1≤n≤2001≤n≤200, 1≤m≤2001≤m≤200).The following nn lines contain mm integers each, the jj-th element of the ii-th line aijaij is the number written in the jj-th cell of the ii-th row (0≤aij≤106)(0≤aij≤106)It is guaranteed that the sum of n⋅mn⋅m over all test cases does not exceed 4⋅1044⋅104.
+OutputFor each test case output a single integer, the maximum sum over all possible placements of the bishop.
+ExampleInputCopy4
+4 4
+1 2 2 1
+2 4 2 4
+2 2 3 1
+2 4 2 4
+2 1
+1
+0
+3 3
+1 1 1
+1 1 1
+1 1 1
+3 3
+0 1 1
+1 0 1
+1 1 0
+OutputCopy20
+1
+5
+3
+
+NoteFor the first test case here the best sum is achieved by the bishop being in this position:   

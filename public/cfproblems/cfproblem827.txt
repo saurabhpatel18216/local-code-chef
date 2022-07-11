@@ -1,0 +1,29 @@
+This is an interactive problem.Baby Ehab loves crawling around his apartment. It has nn rooms numbered from 00 to n−1n−1. For every pair of rooms, aa and bb, there's either a direct passage from room aa to room bb, or from room bb to room aa, but never both.Baby Ehab wants to go play with Baby Badawy. He wants to know if he could get to him. However, he doesn't know anything about his apartment except the number of rooms. He can ask the baby sitter two types of questions:   is the passage between room aa and room bb directed from aa to bb or the other way around?  does room xx have a passage towards any of the rooms s1s1, s2s2, ..., sksk? He can ask at most 9n9n queries of the first type and at most 2n2n queries of the second type.After asking some questions, he wants to know for every pair of rooms aa and bb whether there's a path from aa to bb or not. A path from aa to bb is a sequence of passages that starts from room aa and ends at room bb.
+InputThe first line contains an integer tt (1≤t≤301≤t≤30) — the number of test cases you need to solve.Then each test case starts with an integer nn (4≤n≤1004≤n≤100) — the number of rooms.The sum of nn across the test cases doesn't exceed 500500.
+OutputTo print the answer for a test case, print a line containing "3", followed by nn lines, each containing a binary string of length nn. The jj-th character of the ii-th string should be 11 if there's a path from room ii to room jj, and 00 if there isn't. The ii-th character of the ii-th string should be 11 for each valid ii.After printing the answer, we will respond with a single integer. If it's 11, you printed a correct answer and should keep solving the test cases (or exit if it is the last one). If it's −1−1, you printed a wrong answer and should terminate to get Wrong answer verdict. Otherwise, you can get an arbitrary verdict because your solution will continue to read from a closed stream.
+InteractionTo ask a question of the first type, use the format:   11 aa bb (0≤a,b≤n−10≤a,b≤n−1, a≠ba≠b).  we will answer with 11 if the passage is from aa to bb, and 00 if it is from bb to aa.  you can ask at most 9n9n questions of this type in each test case. To ask a question of the second type, use the format:   22 xx kk s1s1 s2s2 ... sksk (0≤x,si≤n−10≤x,si≤n−1, 0≤k<n0≤k<n, x≠six≠si, elements of ss are pairwise distinct).  we will answer with 11 if there's a passage from xx to any of the rooms in ss, and 00 otherwise.  you can ask at most 2n2n questions of this type in each test case. If we answer with −1−1 instead of a valid answer, that means you exceeded the number of queries or made an invalid query. Exit immediately after receiving −1−1 and you will see Wrong answer verdict. Otherwise, you can get an arbitrary verdict because your solution will continue to read from a closed stream.After printing a query, do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use: fflush(stdout) or cout.flush() in C++; System.out.flush() in Java; flush(output) in Pascal; stdout.flush() in Python; see the documentation for other languages.Hacks:The first line should contain an integer tt — the number of test cases.The first line of each test case should contain an integer nn (4≤n≤1004≤n≤100) — the number of rooms.Each of the next nn lines should contain a binary string of length nn. The jj-th character of the ii-th string should be 11 if there's a passage from room ii to room jj, 00 otherwise. The ii-th character of the ii-th string should be 00.
+ExampleInputCopy1
+4
+
+0
+
+0
+
+1
+
+1
+
+1OutputCopy2 3 3 0 1 2
+
+1 0 1
+
+1 0 2
+
+2 2 1 1
+
+3
+1111
+1111
+1111
+0001
+NoteIn the given example:The first query asks whether there's a passage from room 33 to any of the other rooms.The second query asks about the direction of the passage between rooms 00 and 11.After a couple other queries, we concluded that you can go from any room to any other room except if you start at room 33, and you can't get out of this room, so we printed the matrix:1111111111110001The interactor answered with 11, telling us the answer is correct.

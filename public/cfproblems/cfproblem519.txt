@@ -1,0 +1,9 @@
+The Winter holiday will be here soon. Mr. Chanek wants to decorate his house's wall with ornaments. The wall can be represented as a binary string aa of length nn. His favorite nephew has another binary string bb of length mm (m≤nm≤n).Mr. Chanek's nephew loves the non-negative integer kk. His nephew wants exactly kk occurrences of bb as substrings in aa. However, Mr. Chanek does not know the value of kk. So, for each kk (0≤k≤n−m+10≤k≤n−m+1), find the minimum number of elements in aa that have to be changed such that there are exactly kk occurrences of bb in aa.A string ss occurs exactly kk times in tt if there are exactly kk different pairs (p,q)(p,q) such that we can obtain ss by deleting pp characters from the beginning and qq characters from the end of tt.
+InputThe first line contains two integers nn and mm (1≤m≤n≤5001≤m≤n≤500) — size of the binary string aa and bb respectively.The second line contains a binary string aa of length nn.The third line contains a binary string bb of length mm.
+OutputOutput n−m+2n−m+2 integers — the (k+1)(k+1)-th integer denotes the minimal number of elements in aa that have to be changed so there are exactly kk occurrences of bb as a substring in aa.
+ExampleInputCopy9 3
+100101011
+101
+OutputCopy1 1 0 1 6 -1 -1 -1
+
+NoteFor k=0k=0, to make the string aa have no occurrence of 101, you can do one character change as follows.100101011 →→ 100100011For k=1k=1, you can also change a single character.100101011 →→ 100001011For k=2k=2, no changes are needed.

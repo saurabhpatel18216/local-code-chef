@@ -1,0 +1,22 @@
+You found a painting on a canvas of size n×mn×m. The canvas can be represented as a grid with nn rows and mm columns. Each cell has some color. Cell (i,j)(i,j) has color ci,jci,j.Near the painting you also found a brush in the shape of a 2×22×2 square, so the canvas was surely painted in the following way: initially, no cell was painted. Then, the following painting operation has been performed some number of times:  Choose two integers ii and jj (1≤i<n1≤i<n, 1≤j<m1≤j<m) and some color kk (1≤k≤nm1≤k≤nm).  Paint cells (i,j)(i,j), (i+1,j)(i+1,j), (i,j+1)(i,j+1), (i+1,j+1)(i+1,j+1) in color kk. All cells must be painted at least once. A cell can be painted multiple times. In this case, its final color will be the last one.Find any sequence of at most nmnm operations that could have led to the painting you found or state that it's impossible.
+InputThe first line of input contains two integers nn and mm (2≤n,m≤10002≤n,m≤1000) — the dimensions of the canvas.On the ii-th of the next nn lines of input, there will be mm integers. The jj-th of them is ai,jai,j (1≤ai,j≤nm1≤ai,j≤nm) — the color of cell (i,j)(i,j).
+OutputIf there is no solution, print a single integer −1−1.Otherwise, on the first line, print one integer qq (1≤q≤nm1≤q≤nm) — the number of operations.Next, print the operations in order. On the kk-th of the next qq lines, print three integers ii, jj, cc (1≤i<n1≤i<n, 1≤j<m1≤j<m, 1≤c≤nm1≤c≤nm) — the description of the kk-th operation.If there are multiple solutions, print any.
+ExamplesInputCopy4 4
+5 5 3 3
+1 1 5 3
+2 2 5 4
+2 2 4 4
+OutputCopy6
+1 3 3
+3 3 4
+2 2 5
+1 1 5
+2 1 1
+3 1 2
+InputCopy3 4
+1 1 1 1
+2 2 3 1
+2 2 1 1
+OutputCopy-1
+
+NoteIn the first test case, the solution is not unique. Here's one of them:  In the second test case, there is no way one could obtain the given painting, thus the answer is −1−1.

@@ -1,0 +1,21 @@
+Luntik came out for a morning stroll and found an array aa of length nn. He calculated the sum ss of the elements of the array (s=∑ni=1ais=∑i=1nai). Luntik calls a subsequence of the array aa nearly full if the sum of the numbers in that subsequence is equal to s−1s−1.Luntik really wants to know the number of nearly full subsequences of the array aa. But he needs to come home so he asks you to solve that problem!A sequence xx is a subsequence of a sequence yy if xx can be obtained from yy by deletion of several (possibly, zero or all) elements.
+InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases. The next 2⋅t2⋅t lines contain descriptions of test cases. The description of each test case consists of two lines.The first line of each test case contains a single integer nn (1≤n≤601≤n≤60) — the length of the array.The second line contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤1090≤ai≤109) — the elements of the array aa.
+OutputFor each test case print the number of nearly full subsequences of the array.
+ExampleInputCopy5
+5
+1 2 3 4 5
+2
+1000 1000
+2
+1 0
+5
+3 0 2 1 1
+5
+2 1 0 3 0
+OutputCopy1
+0
+2
+4
+4
+
+NoteIn the first test case, s=1+2+3+4+5=15s=1+2+3+4+5=15, only (2,3,4,5)(2,3,4,5) is a nearly full subsequence among all subsequences, the sum in it is equal to 2+3+4+5=14=15−12+3+4+5=14=15−1.In the second test case, there are no nearly full subsequences.In the third test case, s=1+0=1s=1+0=1, the nearly full subsequences are (0)(0) and ()() (the sum of an empty subsequence is 00).

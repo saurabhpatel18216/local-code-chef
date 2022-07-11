@@ -1,0 +1,18 @@
+One day, early in the morning, you decided to buy yourself a bag of chips in the nearby store. The store has chips of nn different flavors. A bag of the ii-th flavor costs aiai burles.The store may run out of some flavors, so you'll decide which one to buy after arriving there. But there are two major flaws in this plan:   you have only coins of 11, 22 and 33 burles;  since it's morning, the store will ask you to pay in exact change, i. e. if you choose the ii-th flavor, you'll have to pay exactly aiai burles. Coins are heavy, so you'd like to take the least possible number of coins in total. That's why you are wondering: what is the minimum total number of coins you should take with you, so you can buy a bag of chips of any flavor in exact change?
+InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases.The first line of each test case contains the single integer nn (1≤n≤1001≤n≤100) — the number of flavors in the store.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1091≤ai≤109) — the cost of one bag of each flavor.
+OutputFor each test case, print one integer — the minimum number of coins you need to buy one bag of any flavor you'll choose in exact change.
+ExampleInputCopy4
+1
+1337
+3
+10 8 10
+5
+1 2 3 4 5
+3
+7 77 777
+OutputCopy446
+4
+3
+260
+
+NoteIn the first test case, you should, for example, take with you 445445 coins of value 33 and 11 coin of value 22. So, 1337=445⋅3+1⋅21337=445⋅3+1⋅2.In the second test case, you should, for example, take 22 coins of value 33 and 22 coins of value 22. So you can pay either exactly 8=2⋅3+1⋅28=2⋅3+1⋅2 or 10=2⋅3+2⋅210=2⋅3+2⋅2.In the third test case, it's enough to take 11 coin of value 33 and 22 coins of value 11.

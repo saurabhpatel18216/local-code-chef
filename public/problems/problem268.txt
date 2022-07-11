@@ -1,0 +1,103 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+
+In the original Chef and Gordon Ramsay problem, Chef wanted to close all but three of this restaurants, and used his arch-rival Gordon's Secret Restaurant Placement Formula to decide which three to leave open to ensure their success.
+
+Chef is now seeking to expand his chain of restaurants to a new town and, would you know it, the dastardly Gordon has already set up his own chain of restaurants there! Once again, Chef conducts a little Industrial Espionage Market Research and discovers that Gordon's Secret Restaurant Placement Formula is different for this new town: the optimal way to arrange restaurants is still in triples, but this time, the restaurants in any optimal triple have to be equidistant from each other. Just like before, Chef is wondering about the number of ways to build an optimally successful triple of restaurants in this new town.
+
+More formally, the new town has NN sites (numbered 11 through NN) connected by N−1N−1 bidirectional roads (the length of each road is 11 mile) in such a way that any site vv can be reached from any other site uu using these roads. For any pair of sites uu and vv, let dist(u,v)dist(u,v) be the length, in miles, of the shortest sequence of roads that connects uu and vv.
+
+Some sites have been deemed suitable for building a restaurant; other sites are unsuitable. Help Chef find the number of ways to choose an ordered triple of sites (p,q,r)(p,q,r) on which he could build his restaurants such that this arrangement of restaurants would be optimally successful, i.e.:
+
+pp, qq and rr are pairwise distinct.
+pp, qq and rr are all suitable sites.
+pp, qq and rr are equidistant from one another, i.e. dist(p,q)=dist(q,r)=dist(r,p)dist(p,q)=dist(q,r)=dist(r,p).
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+Each of the next N−1N−1 lines contains two space-separated integers uu and vv denoting that sites uu and vv are connected by a road.
+The last line contains NN space-separated integers s1,s2,…,sNs1,s2,…,sN, where si=1si=1 denotes that site ii is suitable, while si=0si=0 denotes that it is not suitable.
+
+Output
+
+For each test case, print a single line containing one integer ― the number of triples of sites which result in optimally successful arrangements of restaurants.
+
+Constraints
+
+1≤T≤1,0001≤T≤1,000
+1≤N≤200,0001≤N≤200,000
+1≤u,v≤N1≤u,v≤N
+si∈{0,1}si∈{0,1} for each valid ii
+the sum of NN over all test cases does not exceed 200,000200,000
+
+Subtasks
+
+Subtask #1 (5 points):
+
+T≤100T≤100
+N≤100N≤100
+
+Subtask #2 (10 points):
+
+T≤100T≤100
+N≤1,000N≤1,000
+
+Subtask #3 (85 points): original constraints
+
+Sample Input 1
+
+4
+4 
+3 2
+4 3
+1 3
+1 1 0 0
+5
+3 1
+2 3
+4 3
+5 3
+1 1 0 1 1
+5
+1 3
+4 3
+2 1
+1 5
+0 1 0 1 1
+9
+2 6
+1 2
+7 2
+5 8
+3 9
+8 4
+5 9
+2 5
+1 0 1 1 1 0 1 0 0
+
+Sample Output 1
+
+0
+24
+0
+18
+
+Explanation
+
+Throughout, we only care about the suitable sites, since no other site can be part of an optimally successful triple.
+
+Example case 1: There are only two suitable sites (the sites 11 and 22), so there is no way to form any triple of distinct suitable sites.
+
+Example case 2: The suitable sites are 11, 22, 44 and 55, and the distance between any two of them is always 22 miles, so any triple consisting of sites drawn from these four suitable sites results in an optimally successful arrangement.
+
+Example case 3: There are only three suitable sites (those labelled 22, 44 and 55), but while dist(2,4)=dist(4,5)=3dist(2,4)=dist(4,5)=3 miles, unfortunately dist(5,2)=2dist(5,2)=2 miles, so the three suitable sites are not equidistant from each other.
+
+Example case 4: The suitable sites are 11, 33, 44, 55 and 77.
+
+Since dist(1,5)=dist(5,7)=dist(7,1)=2dist(1,5)=dist(5,7)=dist(7,1)=2 miles, the triple (1,5,7)(1,5,7) results in an optimally successful arrangement, as do (1,7,5)(1,7,5), (5,1,7)(5,1,7), (5,7,1)(5,7,1), (7,1,5)(7,1,5) and (7,5,1)(7,5,1).
+Also, since dist(1,3)=dist(3,4)=dist(4,1)=4dist(1,3)=dist(3,4)=dist(4,1)=4 miles, (1,3,4)(1,3,4) is another triple that results in an optimally successful arrangement, as are (1,4,3)(1,4,3), (3,1,4)(3,1,4), (3,4,1)(3,4,1), (4,1,3)(4,1,3) and (4,3,1)(4,3,1).
+Finally, we see that dist(3,4)=dist(4,7)=dist(7,3)=4dist(3,4)=dist(4,7)=dist(7,3)=4 miles, so (3,4,7)(3,4,7) is another triple that results in an optimally successful arrangement, as are (3,7,4)(3,7,4), (4,3,7)(4,3,7), (4,7,3)(4,7,3), (7,3,4)(7,3,4) and (7,4,3)(7,4,3). That's 1818 triples in total.
+
+

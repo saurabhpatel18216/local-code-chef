@@ -1,0 +1,11 @@
+In this problem, we will consider complete undirected graphs consisting of nn vertices with weighted edges. The weight of each edge is an integer from 11 to kk.An undirected graph is considered beautiful if the sum of weights of all edges incident to vertex 11 is equal to the weight of MST in the graph. MST is the minimum spanning tree — a tree consisting of n−1n−1 edges of the graph, which connects all nn vertices and has the minimum sum of weights among all such trees; the weight of MST is the sum of weights of all edges in it.Calculate the number of complete beautiful graphs having exactly nn vertices and the weights of edges from 11 to kk. Since the answer might be large, print it modulo 998244353998244353.
+InputThe only line contains two integers nn and kk (2≤n≤2502≤n≤250; 1≤k≤2501≤k≤250).
+OutputPrint one integer — the number of complete beautiful graphs having exactly nn vertices and the weights of edges from 11 to kk. Since the answer might be large, print it modulo 998244353998244353.
+ExamplesInputCopy3 2
+OutputCopy5
+InputCopy4 4
+OutputCopy571
+InputCopy6 9
+OutputCopy310640163
+InputCopy42 13
+OutputCopy136246935

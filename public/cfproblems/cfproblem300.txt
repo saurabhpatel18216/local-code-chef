@@ -1,0 +1,18 @@
+Monocarp is playing a computer game once again. He is a wizard apprentice, who only knows a single spell. Luckily, this spell can damage the monsters.The level he's currently on contains nn monsters. The ii-th of them appears kiki seconds after the start of the level and has hihi health points. As an additional constraint, hi≤kihi≤ki for all 1≤i≤n1≤i≤n. All kiki are different.Monocarp can cast the spell at moments which are positive integer amounts of second after the start of the level: 1,2,3,…1,2,3,… The damage of the spell is calculated as follows. If he didn't cast the spell at the previous second, the damage is 11. Otherwise, let the damage at the previous second be xx. Then he can choose the damage to be either x+1x+1 or 11. A spell uses mana: casting a spell with damage xx uses xx mana. Mana doesn't regenerate.To kill the ii-th monster, Monocarp has to cast a spell with damage at least hihi at the exact moment the monster appears, which is kiki.Note that Monocarp can cast the spell even when there is no monster at the current second.The mana amount required to cast the spells is the sum of mana usages for all cast spells. Calculate the least amount of mana required for Monocarp to kill all monsters.It can be shown that it's always possible to kill all monsters under the constraints of the problem.
+InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of testcases.The first line of the testcase contains a single integer nn (1≤n≤1001≤n≤100) — the number of monsters in the level.The second line of the testcase contains nn integers k1<k2<⋯<knk1<k2<⋯<kn (1≤ki≤1091≤ki≤109) — the number of second from the start the ii-th monster appears at. All kiki are different, kiki are provided in the increasing order.The third line of the testcase contains nn integers h1,h2,…,hnh1,h2,…,hn (1≤hi≤ki≤1091≤hi≤ki≤109) — the health of the ii-th monster.The sum of nn over all testcases doesn't exceed 104104.
+OutputFor each testcase, print a single integer — the least amount of mana required for Monocarp to kill all monsters.
+ExampleInputCopy3
+1
+6
+4
+2
+4 5
+2 2
+3
+5 7 9
+2 1 2
+OutputCopy10
+6
+7
+
+NoteIn the first testcase of the example, Monocarp can cast spells 3,4,53,4,5 and 66 seconds from the start with damages 1,2,31,2,3 and 44, respectively. The damage dealt at 66 seconds is 44, which is indeed greater than or equal to the health of the monster that appears.In the second testcase of the example, Monocarp can cast spells 3,43,4 and 55 seconds from the start with damages 1,21,2 and 33, respectively.In the third testcase of the example, Monocarp can cast spells 4,5,7,84,5,7,8 and 99 seconds from the start with damages 1,2,1,11,2,1,1 and 22, respectively.

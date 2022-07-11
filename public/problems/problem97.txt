@@ -1,0 +1,51 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+
+Chef has a string AA with length NN. It contains only characters '(', ')' and '*'. Chef wants to perform the following process:
+
+Uniformly randomly choose a pair of integers (l,r)(l,r) such that 1≤l≤r≤N1≤l≤r≤N.
+Consider the substring S=[Al,Al+1,…,Ar]S=[Al,Al+1,…,Ar]. Process the characters of this string from left to right.
+Let's denote the current number of closing brackets in SS up to the currently processed character (inclusive) by ncnc. Similarly, let's denote the number of opening brackets by nono. Note that the string SS may change; ncnc and nono correspond to the current state of SS, not its initial state.
+Whenever ncnc becomes greater than nono, the currently processed character must be ')'. Then, change it from ')' to '(' and continue processing the remaining characters of SS.
+
+Chef would like to know the expected number of characters that he would change in this process. Can you help him?
+
+It can be proved that this expected value can be expressed as a fraction P/QP/Q, where PP and QQ are non-negative integers and QQ is coprime to 109+7109+7. You should find P⋅Q−1P⋅Q−1 modulo 109+7109+7, where Q−1Q−1 denotes the multiplicative inverse of QQ modulo 109+7109+7.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains a single string AA with length NN.
+
+Output
+
+For each test case, print a single line containing one integer P⋅Q−1P⋅Q−1 modulo 109+7109+7.
+
+Constraints
+
+1≤T≤101≤T≤10
+1≤N≤1071≤N≤107
+the sum of NN over all test cases does not exceed 107107
+
+Subtasks
+
+Subtask #1 (5 points): N≤100N≤100
+
+Subtask #2 (15 points): N≤5,000N≤5,000
+
+Subtask #3 (30 points): N≤105N≤105
+
+Subtask #4 (50 points): original constraints
+
+Sample Input 1
+
+1
+5
+((())
+
+Sample Output 1
+
+866666673
+
+

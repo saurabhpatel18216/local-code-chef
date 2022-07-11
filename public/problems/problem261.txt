@@ -1,0 +1,63 @@
+
+Read problem statements in Mandarin Chinese, Russian, and Vietnamese as well.
+
+You're given an array AA with NN integers. 
+Define F(A,i,j)=(A[j]−A[i])⋅(j−i)F(A,i,j)=(A[j]−A[i])⋅(j−i).
+
+Consider the set PP of all pairs (i,j)(i,j) such that 1≤i<j≤N1≤i<j≤N. For a subset SS of PP, we define beauty(S,A)beauty(S,A) as the sum of F(A,i,j)F(A,i,j) over all pairs (i,j)(i,j) contained in SS. We also define V(A)V(A) as the maximum value of beauty(S,A)beauty(S,A) over all subsets SS of PP.
+
+You also have a machine that takes a copy of the initial array AA as an input and performs KK pre-defined operations on it in a fixed order. In each operation, it takes two indices, XiXi and YiYi, and swaps the elements present at those positions in the array at that moment in time. After that, it outputs the final array. You know what these operations are and the order in which they are performed.
+
+However, the machine is a bit lazy. It may skip some operations. But the order of operations does not change. In other words, it chooses a subsequence (possibly empty) of the operations and performs them in that order.
+
+Find the sum of V(P)V(P) over all possible outputs PP of the machine (modulo 109+7109+7).
+
+In other words, consider the multiset RR of the arrays we get as an output after the machine takes input as AA and performs one of the subsequences (possibly empty) of the pre-defined operations. Note that there can be multiple occurrences of the same array in this multiset. Find the value ∑P∈RV(P)∑P∈RV(P).
+
+Output the remainder of this value when divided by 109+7109+7.
+
+Input Format
+
+The first line contains one integer TT — the number of test cases. Then TT test cases follow. 
+For each test case, the first line contains integers NN and KK, the length of array AA and the number of predefined operations respectively. 
+The second line contains NN integers A[1],A[2],…A[N]A[1],A[2],…A[N].
+Then KK lines follow. The ii-th of these lines contains integers XiXi and YiYi, the indices to be swapped in the ii-th operation.
+
+Output Format
+
+For each test case, output the answer to the problem modulo 109+7109+7 on a separate line.
+
+Constraints
+
+1≤T≤1031≤T≤103
+2≤N≤4⋅1032≤N≤4⋅103
+1≤K≤4⋅1031≤K≤4⋅103
+−109≤A[i]≤109−109≤A[i]≤109
+1≤Xi<Yi≤N1≤Xi<Yi≤N
+Sum of NN over all test cases is at most 4⋅1034⋅103.
+Sum of KK over all test cases is at most 4⋅1034⋅103.
+
+Sample Input 1
+
+1
+3 2
+1 2 3
+1 2
+2 3
+
+Sample Output 1
+
+15
+
+Explanation
+
+There are 4 ways to select a subsequence from the given list of 2 operations:
+
+Perform both operations 1 and 2: After swapping values at indices 1 and 2, the array becomes [2,1,3][2,1,3]. Then, after swapping values at indices 2 and 3, the array finally becomes [2,3,1][2,3,1]. One of the ways to get the greatest beauty in this array is by by choosing S={(1,2)}S={(1,2)}, ending up with V(A)=F(A,1,2)=(A[2]−A[1])⋅(2−1)=(3−2)⋅(2−1)=1V(A)=F(A,1,2)=(A[2]−A[1])⋅(2−1)=(3−2)⋅(2−1)=1
+Perform only operation 1: After swapping values at indices 1 and 2, the array becomes [2,1,3][2,1,3]. For this final array, V(A)=4V(A)=4.
+Perform only operation 2: After swapping values at indices 2 and 3, the array becomes [1,3,2][1,3,2]. For this final array, V(A)=4V(A)=4.
+Perform no operations: The array AA remains [1,2,3][1,2,3]. Here, V(A)=6V(A)=6.
+
+Hence, our final answer is (1+4+4+6)(1+4+4+6), which leaves a remainder 1515 when divided by 109+7109+7.
+
+

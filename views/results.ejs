@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title><%= queryString %> - AlgoDsGo Search</title>
+  <link rel="icon" type="image/x-icon" href="/images/site.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/83596131d6.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- Top Bar Search -->
+  <div class="forms-div">
+    <form action="/" class="searchBar" method="post">
+      <a href="/" class="navbar-brand text-white">Data Structures and Algorithams!</a>
+      <input type="text" name="query" value="<%= queryString %>" id="searchQueryInput"style="width: 40%;" autocomplete="off">
+      <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="#666666"
+            d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+        </svg>
+      </button>
+      <a class = "results-git" href="https://github.com/saurabhpatel18216/local-code-chef"><i class="fa-brands fa-github"></i> GitHub</a>
+    </form>
+  </div>
+
+<!-- Filter Search -->
+  <div class = "platforms">
+    <!--
+    <form action="/" method="post" class = "top-forms">
+      <input type="text" name="all" value="<%= queryString %>" style ="display: none">
+      <button type="submit" name="button" class = "btn btn-default">&lt; All &gt;</button>
+    </form>
+    <form action="/" method="post" class = "top-forms">
+      <input type="text" name="codeChef" value="<%= queryString %>" style ="display: none">
+      <button type="submit" class="btn btn-default">
+        <img src="images/favicon.ico" width="20" /> CodeChef
+      </button>
+    </form>
+    <form action="/" method="post" class = "top-forms">
+      <input type="text" name="codeforces" value="<%= queryString %>" style ="display: none">
+      <button type="submit" class="btn btn-default">
+        <img src="images/code-forces.webp" width="20" /> Codeforces
+      </button>
+    </form>-->
+  </div>
+  <div class="linebreak"></div>
+
+  <div class="problem-container">
+    <!-- If no search found -->
+    <% if(l===1){ %>
+      <p class = "problem-statement-para">Your search - <strong><%= queryString %></strong> - did not match any documents. Try to add more meaningful keywords and retry!</p>
+      <img src="images/no-results.png" alt="no_results" style="height: 400px;object-fit: cover;">
+    <% } %>
+    <!-- Print 10 results -->
+    <br>
+    <% for(let i = 0; i<l; i++){ %>
+          <% if(l===1){ %>
+            <% break; %>
+          <% } %>
+          <a class="results-link" href="<%= queryResultsLinks[i] %>"><%= queryResultsLinks[i] %></a>
+          <br>
+          <a class="results-title" href="<%= queryResultsLinks[i] %>"><%= queryResultsTitles[i] %></a>
+          <br>
+          <p class="problem-statement-para"><%= queryResultsProblemStatement[i] %></p>
+          <hr>
+          <br>
+          <% if(i>=9){ %>
+          <%   break; %>
+          <% } %>
+      <% } %>
+    <!-- Print more results if any -->
+      <% if(l>=9){ %>
+          <div class="footer-text">
+            <p>Shown ten most relavant results</p>
+            <div class = "more-results-btn">See More Results</div>
+            <br>
+          </div>
+          <hr>
+          <div class="more-results-div">
+            <br>
+            <% for(let i = 10; i<l; i++){ %>
+                <a class="results-link" href="<%= queryResultsLinks[i] %>"><%= queryResultsLinks[i] %></a>
+                <br>
+                <a class="results-title" href="<%= queryResultsLinks[i] %>"><%= queryResultsTitles[i] %></a>
+                <br>
+                <p class="problem-statement-para"><%= queryResultsProblemStatement[i] %></p>
+                <br>
+              <% } %>
+            <br>
+            <p class = 'footer-text'>--- End of results ---</p>
+          </div>
+       <% } %>
+       <!-- End of results for < 10 results -->
+       <% if(l!==1 && l<10){ %>
+         <br>
+         <p class = 'footer-text'>--- End of results ---</p>
+       <% } %>
+  </div>
+  <script type="text/javascript">
+  var buttons = document.querySelectorAll('button');
+  //buttons[<= btn+1>].classList.add('active');
+  var moreResults = document.querySelector('.more-results-div');
+  var moreResultsButton = document.querySelector('.more-results-btn');
+
+  moreResultsButton.addEventListener('click', show);
+  function show(){
+    if (moreResultsButton.innerText === "See More Results") {
+      moreResultsButton.innerText = "See Less Results";
+    }
+    else{
+      moreResultsButton.innerText = "See More Results";
+    }
+    moreResults.classList.toggle('more-results-div');
+  }
+  </script>
+</body>
+
+</html>

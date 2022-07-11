@@ -1,0 +1,59 @@
+
+Chef's college is conducting online exams. Chef has a test tomorrow and he being irresponsible failed to prepare for it on time (just as always). However, fortunately, he now realises the gravity of the situation and decides to prepare as much as possible in the time remaining and try to score maximum marks possible using his analytical skills.
+
+There are NN chapters and only KK minutes are left before the exam. Chapter ii will be worth MiMi marks in the exam, and shall take TiTi minutes to study. Chef can study the chapters in any order but needs to study them completely and at most once. He knows that he will forget the first chapter that he will prepare (due to lack of sleep) and won’t be able to score any marks in it. Find the maximum marks that Chef can score in the exam.
+
+Note that he cannot re-study the chapter that he has forgotten.
+
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase contain N+1N+1 lines of input.
+First line will contain 22 space separated integers NN and KK, total number of chapters and total time left before the exam respectively. 
+Each of the next NN lines contain 22 space separated integers MiMi and TiTi, weightage and time for the ithith chapter respectively.
+
+Output:
+
+For each testcase, output in a single line answer to the problem.
+
+Constraints
+
+1≤T≤101≤T≤10
+1≤N≤1031≤N≤103
+1≤K≤1041≤K≤104
+1≤Mi≤1091≤Mi≤109
+1≤Ti≤K1≤Ti≤K
+Sum of N∗KN∗K over all tests is atmost 107107
+
+Sample Input 1
+
+3
+2 2
+1 1
+2 1
+3 3
+1 1
+2 2
+3 3
+5 6
+5 1
+4 2
+3 3
+2 4
+1 5
+
+Sample Output 1
+
+2
+2
+9
+
+Explanation
+
+TestCase 1: Optimal solution is to study first chapter first followed by second chapter. So total marks ensured =1+2−1=2=1+2−1=2
+
+TestCase 2: Optimal solution is to study first chapter first followed by second chapter. So total marks ensured =1+2−1=2=1+2−1=2
+
+TestCase 3: Optimal solution is to study third chapter first followed by second and first chapter. So total marks ensured =3+4+5−3=9=3+4+5−3=9
+
+

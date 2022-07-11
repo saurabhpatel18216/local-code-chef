@@ -1,0 +1,8 @@
+It is the hard version of the problem. The only difference is that in this version 3≤k≤n3≤k≤n.You are given a positive integer nn. Find kk positive integers a1,a2,…,aka1,a2,…,ak, such that:  a1+a2+…+ak=na1+a2+…+ak=n  LCM(a1,a2,…,ak)≤n2LCM(a1,a2,…,ak)≤n2 Here LCMLCM is the least common multiple of numbers a1,a2,…,aka1,a2,…,ak.We can show that for given constraints the answer always exists.
+InputThe first line contains a single integer tt (1≤t≤104)(1≤t≤104)  — the number of test cases.The only line of each test case contains two integers nn, kk (3≤n≤1093≤n≤109, 3≤k≤n3≤k≤n).It is guaranteed that the sum of kk over all test cases does not exceed 105105.
+OutputFor each test case print kk positive integers a1,a2,…,aka1,a2,…,ak, for which all conditions are satisfied.
+ExampleInputCopy2
+6 4
+9 5
+OutputCopy1 2 2 1 
+1 3 3 1 1 

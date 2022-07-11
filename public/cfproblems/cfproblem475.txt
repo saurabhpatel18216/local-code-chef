@@ -1,0 +1,22 @@
+A bow adorned with nameless flowers that bears the earnest hopes of an equally nameless person.You have obtained the elegant bow known as the Windblume Ode. Inscribed in the weapon is an array of nn (n≥3n≥3) positive distinct integers (i.e. different, no duplicates are allowed).Find the largest subset (i.e. having the maximum number of elements) of this array such that its sum is a composite number. A positive integer xx is called composite if there exists a positive integer yy such that 1<y<x1<y<x and xx is divisible by yy.If there are multiple subsets with this largest size with the composite sum, you can output any of them. It can be proven that under the constraints of the problem such a non-empty subset always exists.
+InputEach test consists of multiple test cases. The first line contains the number of test cases tt (1≤t≤1001≤t≤100). Description of the test cases follows.The first line of each test case contains an integer nn (3≤n≤1003≤n≤100) — the length of the array.The second line of each test case contains nn distinct integers a1,a2,…,ana1,a2,…,an (1≤ai≤2001≤ai≤200) — the elements of the array.
+OutputEach test case should have two lines of output.The first line should contain a single integer xx: the size of the largest subset with composite sum. The next line should contain xx space separated integers representing the indices of the subset of the initial array.
+ExampleInputCopy4
+3
+8 1 2
+4
+6 9 4 2
+9
+1 2 3 4 5 6 7 8 9
+3
+200 199 198
+OutputCopy2
+2 1
+4
+2 1 4 3
+9
+6 9 1 2 3 4 5 7 8
+3
+1 2 3 
+
+NoteIn the first test case, the subset {a2,a1}{a2,a1} has a sum of 99, which is a composite number. The only subset of size 33 has a prime sum equal to 1111. Note that you could also have selected the subset {a1,a3}{a1,a3} with sum 8+2=108+2=10, which is composite as it's divisible by 22.In the second test case, the sum of all elements equals to 2121, which is a composite number. Here we simply take the whole array as our subset.

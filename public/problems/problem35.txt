@@ -1,0 +1,56 @@
+
+You have two binary strings AA and BB, both of length NN. You have to merge both the binary strings to form a new binary string CC of length 2⋅N2⋅N. The relative order of characters in the original binary strings AA and BB should not change in the binary string CC.
+
+For example, if A=01011A=01011 and B=10100B=10100, one possible way to merge them to form CC is: C=0101101100C=0101101100.
+
+Minimize the number of inversions in the merged binary string CC.
+
+As a reminder, a pair of indices (i,j)(i,j) is an inversion for binary string CC if and only if 1≤i<j≤|C|1≤i<j≤|C|, Ci=1Ci=1 and Cj=0Cj=0.
+
+Input Format
+
+The first line of input contains a single integer TT, denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN — the length of the binary strings AA and BB.
+The second line of each test case contains the binary string AA.
+The third line of each test case contains the binary string BB.
+
+Output Format
+
+For each test case, output a single line containing the minimum number of inversions in the merged binary string CC.
+
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤N≤10001≤N≤1000
+It is guaranteed that the sum of NN over all test cases does not exceed 20002000.
+|A|=|B|=N|A|=|B|=N
+AA and BB are binary strings, i.e, contain only 00 and 11.
+
+Sample Input 1
+
+3
+4
+1010
+0101
+5
+10010
+11001
+5
+00001
+11110
+
+Sample Output 1
+
+6
+12
+4
+
+Explanation
+
+Test Case 11: A=1010A=1010 and B=0101B=0101. One optimal CC is 0101010101010101. The 66 inversions in this CC are {(2,3),(2,5),(2,7),(4,5),(4,7),(6,7)}{(2,3),(2,5),(2,7),(4,5),(4,7),(6,7)}.
+
+Test Case 22: A=10010A=10010 and B=11001B=11001. One optimal CC is 10011001011001100101.
+
+Test Case 33: A=00001A=00001 and B=11110B=11110. One optimal CC is 00001111010000111101.
+
+

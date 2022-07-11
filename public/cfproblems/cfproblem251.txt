@@ -1,0 +1,18 @@
+There are nn cars on a coordinate axis OXOX. Each car is located at an integer point initially and no two cars are located at the same point. Also, each car is oriented either left or right, and they can move at any constant positive speed in that direction at any moment.More formally, we can describe the ii-th car with a letter and an integer: its orientation oriiorii and its location xixi. If orii=Lorii=L, then xixi is decreasing at a constant rate with respect to time. Similarly, if orii=Rorii=R, then xixi is increasing at a constant rate with respect to time. We call two cars irrelevant if they never end up in the same point regardless of their speed. In other words, they won't share the same coordinate at any moment.We call two cars destined if they always end up in the same point regardless of their speed. In other words, they must share the same coordinate at some moment.Unfortunately, we lost all information about our cars, but we do remember mm relationships. There are two types of relationships:11 ii jj —ii-th car and jj-th car are irrelevant.22 ii jj —ii-th car and jj-th car are destined.Restore the orientations and the locations of the cars satisfying the relationships, or report that it is impossible. If there are multiple solutions, you can output any.Note that if two cars share the same coordinate, they will intersect, but at the same moment they will continue their movement in their directions.
+InputThe first line contains two integers, nn and mm (2≤n≤2⋅105;1≤m≤min(2⋅105,n(n−1)2)(2≤n≤2⋅105;1≤m≤min(2⋅105,n(n−1)2) — the number of cars and the number of restrictions respectively.Each of the next mm lines contains three integers, typetype, ii, and jj (1≤type≤2;1≤i,j≤n;i≠j)(1≤type≤2;1≤i,j≤n;i≠j).If typetype = 11, ii-th car and jj-th car are irrelevant. Otherwise, ii-th car and jj-th car are destined.It is guaranteed that for each pair of cars, there are at most 11 relationship between.
+OutputIn the first line, print either "YES" or "NO" (in any case), whether it is possible to restore the orientations and the locations of the cars satisfying the relationships.If the answer is "YES", print nn lines each containing a symbol and an integer: oriiorii and xixi (orii∈{L,R};−109≤xi≤109)(orii∈{L,R};−109≤xi≤109) — representing the information of the ii-th car.If the orientation is left, then oriiorii = LL. Otherwise oriiorii = RR.xixi is the where the ii-th car is located. Note that all xixi should be distinct. We can prove that if there exists a solution, then there must be a solution satisfying the constraints on xixi.
+ExamplesInputCopy4 4
+1 1 2
+1 2 3
+2 3 4
+2 4 1
+OutputCopyYES
+R 0
+L -3
+R 5
+L 6
+InputCopy3 3
+1 1 2
+1 2 3
+1 1 3
+OutputCopyNO

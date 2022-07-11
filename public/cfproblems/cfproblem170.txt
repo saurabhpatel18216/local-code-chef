@@ -1,0 +1,20 @@
+Given a list of distinct values, we denote with first minimum, second minimum, and third minimum the three smallest values (in increasing order).A permutation p1,p2,…,pnp1,p2,…,pn is good if the following statement holds for all pairs (l,r)(l,r) with 1≤l<l+2≤r≤n1≤l<l+2≤r≤n.   If {pl,pr}{pl,pr} are (not necessarily in this order) the first and second minimum of pl,pl+1,…,prpl,pl+1,…,pr then the third minimum of pl,pl+1,…,prpl,pl+1,…,pr is either pl+1pl+1 or pr−1pr−1. You are given an integer nn and a string ss of length mm consisting of characters "<" and ">".Count the number of good permutations p1,p2,…,pnp1,p2,…,pn such that, for all 1≤i≤m1≤i≤m,   pi<pi+1pi<pi+1 if si=si= "<";  pi>pi+1pi>pi+1 if si=si= ">".  As the result can be very large, you should print it modulo 998244353998244353.
+InputThe first line contains two integers nn and mm (2≤n≤2⋅1052≤n≤2⋅105, 1≤m≤min(100,n−1)1≤m≤min(100,n−1)).The second line contains a string ss of length mm, consisting of characters "<" and ">".
+OutputPrint a single integer: the number of good permutations satisfying the constraints described in the statement, modulo 998244353998244353.
+ExamplesInputCopy5 3
+>>>
+OutputCopy5
+InputCopy5 1
+<
+OutputCopy56
+InputCopy6 5
+<<><>
+OutputCopy23
+InputCopy10 5
+><<><
+OutputCopy83154
+InputCopy1008 20
+<><<>>><<<<<>>>>>>>>
+OutputCopy284142857
+
+NoteIn the first test, there are 55 good permutations satisfying the constraints given by the string ss: [4,3,2,1,5][4,3,2,1,5], [5,3,2,1,4][5,3,2,1,4], [5,4,2,1,3][5,4,2,1,3], [5,4,3,1,2][5,4,3,1,2], [5,4,3,2,1][5,4,3,2,1]. Each of them   is good;  satisfies p1>p2p1>p2;  satisfies p2>p3p2>p3;  satisfies p3>p4p3>p4. In the second test, there are 6060 permutations such that p1<p2p1<p2. Only 5656 of them are good: the permutations [1,4,3,5,2][1,4,3,5,2], [1,5,3,4,2][1,5,3,4,2], [2,4,3,5,1][2,4,3,5,1], [2,5,3,4,1][2,5,3,4,1] are not good because the required condition doesn't hold for (l,r)(l,r) = (1,5)(1,5). For example, for the permutation [2,4,3,5,1][2,4,3,5,1],   the first minimum and the second minimum are p5p5 and p1p1, respectively (so they are {pl,pr}{pl,pr} up to reordering);  the third minimum is p3p3 (neither pl+1pl+1 nor pr−1pr−1). In the third test, there are 2323 good permutations satisfying the constraints given by the string ss: [1,2,4,3,6,5][1,2,4,3,6,5], [1,2,5,3,6,4][1,2,5,3,6,4], [1,2,6,3,5,4][1,2,6,3,5,4], [1,3,4,2,6,5][1,3,4,2,6,5], [1,3,5,2,6,4][1,3,5,2,6,4], [1,3,6,2,5,4][1,3,6,2,5,4], [1,4,5,2,6,3][1,4,5,2,6,3], [1,4,6,2,5,3][1,4,6,2,5,3], [1,5,6,2,4,3][1,5,6,2,4,3], [2,3,4,1,6,5][2,3,4,1,6,5], [2,3,5,1,6,4][2,3,5,1,6,4], [2,3,6,1,5,4][2,3,6,1,5,4], [2,4,5,1,6,3][2,4,5,1,6,3], [2,4,6,1,5,3][2,4,6,1,5,3], [2,5,6,1,4,3][2,5,6,1,4,3], [3,4,5,1,6,2][3,4,5,1,6,2], [3,4,5,2,6,1][3,4,5,2,6,1], [3,4,6,1,5,2][3,4,6,1,5,2], [3,4,6,2,5,1][3,4,6,2,5,1], [3,5,6,1,4,2][3,5,6,1,4,2], [3,5,6,2,4,1][3,5,6,2,4,1], [4,5,6,1,3,2][4,5,6,1,3,2], [4,5,6,2,3,1][4,5,6,2,3,1].

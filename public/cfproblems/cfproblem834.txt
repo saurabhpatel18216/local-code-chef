@@ -1,0 +1,18 @@
+You are given an array aa of nn (n≥2n≥2) positive integers and an integer pp. Consider an undirected weighted graph of nn vertices numbered from 11 to nn for which the edges between the vertices ii and jj (i<ji<j) are added in the following manner:  If gcd(ai,ai+1,ai+2,…,aj)=min(ai,ai+1,ai+2,…,aj)gcd(ai,ai+1,ai+2,…,aj)=min(ai,ai+1,ai+2,…,aj), then there is an edge of weight min(ai,ai+1,ai+2,…,aj)min(ai,ai+1,ai+2,…,aj) between ii and jj.  If i+1=ji+1=j, then there is an edge of weight pp between ii and jj. Here gcd(x,y,…)gcd(x,y,…) denotes the greatest common divisor (GCD) of integers xx, yy, ....Note that there could be multiple edges between ii and jj if both of the above conditions are true, and if both the conditions fail for ii and jj, then there is no edge between these vertices.The goal is to find the weight of the minimum spanning tree of this graph.
+InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of test cases.The first line of each test case contains two integers nn (2≤n≤2⋅1052≤n≤2⋅105) and pp (1≤p≤1091≤p≤109) — the number of nodes and the parameter pp.The second line contains nn integers a1,a2,a3,…,ana1,a2,a3,…,an (1≤ai≤1091≤ai≤109).It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105. 
+OutputOutput tt lines. For each test case print the weight of the corresponding graph.
+ExampleInputCopy4
+2 5
+10 10
+2 5
+3 3
+4 5
+5 2 4 9
+8 8
+5 3 3 6 10 100 9 15
+OutputCopy5
+3
+12
+46
+
+NoteHere are the graphs for the four test cases of the example (the edges of a possible MST of the graphs are marked pink):For test case 1  For test case 2  For test case 3  For test case 4  

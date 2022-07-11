@@ -1,0 +1,53 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+
+You are given a sequence A1,A2,…,ANA1,A2,…,AN. You may perform the following operation an arbitrary number of times (including zero): choose two adjacent elements of this sequence, i.e. AiAi, Ai+1Ai+1 for some valid ii, and swap them. However, for each valid ii, it is not allowed to choose AiAi (the element with the index ii, regardless of its value at any point in time) more than once in total during this process.
+
+Find the maximum of the sum S=∑Ni=1Ai⋅iS=∑i=1NAi⋅i.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains NN space-separated integers A1,A2,…,ANA1,A2,…,AN.
+
+Output
+
+For each test case, print a single line containing one integer ― the maximum possible value of SS.
+
+Constraints
+
+1≤T≤1,0001≤T≤1,000
+1≤N≤1051≤N≤105
+1≤Ai≤1091≤Ai≤109 for each valid ii
+the sum of NN over all test cases does not exceed 106106
+
+Subtasks
+
+Subtask #1 (50 points):
+
+N≤20N≤20
+the sum of NN over all test cases does not exceed 200200
+
+Subtask #2 (50 points): original constraints
+
+Sample Input 1
+
+2
+4
+2 1 4 3
+4
+7 6 3 2
+
+Sample Output 1
+
+30
+39
+
+Explanation
+
+Example case 1: Swap the first and second element of the initial sequence. Then, swap the third and fourth element of the resulting sequence. The final sequence AA is (1,2,3,4)(1,2,3,4).
+
+Example case 2: Swap the second and third element to make the sequence (7,3,6,2)(7,3,6,2).
+
+

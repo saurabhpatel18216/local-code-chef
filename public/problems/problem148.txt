@@ -1,0 +1,57 @@
+
+Problem is very simple, you're given an array a, consisting of integers . There are m integers  
+For each integer  Find number of distinct elements among
+
+Input
+
+First line contains two integers n and m. Second line contains n integers, the array elements  
+Next m lines contains integer
+
+Output
+
+Print m lines, on the i-th lines print answer to the number
+
+Constraints
+
+1 ≤ n,m ≤ 105
+1 ≤ ai ≤ 105
+
+1 ≤  ≤ n
+
+
+
+Example
+
+Input:
+10 10
+1 2 3 4 1 2 3 4 100000 99999
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Output:
+6
+6
+6
+6
+6
+5
+4
+3
+2
+1
+
+
+
+Explanation
+
+For the first testcase starting from 1, distinct elements are 1,2,3,4,100000,99999, so total distinct elements from 1 to 10 are 6.
+
+

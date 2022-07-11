@@ -1,0 +1,59 @@
+
+You are given an array AA of size NN.
+
+A partitioning of the array AA is the splitting of AA into one or more non-empty contiguous subarrays such that each element of AA belongs to exactly one of these subarrays.
+
+Find the number of ways to partition AA such that the parity of the sum of elements within the subarrays is alternating. In other words, if SiSi denotes the sum of the elements in the ii-th subarray, then either
+
+S1S1 is odd, S2S2 is even, S3S3 is odd and so on.
+or S1S1 is even, S2S2 is odd, S3S3 is even and so on.
+
+For example if A=[1,2,3,3,5]A=[1,2,3,3,5]. One way to partition AA is [1,2][3,3][5][1,2][3,3][5]. Another way to partition AA is [1][2][3][3,5][1][2][3][3,5]. Note that there exists more ways to partition this array.
+
+Since the answer may be large, output it modulo 998244353998244353.
+
+Input Format
+
+The first line contains a single integer TT - the number of test cases. Then the test cases follow.
+The first line of each test case contains an integer NN - the size of the array AA.
+The second line of each test case contains NN space-separated integers A1,A2,…,ANA1,A2,…,AN denoting the array AA.
+
+Output Format
+
+For each test case, output the answer modulo 998244353998244353.
+
+Constraints
+
+1≤T≤100001≤T≤10000
+1≤N≤2⋅1051≤N≤2⋅105
+0≤Ai≤1090≤Ai≤109
+Sum of NN over all test cases does not exceed 2⋅1052⋅105
+
+Sample Input 1
+
+3
+3
+1 2 3
+4
+4 4 4 4
+5
+1 2 3 3 5
+
+Sample Output 1
+
+2
+1
+5
+
+Explanation
+
+Test case 1: The array can be partitioned as follows
+
+[1][2][3][1][2][3]
+[1,2,3][1,2,3]
+
+Test case 2: The array can be partitioned as follows
+
+[4,4,4,4][4,4,4,4]
+
+

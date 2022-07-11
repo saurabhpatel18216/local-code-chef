@@ -1,0 +1,12 @@
+Prefix function of string t=t1t2…tnt=t1t2…tn and position ii in it is defined as the length kk of the longest proper (not equal to the whole substring) prefix of substring t1t2…tit1t2…ti which is also a suffix of the same substring.For example, for string t=t= abacaba the values of the prefix function in positions 1,2,…,71,2,…,7 are equal to [0,0,1,0,1,2,3][0,0,1,0,1,2,3].Let f(t)f(t) be equal to the maximum value of the prefix function of string tt over all its positions. For example, f(f(abacaba)=3)=3.You are given a string ss. Reorder its characters arbitrarily to get a string tt (the number of occurrences of any character in strings ss and tt must be equal). The value of f(t)f(t) must be minimized. Out of all options to minimize f(t)f(t), choose the one where string tt is the lexicographically smallest.
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤1051≤t≤105). Description of the test cases follows.The only line of each test case contains string ss (1≤|s|≤1051≤|s|≤105) consisting of lowercase English letters.It is guaranteed that the sum of lengths of ss over all test cases does not exceed 105105.
+OutputFor each test case print a single string tt.The multisets of letters in strings ss and tt must be equal. The value of f(t)f(t), the maximum of prefix functions in string tt, must be as small as possible. String tt must be the lexicographically smallest string out of all strings satisfying the previous conditions.
+ExampleInputCopy3
+vkcup
+abababa
+zzzzzz
+OutputCopyckpuv
+aababab
+zzzzzz
+
+NoteA string aa is lexicographically smaller than a string bb if and only if one of the following holds: aa is a prefix of bb, but a≠ba≠b; in the first position where aa and bb differ, the string aa has a letter that appears earlier in the alphabet than the corresponding letter in bb.In the first test case, f(t)=0f(t)=0 and the values of prefix function are [0,0,0,0,0][0,0,0,0,0] for any permutation of letters. String ckpuv is the lexicographically smallest permutation of letters of string vkcup.In the second test case, f(t)=1f(t)=1 and the values of prefix function are [0,1,0,1,0,1,0][0,1,0,1,0,1,0].In the third test case, f(t)=5f(t)=5 and the values of prefix function are [0,1,2,3,4,5][0,1,2,3,4,5].

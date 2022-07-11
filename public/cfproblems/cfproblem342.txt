@@ -1,0 +1,14 @@
+You had nn positive integers a1,a2,…,ana1,a2,…,an arranged in a circle. For each pair of neighboring numbers (a1a1 and a2a2, a2a2 and a3a3, ..., an−1an−1 and anan, and anan and a1a1), you wrote down: are the numbers in the pair equal or not.Unfortunately, you've lost a piece of paper with the array aa. Moreover, you are afraid that even information about equality of neighboring elements may be inconsistent. So, you are wondering: is there any array aa which is consistent with information you have about equality or non-equality of corresponding pairs?
+InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases. Next tt cases follow.The first and only line of each test case contains a non-empty string ss consisting of characters E and/or N. The length of ss is equal to the size of array nn and 2≤n≤502≤n≤50. For each ii from 11 to nn:   if si=si= E then aiai is equal to ai+1ai+1 (an=a1an=a1 for i=ni=n);  if si=si= N then aiai is not equal to ai+1ai+1 (an≠a1an≠a1 for i=ni=n). 
+OutputFor each test case, print YES if it's possible to choose array aa that are consistent with information from ss you know. Otherwise, print NO.It can be proved, that if there exists some array aa, then there exists an array aa of positive integers with values less or equal to 109109.
+ExampleInputCopy4
+EEE
+EN
+ENNEENE
+NENN
+OutputCopyYES
+NO
+YES
+YES
+
+NoteIn the first test case, you can choose, for example, a1=a2=a3=5a1=a2=a3=5.In the second test case, there is no array aa, since, according to s1s1, a1a1 is equal to a2a2, but, according to s2s2, a2a2 is not equal to a1a1.In the third test case, you can, for example, choose array a=[20,20,4,50,50,50,20]a=[20,20,4,50,50,50,20].In the fourth test case, you can, for example, choose a=[1,3,3,7]a=[1,3,3,7].

@@ -1,0 +1,18 @@
+People worry that computers will get too smart and take over the world, but the real problem is that they're too stupid and they've already taken over the world.— Pedro DomingosYou work for a well-known department store that uses leading technologies and employs mechanistic work — that is, robots!The department you work in sells n⋅kn⋅k items. The first item costs 11 dollar, the second item costs 22 dollars, and so on: ii-th item costs ii dollars. The items are situated on shelves. The items form a rectangular grid: there are nn shelves in total, and each shelf contains exactly kk items. We will denote by ai,jai,j the price of jj-th item (counting from the left) on the ii-th shelf, 1≤i≤n,1≤j≤k1≤i≤n,1≤j≤k.Occasionally robots get curious and ponder on the following question: what is the mean price (arithmetic average) of items ai,l,ai,l+1,…,ai,rai,l,ai,l+1,…,ai,r for some shelf ii and indices l≤rl≤r? Unfortunately, the old robots can only work with whole numbers. If the mean price turns out not to be an integer, they break down.You care about robots' welfare. You want to arrange the items in such a way that the robots cannot theoretically break. Formally, you want to choose such a two-dimensional array aa that:  Every number from 11 to n⋅kn⋅k (inclusively) occurs exactly once.  For each i,l,ri,l,r, the mean price of items from ll to rr on ii-th shelf is an integer. Find out if such an arrangement is possible, and if it is, give any example of such arrangement.
+InputThe first line contains a single integer tt (1≤t≤5001≤t≤500) — the number of test cases.The first and only line of each test case contains two integers nn and kk (1≤n,k≤5001≤n,k≤500) — the number of shelves and length of each shelf, respectively.It is guaranteed that the sum nn over all test cases does not exceed 500500 and the sum kk over all test cases does not exceed 500500.
+OutputPrint the answer for each test case.If such an arrangement exists, print "YES" on a single line. After that, print any example on nn lines of kk numbers each, one line per shelf. Each number from 11 to n⋅kn⋅k must occur exactly once in the output.If no good arrangement exists, print a single word "NO" on its own line.
+ExampleInputCopy4
+1 1
+2 2
+3 3
+3 1
+OutputCopyYES
+1 
+YES
+1 3 
+2 4 
+NO
+YES
+1 
+2 
+3 

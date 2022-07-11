@@ -1,0 +1,27 @@
+Given an array aa of nn elements, print any value that appears at least three times or print -1 if there is no such value.
+InputThe first line contains an integer tt (1≤t≤1041≤t≤104) — the number of test cases.The first line of each test case contains an integer nn (1≤n≤2⋅1051≤n≤2⋅105) — the length of the array.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤n1≤ai≤n) — the elements of the array.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case, print any value that appears at least three times or print -1 if there is no such value.
+ExampleInputCopy7
+1
+1
+3
+2 2 2
+7
+2 2 3 3 4 2 2
+8
+1 4 3 4 3 2 4 1
+9
+1 1 1 2 2 2 3 3 3
+5
+1 5 2 4 3
+4
+4 4 4 4
+OutputCopy-1
+2
+2
+4
+3
+-1
+4
+
+NoteIn the first test case there is just a single element, so it can't occur at least three times and the answer is -1.In the second test case, all three elements of the array are equal to 22, so 22 occurs three times, and so the answer is 22.For the third test case, 22 occurs four times, so the answer is 22.For the fourth test case, 44 occurs three times, so the answer is 44.For the fifth test case, 11, 22 and 33 all occur at least three times, so they are all valid outputs.For the sixth test case, all elements are distinct, so none of them occurs at least three times and the answer is -1.

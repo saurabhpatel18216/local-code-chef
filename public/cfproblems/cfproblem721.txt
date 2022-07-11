@@ -1,0 +1,18 @@
+You are given matrix ss that contains nn rows and mm columns. Each element of a matrix is one of the 55 first Latin letters (in upper case).For each kk (1≤k≤51≤k≤5) calculate the number of submatrices that contain exactly kk different letters. Recall that a submatrix of matrix ss is a matrix that can be obtained from ss after removing several (possibly zero) first rows, several (possibly zero) last rows, several (possibly zero) first columns, and several (possibly zero) last columns. If some submatrix can be obtained from ss in two or more ways, you have to count this submatrix the corresponding number of times.
+InputThe first line contains two integers nn and mm (1≤n,m≤8001≤n,m≤800).Then nn lines follow, each containing the string sisi (|si|=m|si|=m) — ii-th row of the matrix. 
+OutputFor each kk (1≤k≤51≤k≤5) print one integer — the number of submatrices that contain exactly kk different letters.
+ExamplesInputCopy2 3
+ABB
+ABA
+OutputCopy9 9 0 0 0 InputCopy6 6
+EDCECE
+EDDCEB
+ACCECC
+BAEEDC
+DDDDEC
+DDAEAD
+OutputCopy56 94 131 103 57 InputCopy3 10
+AEAAEEEEEC
+CEEAAEEEEE
+CEEEEAACAA
+OutputCopy78 153 99 0 0 

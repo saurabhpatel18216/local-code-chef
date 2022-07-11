@@ -1,0 +1,21 @@
+Three little pigs from all over the world are meeting for a convention! Every minute, a triple of 3 new pigs arrives on the convention floor. After the nn-th minute, the convention ends.The big bad wolf has learned about this convention, and he has an attack plan. At some minute in the convention, he will arrive and eat exactly xx pigs. Then he will get away.The wolf wants Gregor to help him figure out the number of possible attack plans that involve eating exactly xx pigs for various values of xx (1≤x≤3n1≤x≤3n). Two attack plans are considered different, if they occur at different times or if the sets of little pigs to eat are different.Note that all queries are independent, that is, the wolf does not eat the little pigs, he only makes plans!
+InputThe first line of input contains two integers nn and qq (1≤n≤1061≤n≤106, 1≤q≤2⋅1051≤q≤2⋅105), the number of minutes the convention lasts and the number of queries the wolf asks.Each of the next qq lines contains a single integer xixi (1≤xi≤3n1≤xi≤3n), the number of pigs the wolf will eat in the ii-th query.
+OutputYou should print qq lines, with line ii representing the number of attack plans if the wolf wants to eat xixi pigs. Since each query answer can be large, output each answer modulo 109+7109+7.
+ExamplesInputCopy2 3
+1
+5
+6
+OutputCopy9
+6
+1
+InputCopy5 4
+2
+4
+6
+8
+OutputCopy225
+2001
+6014
+6939
+
+NoteIn the example test, n=2n=2. Thus, there are 33 pigs at minute 11, and 66 pigs at minute 22. There are three queries: x=1x=1, x=5x=5, and x=6x=6.If the wolf wants to eat 11 pig, he can do so in 3+6=93+6=9 possible attack plans, depending on whether he arrives at minute 11 or 22.If the wolf wants to eat 55 pigs, the wolf cannot arrive at minute 11, since there aren't enough pigs at that time. Therefore, the wolf has to arrive at minute 22, and there are 66 possible attack plans.If the wolf wants to eat 66 pigs, his only plan is to arrive at the end of the convention and devour everybody.Remember to output your answers modulo 109+7109+7!

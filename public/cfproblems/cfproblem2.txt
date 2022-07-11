@@ -1,0 +1,24 @@
+You are given a board of size 2×n2×n (22 rows, nn columns). Some cells of the board contain chips. The chip is represented as '*', and an empty space is represented as '.'. It is guaranteed that there is at least one chip on the board.In one move, you can choose any chip and move it to any adjacent (by side) cell of the board (if this cell is inside the board). It means that if the chip is in the first row, you can move it left, right or down (but it shouldn't leave the board). Same, if the chip is in the second row, you can move it left, right or up.If the chip moves to the cell with another chip, the chip in the destination cell disappears (i. e. our chip captures it).Your task is to calculate the minimum number of moves required to leave exactly one chip on the board.You have to answer tt independent test cases.
+InputThe first line of the input contains one integer tt (1≤t≤2⋅1041≤t≤2⋅104) — the number of test cases. Then tt test cases follow.The first line of the test case contains one integer nn (1≤n≤2⋅1051≤n≤2⋅105) — the length of the board. The second line of the test case contains the string s1s1 consisting of nn characters '*' (chip) and/or '.' (empty cell). The third line of the test case contains the string s2s2 consisting of nn characters '*' (chip) and/or '.' (empty cell).Additional constraints on the input:  in each test case, there is at least one chip on a board;  the sum of nn over all test cases does not exceed 2⋅1052⋅105 (∑n≤2⋅105∑n≤2⋅105). 
+OutputFor each test case, print one integer — the minimum number of moves required to leave exactly one chip on the board.
+ExampleInputCopy5
+1
+*
+.
+2
+.*
+**
+3
+*.*
+.*.
+4
+**.*
+**..
+5
+**...
+...**
+OutputCopy0
+2
+3
+5
+5

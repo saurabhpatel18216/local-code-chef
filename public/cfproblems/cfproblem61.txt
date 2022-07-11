@@ -1,0 +1,14 @@
+Calculate the number of permutations pp of size nn with exactly kk inversions (pairs of indices (i,j)(i,j) such that i<ji<j and pi>pjpi>pj) and exactly xx indices ii such that pi>pi+1pi>pi+1.Yep, that's the whole problem. Good luck!
+InputThe first line contains one integer tt (1≤t≤3⋅1041≤t≤3⋅104) — the number of test cases.Each test case consists of one line which contains three integers nn, kk and xx (1≤n≤9982443521≤n≤998244352; 1≤k≤111≤k≤11; 1≤x≤111≤x≤11).
+OutputFor each test case, print one integer — the answer to the problem, taken modulo 998244353998244353.
+ExampleInputCopy5
+10 6 4
+7 3 1
+163316 11 7
+136373 11 1
+325902 11 11
+OutputCopy465
+12
+986128624
+7636394
+57118194

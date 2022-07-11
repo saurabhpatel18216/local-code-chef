@@ -1,0 +1,35 @@
+You are given two tables AA and BB of size n×mn×m. We define a sorting by column as the following: we choose a column and reorder the rows of the table by the value in this column, from the rows with the smallest value to the rows with the largest. In case there are two or more rows with equal value in this column, their relative order does not change (such sorting algorithms are called stable).You can find this behavior of sorting by column in many office software for managing spreadsheets. Petya works in one, and he has a table AA opened right now. He wants to perform zero of more sortings by column to transform this table to table BB.Determine if it is possible to do so, and if yes, find a sequence of columns to sort by. Note that you do not need to minimize the number of sortings.
+InputThe first line contains two integers nn and mm (1≤n,m≤15001≤n,m≤1500) — the sizes of the tables.Each of the next nn lines contains mm integers ai,jai,j (1≤ai,j≤n1≤ai,j≤n), denoting the elements of the table AA.Each of the next nn lines contains mm integers bi,jbi,j (1≤bi,j≤n1≤bi,j≤n), denoting the elements of the table BB.
+OutputIf it is not possible to transform AA into BB, print −1−1.Otherwise, first print an integer kk (0≤k≤50000≤k≤5000) — the number of sortings in your solution.Then print kk integers c1,…,ckc1,…,ck (1≤ci≤m1≤ci≤m) — the columns, by which Petya needs to perform a sorting.We can show that if a solution exists, there is one in no more than 50005000 sortings.
+ExamplesInputCopy2 2
+2 2
+1 2
+1 2
+2 2
+OutputCopy1
+1InputCopy3 3
+2 3 2
+1 3 3
+1 1 2
+1 1 2
+1 3 3
+2 3 2
+OutputCopy2
+1 2InputCopy2 2
+1 1
+2 1
+2 1
+1 1
+OutputCopy-1InputCopy4 1
+2
+2
+2
+1
+1
+2
+2
+2
+OutputCopy1
+1 
+
+NoteConsider the second example. After the sorting by the first column the table becomes112313322.133112232.After the sorting by the second column the table becomes112133232,112133232,and this is what we need.In the third test any sorting does not change anything, because the columns are already sorted.

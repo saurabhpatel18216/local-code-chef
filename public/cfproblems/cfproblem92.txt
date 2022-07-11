@@ -1,0 +1,25 @@
+This is an interactive problem.There is a grid of n×mn×m cells. Two treasure chests are buried in two different cells of the grid. Your task is to find both of them. You can make two types of operations:    DIG rr cc: try to find the treasure in the cell (r,c)(r,c). The interactor will tell you if you found the treasure or not.  SCAN rr cc: scan from the cell (r,c)(r,c). The result of this operation is the sum of Manhattan distances from the cell (r,c)(r,c) to the cells where the treasures are hidden. Manhattan distance from a cell (r1,c1)(r1,c1) to a cell (r2,c2)(r2,c2) is calculated as |r1−r2|+|c1−c2||r1−r2|+|c1−c2|. You need to find the treasures in at most 7 operations. This includes both DIG and SCAN operations in total. To solve the test you need to call DIG operation at least once in both of the cells where the treasures are hidden.
+InteractionYour program has to process multiple test cases in a single run. First, the testing system writes tt — the number of test cases (1≤t≤1001≤t≤100). Then, tt test cases should be processed one by one.In each test case, your program should start by reading the integers nn and mm (2≤n,m≤162≤n,m≤16).Then, your program can make queries of two types:   DIG rr cc (1≤r≤n1≤r≤n; 1≤c≤m1≤c≤m). The interactor responds with integer 11, if you found the treasure, and 00 if not. If you try to find the treasure in the same cell multiple times, the result will be 00 since the treasure is already found.  SCAN rr cc (1≤r≤n1≤r≤n; 1≤c≤m1≤c≤m). The interactor responds with an integer that is the sum of Manhattan distances from the cell (r,c)(r,c) to the cells where the treasures were hidden. The sum is calculated for both cells with treasures, even if you already found one of them. After you found both treasures, i. e. you received 11 for two DIG operations, your program should continue to the next test case or exit if that test case was the last one. 
+ExampleInputCopy1
+2 3
+
+1
+
+1
+
+3
+
+0
+
+1
+OutputCopy
+
+SCAN 1 2
+
+DIG 1 2
+
+SCAN 2 2
+
+DIG 1 1
+
+DIG 1 3

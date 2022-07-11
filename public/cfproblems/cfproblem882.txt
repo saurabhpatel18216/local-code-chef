@@ -1,0 +1,5 @@
+    *The two images are equivalent, feel free to use either one.
+InputThe input contains a single integer aa (−100≤a≤100−100≤a≤100).
+OutputOutput the result – an integer number.
+ExampleInputCopy1
+OutputCopy1

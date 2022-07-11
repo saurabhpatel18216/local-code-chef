@@ -1,0 +1,12 @@
+Moamen and Ezzat are playing a game. They create an array aa of nn non-negative integers where every element is less than 2k2k.Moamen wins if a1&a2&a3&…&an≥a1⊕a2⊕a3⊕…⊕ana1&a2&a3&…&an≥a1⊕a2⊕a3⊕…⊕an.Here && denotes the bitwise AND operation, and ⊕⊕ denotes the bitwise XOR operation.Please calculate the number of winning for Moamen arrays aa.As the result may be very large, print the value modulo 10000000071000000007 (109+7109+7).
+InputThe first line contains a single integer tt (1≤t≤51≤t≤5)— the number of test cases. Each test case consists of one line containing two integers nn and kk (1≤n≤2⋅1051≤n≤2⋅105, 0≤k≤2⋅1050≤k≤2⋅105).
+OutputFor each test case, print a single value — the number of different arrays that Moamen wins with.Print the result modulo 10000000071000000007 (109+7109+7).
+ExampleInputCopy3
+3 1
+2 1
+4 0
+OutputCopy5
+2
+1
+
+NoteIn the first example, n=3n=3, k=1k=1. As a result, all the possible arrays are [0,0,0][0,0,0], [0,0,1][0,0,1], [0,1,0][0,1,0], [1,0,0][1,0,0], [1,1,0][1,1,0], [0,1,1][0,1,1], [1,0,1][1,0,1], and [1,1,1][1,1,1].Moamen wins in only 55 of them: [0,0,0][0,0,0], [1,1,0][1,1,0], [0,1,1][0,1,1], [1,0,1][1,0,1], and [1,1,1][1,1,1].

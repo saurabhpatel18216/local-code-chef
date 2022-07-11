@@ -1,0 +1,24 @@
+Note that the memory limit is unusual.There are nn chefs numbered 1,2,…,n1,2,…,n that must prepare dishes for a king. Chef ii has skill ii and initially has a dish of tastiness aiai where |ai|≤i|ai|≤i. Each chef has a list of other chefs that he is allowed to copy from. To stop chefs from learning bad habits, the king makes sure that chef ii can only copy from chefs of larger skill.There are a sequence of days that pass during which the chefs can work on their dish. During each day, there are two stages during which a chef can change the tastiness of their dish.   At the beginning of each day, each chef can choose to work (or not work) on their own dish, thereby multiplying the tastiness of their dish of their skill (ai:=i⋅aiai:=i⋅ai) (or doing nothing). After all chefs (who wanted) worked on their own dishes, each start observing the other chefs. In particular, for each chef jj on chef ii's list, chef ii can choose to copy (or not copy) jj's dish, thereby adding the tastiness of the jj's dish to ii's dish (ai:=ai+ajai:=ai+aj) (or doing nothing). It can be assumed that all copying occurs simultaneously. Namely, if chef ii chooses to copy from chef jj he will copy the tastiness of chef jj's dish at the end of stage 11.All chefs work to maximize the tastiness of their own dish in order to please the king.Finally, you are given qq queries. Each query is one of two types.  11 kk ll rr — find the sum of tastiness al,al+1,…,aral,al+1,…,ar after the kk-th day. Because this value can be large, find it modulo 109+7109+7.  22 ii xx — the king adds xx tastiness to the ii-th chef's dish before the 11-st day begins (ai:=ai+xai:=ai+x). Note that, because the king wants to see tastier dishes, he only adds positive tastiness (x>0x>0). Note that queries of type 11 are independent of each all other queries. Specifically, each query of type 11 is a scenario and does not change the initial tastiness aiai of any dish for future queries. Note that queries of type 22 are cumulative and only change the initial tastiness aiai of a dish. See notes for an example of queries.
+InputThe first line contains a single integer nn (1≤n≤3001≤n≤300) — the number of chefs.The second line contains nn integers a1,a2,…,ana1,a2,…,an (−i≤ai≤i−i≤ai≤i).The next nn lines each begin with a integer cici (0≤ci<n0≤ci<n), denoting the number of chefs the ii-th chef can copy from. This number is followed by cici distinct integers dd (i<d≤ni<d≤n), signifying that chef ii is allowed to copy from chef dd during stage 22 of each day.The next line contains a single integer qq (1≤q≤2⋅1051≤q≤2⋅105) — the number of queries.Each of the next qq lines contains a query of one of two types:   11 kk ll rr (1≤l≤r≤n1≤l≤r≤n; 1≤k≤10001≤k≤1000);  22 ii xx (1≤i≤n1≤i≤n; 1≤x≤10001≤x≤1000). It is guaranteed that there is at least one query of the first type.
+OutputFor each query of the first type, print a single integer — the answer to the query.
+ExampleInputCopy5
+1 0 -2 -2 4
+4 2 3 4 5
+1 3
+1 4
+1 5
+0
+7
+1 1 1 5
+2 4 3
+1 1 1 5
+2 3 2
+1 2 2 4
+2 5 1
+1 981 4 5
+OutputCopy57
+71
+316
+278497818
+
+NoteBelow is the set of chefs that each chef is allowed to copy from:  11: {2,3,4,5}{2,3,4,5}  22: {3}{3}  33: {4}{4}  44: {5}{5}  55: ∅∅ (no other chefs)Following is a description of the sample.For the first query of type 11, the initial tastiness values are [1,0,−2,−2,4][1,0,−2,−2,4].The final result of the first day is shown below:   [1,0,−2,−2,20][1,0,−2,−2,20] (chef 55 works on his dish).  [21,0,−2,18,20][21,0,−2,18,20] (chef 11 and chef 44 copy from chef 55). So, the answer for the 11-st query is 21+0−2+18+20=5721+0−2+18+20=57.For the 55-th query (33-rd of type 11). The initial tastiness values are now [1,0,0,1,4][1,0,0,1,4].Day 1   [1,0,0,4,20][1,0,0,4,20] (chefs 44 and 55 work on their dishes).  [25,0,4,24,20][25,0,4,24,20] (chef 11 copies from chefs 44 and 55, chef 33 copies from chef 44, chef 44 copies from chef 55). Day 2   [25,0,12,96,100][25,0,12,96,100] (all chefs but chef 22 work on their dish).  [233,12,108,196,100][233,12,108,196,100] (chef 11 copies from chefs 33, 44 and 55, chef 22 from 33, chef 33 from 44, chef 44 from chef 55).So, the answer for the 55-th query is 12+108+196=31612+108+196=316. It can be shown that, in each step we described, all chefs moved optimally.

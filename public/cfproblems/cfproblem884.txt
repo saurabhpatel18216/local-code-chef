@@ -1,0 +1,10 @@
+InputThe input contains two integers NN, MM (1≤N≤1024,2≤M≤161≤N≤1024,2≤M≤16), separated by a single space.OutputOutput "YES" or "NO".ExamplesInputCopy2 3
+OutputCopyYES
+InputCopy3 2
+OutputCopyNO
+InputCopy33 16
+OutputCopyYES
+InputCopy26 5
+OutputCopyNO
+
+ 

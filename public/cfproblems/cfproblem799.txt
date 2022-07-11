@@ -1,0 +1,23 @@
+Alice and Bob play a game. Alice has got nn treasure chests (the ii-th of which contains aiai coins) and mm keys (the jj-th of which she can sell Bob for bjbj coins).Firstly, Alice puts some locks on the chests. There are mm types of locks, the locks of the jj-th type can only be opened with the jj-th key. To put a lock of type jj on the ii-th chest, Alice has to pay ci,jci,j dollars. Alice can put any number of different types of locks on each chest (possibly, zero).Then, Bob buys some of the keys from Alice (possibly none, possibly all of them) and opens each chest he can (he can open a chest if he has the keys for all of the locks on this chest). Bob's profit is the difference between the total number of coins in the opened chests and the total number of coins he spends buying keys from Alice. If Bob's profit is strictly positive (greater than zero), he wins the game. Otherwise, Alice wins the game.Alice wants to put some locks on some chests so no matter which keys Bob buys, she always wins (Bob cannot get positive profit). Of course, she wants to spend the minimum possible number of dollars on buying the locks. Help her to determine whether she can win the game at all, and if she can, how many dollars she has to spend on the locks.
+InputThe first line contains two integers nn and mm (1≤n,m≤61≤n,m≤6) — the number of chests and the number of keys, respectively.The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤41≤ai≤4), where aiai is the number of coins in the ii-th chest.The third line contains mm integers b1,b2,…,bmb1,b2,…,bm (1≤bj≤41≤bj≤4), where bjbj is the number of coins Bob has to spend to buy the jj-th key from Alice.Then nn lines follow. The ii-th of them contains mm integers ci,1,ci,2,…,ci,mci,1,ci,2,…,ci,m (1≤ci,j≤1071≤ci,j≤107), where ci,jci,j is the number of dollars Alice has to spend to put a lock of the jj-th type on the ii-th chest.
+OutputIf Alice cannot ensure her victory (no matter which locks she puts on which chests, Bob always has a way to gain positive profit), print −1−1.Otherwise, print one integer — the minimum number of dollars Alice has to spend to win the game regardless of Bob's actions.
+ExamplesInputCopy2 3
+3 3
+1 1 4
+10 20 100
+20 15 80
+OutputCopy205
+InputCopy2 3
+3 3
+2 1 4
+10 20 100
+20 15 80
+OutputCopy110
+InputCopy2 3
+3 4
+1 1 4
+10 20 100
+20 15 80
+OutputCopy-1
+
+NoteIn the first example, Alice should put locks of types 11 and 33 on the first chest, and locks of type 22 and 33 on the second chest.In the second example, Alice should put locks of types 11 and 22 on the first chest, and a lock of type 33 on the second chest.

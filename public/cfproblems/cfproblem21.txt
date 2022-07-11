@@ -1,0 +1,15 @@
+Tokitsukaze has a permutation pp of length nn. Recall that a permutation pp of length nn is a sequence p1,p2,…,pnp1,p2,…,pn consisting of nn distinct integers, each of which from 11 to nn (1≤pi≤n1≤pi≤n).She wants to know how many different indices tuples [a,b,c,d][a,b,c,d] (1≤a<b<c<d≤n1≤a<b<c<d≤n) in this permutation satisfy the following two inequalities: pa<pcpa<pc and pb>pdpb>pd. Note that two tuples [a1,b1,c1,d1][a1,b1,c1,d1] and [a2,b2,c2,d2][a2,b2,c2,d2] are considered to be different if a1≠a2a1≠a2 or b1≠b2b1≠b2 or c1≠c2c1≠c2 or d1≠d2d1≠d2.
+InputThe first line contains one integer tt (1≤t≤10001≤t≤1000) — the number of test cases. Each test case consists of two lines.The first line contains a single integer nn (4≤n≤50004≤n≤5000) — the length of permutation pp.The second line contains nn integers p1,p2,…,pnp1,p2,…,pn (1≤pi≤n1≤pi≤n) — the permutation pp.It is guaranteed that the sum of nn over all test cases does not exceed 50005000.
+OutputFor each test case, print a single integer — the number of different [a,b,c,d][a,b,c,d] tuples.
+ExampleInputCopy3
+6
+5 3 6 1 4 2
+4
+1 2 3 4
+10
+5 1 6 2 8 3 4 10 9 7
+OutputCopy3
+0
+28
+
+NoteIn the first test case, there are 33 different [a,b,c,d][a,b,c,d] tuples.p1=5p1=5, p2=3p2=3, p3=6p3=6, p4=1p4=1, where p1<p3p1<p3 and p2>p4p2>p4 satisfies the inequality, so one of [a,b,c,d][a,b,c,d] tuples is [1,2,3,4][1,2,3,4].Similarly, other two tuples are [1,2,3,6][1,2,3,6], [2,3,5,6][2,3,5,6].

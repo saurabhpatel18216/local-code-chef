@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>DSA ,Search, simplified.</title>
+  <link rel="icon" type="image/x-icon" href="/images/site.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/83596131d6.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body class="main-page">
+  <div class="navbar-bg">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand text-white">
+        <h1>Data Struture And Algorithams!</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item me-auto">
+            <a class="nav-link mr-4" href="https://github.com/saurabhpatel18216/local-code-chef"><i class="fa-brands fa-github"></i> GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2><strong>A great Platform for  for all DSA problems and CP enthusiast!</strong></h2>
+        <h2>Search among <p id = "changing"></p>+ CodeChef and <p id="changing2"></p>+ Codeforces Problems.</h2>
+        <div class="wrapper">
+          <div>
+            <form action="/" class="searchBar" method="post">
+              <input type="text" name="query" placeholder="Search" id="searchQueryInput" autocomplete="off">
+              <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="#666666"
+                    d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div style="opacity: 80%; color:black">
+        <p  style="opacity: 1000%; color:Black">Made by Saurabh Patel</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", () => {
+    function counter(id, start, end, duration) {
+    let obj = document.getElementById(id),
+     current = start,
+     range = end - start,
+     increment = end > start ? 1 : -1,
+     step = Math.abs(Math.floor(duration / range)),
+     timer = setInterval(() => {
+      current += increment;
+      obj.textContent = current;
+      if (current == end) {
+       clearInterval(timer);
+      }
+     }, step);
+    }
+    counter("changing", 0, 400, 1000);
+    counter("changing2", 0, 900, 800);
+});
+  </script>
+</body>
+
+</html>

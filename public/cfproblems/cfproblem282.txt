@@ -1,0 +1,24 @@
+Consider the array aa composed of all the integers in the range [l,r][l,r]. For example, if l=3l=3 and r=7r=7, then a=[3,4,5,6,7]a=[3,4,5,6,7].Given ll, rr, and kk, is it possible for gcd(a)gcd(a) to be greater than 11 after doing the following operation at most kk times?   Choose 22 numbers from aa.  Permanently remove one occurrence of each of them from the array.  Insert their product back into aa. gcd(b)gcd(b) denotes the greatest common divisor (GCD) of the integers in bb.
+InputThe first line of the input contains a single integer tt (1≤t≤1051≤t≤105) — the number of test cases. The description of test cases follows.The input for each test case consists of a single line containing 33 non-negative integers ll, rr, and kk (1≤l≤r≤109,0≤k≤r−l1≤l≤r≤109,0≤k≤r−l).
+OutputFor each test case, print "YES" if it is possible to have the GCD of the corresponding array greater than 11 by performing at most kk operations, and "NO" otherwise (case insensitive).
+ExampleInputCopy9
+1 1 0
+3 5 1
+13 13 0
+4 4 0
+3 7 4
+4 10 3
+2 4 0
+1 7 3
+1 5 3
+OutputCopyNO
+NO
+YES
+YES
+YES
+YES
+NO
+NO
+YES
+
+NoteFor the first test case, a=[1]a=[1], so the answer is "NO", since the only element in the array is 11.For the second test case the array is a=[3,4,5]a=[3,4,5] and we have 11 operation. After the first operation the array can change to: [3,20][3,20], [4,15][4,15] or [5,12][5,12] all of which having their greatest common divisor equal to 11 so the answer is "NO".For the third test case, a=[13]a=[13], so the answer is "YES", since the only element in the array is 1313.For the fourth test case, a=[4]a=[4], so the answer is "YES", since the only element in the array is 44.

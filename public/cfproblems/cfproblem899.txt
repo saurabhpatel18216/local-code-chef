@@ -1,0 +1,30 @@
+Vanya invented an interesting trick with a set of integers.Let an illusionist have a set of positive integers SS. He names a positive integer xx. Then an audience volunteer must choose some subset (possibly, empty) of SS without disclosing it to the illusionist. The volunteer tells the illusionist the size of the chosen subset. And here comes the trick: the illusionist guesses whether the sum of the subset elements does not exceed xx. The sum of elements of an empty subset is considered to be 00.Vanya wants to prepare the trick for a public performance. He prepared some set of distinct positive integers SS. Vasya wants the trick to be successful. He calls a positive number xx unsuitable, if he can't be sure that the trick would be successful for every subset a viewer can choose.Vanya wants to count the number of unsuitable integers for the chosen set SS.Vanya plans to try different sets SS. He wants you to write a program that finds the number of unsuitable integers for the initial set SS, and after each change to the set SS. Vanya will make qq changes to the set, and each change is one of the following two types:   add a new integer aa to the set SS, or  remove some integer aa from the set SS. 
+InputThe first line contains two integers nn, qq (1≤n,q≤2000001≤n,q≤200000) — the size of the initial set SS and the number of changes.The next line contains nn distinct integers s1,s2,…,sns1,s2,…,sn (1≤si≤10131≤si≤1013) — the initial elements of SS.Each of the following qq lines contain two integers titi, aiai (1≤ti≤21≤ti≤2, 1≤ai≤10131≤ai≤1013), describing a change:   If ti=1ti=1, then an integer aiai is added to the set SS. It is guaranteed that this integer is not present in SS before this operation.  If ti=2ti=2, then an integer aiai is removed from the set SS. In is guaranteed that this integer is present in SS before this operation. 
+OutputPrint q+1q+1 lines.In the first line print the number of unsuitable integers for the initial set SS. In the next qq lines print the number of unsuitable integers for SS after each change.
+ExampleInputCopy3 11
+1 2 3
+2 1
+1 5
+1 6
+1 7
+2 6
+2 2
+2 3
+1 10
+2 5
+2 7
+2 10
+OutputCopy4
+1
+6
+12
+19
+13
+8
+2
+10
+3
+0
+0
+
+NoteIn the first example the initial set is S={1,2,3}S={1,2,3}. For this set the trick can be unsuccessful for x∈{1,2,3,4}x∈{1,2,3,4}. For example, if x=4x=4, the volunteer can choose the subset {1,2}{1,2} with sum 3≤x3≤x, and can choose the subset {2,3}{2,3} with sum 5>x5>x. However, in both cases the illusionist only know the same size of the subset (22), so he can't be sure answering making a guess. Since there is only one subset of size 33, and the sum of each subset of smaller size does not exceed 55, all x≥5x≥5 are suitable.

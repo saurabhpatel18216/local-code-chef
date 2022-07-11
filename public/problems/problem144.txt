@@ -1,0 +1,42 @@
+
+A number is said to be a palindrome if it remains the same when it is read backwards. Eg. 1202112021 is pallindrome while 2121 is not A number is called total-palindromic if it contains a palindrome with odd length greater than 11 and an even palindrome as a substring.
+
+For example, the number 2267622676 is total-palindromic whereas the number 101101 is not because it contains the palindrome of odd length 676676 and even length 2222. While 101101 does not contain an even palindrome as a substring.
+
+You are given two numbers aa, bb. Output the number of total-palindromic numbers which lie in the range (a,b](a,b] i.e set {a+1,a+2,....b}{a+1,a+2,....b}
+
+Input
+
+First line contains number of test cases TT. Each test case contains two lines.
+First line contains the number aa
+Second line contains the number bb
+
+Output
+
+Output TT lines, each line containing an integer - the answer to the test case.
+
+Constraints
+
+1≤T≤1001≤T≤100
+99≤a<b≤101899≤a<b≤1018
+
+Sample Input:
+
+2
+99
+100
+110
+119
+
+Sample Output:
+
+0
+1
+
+Explanation
+
+In second test case the range is between 110110 and 119119 i.e the numbers 111,112,113,114,115,116,117,118,119111,112,113,114,115,116,117,118,119. Of these only 111111 contains the odd palindromic substring 111 and even palindromic substring 1111.
+
+So the answer to this test-case is 11.
+
+

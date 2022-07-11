@@ -1,0 +1,21 @@
+You are given an array a[0…n−1]=[a0,a1,…,an−1]a[0…n−1]=[a0,a1,…,an−1] of zeroes and ones only. Note that in this problem, unlike the others, the array indexes are numbered from zero, not from one.In one step, the array aa is replaced by another array of length nn according to the following rules:   First, a new array a→da→d is defined as a cyclic shift of the array aa to the right by dd cells. The elements of this array can be defined as a→di=a(i+n−d)modnai→d=a(i+n−d)modn, where (i+n−d)modn(i+n−d)modn is the remainder of integer division of i+n−di+n−d by nn.  It means that the whole array a→da→d can be represented as a sequence a→d=[an−d,an−d+1,…,an−1,a0,a1,…,an−d−1]a→d=[an−d,an−d+1,…,an−1,a0,a1,…,an−d−1]  Then each element of the array aiai is replaced by ai&a→diai&ai→d, where && is a logical "AND" operator. For example, if a=[0,0,1,1]a=[0,0,1,1] and d=1d=1, then a→d=[1,0,0,1]a→d=[1,0,0,1] and the value of aa after the first step will be [0&1,0&0,1&0,1&1][0&1,0&0,1&0,1&1], that is [0,0,0,1][0,0,0,1].The process ends when the array stops changing. For a given array aa, determine whether it will consist of only zeros at the end of the process. If yes, also find the number of steps the process will take before it finishes.
+InputThe first line contains an integer tt (1≤t≤10001≤t≤1000) — the number of test cases.The next 2t2t lines contain descriptions of the test cases. The first line of each test case description contains two integers: nn (1≤n≤1061≤n≤106) — array size and dd (1≤d≤n1≤d≤n) — cyclic shift offset. The second line of the description contains nn space-separated integers aiai (0≤ai≤10≤ai≤1) — elements of the array.It is guaranteed that the sum of nn over all test cases does not exceed 106106.
+OutputPrint tt lines, each line containing the answer to the corresponding test case. The answer to a test case should be a single integer — the number of steps after which the array will contain only zeros for the first time. If there are still elements equal to 11 in the array after the end of the process, print -1.
+ExampleInputCopy5
+2 1
+0 1
+3 2
+0 1 0
+5 2
+1 1 0 1 0
+4 2
+0 1 0 1
+1 1
+0
+OutputCopy1
+1
+3
+-1
+0
+
+NoteIn the third sample test case the array will change as follows:   At the beginning a=[1,1,0,1,0]a=[1,1,0,1,0], and a→2=[1,0,1,1,0]a→2=[1,0,1,1,0]. Their element-by-element "AND" is equal to [1&1,1&0,0&1,1&1,0&0]=[1,0,0,1,0][1&1,1&0,0&1,1&1,0&0]=[1,0,0,1,0]  Now a=[1,0,0,1,0]a=[1,0,0,1,0], then a→2=[1,0,1,0,0]a→2=[1,0,1,0,0]. Their element-by-element "AND" equals to [1&1,0&0,0&1,1&0,0&0]=[1,0,0,0,0][1&1,0&0,0&1,1&0,0&0]=[1,0,0,0,0]  And finally, when a=[1,0,0,0,0]a=[1,0,0,0,0] we get a→2=[0,0,1,0,0]a→2=[0,0,1,0,0]. Their element-by-element "AND" equals to [1&0,0&0,0&1,0&0,0&0]=[0,0,0,0,0][1&0,0&0,0&1,0&0,0&0]=[0,0,0,0,0]  Thus, the answer is 33 steps.In the fourth sample test case, the array will not change as it shifts by 22 to the right, so each element will be calculated as 0&00&0 or 1&11&1 thus not changing its value. So the answer is -1, the array will never contain only zeros.

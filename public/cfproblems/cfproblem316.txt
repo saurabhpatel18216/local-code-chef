@@ -1,0 +1,31 @@
+A binary tree of nn nodes is given. Nodes of the tree are numbered from 11 to nn and the root is the node 11. Each node can have no child, only one left child, only one right child, or both children. For convenience, let's denote lulu and ruru as the left and the right child of the node uu respectively, lu=0lu=0 if uu does not have the left child, and ru=0ru=0 if the node uu does not have the right child.Each node has a string label, initially is a single character cucu. Let's define the string representation of the binary tree as the concatenation of the labels of the nodes in the in-order. Formally, let f(u)f(u) be the string representation of the tree rooted at the node uu. f(u)f(u) is defined as follows: f(u)={<empty string>,f(lu)+cu+f(ru)if u=0;otherwise,f(u)={<empty string>,if u=0;f(lu)+cu+f(ru)otherwise, where ++ denotes the string concatenation operation.This way, the string representation of the tree is f(1)f(1).For each node, we can duplicate its label at most once, that is, assign cucu with cu+cucu+cu, but only if uu is the root of the tree, or if its parent also has its label duplicated.You are given the tree and an integer kk. What is the lexicographically smallest string representation of the tree, if we can duplicate labels of at most kk nodes?A string aa is lexicographically smaller than a string bb if and only if one of the following holds:   aa is a prefix of bb, but a≠ba≠b;  in the first position where aa and bb differ, the string aa has a letter that appears earlier in the alphabet than the corresponding letter in bb. 
+InputThe first line contains two integers nn and kk (1≤k≤n≤2⋅1051≤k≤n≤2⋅105).The second line contains a string cc of nn lower-case English letters, where cici is the initial label of the node ii for 1≤i≤n1≤i≤n. Note that the given string cc is not the initial string representation of the tree.The ii-th of the next nn lines contains two integers lili and riri (0≤li,ri≤n0≤li,ri≤n). If the node ii does not have the left child, li=0li=0, and if the node ii does not have the right child, ri=0ri=0.It is guaranteed that the given input forms a binary tree, rooted at 11.
+OutputPrint a single line, containing the lexicographically smallest string representation of the tree if at most kk nodes have their labels duplicated.
+ExamplesInputCopy4 3
+abab
+2 3
+0 0
+0 4
+0 0
+OutputCopybaaaabInputCopy8 2
+kadracyn
+2 5
+3 4
+0 0
+0 0
+6 8
+0 7
+0 0
+0 0
+OutputCopydaarkkcyanInputCopy8 3
+kdaracyn
+2 5
+0 3
+0 4
+0 0
+6 8
+0 7
+0 0
+0 0
+OutputCopydarkcyan
+NoteThe images below present the tree for the examples. The number in each node is the node number, while the subscripted letter is its label. To the right is the string representation of the tree, with each letter having the same color as the corresponding node.Here is the tree for the first example. Here we duplicated the labels of nodes 11 and 33. We should not duplicate the label of node 22 because it would give us the string "bbaaab", which is lexicographically greater than "baaaab".  In the second example, we can duplicate the labels of nodes 11 and 22. Note that only duplicating the label of the root will produce a worse result than the initial string.  In the third example, we should not duplicate any character at all. Even though we would want to duplicate the label of the node 33, by duplicating it we must also duplicate the label of the node 22, which produces a worse result.  There is no way to produce string "darkkcyan" from a tree with the initial string representation "darkcyan" :(.

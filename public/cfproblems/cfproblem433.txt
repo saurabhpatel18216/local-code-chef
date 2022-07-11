@@ -1,0 +1,29 @@
+Theofanis started playing the new online game called "Among them". However, he always plays with Cypriot players, and they all have the same name: "Andreas" (the most common name in Cyprus).In each game, Theofanis plays with nn other players. Since they all have the same name, they are numbered from 11 to nn.The players write mm comments in the chat. A comment has the structure of "ii jj cc" where ii and jj are two distinct integers and cc is a string (1≤i,j≤n1≤i,j≤n; i≠ji≠j; cc is either imposter or crewmate). The comment means that player ii said that player jj has the role cc.An imposter always lies, and a crewmate always tells the truth. Help Theofanis find the maximum possible number of imposters among all the other Cypriot players, or determine that the comments contradict each other (see the notes for further explanation).Note that each player has exactly one role: either imposter or crewmate.
+InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of test cases. Description of each test case follows.The first line of each test case contains two integers nn and mm (1≤n≤2⋅1051≤n≤2⋅105; 0≤m≤5⋅1050≤m≤5⋅105) — the number of players except Theofanis and the number of comments.Each of the next mm lines contains a comment made by the players of the structure "ii jj cc" where ii and jj are two distinct integers and cc is a string (1≤i,j≤n1≤i,j≤n; i≠ji≠j; cc is either imposter or crewmate).There can be multiple comments for the same pair of (i,j)(i,j).It is guaranteed that the sum of all nn does not exceed 2⋅1052⋅105 and the sum of all mm does not exceed 5⋅1055⋅105.
+OutputFor each test case, print one integer — the maximum possible number of imposters. If the comments contradict each other, print −1−1.
+ExampleInputCopy5
+3 2
+1 2 imposter
+2 3 crewmate
+5 4
+1 3 crewmate
+2 5 crewmate
+2 4 imposter
+3 4 imposter
+2 2
+1 2 imposter
+2 1 crewmate
+3 5
+1 2 imposter
+1 2 imposter
+3 2 crewmate
+3 2 crewmate
+1 3 imposter
+5 0
+OutputCopy2
+4
+-1
+2
+5
+
+NoteIn the first test case, imposters can be Andreas 22 and 33.In the second test case, imposters can be Andreas 11, 22, 33 and 55.In the third test case, comments contradict each other. This is because player 11 says that player 22 is an imposter, and player 22 says that player 11 is a crewmate. If player 11 is a crewmate, then he must be telling the truth, so player 22 must be an imposter. But if player 22 is an imposter then he must be lying, so player 11 can't be a crewmate. Contradiction.

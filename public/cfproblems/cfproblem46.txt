@@ -1,0 +1,17 @@
+The symbol ∧∧ is quite ambiguous, especially when used without context. Sometimes it is used to denote a power (a∧b=aba∧b=ab) and sometimes it is used to denote the XOR operation (a∧b=a⊕ba∧b=a⊕b). You have an ambiguous expression E=A1∧A2∧A3∧…∧AnE=A1∧A2∧A3∧…∧An. You can replace each ∧∧ symbol with either a PowerPower operation or a XORXOR operation to get an unambiguous expression E′E′.The value of this expression E′E′ is determined according to the following rules:   All PowerPower operations are performed before any XORXOR operation. In other words, the PowerPower operation takes precedence over XORXOR operation. For example, 4XOR6Power2=4⊕(62)=4⊕36=324XOR6Power2=4⊕(62)=4⊕36=32.  Consecutive powers are calculated from left to right. For example, 2Power3Power4=(23)4=84=40962Power3Power4=(23)4=84=4096. You are given an array BB of length nn and an integer kk. The array AA is given by Ai=2BiAi=2Bi and the expression EE is given by E=A1∧A2∧A3∧…∧AnE=A1∧A2∧A3∧…∧An. You need to find the XOR of the values of all possible unambiguous expressions E′E′ which can be obtained from EE and has at least kk ∧∧ symbols used as XORXOR operation. Since the answer can be very large, you need to find it modulo 22202220. Since this number can also be very large, you need to print its binary representation without leading zeroes. If the answer is equal to 00, print 00.
+InputThe first line of input contains two integers nn and kk (1≤n≤220,0≤k<n)(1≤n≤220,0≤k<n).The second line of input contains nn integers B1,B2,…,BnB1,B2,…,Bn (1≤Bi<220)(1≤Bi<220).
+OutputPrint a single line containing a binary string without leading zeroes denoting the answer to the problem. If the answer is equal to 00, print 00.
+ExamplesInputCopy3 2
+3 1 2
+OutputCopy1110
+InputCopy3 1
+3 1 2
+OutputCopy1010010
+InputCopy3 0
+3 1 2
+OutputCopy1000000000000000001010010
+InputCopy2 1
+1 1
+OutputCopy0
+
+NoteFor each of the testcases 11 to 33, A={23,21,22}={8,2,4}A={23,21,22}={8,2,4} and E=8∧2∧4E=8∧2∧4.For the first testcase, there is only one possible valid unambiguous expression E′=8⊕2⊕4=14=(1110)2E′=8⊕2⊕4=14=(1110)2.For the second testcase, there are three possible valid unambiguous expressions E′E′:   8⊕2⊕4=148⊕2⊕4=14  82⊕4=64⊕4=6882⊕4=64⊕4=68  8⊕24=8⊕16=248⊕24=8⊕16=24  XOR of the values of all of these is 14⊕68⊕24=82=(1010010)214⊕68⊕24=82=(1010010)2.For the third testcase, there are four possible valid unambiguous expressions E′E′:   8⊕2⊕4=148⊕2⊕4=14  82⊕4=64⊕4=6882⊕4=64⊕4=68  8⊕24=8⊕16=248⊕24=8⊕16=24  (82)4=644=224=16777216(82)4=644=224=16777216  XOR of the values of all of these is 14⊕68⊕24⊕16777216=16777298=(1000000000000000001010010)214⊕68⊕24⊕16777216=16777298=(1000000000000000001010010)2.For the fourth testcase, A={2,2}A={2,2} and E=2∧2E=2∧2. The only possible valid unambiguous expression E′=2⊕2=0=(0)2E′=2⊕2=0=(0)2.

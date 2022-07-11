@@ -1,0 +1,15 @@
+You are given an array a1,a2,…,ana1,a2,…,an of positive integers. A good pair is a pair of indices (i,j)(i,j) with 1≤i,j≤n1≤i,j≤n such that, for all 1≤k≤n1≤k≤n, the following equality holds:|ai−ak|+|ak−aj|=|ai−aj|,|ai−ak|+|ak−aj|=|ai−aj|, where |x||x| denotes the absolute value of xx.Find a good pair. Note that ii can be equal to jj.
+InputThe input consists of multiple test cases. The first line contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases. Description of the test cases follows.The first line of each test case contains an integer nn (1≤n≤1051≤n≤105) — the length of the array.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1091≤ai≤109) where aiai is the ii-th element of the array.The sum of nn for all test cases is at most 2⋅1052⋅105.
+OutputFor each test case, print a single line with two space-separated indices ii and jj which form a good pair of the array. The case i=ji=j is allowed. It can be shown that such a pair always exists. If there are multiple good pairs, print any of them.
+ExampleInputCopy3
+3
+5 2 7
+5
+1 4 2 2 3
+1
+2
+OutputCopy2 3
+1 2
+1 1
+
+NoteIn the first case, for i=2i=2 and j=3j=3 the equality holds true for all kk:   k=1k=1: |a2−a1|+|a1−a3|=|2−5|+|5−7|=5=|2−7|=|a2−a3||a2−a1|+|a1−a3|=|2−5|+|5−7|=5=|2−7|=|a2−a3|,  k=2k=2: |a2−a2|+|a2−a3|=|2−2|+|2−7|=5=|2−7|=|a2−a3||a2−a2|+|a2−a3|=|2−2|+|2−7|=5=|2−7|=|a2−a3|,  k=3k=3: |a2−a3|+|a3−a3|=|2−7|+|7−7|=5=|2−7|=|a2−a3||a2−a3|+|a3−a3|=|2−7|+|7−7|=5=|2−7|=|a2−a3|. 

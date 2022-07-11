@@ -1,0 +1,17 @@
+The derby between Milan and Inter is happening soon, and you have been chosen as the assistant referee for the match, also known as linesman. Your task is to move along the touch-line, namely the side of the field, always looking very carefully at the match to check for offside positions and other offences.Football is an extremely serious matter in Italy, and thus it is fundamental that you keep very close track of the ball for as much time as possible. This means that you want to maximise the number of kicks which you monitor closely. You are able to monitor closely a kick if, when it happens, you are in the position along the touch-line with minimum distance from the place where the kick happens.Fortunately, expert analysts have been able to accurately predict all the kicks which will occur during the game. That is, you have been given two lists of integers, t1,…,tnt1,…,tn and a1,…,ana1,…,an, indicating that titi seconds after the beginning of the match the ball will be kicked and you can monitor closely such kick if you are at the position aiai along the touch-line. At the beginning of the game you start at position 00 and the maximum speed at which you can walk along the touch-line is vv units per second (i.e., you can change your position by at most vv each second). What is the maximum number of kicks that you can monitor closely?
+InputThe first line contains two integers nn and vv (1≤n≤2⋅1051≤n≤2⋅105, 1≤v≤1061≤v≤106) — the number of kicks that will take place and your maximum speed.The second line contains nn integers t1,…,tnt1,…,tn (1≤ti≤1091≤ti≤109) — the times of the kicks in the match. The sequence of times is guaranteed to be strictly increasing, i.e., t1<t2<⋯<tnt1<t2<⋯<tn.The third line contains nn integers a1,…,ana1,…,an (−109≤ai≤109−109≤ai≤109) — the positions along the touch-line where you have to be to monitor closely each kick.
+OutputPrint the maximum number of kicks that you can monitor closely.
+ExamplesInputCopy3 2
+5 10 15
+7 17 29
+OutputCopy2
+InputCopy5 1
+5 7 8 11 13
+3 3 -2 -2 4
+OutputCopy3
+InputCopy1 2
+3
+7
+OutputCopy0
+
+NoteIn the first sample, it is possible to move to the right at maximum speed for the first 3.53.5 seconds and stay at position 77 until the first kick happens, and then immediately move right also at maximum speed to watch the second kick at position 1717. There is no way to monitor closely the third kick after the second kick, so at most 22 kicks can be seen.

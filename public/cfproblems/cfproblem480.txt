@@ -1,0 +1,15 @@
+Vupsen and Pupsen were gifted an integer array. Since Vupsen doesn't like the number 00, he threw away all numbers equal to 00 from the array. As a result, he got an array aa of length nn.Pupsen, on the contrary, likes the number 00 and he got upset when he saw the array without zeroes. To cheer Pupsen up, Vupsen decided to come up with another array bb of length nn such that ∑ni=1ai⋅bi=0∑i=1nai⋅bi=0. Since Vupsen doesn't like number 00, the array bb must not contain numbers equal to 00. Also, the numbers in that array must not be huge, so the sum of their absolute values cannot exceed 109109. Please help Vupsen to find any such array bb!
+InputThe first line contains a single integer tt (1≤t≤1001≤t≤100) — the number of test cases. The next 2⋅t2⋅t lines contain the description of test cases. The description of each test case consists of two lines.The first line of each test case contains a single integer nn (2≤n≤1052≤n≤105) — the length of the array.The second line contains nn integers a1,a2,…,ana1,a2,…,an (−104≤ai≤104−104≤ai≤104, ai≠0ai≠0) — the elements of the array aa.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case print nn integers b1,b2,…,bnb1,b2,…,bn — elements of the array bb (|b1|+|b2|+…+|bn|≤109|b1|+|b2|+…+|bn|≤109, bi≠0bi≠0, ∑ni=1ai⋅bi=0∑i=1nai⋅bi=0).It can be shown that the answer always exists.
+ExampleInputCopy3
+2
+5 5
+5
+5 -2 10 -9 4
+7
+1 2 3 4 5 6 7
+OutputCopy1 -1
+-1 5 1 -1 -1
+-10 2 2 -3 5 -1 -1
+
+NoteIn the first test case, 5⋅1+5⋅(−1)=5−5=05⋅1+5⋅(−1)=5−5=0. You could also print 33 −3−3, for example, since 5⋅3+5⋅(−3)=15−15=05⋅3+5⋅(−3)=15−15=0In the second test case, 5⋅(−1)+(−2)⋅5+10⋅1+(−9)⋅(−1)+4⋅(−1)=−5−10+10+9−4=05⋅(−1)+(−2)⋅5+10⋅1+(−9)⋅(−1)+4⋅(−1)=−5−10+10+9−4=0.

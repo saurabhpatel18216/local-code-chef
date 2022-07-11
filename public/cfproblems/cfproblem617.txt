@@ -1,0 +1,23 @@
+On a circle lie 2n2n distinct points, with the following property: however you choose 33 chords that connect 33 disjoint pairs of points, no point strictly inside the circle belongs to all 33 chords. The points are numbered 1,2,…,2n1,2,…,2n in clockwise order.Initially, kk chords connect kk pairs of points, in such a way that all the 2k2k endpoints of these chords are distinct.You want to draw n−kn−k additional chords that connect the remaining 2(n−k)2(n−k) points (each point must be an endpoint of exactly one chord).In the end, let xx be the total number of intersections among all nn chords. Compute the maximum value that xx can attain if you choose the n−kn−k chords optimally.Note that the exact position of the 2n2n points is not relevant, as long as the property stated in the first paragraph holds.
+InputThe first line contains a single integer tt (1≤t≤1001≤t≤100) — the number of test cases. Then tt test cases follow.The first line of each test case contains two integers nn and kk (1≤n≤1001≤n≤100, 0≤k≤n0≤k≤n) — half the number of points and the number of chords initially drawn.Then kk lines follow. The ii-th of them contains two integers xixi and yiyi (1≤xi,yi≤2n1≤xi,yi≤2n, xi≠yixi≠yi) — the endpoints of the ii-th chord. It is guaranteed that the 2k2k numbers x1,y1,x2,y2,…,xk,ykx1,y1,x2,y2,…,xk,yk are all distinct.
+OutputFor each test case, output the maximum number of intersections that can be obtained by drawing n−kn−k additional chords.
+ExampleInputCopy4
+4 2
+8 2
+1 5
+1 1
+2 1
+2 0
+10 6
+14 6
+2 20
+9 10
+13 18
+15 12
+11 7
+OutputCopy4
+0
+1
+14
+
+NoteIn the first test case, there are three ways to draw the 22 additional chords, shown below (black chords are the ones initially drawn, while red chords are the new ones):  We see that the third way gives the maximum number of intersections, namely 44.In the second test case, there are no more chords to draw. Of course, with only one chord present there are no intersections.In the third test case, we can make at most one intersection by drawing chords 1−31−3 and 2−42−4, as shown below:  

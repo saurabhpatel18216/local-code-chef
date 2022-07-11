@@ -1,0 +1,13 @@
+In a dream, Lucy found herself in a labyrinth. This labyrinth consists of nn rooms, connected by mm passages (ii-th passage is wiwi cm wide). Each passage can be traversed in both directions. It is guaranteed that it is possible to get from any room to any other room. But this is not an ordinary labyrinth — each room in this labyrinth contains a magic candy. When Lucy eats this magic candy, she is getting wider. Specifically, if she eats candy from room ii she becomes wider by cici cm. Note that she is not obliged to eat candy the first time she visits a particular room, but she can eat each candy only once. Unfortunately, passages in this labyrinth are pretty narrow, so after eating some candy, Lucy can get too wide and will not be able to traverse them — her width should not be greater than the width of the corresponding passage.Lucy starts her journey in a room number 11. She wants to eat all the candies. After that, she will just wake up, so she does not have to be able to return to the room 11. She realizes that with her current width, she may not be able to do so, so she plans a workout before embarking on her journey. Lucy wants to know if it is possible to start with some positive width and still eat all the candies. If yes, then what is the maximal starting width with which it is possible.
+InputThe first line contains two integers, nn and mm (2≤n≤105;n−1≤m≤1052≤n≤105;n−1≤m≤105) — the number of rooms and the number of passages.The second line contains nn integers — cici (1≤ci≤1091≤ci≤109).Next mm lines contain three integers each — aiai, bibi and wiwi (1≤ai,bi≤n;ai≠bi;1≤wi≤1091≤ai,bi≤n;ai≠bi;1≤wi≤109) describing passage that connects rooms aiai and bibi and is wiwi cm wide. It is guaranteed that the resulting labyrinth is connected and there is at most one passage between any pair of rooms.
+OutputIf it is possible to eat all the candies, output the maximal possible starting width, otherwise output −1−1.
+ExamplesInputCopy3 3
+1 2 3
+1 2 4
+1 3 4
+2 3 6
+OutputCopy3
+InputCopy2 1
+1 1
+1 2 1
+OutputCopy-1

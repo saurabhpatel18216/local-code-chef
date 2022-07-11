@@ -1,0 +1,21 @@
+On a beach there are nn huts in a perfect line, hut 11 being at the left and hut i+1i+1 being 100100 meters to the right of hut ii, for all 1≤i≤n−11≤i≤n−1. In hut ii there are pipi people.There are mm ice cream sellers, also aligned in a perfect line with all the huts. The ii-th ice cream seller has their shop xixi meters to the right of the first hut. All ice cream shops are at distinct locations, but they may be at the same location as a hut.You want to open a new ice cream shop and you wonder what the best location for your shop is. You can place your ice cream shop anywhere on the beach (not necessarily at an integer distance from the first hut) as long as it is aligned with the huts and the other ice cream shops, even if there is already another ice cream shop or a hut at that location. You know that people would come to your shop only if it is strictly closer to their hut than any other ice cream shop.If every person living in the huts wants to buy exactly one ice cream, what is the maximum number of ice creams that you can sell if you place the shop optimally?
+InputThe first line contains two integers nn and mm (2≤n≤2000002≤n≤200000, 1≤m≤2000001≤m≤200000) — the number of huts and the number of ice cream sellers.The second line contains nn integers p1,p2,…,pnp1,p2,…,pn (1≤pi≤1091≤pi≤109) — the number of people in each hut.The third line contains mm integers x1,x2,…,xmx1,x2,…,xm (0≤xi≤1090≤xi≤109, xi≠xjxi≠xj for i≠ji≠j) — the location of each ice cream shop.
+OutputPrint the maximum number of ice creams that can be sold by choosing optimally the location of the new shop.
+ExamplesInputCopy3 1
+2 5 6
+169
+OutputCopy7
+InputCopy4 2
+1 2 7 8
+35 157
+OutputCopy15
+InputCopy4 1
+272203905 348354708 848256926 939404176
+20
+OutputCopy2136015810
+InputCopy3 2
+1 1 1
+300 99
+OutputCopy2
+
+NoteIn the first sample, you can place the shop (coloured orange in the picture below) 150150 meters to the right of the first hut (for example) so that it is the closest shop to the first two huts, which have 22 and 55 people, for a total of 77 sold ice creams.  In the second sample, you can place the shop 170170 meters to the right of the first hut (for example) so that it is the closest shop to the last two huts, which have 77 and 88 people, for a total of 1515 sold ice creams.  

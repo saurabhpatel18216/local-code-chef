@@ -1,0 +1,56 @@
+
+There is an urgent need of NN agents for NN missions. The missions are numbered from 11 to NN. All agents have some intelligence level denoted by their IQ (a positive integer ) . Major Francis asked Perry the platypus for the list of agents to be sent on missions. For each mission: ii, there is  a default agent available (AiAi) , and an Special agent (BiBi) which may want some money(CiCi)  to go on mission. Perry is busy with Candice, now you have to prepare the list of agents with the minimum amount to pay. Remember that Perry loves sorted things.
+
+More formally you have to make a non−decreasingnon−decreasing list of the agent's IQ by either selecting a default agent or paid agent , with minimumminimum possiblepossible payment, Or determine that list cannot be made.
+
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase consists of 44 lines.
+First line of each testcase contains integer NN denoting no. of missions.
+Second line contains NN space separated integers   (AiAi)
+describing IQ level of default agent for the ithith mission . 
+Third line contains NN space separated integers  (BiBi)
+describing IQ level of special agent for the ithith mission.  
+Fourth line contains NN space separated integers   (CiCi)
+describing the cost  of  ithith special agent.
+
+Output:
+
+For each testcase, print in a single line the minimum cost that satisfys the given condition or −1−1  , if not possible.
+
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤N≤40001≤N≤4000 
+1≤Ai,Bi≤1091≤Ai,Bi≤109
+0≤Ci≤1000≤Ci≤100
+
+Sample Input:
+
+3
+3
+1 4  2
+5 2 6
+4 5 6
+2
+5 2
+6 2
+7 2
+4
+4  2  2  5
+1  4  5  8
+10 2 3  16
+
+Sample Output:
+
+5
+ -1
+5
+
+EXPLANATION:
+
+In first testcase  agents list possibles are:    [1 ,2 ,2] with 5 cost  and, [1 ,4, 6]  with 6 cost .
+In second no sorted list of agents are possible :)
+
+

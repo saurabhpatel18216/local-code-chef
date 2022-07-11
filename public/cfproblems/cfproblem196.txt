@@ -1,0 +1,17 @@
+While looking at the kitchen fridge, the little boy Tyler noticed magnets with symbols, that can be aligned into a string ss.Tyler likes strings, and especially those that are lexicographically smaller than another string, tt. After playing with magnets on the fridge, he is wondering, how many distinct strings can be composed out of letters of string ss by rearranging them, so that the resulting string is lexicographically smaller than the string tt? Tyler is too young, so he can't answer this question. The alphabet Tyler uses is very large, so for your convenience he has already replaced the same letters in ss and tt to the same integers, keeping that different letters have been replaced to different integers.We call a string xx lexicographically smaller than a string yy if one of the followings conditions is fulfilled:   There exists such position of symbol mm that is presented in both strings, so that before mm-th symbol the strings are equal, and the mm-th symbol of string xx is smaller than mm-th symbol of string yy.  String xx is the prefix of string yy and x≠yx≠y. Because the answer can be too large, print it modulo 998244353998244353.
+InputThe first line contains two integers nn and mm (1≤n,m≤2000001≤n,m≤200000) — the lengths of strings ss and tt respectively.The second line contains nn integers s1,s2,s3,…,sns1,s2,s3,…,sn (1≤si≤2000001≤si≤200000) — letters of the string ss.The third line contains mm integers t1,t2,t3,…,tmt1,t2,t3,…,tm (1≤ti≤2000001≤ti≤200000) — letters of the string tt.
+OutputPrint a single number — the number of strings lexicographically smaller than tt that can be obtained by rearranging the letters in ss, modulo 998244353998244353.
+ExamplesInputCopy3 4
+1 2 2
+2 1 2 1
+OutputCopy2
+InputCopy4 4
+1 2 3 4
+4 3 2 1
+OutputCopy23
+InputCopy4 3
+1 1 1 2
+1 1 2
+OutputCopy1
+
+NoteIn the first example, the strings we are interested in are [122][122] and [212][212]. The string [221][221] is lexicographically larger than the string [2121][2121], so we don't count it.In the second example, all strings count except [4321][4321], so the answer is 4!−1=234!−1=23.In the third example, only the string [1112][1112] counts.

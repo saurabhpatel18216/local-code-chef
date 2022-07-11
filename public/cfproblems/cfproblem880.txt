@@ -1,0 +1,3 @@
+Hack the program and get the password hidden in it.
+InputThis program has only one test, and it's empty (it doesn't give your program anything to read).
+OutputOutput the password recovered from the program. The password is case sensitive.

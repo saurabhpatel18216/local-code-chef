@@ -1,0 +1,17 @@
+For an array of integers aa, let's define |a||a| as the number of elements in it.Let's denote two functions: F(a,k)F(a,k) is a function that takes an array of integers aa and a positive integer kk. The result of this function is the array containing |a||a| first elements of the array that you get by replacing each element of aa with exactly kk copies of that element.For example, F([2,2,1,3,5,6,8],2)F([2,2,1,3,5,6,8],2) is calculated as follows: first, you replace each element of the array with 22 copies of it, so you obtain [2,2,2,2,1,1,3,3,5,5,6,6,8,8][2,2,2,2,1,1,3,3,5,5,6,6,8,8]. Then, you take the first 77 elements of the array you obtained, so the result of the function is [2,2,2,2,1,1,3][2,2,2,2,1,1,3]. G(a,x,y)G(a,x,y) is a function that takes an array of integers aa and two different integers xx and yy. The result of this function is the array aa with every element equal to xx replaced by yy, and every element equal to yy replaced by xx.For example, G([1,1,2,3,5],3,1)=[3,3,2,1,5]G([1,1,2,3,5],3,1)=[3,3,2,1,5].An array aa is a parent of the array bb if:  either there exists a positive integer kk such that F(a,k)=bF(a,k)=b;  or there exist two different integers xx and yy such that G(a,x,y)=bG(a,x,y)=b. An array aa is an ancestor of the array bb if there exists a finite sequence of arrays c0,c1,…,cmc0,c1,…,cm (m≥0m≥0) such that c0c0 is aa, cmcm is bb, and for every i∈[1,m]i∈[1,m], ci−1ci−1 is a parent of cici.And now, the problem itself.You are given two integers nn and kk. Your goal is to construct a sequence of arrays s1,s2,…,sms1,s2,…,sm in such a way that:  every array sisi contains exactly nn elements, and all elements are integers from 11 to kk;  for every array aa consisting of exactly nn integers from 11 to kk, the sequence contains at least one array sisi such that sisi is an ancestor of aa. Print the minimum number of arrays in such sequence.
+InputThe only line contains two integers nn and kk (1≤n,k≤2⋅1051≤n,k≤2⋅105).
+OutputPrint one integer — the minimum number of elements in a sequence of arrays meeting the constraints. Since the answer can be large, output it modulo 998244353998244353.
+ExamplesInputCopy3 2
+OutputCopy2
+InputCopy4 10
+OutputCopy12
+InputCopy13 37
+OutputCopy27643508
+InputCopy1337 42
+OutputCopy211887828
+InputCopy198756 123456
+OutputCopy159489391
+InputCopy123456 198756
+OutputCopy460526614
+
+NoteLet's analyze the first example.One of the possible answers for the first example is the sequence [[2,1,2],[1,2,2]][[2,1,2],[1,2,2]]. Every array of size 33 consisting of elements from 11 to 22 has an ancestor in this sequence:  for the array [1,1,1][1,1,1], the ancestor is [1,2,2][1,2,2]: F([1,2,2],13)=[1,1,1]F([1,2,2],13)=[1,1,1];  for the array [1,1,2][1,1,2], the ancestor is [1,2,2][1,2,2]: F([1,2,2],2)=[1,1,2]F([1,2,2],2)=[1,1,2];  for the array [1,2,1][1,2,1], the ancestor is [2,1,2][2,1,2]: G([2,1,2],1,2)=[1,2,1]G([2,1,2],1,2)=[1,2,1];  for the array [1,2,2][1,2,2], the ancestor is [1,2,2][1,2,2];  for the array [2,1,1][2,1,1], the ancestor is [1,2,2][1,2,2]: G([1,2,2],1,2)=[2,1,1]G([1,2,2],1,2)=[2,1,1];  for the array [2,1,2][2,1,2], the ancestor is [2,1,2][2,1,2];  for the array [2,2,1][2,2,1], the ancestor is [2,1,2][2,1,2]: F([2,1,2],2)=[2,2,1]F([2,1,2],2)=[2,2,1];  for the array [2,2,2][2,2,2], the ancestor is [1,2,2][1,2,2]: G(F([1,2,2],4),1,2)=G([1,1,1],1,2)=[2,2,2]G(F([1,2,2],4),1,2)=G([1,1,1],1,2)=[2,2,2]. 

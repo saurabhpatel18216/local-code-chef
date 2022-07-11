@@ -1,0 +1,35 @@
+Lee was planning to get closer to Mashtali's heart to proceed with his evil plan(which we're not aware of, yet), so he decided to beautify Mashtali's graph. But he made several rules for himself. And also he was too busy with his plans that he didn't have time for such minor tasks, so he asked you for help.Mashtali's graph is an undirected weighted graph with nn vertices and mm edges with weights equal to either 11 or 22. Lee wants to direct the edges of Mashtali's graph so that it will be as beautiful as possible.Lee thinks that the beauty of a directed weighted graph is equal to the number of its Oddysey vertices. A vertex vv is an Oddysey vertex if |d+(v)−d−(v)|=1|d+(v)−d−(v)|=1, where d+(v)d+(v) is the sum of weights of the outgoing from vv edges, and d−(v)d−(v) is the sum of the weights of the incoming to vv edges.Find the largest possible beauty of a graph that Lee can achieve by directing the edges of Mashtali's graph. In addition, find any way to achieve it.Note that you have to orient each edge.
+InputThe first line contains two integers nn and mm (1≤n≤105;1≤m≤105)(1≤n≤105;1≤m≤105) — the numbers of vertices and edges in the graph.The ii-th line of the following mm lines contains three integers uiui, vivi and wiwi (1≤ui,vi≤n;ui≠vi;wi∈{1,2})(1≤ui,vi≤n;ui≠vi;wi∈{1,2}) — the endpoints of the ii-th edge and its weight.Note that the graph doesn't have to be connected, and it might contain multiple edges.
+OutputIn the first line print a single integer — the maximum beauty of the graph Lee can achieve.In the second line print a string of length mm consisting of 11s and 22s — directions of the edges.If you decide to direct the ii-th edge from vertex uiui to vertex vivi, ii-th character of the string should be 11. Otherwise, it should be 22.
+ExamplesInputCopy6 7
+1 2 1
+1 3 2
+2 3 2
+1 4 1
+4 5 1
+2 5 2
+2 6 2
+OutputCopy2
+1212212
+InputCopy6 7
+1 2 2
+1 3 2
+2 3 2
+1 4 2
+4 5 2
+2 5 2
+2 6 2
+OutputCopy0
+1212212
+InputCopy6 7
+1 2 1
+1 3 1
+2 3 1
+1 4 1
+4 5 1
+2 5 1
+2 6 1
+OutputCopy2
+1212212
+
+NoteExplanation for the first sample:  vertices 22 and 55 are Oddyseys. Explanation for the third sample:  vertices 11 and 66 are Oddyseys. 

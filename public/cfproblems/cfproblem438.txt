@@ -1,0 +1,18 @@
+It is given a non-negative integer xx, the decimal representation of which contains nn digits. You need to color each its digit in red or black, so that the number formed by the red digits is divisible by AA, and the number formed by the black digits is divisible by BB.At least one digit must be colored in each of two colors. Consider, the count of digits colored in red is rr and the count of digits colored in black is bb. Among all possible colorings of the given number xx, you need to output any such that the value of |r−b||r−b| is the minimum possible.Note that the number xx and the numbers formed by digits of each color, may contain leading zeros.  Example of painting a number for A=3A=3 and B=13B=13 The figure above shows an example of painting the number x=02165x=02165 of n=5n=5 digits for A=3A=3 and B=13B=13. The red digits form the number 015015, which is divisible by 33, and the black ones — 2626, which is divisible by 1313. Note that the absolute value of the difference between the counts of red and black digits is 11, it is impossible to achieve a smaller value.
+InputThe first line contains one integer tt (1≤t≤101≤t≤10) — the number of test cases. Then tt test cases follow.Each test case consists of two lines. The first line contains three integers nn, AA, BB (2≤n≤402≤n≤40, 1≤A,B≤401≤A,B≤40). The second line contains a non-negative integer xx containing exactly nn digits and probably containing leading zeroes.
+OutputFor each test case, output in a separate line:  -1 if the desired coloring does not exist;  a string ss of nn characters, each of them is a letter 'R' or 'B'. If the ii-th digit of the number xx is colored in red, then the ii-th character of the string ss must be the letter 'R', otherwise the letter 'B'. The number formed by digits colored red should divisible by AA. The number formed by digits colored black should divisible by BB. The value |r−b||r−b| should be minimal, where rr is the count of red digits, bb is the count of black digits. If there are many possible answers, print any of them.
+ExampleInputCopy4
+5 3 13
+02165
+4 2 1
+1357
+8 1 1
+12345678
+2 7 9
+90
+OutputCopyRBRBR
+-1
+BBRRRRBB
+BR
+
+NoteThe first test case is considered in the statement.In the second test case, there are no even digits, so it is impossible to form a number from its digits that is divisible by 22.In the third test case, each coloring containing at least one red and one black digit is possible, so you can color 44 digits in red and 44 in black (|4−4|=0|4−4|=0, it is impossible to improve the result).In the fourth test case, there is a single desired coloring.

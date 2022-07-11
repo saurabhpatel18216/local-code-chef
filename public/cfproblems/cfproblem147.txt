@@ -1,0 +1,25 @@
+Team Red and Team Blue competed in a competitive FPS. Their match was streamed around the world. They played a series of nn matches.In the end, it turned out Team Red won rr times and Team Blue won bb times. Team Blue was less skilled than Team Red, so bb was strictly less than rr.You missed the stream since you overslept, but you think that the match must have been neck and neck since so many people watched it. So you imagine a string of length nn where the ii-th character denotes who won the ii-th match  — it is R if Team Red won or B if Team Blue won. You imagine the string was such that the maximum number of times a team won in a row was as small as possible. For example, in the series of matches RBBRRRB, Team Red won 33 times in a row, which is the maximum.You must find a string satisfying the above conditions. If there are multiple answers, print any.
+InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000)  — the number of test cases.Each test case has a single line containing three integers nn, rr, and bb (3≤n≤1003≤n≤100; 1≤b<r≤n1≤b<r≤n, r+b=nr+b=n).
+OutputFor each test case, output a single line containing a string satisfying the given conditions. If there are multiple answers, print any.
+ExamplesInputCopy3
+7 4 3
+6 5 1
+19 13 6
+OutputCopyRBRBRBR
+RRRBRR
+RRBRRBRRBRRBRRBRRBR
+InputCopy6
+3 2 1
+10 6 4
+11 6 5
+10 9 1
+10 8 2
+11 9 2
+OutputCopyRBR
+RRBRBRBRBR
+RBRBRBRBRBR
+RRRRRBRRRR
+RRRBRRRBRR
+RRRBRRRBRRR
+
+NoteThe first test case of the first example gives the optimal answer for the example in the statement. The maximum number of times a team wins in a row in RBRBRBR is 11. We cannot minimize it any further.The answer for the second test case of the second example is RRBRBRBRBR. The maximum number of times a team wins in a row is 22, given by RR at the beginning. We cannot minimize the answer any further.

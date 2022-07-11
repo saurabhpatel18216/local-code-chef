@@ -1,0 +1,43 @@
+
+Chozi is, as usual, late for his class and is stuck on a staircase where he is being very skeptic about taking them since some of the stairs are wet and Chozi is wearing very slippery shoes.
+
+There are N stairs, numbered 11 to NN, out of which KK stairs are wet and the class is at the end of the NN - th stair. Chozi can skip 11 or 22 stairs if needed to avoid a wet stair, i.e. if Chozi is on the ii-th stair, he can go to i+1i+1-th ,i+2i+2-th ,i+3i+3 - th stair.
+
+Chozi is not a very punctual student and won't mind skipping a lecture if he cannot avoid all the wet stairs. Help him find the total number of ways in which he can reach the NN-th  stair by avoiding all the wet stairs if he only moves forward.
+
+Find this number of possible ways modulo 109+7109+7.
+
+Input:
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains two space separated integers NN and KK.
+The second line contains KK space-separated integers K1K1,K2K2,…,KKKK where each integer denotes the stair number that is wet.
+
+Output:
+
+For each test case, print a single line. The total ways to reach the NN-th stair modulo 109+7109+7.
+
+Constraints
+
+1≤T≤101≤T≤10
+3≤N≤1063≤N≤106
+0≤K≤N/20≤K≤N/2
+1≤Ki<N1≤Ki<N
+
+Sample Input:
+
+1
+6 2
+
+2 4
+
+Sample Output:
+
+4
+
+EXPLANATION:
+
+The possible ways are:
+[1,3,5,6],[3,5,6],[3,6]and[1,3,6][1,3,5,6],[3,5,6],[3,6]and[1,3,6]. Hence the answer is 4.
+
+

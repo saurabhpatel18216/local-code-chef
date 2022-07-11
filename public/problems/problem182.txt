@@ -1,0 +1,52 @@
+
+You are given two arrays AA and BB, both of length NN.
+
+You would like to choose exactly KK distinct indices i1,i2,…,iKi1,i2,…,iK such that min(Ai1+Ai2+…+AiK,Bi1+Bi2+…+BiK)min(Ai1+Ai2+…+AiK,Bi1+Bi2+…+BiK) is maximized. Find this maximum value.
+
+Input Format
+
+The first line of input contains a single integer TT, denoting the number of test cases. The description of TT test cases follows.
+Each test case consists of 33 lines of input.
+The first line of each test case contains two space-separated integers NN and KK.
+The second line contains NN space-separated integers A1,A2,…,ANA1,A2,…,AN denoting the elements of AA.
+The third line contains NN space-separated integers B1,B2,…,BNB1,B2,…,BN denoting the elements of BB.
+
+Output Format
+
+For each test case, output a new line containing one integer — the required maximum value.
+
+Constraints
+
+1≤T≤201≤T≤20
+2≤N≤402≤N≤40
+1≤K≤N1≤K≤N
+1≤Ai,Bi≤401≤Ai,Bi≤40
+
+Sample Input 1
+
+3
+5 3
+4 2 3 1 4
+3 2 5 5 1
+4 2
+1 2 3 4
+4 3 2 1
+6 3
+8 10 3 6 7 2
+4 8 4 1 1 6
+
+Sample Output 1
+
+9
+5
+18
+
+Explanation
+
+Test Case 11: One optimal choice of indices is i1=1,i2=3,i3=5i1=1,i2=3,i3=5. This gives A1+A3+A5=11A1+A3+A5=11 and B1+B3+B5=9B1+B3+B5=9.
+
+Test Case 22: One optimal choice of indices is i1=1,i2=4i1=1,i2=4.
+
+Test Case 33: One optimal choice of indices is i1=1,i2=2,i3=6i1=1,i2=2,i3=6.
+
+

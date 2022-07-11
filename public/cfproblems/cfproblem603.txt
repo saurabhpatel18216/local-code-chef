@@ -1,0 +1,11 @@
+You are given an array aa consisting of nn distinct elements and an integer kk. Each element in the array is a non-negative integer not exceeding 2k−12k−1.Let's define the XOR distance for a number xx as the value of f(x)=mini=1nminj=i+1n|(ai⊕x)−(aj⊕x)|,f(x)=mini=1nminj=i+1n|(ai⊕x)−(aj⊕x)|,where ⊕⊕ denotes the bitwise XOR operation.For every integer xx from 00 to 2k−12k−1, you have to calculate f(x)f(x).
+InputThe first line contains two integers nn and kk (1≤k≤191≤k≤19; 2≤n≤2k2≤n≤2k).The second line contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤2k−10≤ai≤2k−1). All these integers are distinct.
+OutputPrint 2k2k integers. The ii-th of them should be equal to f(i−1)f(i−1).
+ExamplesInputCopy3 3
+6 0 3
+OutputCopy3 1 1 2 2 1 1 3 
+InputCopy3 4
+13 4 2
+OutputCopy2 2 6 6 3 1 2 2 2 2 1 3 6 6 2 2 
+
+NoteConsider the first example:  for x=0x=0, if we apply bitwise XOR to the elements of the array with xx, we get the array [6,0,3][6,0,3], and the minimum absolute difference of two elements is 33;  for x=1x=1, if we apply bitwise XOR to the elements of the array with xx, we get the array [7,1,2][7,1,2], and the minimum absolute difference of two elements is 11;  for x=2x=2, if we apply bitwise XOR to the elements of the array with xx, we get the array [4,2,1][4,2,1], and the minimum absolute difference of two elements is 11;  for x=3x=3, if we apply bitwise XOR to the elements of the array with xx, we get the array [5,3,0][5,3,0], and the minimum absolute difference of two elements is 22;  for x=4x=4, if we apply bitwise XOR to the elements of the array with xx, we get the array [2,4,7][2,4,7], and the minimum absolute difference of two elements is 22;  for x=5x=5, if we apply bitwise XOR to the elements of the array with xx, we get the array [3,5,6][3,5,6], and the minimum absolute difference of two elements is 11;  for x=6x=6, if we apply bitwise XOR to the elements of the array with xx, we get the array [0,6,5][0,6,5], and the minimum absolute difference of two elements is 11;  for x=7x=7, if we apply bitwise XOR to the elements of the array with xx, we get the array [1,7,4][1,7,4], and the minimum absolute difference of two elements is 33. 

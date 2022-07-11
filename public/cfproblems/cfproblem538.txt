@@ -1,0 +1,16 @@
+Alice gave Bob two integers aa and bb (a>0a>0 and b≥0b≥0). Being a curious boy, Bob wrote down an array of non-negative integers with MEXMEX value of all elements equal to aa and XORXOR value of all elements equal to bb.What is the shortest possible length of the array Bob wrote?Recall that the MEXMEX (Minimum EXcluded) of an array is the minimum non-negative integer that does not belong to the array and the XORXOR of an array is the bitwise XOR of all the elements of the array.
+InputThe input consists of multiple test cases. The first line contains an integer tt (1≤t≤5⋅1041≤t≤5⋅104) — the number of test cases. The description of the test cases follows.The only line of each test case contains two integers aa and bb (1≤a≤3⋅1051≤a≤3⋅105; 0≤b≤3⋅1050≤b≤3⋅105) — the MEXMEX and XORXOR of the array, respectively.
+OutputFor each test case, output one (positive) integer — the length of the shortest array with MEXMEX aa and XORXOR bb. We can show that such an array always exists.
+ExampleInputCopy5
+1 1
+2 1
+2 0
+1 10000
+2 10000
+OutputCopy3
+2
+3
+2
+3
+
+NoteIn the first test case, one of the shortest arrays with MEXMEX 11 and XORXOR 11 is [0,2020,2021][0,2020,2021].In the second test case, one of the shortest arrays with MEXMEX 22 and XORXOR 11 is [0,1][0,1].It can be shown that these arrays are the shortest arrays possible.

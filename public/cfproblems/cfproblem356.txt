@@ -1,0 +1,19 @@
+Keshi is throwing a party and he wants everybody in the party to be happy.He has nn friends. His ii-th friend has ii dollars. If you invite the ii-th friend to the party, he will be happy only if at most aiai people in the party are strictly richer than him and at most bibi people are strictly poorer than him.Keshi wants to invite as many people as possible. Find the maximum number of people he can invite to the party so that every invited person would be happy.
+InputThe first line contains a single integer tt (1≤t≤104)(1≤t≤104) — the number of test cases. The description of the test cases follows.The first line of each test case contains a single integer nn (1≤n≤2⋅105)(1≤n≤2⋅105) — the number of Keshi's friends.The ii-th of the following nn lines contains two integers aiai and bibi (0≤ai,bi<n)(0≤ai,bi<n).It is guaranteed that the sum of nn over all test cases doesn't exceed 2⋅1052⋅105.
+OutputFor each test case print the maximum number of people Keshi can invite.
+ExampleInputCopy3
+3
+1 2
+2 1
+1 1
+2
+0 0
+0 1
+2
+1 0
+0 1
+OutputCopy2
+1
+2
+
+NoteIn the first test case, he invites the first and the second person. If he invites all of them, the third person won't be happy because there will be more than 11 person poorer than him.

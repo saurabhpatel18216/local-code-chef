@@ -1,0 +1,25 @@
+Andrea has come up with what he believes to be a novel sorting algorithm for arrays of length nn. The algorithm works as follows.Initially there is an array of nn integers a1,a2,…,ana1,a2,…,an. Then, kk steps are executed.For each 1≤i≤k1≤i≤k, during the ii-th step the subsequence of the array aa with indexes ji,1<ji,2<⋯<ji,qiji,1<ji,2<⋯<ji,qi is sorted, without changing the values with the remaining indexes. So, the subsequence aji,1,aji,2,…,aji,qiaji,1,aji,2,…,aji,qi is sorted and all other elements of aa are left untouched.Andrea, being eager to share his discovery with the academic community, sent a short paper describing his algorithm to the journal "Annals of Sorting Algorithms" and you are the referee of the paper (that is, the person who must judge the correctness of the paper). You must decide whether Andrea's algorithm is correct, that is, if it sorts any array aa of nn integers.
+InputThe first line contains two integers nn and kk (1≤n≤401≤n≤40, 0≤k≤100≤k≤10) — the length of the arrays handled by Andrea's algorithm and the number of steps of Andrea's algorithm.Then kk lines follow, each describing the subsequence considered in a step of Andrea's algorithm.The ii-th of these lines contains the integer qiqi (1≤qi≤n1≤qi≤n) followed by qiqi integers ji,1,ji,2,…,ji,qiji,1,ji,2,…,ji,qi (1≤ji,1<ji,2<⋯<ji,qi≤n1≤ji,1<ji,2<⋯<ji,qi≤n) — the length of the subsequence considered in the ii-th step and the indexes of the subsequence.
+OutputIf Andrea's algorithm is correct print ACCEPTED, otherwise print REJECTED.
+ExamplesInputCopy4 3
+3 1 2 3
+3 2 3 4
+2 1 2
+OutputCopyACCEPTED
+InputCopy4 3
+3 1 2 3
+3 2 3 4
+3 1 3 4
+OutputCopyREJECTED
+InputCopy3 4
+1 1
+1 2
+1 3
+2 1 3
+OutputCopyREJECTED
+InputCopy5 2
+3 2 3 4
+5 1 2 3 4 5
+OutputCopyACCEPTED
+
+NoteExplanation of the first sample: The algorithm consists of 33 steps. The first one sorts the subsequence [a1,a2,a3][a1,a2,a3], the second one sorts the subsequence [a2,a3,a4][a2,a3,a4], the third one sorts the subsequence [a1,a2][a1,a2]. For example, if initially a=[6,5,6,3]a=[6,5,6,3], the algorithm transforms the array as follows (the subsequence that gets sorted is highlighted in red) [6,5,6,3]→[5,6,6,3]→[5,3,6,6]→[3,5,6,6].[6,5,6,3]→[5,6,6,3]→[5,3,6,6]→[3,5,6,6]. One can prove that, for any initial array aa, at the end of the algorithm the array aa will be sorted.Explanation of the second sample: The algorithm consists of 33 steps. The first one sorts the subsequence [a1,a2,a3][a1,a2,a3], the second one sorts the subsequence [a2,a3,a4][a2,a3,a4], the third one sorts the subsequence [a1,a3,a4][a1,a3,a4]. For example, if initially a=[6,5,6,3]a=[6,5,6,3], the algorithm transforms the array as follows (the subsequence that gets sorted is highlighted in red) [6,5,6,3]→[5,6,6,3]→[5,3,6,6]→[5,3,6,6].[6,5,6,3]→[5,6,6,3]→[5,3,6,6]→[5,3,6,6]. Notice that a=[6,5,6,3]a=[6,5,6,3] is an example of an array that is not sorted by the algorithm.Explanation of the third sample: The algorithm consists of 44 steps. The first 33 steps do nothing because they sort subsequences of length 11, whereas the fourth step sorts the subsequence [a1,a3][a1,a3]. For example, if initially a=[5,6,4]a=[5,6,4], the algorithm transforms the array as follows (the subsequence that gets sorted is highlighted in red) [5,6,4]→[5,6,4]→[5,6,4]→[5,6,4]→[4,6,5].[5,6,4]→[5,6,4]→[5,6,4]→[5,6,4]→[4,6,5]. Notice that a=[5,6,4]a=[5,6,4] is an example of an array that is not sorted by the algorithm.Explanation of the fourth sample: The algorithm consists of 22 steps. The first step sorts the subsequences [a2,a3,a4][a2,a3,a4], the second step sorts the whole array [a1,a2,a3,a4,a5][a1,a2,a3,a4,a5]. For example, if initially a=[9,8,1,1,1]a=[9,8,1,1,1], the algorithm transforms the array as follows (the subsequence that gets sorted is highlighted in red) [9,8,1,1,1]→[9,1,1,8,1]→[1,1,1,8,9].[9,8,1,1,1]→[9,1,1,8,1]→[1,1,1,8,9]. Since in the last step the whole array is sorted, it is clear that, for any initial array aa, at the end of the algorithm the array aa will be sorted.

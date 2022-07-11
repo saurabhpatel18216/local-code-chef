@@ -1,0 +1,11 @@
+Joseph really likes the culture of Japan. Last year he learned Japanese traditional clothes and visual arts and now he is trying to find out the secret of the Japanese game called Nonogram.In the one-dimensional version of the game, there is a row of nn empty cells, some of which are to be filled with a pen. There is a description of a solution called a profile — a sequence of positive integers denoting the lengths of consecutive sets of filled cells. For example, the profile of [4,3,1][4,3,1] means that there are sets of four, three, and one filled cell, in that order, with at least one empty cell between successive sets. A suitable solution for n=12n=12 and p=[4,3,1]p=[4,3,1].  A wrong solution: the first four filled cells should be consecutive.  A wrong solution: there should be at least one empty cell before the last filled cell. Joseph found out that for some numbers nn and profiles pp there are lots of ways to fill the cells to satisfy the profile. Now he is in the process of solving a nonogram consisting of nn cells and a profile pp. He has already created a mask of pp — he has filled all the cells that must be filled in every solution of the nonogram. The mask for n=12n=12 and p=[4,3,1]p=[4,3,1]: all the filled cells above are filled in every solution. After a break, he lost the source profile pp. He only has nn and the mask mm. Help Joseph find any profile p′p′ with the mask mm or say that there is no such profile and Joseph has made a mistake.
+InputThe only line contains a string mm — the mask of the source profile pp. The length of mm is nn (1≤n≤1000001≤n≤100000). The string mm consists of symbols # and _ — denoting filled and empty cells respectively.
+OutputIf there is no profile with the mask mm, output the number −1−1. Otherwise, on the first line, output an integer kk — the number of integers in the profile p′p′. On the second line, output kk integers of the profile p′p′.
+ExamplesInputCopy__#_____
+OutputCopy2
+3 2 
+InputCopy_#
+OutputCopy-1
+InputCopy___
+OutputCopy0
+

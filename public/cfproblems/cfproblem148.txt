@@ -1,0 +1,22 @@
+The cuteness of a binary string is the number of 11s divided by the length of the string. For example, the cuteness of 0110101101 is 3535.Juju has a binary string ss of length nn. She wants to choose some non-intersecting subsegments of ss such that their concatenation has length mm and it has the same cuteness as the string ss. More specifically, she wants to find two arrays ll and rr of equal length kk such that 1≤l1≤r1<l2≤r2<…<lk≤rk≤n1≤l1≤r1<l2≤r2<…<lk≤rk≤n, and also:  ∑i=1k(ri−li+1)=m∑i=1k(ri−li+1)=m;  The cuteness of s[l1,r1]+s[l2,r2]+…+s[lk,rk]s[l1,r1]+s[l2,r2]+…+s[lk,rk] is equal to the cuteness of ss, where s[x,y]s[x,y] denotes the subsegment sxsx+1…sysxsx+1…sy, and ++ denotes string concatenation. Juju does not like splitting the string into many parts, so she also wants to minimize the value of kk. Find the minimum value of kk such that there exist ll and rr that satisfy the constraints above or determine that it is impossible to find such ll and rr for any kk.
+InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of test cases.The first line of each test case contains two integers nn and mm (1≤m≤n≤2⋅1051≤m≤n≤2⋅105).The second line of each test case contains a binary string ss of length nn.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case, if there is no valid pair of ll and rr, print −1−1. Otherwise, print k+1k+1 lines.In the first line, print a number kk (1≤k≤m1≤k≤m) — the minimum number of subsegments required.Then print kk lines, the ii-th should contain lili and riri (1≤li≤ri≤n1≤li≤ri≤n) — the range of the ii-th subsegment. Note that you should output the subsegments such that the inequality l1≤r1<l2≤r2<…<lk≤rkl1≤r1<l2≤r2<…<lk≤rk is true.
+ExampleInputCopy4
+4 2
+0011
+8 6
+11000011
+4 3
+0101
+5 5
+11111
+OutputCopy1
+2 3
+2
+2 3
+5 8
+-1
+1
+1 5
+
+NoteIn the first example, the cuteness of 00110011 is the same as the cuteness of 0101.In the second example, the cuteness of 1100001111000011 is 1212 and there is no subsegment of size 66 with the same cuteness. So we must use 22 disjoint subsegments 1010 and 00110011.In the third example, there are 88 ways to split the string such that ∑i=1k(ri−li+1)=3∑i=1k(ri−li+1)=3 but none of them has the same cuteness as 01010101.In the last example, we don't have to split the string.

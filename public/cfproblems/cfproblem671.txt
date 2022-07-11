@@ -1,0 +1,10 @@
+There are nn cats in a line, labeled from 11 to nn, with the ii-th cat at position ii. They are bored of gyrating in the same spot all day, so they want to reorder themselves such that no cat is in the same place as before. They are also lazy, so they want to minimize the total distance they move. Help them decide what cat should be at each location after the reordering.For example, if there are 33 cats, this is a valid reordering: [3,1,2][3,1,2]. No cat is in its original position. The total distance the cats move is 1+1+2=41+1+2=4 as cat 11 moves one place to the right, cat 22 moves one place to the right, and cat 33 moves two places to the left.
+InputThe first line contains a single integer tt (1≤t≤1001≤t≤100) — the number of test cases. Then tt test cases follow.The first and only line of each test case contains one integer nn (2≤n≤1002≤n≤100) — the number of cats.It can be proven that under the constraints of the problem, an answer always exist. 
+OutputOutput tt answers, one for each test case. Each answer consists of nn integers — a permutation with the minimum total distance. If there are multiple answers, print any.
+ExampleInputCopy2
+2
+3
+OutputCopy2 1 
+3 1 2 
+
+NoteFor the first test case, there is only one possible permutation that satisfies the conditions: [2,1][2,1].The second test case was described in the statement. Another possible answer is [2,3,1][2,3,1].

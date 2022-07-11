@@ -1,0 +1,22 @@
+You have a connected undirected graph made of nn nodes and mm edges. The ii-th node has a value vivi and a target value titi.In an operation, you can choose an edge (i,j)(i,j) and add kk to both vivi and vjvj, where kk can be any integer. In particular, kk can be negative.Your task to determine if it is possible that by doing some finite number of operations (possibly zero), you can achieve for every node ii, vi=tivi=ti.
+InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000), the number of test cases. Then the test cases follow.The first line of each test case contains two integers nn, mm (2≤n≤2⋅1052≤n≤2⋅105, n−1≤m≤min(2⋅105,n(n−1)2)n−1≤m≤min(2⋅105,n(n−1)2)) — the number of nodes and edges respectively.The second line contains nn integers v1…,vnv1…,vn (−109≤vi≤109−109≤vi≤109) — initial values of nodes.The third line contains nn integers t1…,tnt1…,tn (−109≤ti≤109−109≤ti≤109) — target values of nodes.Each of the next mm lines contains two integers ii and jj representing an edge between node ii and node jj (1≤i,j≤n1≤i,j≤n, i≠ji≠j).It is guaranteed that the graph is connected and there is at most one edge between the same pair of nodes.It is guaranteed that the sum of nn over all testcases does not exceed 2⋅1052⋅105 and the sum of mm over all testcases does not exceed 2⋅1052⋅105.
+OutputFor each test case, if it is possible for every node to reach its target after some number of operations, print "YES". Otherwise, print "NO".
+ExampleInputCopy2
+4 4
+5 1 2 -3
+3 3 10 1
+1 2
+1 4
+3 2
+3 4
+4 4
+5 8 6 6
+-3 1 15 4
+1 2
+1 4
+3 2
+3 4
+OutputCopyYES
+NO
+
+NoteHere is a visualization of the first test case (the orange values denote the initial values and the blue ones the desired values):   One possible order of operations to obtain the desired values for each node is the following:  Operation 11: Add 22 to nodes 22 and 33.  Operation 22: Add −2−2 to nodes 11 and 44.  Operation 33: Add 66 to nodes 33 and 44. Now we can see that in total we added −2−2 to node 11, 22 to node 22, 88 to node 33 and 44 to node 44 which brings each node exactly to it's desired value.For the graph from the second test case it's impossible to get the target values.

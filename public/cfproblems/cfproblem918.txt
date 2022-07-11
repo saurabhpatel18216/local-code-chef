@@ -1,0 +1,15 @@
+This is the easy version of the problem. The only difference is that in this version k=0k=0.There is an array a1,a2,…,ana1,a2,…,an of nn positive integers. You should divide it into a minimal number of continuous segments, such that in each segment there are no two numbers (on different positions), whose product is a perfect square.Moreover, it is allowed to do at most kk such operations before the division: choose a number in the array and change its value to any positive integer. But in this version k=0k=0, so it is not important.What is the minimum number of continuous segments you should use if you will make changes optimally?
+InputThe first line contains a single integer tt (1≤t≤1000)(1≤t≤1000)  — the number of test cases.The first line of each test case contains two integers nn, kk (1≤n≤2⋅1051≤n≤2⋅105, k=0k=0).The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1071≤ai≤107).It's guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case print a single integer  — the answer to the problem.
+ExampleInputCopy3
+5 0
+18 6 2 4 1
+5 0
+6 8 1 24 8
+1 0
+1
+OutputCopy3
+2
+1
+
+NoteIn the first test case the division may be as follows:  [18,6][18,6]  [2,4][2,4]  [1][1] 

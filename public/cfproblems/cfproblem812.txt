@@ -1,0 +1,18 @@
+A number is called 2050-number if it is 20502050, 2050020500, ..., (2050⋅10k2050⋅10k for integer k≥0k≥0).Given a number nn, you are asked to represent nn as the sum of some (not necessarily distinct) 2050-numbers. Compute the minimum number of 2050-numbers required for that.
+InputThe first line contains a single integer TT (1≤T≤10001≤T≤1000) denoting the number of test cases.The only line of each test case contains a single integer nn (1≤n≤10181≤n≤1018) denoting the number to be represented.
+OutputFor each test case, output the minimum number of 2050-numbers in one line. If nn cannot be represented as the sum of 2050-numbers, output −1−1 instead. 
+ExampleInputCopy6
+205
+2050
+4100
+20500
+22550
+25308639900
+OutputCopy-1
+1
+2
+1
+2
+36
+
+NoteIn the third case, 4100=2050+20504100=2050+2050.In the fifth case, 22550=20500+205022550=20500+2050.

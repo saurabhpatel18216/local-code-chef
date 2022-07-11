@@ -1,0 +1,18 @@
+The Berland language consists of words having exactly two letters. Moreover, the first letter of a word is different from the second letter. Any combination of two different Berland letters (which, by the way, are the same as the lowercase letters of Latin alphabet) is a correct word in Berland language.The Berland dictionary contains all words of this language. The words are listed in a way they are usually ordered in dictionaries. Formally, word aa comes earlier than word bb in the dictionary if one of the following conditions hold:  the first letter of aa is less than the first letter of bb;  the first letters of aa and bb are the same, and the second letter of aa is less than the second letter of bb. So, the dictionary looks like that:  Word 11: ab  Word 22: ac  ...  Word 2525: az  Word 2626: ba  Word 2727: bc  ...  Word 649649: zx  Word 650650: zy You are given a word ss from the Berland language. Your task is to find its index in the dictionary.
+InputThe first line contains one integer tt (1≤t≤6501≤t≤650) — the number of test cases.Each test case consists of one line containing ss — a string consisting of exactly two different lowercase Latin letters (i. e. a correct word of the Berland language).
+OutputFor each test case, print one integer — the index of the word ss in the dictionary.
+ExampleInputCopy7
+ab
+ac
+az
+ba
+bc
+zx
+zy
+OutputCopy1
+2
+25
+26
+27
+649
+650

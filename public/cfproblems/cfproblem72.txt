@@ -1,0 +1,18 @@
+One day Prof. Slim decided to leave the kingdom of the GUC to join the kingdom of the GIU. He was given an easy online assessment to solve before joining the GIU. Citizens of the GUC were happy sad to see the prof leaving, so they decided to hack into the system and change the online assessment into a harder one so that he stays at the GUC. After a long argument, they decided to change it into the following problem.Given an array of nn integers a1,a2,…,ana1,a2,…,an, where ai≠0ai≠0, check if you can make this array sorted by using the following operation any number of times (possibly zero). An array is sorted if its elements are arranged in a non-decreasing order.  select two indices ii and jj (1≤i,j≤n1≤i,j≤n) such that aiai and ajaj have different signs. In other words, one must be positive and one must be negative.  swap the signs of aiai and ajaj. For example if you select ai=3ai=3 and aj=−2aj=−2, then they will change to ai=−3ai=−3 and aj=2aj=2. Prof. Slim saw that the problem is still too easy and isn't worth his time, so he decided to give it to you to solve.
+InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of test cases. Then tt test cases follow.The first line of each test case contains a single integer nn (1≤n≤1051≤n≤105) — the length of the array aa.The next line contain nn integers a1,a2,…,ana1,a2,…,an (−109≤ai≤109−109≤ai≤109, ai≠0ai≠0) separated by spaces describing elements of the array aa. It is guaranteed that the sum of nn over all test cases doesn't exceed 105105.
+OutputFor each test case, print "YES" if the array can be sorted in the non-decreasing order, otherwise print "NO". You can print each letter in any case (upper or lower).
+ExampleInputCopy4
+7
+7 3 2 -11 -13 -17 -23
+6
+4 10 25 47 71 96
+6
+71 -35 7 -4 -11 -25
+6
+-45 9 -48 -67 -55 7
+OutputCopyNO
+YES
+YES
+NO
+
+NoteIn the first test case, there is no way to make the array sorted using the operation any number of times.In the second test case, the array is already sorted.In the third test case, we can swap the sign of the 11-st element with the sign of the 55-th element, and the sign of the 33-rd element with the sign of the 66-th element, this way the array will be sorted.In the fourth test case, there is no way to make the array sorted using the operation any number of times.

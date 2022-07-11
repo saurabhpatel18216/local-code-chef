@@ -1,0 +1,14 @@
+You are given an integer nn. Find any string ss of length nn consisting only of English lowercase letters such that each non-empty substring of ss occurs in ss an odd number of times. If there are multiple such strings, output any. It can be shown that such string always exists under the given constraints.A string aa is a substring of a string bb if aa can be obtained from bb by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.
+InputThe first line contains a single integer tt (1≤t≤5001≤t≤500) — the number of test cases.The first line of each test case contains a single integer nn (1≤n≤1051≤n≤105).It is guaranteed that the sum of nn over all test cases doesn't exceed 3⋅1053⋅105.
+OutputFor each test case, print a single line containing the string ss. If there are multiple such strings, output any. It can be shown that such string always exists under the given constraints.
+ExampleInputCopy4
+3
+5
+9
+19
+OutputCopyabc
+diane
+bbcaabbba
+youarethecutestuwuu
+
+NoteIn the first test case, each substring of "abc" occurs exactly once.In the third test case, each substring of "bbcaabbba" occurs an odd number of times. In particular, "b" occurs 55 times, "a" and "bb" occur 33 times each, and each of the remaining substrings occurs exactly once.

@@ -1,0 +1,16 @@
+You are given a string ss, consisting of lowercase Latin letters. While there is at least one character in the string ss that is repeated at least twice, you perform the following operation:   you choose the index ii (1≤i≤|s|1≤i≤|s|) such that the character at position ii occurs at least two times in the string ss, and delete the character at position ii, that is, replace ss with s1s2…si−1si+1si+2…sns1s2…si−1si+1si+2…sn. For example, if s=s="codeforces", then you can apply the following sequence of operations:   i=6⇒s=i=6⇒s="codefrces";  i=1⇒s=i=1⇒s="odefrces";  i=7⇒s=i=7⇒s="odefrcs"; Given a given string ss, find the lexicographically maximum string that can be obtained after applying a certain sequence of operations after which all characters in the string become unique.A string aa of length nn is lexicographically less than a string bb of length mm, if:   there is an index ii (1≤i≤min(n,m)1≤i≤min(n,m)) such that the first i−1i−1 characters of the strings aa and bb are the same, and the ii-th character of the string aa is less than ii-th character of string bb;  or the first min(n,m)min(n,m) characters in the strings aa and bb are the same and n<mn<m. For example, the string a=a="aezakmi" is lexicographically less than the string b=b="aezus".
+InputThe first line contains one integer tt (1≤t≤1041≤t≤104). Then tt test cases follow.Each test case is characterized by a string ss, consisting of lowercase Latin letters (1≤|s|≤2⋅1051≤|s|≤2⋅105).It is guaranteed that the sum of the lengths of the strings in all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case, output the lexicographically maximum string that can be obtained after applying a certain sequence of operations after which all characters in the string become unique.
+ExampleInputCopy6
+codeforces
+aezakmi
+abacaba
+convexhull
+swflldjgpaxs
+myneeocktxpqjpz
+OutputCopyodfrces
+ezakmi
+cba
+convexhul
+wfldjgpaxs
+myneocktxqjpz

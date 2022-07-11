@@ -1,0 +1,52 @@
+Alice has an empty grid with nn rows and mm columns. Some of the cells are marked, and no marked cells are adjacent to the edge of the grid. (Two squares are adjacent if they share a side.) Alice wants to fill each cell with a number such that the following statements are true:   every unmarked cell contains either the number 11 or 44;  every marked cell contains the sum of the numbers in all unmarked cells adjacent to it (if a marked cell is not adjacent to any unmarked cell, this sum is 00);  every marked cell contains a multiple of 55.  Alice couldn't figure it out, so she asks Bob to help her. Help Bob find any such grid, or state that no such grid exists.
+InputThe first line of input contains two integers nn and mm (1≤n,m≤5001≤n,m≤500) — the number of rows and the number of columns in the grid, respectively.Then nn lines follow, each containing mm characters. Each of these characters is either '.' or 'X' — an unmarked and a marked cell, respectively. No marked cells are adjacent to the edge of the grid.
+OutputOutput "'NO" if no suitable grid exists. Otherwise, output "'YES"'. Then output nn lines of mm space-separated integers — the integers in the grid.
+ExamplesInputCopy5 5
+.....
+.XXX.
+.X.X.
+.XXX.
+.....
+OutputCopyYES
+4 1 4 4 1
+4 5 5 5 1
+4 5 1 5 4
+1 5 5 5 4
+1 4 4 1 4
+InputCopy5 5
+.....
+.XXX.
+.XXX.
+.XXX.
+.....
+OutputCopyNO
+InputCopy3 2
+..
+..
+..
+OutputCopyYES
+4 1
+4 1
+1 4
+InputCopy9 9
+.........
+.XXXXX.X.
+.X...X...
+.X.XXXXX.
+.X.X.X.X.
+.X.XXX.X.
+.X.....X.
+.XXXXXXX.
+.........
+OutputCopyYES
+4 4 4 1 4 1 4 1 4
+1 5 5 5 5 5 4 10 1
+4 5 1 4 1 5 4 4 4
+4 5 1 5 5 0 5 5 1
+4 5 1 5 4 5 1 5 4
+4 5 1 5 5 5 4 5 1
+1 5 4 4 1 1 4 5 1
+4 5 5 5 5 5 5 5 4
+1 1 1 1 4 4 1 1 4
+
+NoteIt can be shown that no such grid exists for the second test.

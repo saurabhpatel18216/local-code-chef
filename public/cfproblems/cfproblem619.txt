@@ -1,0 +1,18 @@
+A string ss of length nn, consisting of lowercase letters of the English alphabet, is given.You must choose some number kk between 00 and nn. Then, you select kk characters of ss and permute them however you want. In this process, the positions of the other n−kn−k characters remain unchanged. You have to perform this operation exactly once.For example, if s="andrea"s="andrea", you can choose the k=4k=4 characters "a_d_ea""a_d_ea" and permute them into "d_e_aa""d_e_aa" so that after the operation the string becomes "dneraa""dneraa".Determine the minimum kk so that it is possible to sort ss alphabetically (that is, after the operation its characters appear in alphabetical order).
+InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases. Then tt test cases follow.The first line of each test case contains one integer nn (1≤n≤401≤n≤40) — the length of the string.The second line of each test case contains the string ss. It is guaranteed that ss contains only lowercase letters of the English alphabet.
+OutputFor each test case, output the minimum kk that allows you to obtain a string sorted alphabetically, through the operation described above.
+ExampleInputCopy4
+3
+lol
+10
+codeforces
+5
+aaaaa
+4
+dcba
+OutputCopy2
+6
+0
+4
+
+NoteIn the first test case, we can choose the k=2k=2 characters "_ol""_ol" and rearrange them as "_lo""_lo" (so the resulting string is "llo""llo"). It is not possible to sort the string choosing strictly less than 22 characters.In the second test case, one possible way to sort ss is to consider the k=6k=6 characters "_o__force_""_o__force_" and rearrange them as "_c__efoor_""_c__efoor_" (so the resulting string is "ccdeefoors""ccdeefoors"). One can show that it is not possible to sort the string choosing strictly less than 66 characters.In the third test case, string ss is already sorted (so we can choose k=0k=0 characters).In the fourth test case, we can choose all k=4k=4 characters "dcba""dcba" and reverse the whole string (so the resulting string is "abcd""abcd").

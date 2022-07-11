@@ -1,0 +1,15 @@
+Tokitsukaze is arranging a meeting. There are nn rows and mm columns of seats in the meeting hall.There are exactly n⋅mn⋅m students attending the meeting, including several naughty students and several serious students. The students are numerated from 11 to n⋅mn⋅m. The students will enter the meeting hall in order. When the ii-th student enters the meeting hall, he will sit in the 11-st column of the 11-st row, and the students who are already seated will move back one seat. Specifically, the student sitting in the jj-th (1≤j≤m−11≤j≤m−1) column of the ii-th row will move to the (j+1)(j+1)-th column of the ii-th row, and the student sitting in mm-th column of the ii-th row will move to the 11-st column of the (i+1)(i+1)-th row.For example, there is a meeting hall with 22 rows and 22 columns of seats shown as below:  There will be 44 students entering the meeting hall in order, represented as a binary string "1100", of which '0' represents naughty students and '1' represents serious students. The changes of seats in the meeting hall are as follows:  Denote a row or a column good if and only if there is at least one serious student in this row or column. Please predict the number of good rows and columns just after the ii-th student enters the meeting hall, for all ii.
+InputThe first contains a single positive integer tt (1≤t≤100001≤t≤10000) — the number of test cases.For each test case, the first line contains two integers nn, mm (1≤n,m≤1061≤n,m≤106; 1≤n⋅m≤1061≤n⋅m≤106), denoting there are nn rows and mm columns of seats in the meeting hall.The second line contains a binary string ss of length n⋅mn⋅m, consisting only of zeros and ones. If sisi equal to '0' represents the ii-th student is a naughty student, and sisi equal to '1' represents the ii-th student is a serious student.It is guaranteed that the sum of n⋅mn⋅m over all test cases does not exceed 106106.
+OutputFor each test case, print a single line with n⋅mn⋅m integers — the number of good rows and columns just after the ii-th student enters the meeting hall.
+ExampleInputCopy3
+2 2
+1100
+4 2
+11001101
+2 4
+11001101
+OutputCopy2 3 4 3
+2 3 4 3 5 4 6 5
+2 3 3 3 4 4 4 5
+
+NoteThe first test case is shown in the statement.After the 11-st student enters the meeting hall, there are 22 good rows and columns: the 11-st row and the 11-st column.After the 22-nd student enters the meeting hall, there are 33 good rows and columns: the 11-st row, the 11-st column and the 22-nd column.After the 33-rd student enters the meeting hall, the 44 rows and columns are all good.After the 44-th student enters the meeting hall, there are 33 good rows and columns: the 22-nd row, the 11-st column and the 22-nd column.

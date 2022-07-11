@@ -1,0 +1,18 @@
+Let's call an array of kk integers c1,c2,…,ckc1,c2,…,ck terrible, if the following condition holds:Let AVGAVG be the c1+c2+…+ckkc1+c2+…+ckk(the average of all the elements of the array, it doesn't have to be integer). Then the number of elements of the array which are bigger than AVGAVG should be strictly larger than the number of elements of the array which are smaller than AVGAVG. Note that elements equal to AVGAVG don't count.For example c={1,4,4,5,6}c={1,4,4,5,6} is terrible because AVG=4.0AVG=4.0 and 55-th and 44-th elements are greater than AVGAVG and 11-st element is smaller than AVGAVG.Let's call an array of mm integers b1,b2,…,bmb1,b2,…,bm bad, if at least one of its non-empty subsequences is terrible, and good otherwise.You are given an array of nn integers a1,a2,…,ana1,a2,…,an. Find the minimum number of elements that you have to delete from it to obtain a good array.An array is a subsequence of another array if it can be obtained from it by deletion of several (possibly, zero or all) elements.
+InputThe first line contains an integer tt (1≤t≤1041≤t≤104) — the number of test cases. The description of test cases follows.The first line of each test case contains a single integer nn (2≤n≤2⋅1052≤n≤2⋅105) — the size of aa.The second line of each testcase contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1091≤ai≤109) — elements of array aa.In each testcase for any 1≤i<n1≤i<n it is guaranteed that ai≤ai+1ai≤ai+1.It is guaranteed that the sum of nn over all testcases doesn't exceed 2⋅1052⋅105.
+OutputFor each testcase, print the minimum number of elements that you have to delete from it to obtain a good array.
+ExampleInputCopy4
+3
+1 2 3
+5
+1 4 4 5 6
+6
+7 8 197860736 212611869 360417095 837913434
+8
+6 10 56026534 405137099 550504063 784959015 802926648 967281024
+OutputCopy0
+1
+2
+3
+
+NoteIn the first sample, the array aa is already good.In the second sample, it's enough to delete 11, obtaining array [4,4,5,6][4,4,5,6], which is good.

@@ -1,0 +1,4 @@
+Aenar should go to the string's home.
+InputA string consisting of only 66 letters.
+OutputA string consisting of only 66 characters.
+NoteIf many answers are possible, the jury will still only accept one!

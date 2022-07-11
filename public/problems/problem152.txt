@@ -1,0 +1,48 @@
+
+Akshay has been given a problem by his teacher to find the maximum sum of subarray given an array of nn length.
+
+A subarray of an array is an array composed from a contiguous block of the original array's elements.
+
+There is another thing given by the teacher that. Once the above maximum sum subarrays are selected, Akshay is allowed to remove atmost one element from them, to maximise the result further.
+
+There should be atleast one element in the subarray at the end. Since Akshay is sleepy, can you solve the problem for him?
+
+Note: Remember that you can remove atmost one element from a maximum sum subarray and not the other part of array.
+
+Note: In case of two subarrays having equal value, take that sub-array which will give maximum value after removal of atmost one element.
+
+Input :
+
+First line contains tt, the number of testcases. 
+The first line of each testcase contains an integer nn, the number of elements in an array. 
+The second line contains nn space seperated integers AiAi denoting an array.
+
+Output :
+
+For each testcase output a single integer on newline, the maximized final result expected by teacher.
+
+Constraints :
+
+1≤t≤1051≤t≤105 
+1≤n≤1051≤n≤105 
+−109≤Ai≤109−109≤Ai≤109
+Sum of NN over all tests is atmost 106106.
+
+Sample Input :
+
+2
+5
+1 2 3 -2 3
+2
+-1 -2
+
+Sample Output:
+
+9
+-1
+
+Explanation
+
+For the first test case, we first find the maximum sum subarray which is [123−23][123−23] with sum = 77. Now chef removes −2−2 and makes final result = 99.
+
+

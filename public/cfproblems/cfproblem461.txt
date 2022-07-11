@@ -1,0 +1,14 @@
+You are given nn distinct points p1,p2,…,pnp1,p2,…,pn on the plane and a positive integer RR. Find the number of pairs of indices (i,j)(i,j) such that 1≤i<j≤n1≤i<j≤n, and for every possible kk (1≤k≤n1≤k≤n) the distance from the point pkpk to the segment between points pipi and pjpj is at most RR.
+InputThe first line contains two integers nn, RR (1≤n≤30001≤n≤3000, 1≤R≤1051≤R≤105) — the number of points and the maximum distance between a point and a segment.Each of the next nn lines contains two integers xixi, yiyi (−105≤xi,yi≤105−105≤xi,yi≤105) that define the ii-th point pi=(xi,yi)pi=(xi,yi). All points are distinct.It is guaranteed that the answer does not change if the parameter RR is changed by at most 10−210−2.
+OutputPrint the number of suitable pairs (i,j)(i,j).
+ExamplesInputCopy4 2
+0 1
+0 -1
+3 0
+-3 0
+OutputCopy1InputCopy3 3
+1 -1
+-1 -1
+0 1
+OutputCopy3
+NoteIn the first example, the only pair of points (−3,0)(−3,0), (3,0)(3,0) is suitable. The distance to the segment between these points from the points (0,1)(0,1) and (0,−1)(0,−1) is equal to 11, which is less than R=2R=2.In the second example, all possible pairs of points are eligible.

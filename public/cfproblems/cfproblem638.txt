@@ -1,0 +1,17 @@
+This is the easy version of the problem. The only difference from the hard version is that in this version all coordinates are even.There are nn fence-posts at distinct coordinates on a plane. It is guaranteed that no three fence posts lie on the same line.There are an infinite number of cows on the plane, one at every point with integer coordinates.Gregor is a member of the Illuminati, and wants to build a triangular fence, connecting 33 distinct existing fence posts. A cow strictly inside the fence is said to be enclosed. If there are an odd number of enclosed cows and the area of the fence is an integer, the fence is said to be interesting.Find the number of interesting fences.
+InputThe first line contains the integer nn (3≤n≤60003≤n≤6000), the number of fence posts which Gregor can choose to form the vertices of a fence.Each of the next nn line contains two integers xx and yy (0≤x,y≤1070≤x,y≤107, xx and yy are even), where (x,y)(x,y) is the coordinate of a fence post. All fence posts lie at distinct coordinates. No three fence posts are on the same line.
+OutputPrint a single integer, the number of interesting fences. Two fences are considered different if they are constructed with a different set of three fence posts.
+ExamplesInputCopy3
+0 0
+2 0
+0 4
+OutputCopy1
+InputCopy5
+0 0
+2 16
+30 14
+4 6
+2 10
+OutputCopy3
+
+NoteIn the first example, there is only 11 fence. That fence is interesting since its area is 44 and there is 11 enclosed cow, marked in red.  In the second example, there are 33 interesting fences.   (0,0)(0,0) — (30,14)(30,14) — (2,10)(2,10)  (2,16)(2,16) — (30,14)(30,14) — (2,10)(2,10)  (30,14)(30,14) — (4,6)(4,6) — (2,10)(2,10) 

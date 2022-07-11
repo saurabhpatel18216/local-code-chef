@@ -1,0 +1,20 @@
+A chess tournament will be held soon, where nn chess players will take part. Every participant will play one game against every other participant. Each game ends in either a win for one player and a loss for another player, or a draw for both players.Each of the players has their own expectations about the tournament, they can be one of two types:  a player wants not to lose any game (i. e. finish the tournament with zero losses);  a player wants to win at least one game. You have to determine if there exists an outcome for all the matches such that all the players meet their expectations. If there are several possible outcomes, print any of them. If there are none, report that it's impossible.
+InputThe first line contains a single integer tt (1≤t≤2001≤t≤200) — the number of test cases.The first line of each test case contains one integer nn (2≤n≤502≤n≤50) — the number of chess players.The second line contains the string ss (|s|=n|s|=n; si∈{1,2}si∈{1,2}). If si=1si=1, then the ii-th player has expectations of the first type, otherwise of the second type.
+OutputFor each test case, print the answer in the following format:In the first line, print NO if it is impossible to meet the expectations of all players.Otherwise, print YES, and the matrix of size n×nn×n in the next nn lines.The matrix element in the ii-th row and jj-th column should be equal to:  +, if the ii-th player won in a game against the jj-th player;  -, if the ii-th player lost in a game against the jj-th player;  =, if the ii-th and jj-th players' game resulted in a draw;  X, if i=ji=j. 
+ExampleInputCopy3
+3
+111
+2
+21
+4
+2122
+OutputCopyYES
+X==
+=X=
+==X
+NO
+YES
+X--+
++X++
++-X-
+--+X

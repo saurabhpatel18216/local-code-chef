@@ -1,0 +1,22 @@
+This is an interactive problem.There is a positive integer 1≤x≤1091≤x≤109 that you have to guess.In one query you can choose two positive integers a≠ba≠b. As an answer to this query you will get gcd(x+a,x+b)gcd(x+a,x+b), where gcd(n,m)gcd(n,m) is the greatest common divisor of the numbers nn and mm.To guess one hidden number xx you are allowed to make no more than 3030 queries.
+InputThe first line of input contains a single integer tt (1≤t≤10001≤t≤1000) denoting the number of test cases.The integer xx that you have to guess satisfies the constraints: (1≤x≤1091≤x≤109).
+InteractionThe hidden number xx is fixed before the start of the interaction and does not depend on your queries.To guess each xx you can make no more than 3030 queries in the following way:  "? a b" (1≤a,b≤2⋅1091≤a,b≤2⋅109, a≠ba≠b). For this query you will get gcd(x+a,x+b)gcd(x+a,x+b).When you know xx, print a single line in the following format.  "! x" (1≤x≤1091≤x≤109). After that continue to solve the next test case.If you ask more than 3030 queries for one xx or make an invalid query, the interactor will terminate immediately and your program will receive verdict Wrong Answer.After printing each query do not forget to output end of line and flush the output buffer. Otherwise, you will get the Idleness limit exceeded verdict. To do flush use:  fflush(stdout) or cout.flush() in C++;  System.out.flush() in Java;  flush(output) in Pascal;  stdout.flush() in Python;  Read documentation for other languages. HacksTo use hacks, use the following format of tests:The first line should contain a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases.The first and only line of each test case should contain a single integer xx (1≤x≤1091≤x≤109) denoting the integer xx that should be guessed.
+ExampleInputCopy2
+
+1
+
+8
+
+
+1
+OutputCopy
+? 1 2
+
+? 12 4
+
+! 4
+? 2000000000 1999999999
+
+! 1000000000
+
+NoteThe first hidden number is 44, that's why the answers for the queries are:"? 1 2" — gcd(4+1,4+2)=gcd(5,6)=1gcd(4+1,4+2)=gcd(5,6)=1."? 12 4" — gcd(4+12,4+4)=gcd(16,8)=8gcd(4+12,4+4)=gcd(16,8)=8.The second hidden number is 109109, that's why the answer for the query is:"? 2000000000 1999999999" — gcd(3⋅109,3⋅109−1)=1gcd(3⋅109,3⋅109−1)=1.These queries are made only for understanding the interaction and are not enough for finding the true xx.

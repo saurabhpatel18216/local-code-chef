@@ -1,0 +1,11 @@
+There are nn heroes fighting in the arena. Initially, the ii-th hero has aiai health points.The fight in the arena takes place in several rounds. At the beginning of each round, each alive hero deals 11 damage to all other heroes. Hits of all heroes occur simultaneously. Heroes whose health is less than 11 at the end of the round are considered killed.If exactly 11 hero remains alive after a certain round, then he is declared the winner. Otherwise, there is no winner.Your task is to calculate the number of ways to choose the initial health points for each hero aiai, where 1≤ai≤x1≤ai≤x, so that there is no winner of the fight. The number of ways can be very large, so print it modulo 998244353998244353. Two ways are considered different if at least one hero has a different amount of health. For example, [1,2,1][1,2,1] and [2,1,1][2,1,1] are different.
+InputThe only line contains two integers nn and xx (2≤n≤500;1≤x≤5002≤n≤500;1≤x≤500).
+OutputPrint one integer — the number of ways to choose the initial health points for each hero aiai, where 1≤ai≤x1≤ai≤x, so that there is no winner of the fight, taken modulo 998244353998244353. 
+ExamplesInputCopy2 5
+OutputCopy5
+InputCopy3 3
+OutputCopy15
+InputCopy5 4
+OutputCopy1024
+InputCopy13 37
+OutputCopy976890680

@@ -1,0 +1,14 @@
+You have a permutation pp of integers from 11 to nn.You have a strength of ss and will perform the following operation some times:  Choose an index ii such that 1≤i≤|p|1≤i≤|p| and |i−pi|≤s|i−pi|≤s.  For all jj such that 1≤j≤|p|1≤j≤|p| and pi<pjpi<pj, update pjpj to pj−1pj−1.  Delete the ii-th element from pp. Formally, update pp to [p1,…,pi−1,pi+1,…,pn][p1,…,pi−1,pi+1,…,pn]. It can be shown that no matter what ii you have chosen, pp will be a permutation of integers from 11 to |p||p| after all operations.You want to be able to transform pp into the empty permutation. Find the minimum strength ss that will allow you to do so.
+InputThe first line of input contains a single integer nn (1≤n≤5⋅1051≤n≤5⋅105)  — the length of the permutation pp.The second line of input conatains nn integers p1,p2,…,pnp1,p2,…,pn (1≤pi≤n1≤pi≤n)  — the elements of the permutation pp.It is guaranteed that all elements in pp are distinct.
+OutputPrint the minimum strength ss required.
+ExamplesInputCopy3
+3 2 1
+OutputCopy1
+InputCopy1
+1
+OutputCopy0
+InputCopy10
+1 8 4 3 7 10 6 5 9 2
+OutputCopy1
+
+NoteIn the first test case, the minimum ss required is 11.Here is how we can transform pp into the empty permutation with s=1s=1:   In the first move, you can only choose i=2i=2 as choosing any other value of ii will result in |i−pi|≤s|i−pi|≤s being false. With i=2i=2, pp will be changed to [2,1][2,1].  In the second move, you choose i=1i=1, then pp will be changed to [1][1].  In the third move, you choose i=1i=1, then pp will be changed to [ ][ ]. It can be shown that with s=0s=0, it is impossible to transform pp into the empty permutation.

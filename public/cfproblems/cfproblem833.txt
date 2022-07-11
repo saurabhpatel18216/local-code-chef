@@ -1,0 +1,11 @@
+An array is called beautiful if all the elements in the array are equal.You can transform an array using the following steps any number of times:   Choose two indices ii and jj (1≤i,j≤n1≤i,j≤n), and an integer xx (1≤x≤ai1≤x≤ai). Let ii be the source index and jj be the sink index.  Decrease the ii-th element by xx, and increase the jj-th element by xx. The resulting values at ii-th and jj-th index are ai−xai−x and aj+xaj+x respectively.  The cost of this operation is x⋅|j−i|x⋅|j−i|.  Now the ii-th index can no longer be the sink and the jj-th index can no longer be the source.  The total cost of a transformation is the sum of all the costs in step 33.For example, array [0,2,3,3][0,2,3,3] can be transformed into a beautiful array [2,2,2,2][2,2,2,2] with total cost 1⋅|1−3|+1⋅|1−4|=51⋅|1−3|+1⋅|1−4|=5.An array is called balanced, if it can be transformed into a beautiful array, and the cost of such transformation is uniquely defined. In other words, the minimum cost of transformation into a beautiful array equals the maximum cost.You are given an array a1,a2,…,ana1,a2,…,an of length nn, consisting of non-negative integers. Your task is to find the number of balanced arrays which are permutations of the given array. Two arrays are considered different, if elements at some position differ. Since the answer can be large, output it modulo 109+7109+7.
+InputThe first line contains a single integer nn (1≤n≤1051≤n≤105) — the size of the array. The second line contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤1090≤ai≤109).
+OutputOutput a single integer — the number of balanced permutations modulo 109+7109+7.
+ExamplesInputCopy3
+1 2 3
+OutputCopy6InputCopy4
+0 4 0 4
+OutputCopy2InputCopy5
+0 11 12 13 14
+OutputCopy120
+NoteIn the first example, [1,2,3][1,2,3] is a valid permutation as we can consider the index with value 33 as the source and index with value 11 as the sink. Thus, after conversion we get a beautiful array [2,2,2][2,2,2], and the total cost would be 22. We can show that this is the only transformation of this array that leads to a beautiful array. Similarly, we can check for other permutations too.In the second example, [0,0,4,4][0,0,4,4] and [4,4,0,0][4,4,0,0] are balanced permutations.In the third example, all permutations are balanced.

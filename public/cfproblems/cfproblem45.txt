@@ -1,0 +1,28 @@
+This is an interactive problem.A city has n2n2 buildings divided into a grid of nn rows and nn columns. You need to build a road of some length D(A,B)D(A,B) of your choice between each pair of adjacent by side buildings AA and BB. Due to budget limitations and legal restrictions, the length of each road must be a positive integer and the total length of all roads should not exceed 4800048000.There is a thief in the city who will start from the topmost, leftmost building (in the first row and the first column) and roam around the city, occasionally stealing artifacts from some of the buildings. He can move from one building to another adjacent building by travelling through the road which connects them.You are unable to track down what buildings he visits and what path he follows to reach them. But there is one tracking mechanism in the city. The tracker is capable of storing a single integer xx which is initially 00. Each time the thief travels from a building AA to another adjacent building BB through a road of length D(A,B)D(A,B), the tracker changes xx to x⊕D(A,B)x⊕D(A,B). Each time the thief steals from a building, the tracker reports the value xx stored in it and resets it back to 00.It is known beforehand that the thief will steal in exactly kk buildings but you will know the values returned by the tracker only after the thefts actually happen. Your task is to choose the lengths of roads in such a way that no matter what strategy or routes the thief follows, you will be able to exactly tell the location of all the buildings where the thefts occurred from the values returned by the tracker.
+InteractionFirst read a single line containing two integers nn (2≤n≤32)(2≤n≤32) and kk (1≤k≤1024)(1≤k≤1024) denoting the number of rows and number of thefts respectively.Let's denote the jj-th building in the ii-th row by Bi,jBi,j.Then print nn lines each containing n−1n−1 integers. The jj-th integer of the ii-th line must be the value of D(Bi,j,Bi,j+1)D(Bi,j,Bi,j+1).Then print n−1n−1 lines each containing nn integers. The jj-th integer of the ii-th line must be the value of D(Bi,j,Bi+1,j)D(Bi,j,Bi+1,j).Remember that the total length of the roads must not exceed 4800048000.Then answer kk queries. First read the value xx returned by the tracker. Then print two integers denoting the row number and column number of the building where the theft occurred. After that you will be able to answer the next query (if such exists).After printing the answers do not forget to output end of line and flush the output buffer. Otherwise you will get the verdict Idleness limit exceeded. To flush the buffer, use:  fflush(stdout) or cout.flush() in C++;  System.out.flush() in Java;  flush(output) in Pascal;  stdout.flush() in Python;  Read documentation for other languages. HacksYou cannot make hacks in this problem.
+ExampleInputCopy2 4
+
+
+
+14
+
+1
+
+14
+
+3
+
+OutputCopy
+1
+8
+2 4
+
+1 2
+
+1 1
+
+1 2
+
+2 1
+
+NoteFor the sample test, n=2n=2 and k=4k=4.You choose to build the roads of the following lengths:  The thief follows the following strategy:   Start at B1,1B1,1.  Move Right to B1,2B1,2.  Move Down to B2,2B2,2.  Move Left to B2,1B2,1.  Move Up to B1,1B1,1.  Move Right to B1,2B1,2.  Steal from B1,2B1,2.  Move Left to B1,1B1,1.  Steal from B1,1B1,1.  Move Down to B2,1B2,1.  Move Right to B2,2B2,2.  Move Up to B1,2B1,2.  Steal from B1,2B1,2.  Move Left to B1,1B1,1.  Move Down to B2,1B2,1.  Steal from B2,1B2,1. The tracker responds in the following way:   Initialize x=0x=0.  Change xx to x⊕1=0⊕1=1x⊕1=0⊕1=1.  Change xx to x⊕4=1⊕4=5x⊕4=1⊕4=5.  Change xx to x⊕8=5⊕8=13x⊕8=5⊕8=13.  Change xx to x⊕2=13⊕2=15x⊕2=13⊕2=15.  Change xx to x⊕1=15⊕1=14x⊕1=15⊕1=14.  Return x=14x=14 and re-initialize x=0x=0.  Change xx to x⊕1=0⊕1=1x⊕1=0⊕1=1.  Return x=1x=1 and re-initialize x=0x=0.  Change xx to x⊕2=0⊕2=2x⊕2=0⊕2=2.  Change xx to x⊕8=2⊕8=10x⊕8=2⊕8=10.  Change xx to x⊕4=10⊕4=14x⊕4=10⊕4=14.  Return x=14x=14 and re-initialize x=0x=0.  Change xx to x⊕1=0⊕1=1x⊕1=0⊕1=1.  Change xx to x⊕2=1⊕2=3x⊕2=1⊕2=3.  Return x=3x=3 and re-initialize x=0x=0. 

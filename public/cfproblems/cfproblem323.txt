@@ -1,0 +1,17 @@
+You are given a binary string (i. e. a string consisting of characters 0 and/or 1) ss of length nn. You can perform the following operation with the string ss at most once: choose a substring (a contiguous subsequence) of ss having exactly kk characters 1 in it, and shuffle it (reorder the characters in the substring as you wish).Calculate the number of different strings which can be obtained from ss by performing this operation at most once.
+InputThe first line contains two integers nn and kk (2≤n≤50002≤n≤5000; 0≤k≤n0≤k≤n).The second line contains the string ss of length nn, consisting of characters 0 and/or 1.
+OutputPrint one integer — the number of different strings which can be obtained from ss by performing the described operation at most once. Since the answer can be large, output it modulo 998244353998244353.
+ExamplesInputCopy7 2
+1100110
+OutputCopy16
+InputCopy5 0
+10010
+OutputCopy1
+InputCopy8 1
+10001000
+OutputCopy10
+InputCopy10 8
+0010011000
+OutputCopy1
+
+NoteSome strings you can obtain in the first example:  to obtain 0110110, you can take the substring from the 11-st character to the 44-th character, which is 1100, and reorder its characters to get 0110;  to obtain 1111000, you can take the substring from the 33-rd character to the 77-th character, which is 00110, and reorder its characters to get 11000;  to obtain 1100101, you can take the substring from the 55-th character to the 77-th character, which is 110, and reorder its characters to get 101. In the second example, k=0k=0 so you can only choose the substrings consisting only of 0 characters. Reordering them doesn't change the string at all, so the only string you can obtain is 10010.

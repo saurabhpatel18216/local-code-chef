@@ -1,0 +1,14 @@
+Bakry got bored of solving problems related to xor, so he asked you to solve this problem for him.You are given an array aa of nn integers [a1,a2,…,an][a1,a2,…,an].Let's call a subarray al,al+1,al+2,…,aral,al+1,al+2,…,ar good if al&al+1&al+2…&ar>al⊕al+1⊕al+2…⊕aral&al+1&al+2…&ar>al⊕al+1⊕al+2…⊕ar, where ⊕⊕ denotes the bitwise XOR operation and && denotes the bitwise AND operation.Find the length of the longest good subarray of aa, or determine that no such subarray exists.
+InputThe first line contains a single integer nn (1≤n≤1061≤n≤106) — the length of the array.The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1061≤ai≤106) — elements of the array.
+OutputPrint a single integer — the length of the longest good subarray. If there are no good subarrays, print 00.
+ExamplesInputCopy2
+5 6
+OutputCopy2
+InputCopy3
+2 4 3
+OutputCopy0
+InputCopy6
+8 1 3 3 1 2
+OutputCopy4
+
+NoteIn the first case, the answer is 22, as the whole array is good: 5&6=4>5⊕6=35&6=4>5⊕6=3.In the third case, the answer is 44, and one of the longest good subarrays is [a2,a3,a4,a5][a2,a3,a4,a5]: 1&3&3&1=1>1⊕3⊕3⊕1=01&3&3&1=1>1⊕3⊕3⊕1=0.

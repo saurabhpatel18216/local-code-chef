@@ -1,0 +1,50 @@
+
+Read problems statements in Mandarin Chinese and Russian as well.
+
+You are given a sequence a1,a2,…,aNa1,a2,…,aN of non-negative integers. Your task is to process QQ queries of the following format: each query is described by two integers L≤RL≤R and asks to calculate the number of triples (i,j,k)(i,j,k), such that L<i<j<k<RL<i<j<k<R and aL>ai<aj>ak<aRaL>ai<aj>ak<aR.
+
+Input
+
+The first line of the input contains two integers NN and QQ denoting the size of the sequence and the number of the queries to process.
+The second line contains NN non-negative integers a1,a2,…,aNa1,a2,…,aN.
+Each of the next QQ lines contains two integers LL and RR describing the corresponding query.
+
+Output
+
+For each query, output a single line containing one integers: the number of triples as described above.
+
+Constraints
+
+1≤N≤20001≤N≤2000
+1≤Q≤1000001≤Q≤100000
+0≤ai≤1090≤ai≤109
+1≤L≤R≤N1≤L≤R≤N for each query in the input
+
+Example Input
+
+10 3
+5 5 1 1 5 5 1 1 5 5
+1 10
+2 9
+1 1
+
+Example Output
+
+8
+8
+0
+
+Explanation
+
+The following triples (i,j,k)(i,j,k) are valid for the first and the second queries:
+
+(3,5,7)(3,5,7)
+(3,5,8)(3,5,8)
+(3,6,7)(3,6,7)
+(3,6,8)(3,6,8)
+(4,5,7)(4,5,7)
+(4,5,8)(4,5,8)
+(4,6,7)(4,6,7)
+(4,6,8)(4,6,8)
+
+

@@ -1,0 +1,12 @@
+Let's call a number a binary decimal if it's a positive integer and all digits in its decimal notation are either 00 or 11. For example, 10101111010111 is a binary decimal, while 1020110201 and 787788787788 are not.Given a number nn, you are asked to represent nn as a sum of some (not necessarily distinct) binary decimals. Compute the smallest number of binary decimals required for that.
+InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000), denoting the number of test cases.The only line of each test case contains a single integer nn (1≤n≤1091≤n≤109), denoting the number to be represented.
+OutputFor each test case, output the smallest number of binary decimals required to represent nn as a sum.
+ExampleInputCopy3
+121
+5
+1000000000
+OutputCopy2
+5
+1
+
+NoteIn the first test case, 121121 can be represented as 121=110+11121=110+11 or 121=111+10121=111+10.In the second test case, 55 can be represented as 5=1+1+1+1+15=1+1+1+1+1.In the third test case, 10000000001000000000 is a binary decimal itself, thus the answer is 11.

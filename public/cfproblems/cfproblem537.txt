@@ -1,0 +1,16 @@
+Alice has just learned addition. However, she hasn't learned the concept of "carrying" fully — instead of carrying to the next column, she carries to the column two columns to the left.For example, the regular way to evaluate the sum 2039+29762039+2976 would be as shown:   However, Alice evaluates it as shown:   In particular, this is what she does:   add 99 and 66 to make 1515, and carry the 11 to the column two columns to the left, i. e. to the column "00 99";  add 33 and 77 to make 1010 and carry the 11 to the column two columns to the left, i. e. to the column "22 22";  add 11, 00, and 99 to make 1010 and carry the 11 to the column two columns to the left, i. e. to the column above the plus sign;  add 11, 22 and 22 to make 55;  add 11 to make 11.  Thus, she ends up with the incorrect result of 1500515005.Alice comes up to Bob and says that she has added two numbers to get a result of nn. However, Bob knows that Alice adds in her own way. Help Bob find the number of ordered pairs of positive integers such that when Alice adds them, she will get a result of nn. Note that pairs (a,b)(a,b) and (b,a)(b,a) are considered different if a≠ba≠b.
+InputThe input consists of multiple test cases. The first line contains an integer tt (1≤t≤10001≤t≤1000) — the number of test cases. The description of the test cases follows.The only line of each test case contains an integer nn (2≤n≤1092≤n≤109) — the number Alice shows Bob.
+OutputFor each test case, output one integer — the number of ordered pairs of positive integers such that when Alice adds them, she will get a result of nn. 
+ExampleInputCopy5
+100
+12
+8
+2021
+10000
+OutputCopy9
+4
+7
+44
+99
+
+NoteIn the first test case, when Alice evaluates any of the sums 1+91+9, 2+82+8, 3+73+7, 4+64+6, 5+55+5, 6+46+4, 7+37+3, 8+28+2, or 9+19+1, she will get a result of 100100. The picture below shows how Alice evaluates 6+46+4:   

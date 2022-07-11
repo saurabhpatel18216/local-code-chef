@@ -1,0 +1,16 @@
+Let's call a positive integer nn ordinary if in the decimal notation all its digits are the same. For example, 11, 22 and 9999 are ordinary numbers, but 719719 and 20212021 are not ordinary numbers.For a given number nn, find the number of ordinary numbers among the numbers from 11 to nn.
+InputThe first line contains one integer tt (1≤t≤1041≤t≤104). Then tt test cases follow.Each test case is characterized by one integer nn (1≤n≤1091≤n≤109).
+OutputFor each test case output the number of ordinary numbers among numbers from 11 to nn.
+ExampleInputCopy6
+1
+2
+3
+4
+5
+100
+OutputCopy1
+2
+3
+4
+5
+18

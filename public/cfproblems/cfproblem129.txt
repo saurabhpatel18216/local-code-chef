@@ -1,0 +1,19 @@
+There are n+1n+1 teleporters on a straight line, located in points 00, a1a1, a2a2, a3a3, ..., anan. It's possible to teleport from point xx to point yy if there are teleporters in both of those points, and it costs (x−y)2(x−y)2 energy.You want to install some additional teleporters so that it is possible to get from the point 00 to the point anan (possibly through some other teleporters) spending no more than mm energy in total. Each teleporter you install must be located in an integer point.What is the minimum number of teleporters you have to install?
+InputThe first line contains one integer nn (1≤n≤2⋅1051≤n≤2⋅105).The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤a1<a2<a3<⋯<an≤1091≤a1<a2<a3<⋯<an≤109).The third line contains one integer mm (an≤m≤1018an≤m≤1018).
+OutputPrint one integer — the minimum number of teleporters you have to install so that it is possible to get from 00 to anan spending at most mm energy. It can be shown that it's always possible under the constraints from the input format.
+ExamplesInputCopy2
+1 5
+7
+OutputCopy2
+InputCopy2
+1 5
+6
+OutputCopy3
+InputCopy1
+5
+5
+OutputCopy4
+InputCopy1
+1000000000
+1000000043
+OutputCopy999999978

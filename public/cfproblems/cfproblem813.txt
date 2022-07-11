@@ -1,0 +1,11 @@
+This time around, Baby Ehab will play with permutations. He has nn cubes arranged in a row, with numbers from 11 to nn written on them. He'll make exactly jj operations. In each operation, he'll pick up 22 cubes and switch their positions.He's wondering: how many different sequences of cubes can I have at the end? Since Baby Ehab is a turbulent person, he doesn't know how many operations he'll make, so he wants the answer for every possible jj between 11 and kk.
+InputThe only line contains 22 integers nn and kk (2≤n≤1092≤n≤109, 1≤k≤2001≤k≤200) — the number of cubes Baby Ehab has, and the parameter kk from the statement.
+OutputPrint kk space-separated integers. The ii-th of them is the number of possible sequences you can end up with if you do exactly ii operations. Since this number can be very large, print the remainder when it's divided by 109+7109+7.
+ExamplesInputCopy2 3
+OutputCopy1 1 1 
+InputCopy3 2
+OutputCopy3 3 
+InputCopy4 2
+OutputCopy6 12 
+
+NoteIn the second example, there are 33 sequences he can get after 11 swap, because there are 33 pairs of cubes he can swap. Also, there are 33 sequences he can get after 22 swaps:  [1,2,3][1,2,3],  [3,1,2][3,1,2],  [2,3,1][2,3,1]. 

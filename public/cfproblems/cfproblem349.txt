@@ -1,0 +1,14 @@
+Polycarp has an integer nn that doesn't contain the digit 0. He can do the following operation with his number several (possibly zero) times: Reverse the prefix of length ll (in other words, ll leftmost digits) of nn. So, the leftmost digit is swapped with the ll-th digit from the left, the second digit from the left swapped with (l−1l−1)-th left, etc. For example, if n=123456789n=123456789 and l=5l=5, then the new value of nn will be 543216789543216789.Note that for different operations, the values of ll can be different. The number ll can be equal to the length of the number nn — in this case, the whole number nn is reversed.Polycarp loves even numbers. Therefore, he wants to make his number even. At the same time, Polycarp is very impatient. He wants to do as few operations as possible.Help Polycarp. Determine the minimum number of operations he needs to perform with the number nn to make it even or determine that this is impossible.You need to answer tt independent test cases.
+InputThe first line contains the number tt (1≤t≤1041≤t≤104) — the number of test cases.Each of the following tt lines contains one integer nn (1≤n<1091≤n<109). It is guaranteed that the given number doesn't contain the digit 0.
+OutputPrint tt lines. On each line print one integer — the answer to the corresponding test case. If it is impossible to make an even number, print -1.
+ExampleInputCopy4
+3876
+387
+4489
+3
+OutputCopy0
+2
+1
+-1
+
+NoteIn the first test case, n=3876n=3876, which is already an even number. Polycarp doesn't need to do anything, so the answer is 00.In the second test case, n=387n=387. Polycarp needs to do 22 operations: Select l=2l=2 and reverse the prefix 38–––738_7. The number nn becomes 837837. This number is odd. Select l=3l=3 and reverse the prefix 837––––837_. The number nn becomes 738738. This number is even.It can be shown that 22 is the minimum possible number of operations that Polycarp needs to do with his number to make it even.In the third test case, n=4489n=4489. Polycarp can reverse the whole number (choose a prefix of length l=4l=4). It will become 98449844 and this is an even number.In the fourth test case, n=3n=3. No matter how hard Polycarp tried, he would not be able to make an even number.

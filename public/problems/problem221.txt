@@ -1,0 +1,59 @@
+
+Read problem statements in Mandarin, Bengali, Russian, and Vietnamese as well.
+
+You are given an integer KK and a tree of size NN, rooted at node 11. In one operation, you can either select a node of the tree and color its entire subtree or create a new (uncolored) copy of the given tree. Find the minimum number of operations required so that the total number of colored nodes among all trees is exactly KK.
+
+Input
+
+The first line contains an integer TT, denoting the number of test cases. Then TT test cases follow.
+For each test case, the first line contains two integers NN and KK, the size of the given tree and the number of nodes to be colored, respectively.
+The next line contains N−1N−1 integers p2,…,pnp2,…,pn, where pipi is the parent of node ii.
+
+Output
+
+For each testcase, output a single integer: the minimum number of operations required to color exactly KK total nodes.
+
+Constraints
+
+1≤T≤4001≤T≤400
+1≤N≤5⋅1041≤N≤5⋅104
+1≤K≤1031≤K≤103
+1≤pi≤N1≤pi≤N
+The input describes a valid tree rooted at node 11
+The sum of N⋅KN⋅K over all test cases does not exceed 107107
+
+Subtasks
+
+Subtask 1 (10 points): The tree is a simple path
+Subtask 2 (35 points): 1≤N,K≤2001≤N,K≤200 and the sum of N⋅KN⋅K does not exceed 4⋅1044⋅104
+Subtask 3 (55 points): Original constraints
+
+Sample Input
+
+2
+3 5
+1 1
+4 6
+1 2 2
+
+Sample Output
+
+4
+3
+
+Explanation
+
+For the first test case:
+
+Operation 11: The subtree of node 11 is colored (coloring a total of 33 nodes).
+Operation 22: A new copy of tree is generated.
+Operation 33: The subtree of node 22 of the new tree is colored.
+Operation 44: The subtree of node 33 of the new tree is colored.
+
+For the second test case:
+
+Operation 11: The subtree of node 22 is colored (coloring a total of 33 nodes).
+Operation 22: A new copy of tree is generated.
+Operation 33: The subtree of node 22 is colored (coloring a total of 33 more nodes).
+
+

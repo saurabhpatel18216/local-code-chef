@@ -1,0 +1,41 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+
+Chef is given a sequence of prime numbers A1,A2,…,ANA1,A2,…,AN. This sequence has exactly 2N2N subsequences. A subsequence of AA is good if it does not contain any two identical numbers; in particular, the empty sequence is good.
+
+Chef has to find the number of good subsequences which contain at most KK numbers. Since he does not know much about subsequences, help him find the answer. This number could be very large, so compute it modulo 1,000,000,0071,000,000,007.
+
+Input
+
+The first line of the input contains two space-separated integers NN and KK.
+The second line contains NN space-separated integers A1,A2,…,ANA1,A2,…,AN.
+
+Output
+
+Print a single line containing one integer ― the number of good subsequences with size at most KK, modulo 1,000,000,0071,000,000,007.
+
+Constraints
+
+1≤K≤N≤1051≤K≤N≤105
+2≤Ai≤8,0002≤Ai≤8,000 for each valid ii
+
+Subtasks
+
+Subtask #1 (40 points): A1,A2,…,ANA1,A2,…,AN are pairwise distinct
+
+Subtask #2 (60 points): original constraints
+
+Sample Input 1
+
+5 3
+2 2 3 3 5
+
+Sample Output 1
+
+18
+
+Explanation
+
+There is 11 good subsequence with length 00, 55 good subsequences with length 11, 88 good subsequences with length 22 and 44 good subsequences with length 33.
+
+

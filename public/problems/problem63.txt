@@ -1,0 +1,65 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+
+Chef is trying to open the oven in his kitchen to cook some cookies. However, the oven is special ― you need a password to open it.
+
+Let's define a function f(x)f(x) for a positive integer xx as follows:
+
+Consider the decimal representation of xx (without leading zeros). Split it into the minimum number of contiguous subsequences of digits such that in each subsequence, all digits are identical.
+For each subsequence, look at its position in the original decimal representation of xx. Let's say that the most significant digit it contained was the ee-th digit, where e=0e=0 corresponds to the least significant digit of xx. For example, 388,822,442388,822,442 can be split into subsequences "3", "888", "22", "44", "2", where e=7e=7 for the sequence "888" and e=4e=4 for the sequence "22".
+The value of a subsequence which contains a digit dd repeated one or more times is d⋅10ed⋅10e.
+f(x)f(x) is the sum of values of these subsequences. For example, f(388,822,442)=3⋅108+8⋅107+2⋅104+4⋅102+2⋅100f(388,822,442)=3⋅108+8⋅107+2⋅104+4⋅102+2⋅100.
+
+The oven has a screen which displays two long integers LL and RR (with NLNL and NRNR digits respectively, without leading zeros). The password is the sum of f(x)f(x) for each xx between LL and RR inclusive.
+
+Chef does not have a lot of time, so he asks for your help. Please find the password for the oven so that he can start cooking as fast as possible. Since this number could be very large, compute it modulo 109+7109+7.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains two space-separated integers NLNL and LL.
+The second line contains two space-separated integers NRNR and RR.
+
+Output
+
+For each test case, print a single line containing one integer ― the password.
+
+Constraints
+
+1≤T≤101≤T≤10
+1≤NL,NR≤1051≤NL,NR≤105
+1≤L≤R<10100,0001≤L≤R<10100,000
+LL and RR do not contain leading zeros
+
+Subtasks
+
+Subtask #1 (10 points):
+
+R−L≤105R−L≤105
+R<1018R<1018
+
+Subtask #2 (20 points): R<1018R<1018
+
+Subtask #3 (70 points): original constraints
+
+Sample Input 1
+
+3
+1 9
+2 97
+1 8
+2 12
+1 1
+1 8
+
+Sample Output 1
+
+4681
+49
+36
+
+Explanation
+
+Example case 2: f(8)=8,f(9)=9,f(10)=10,f(11)=10,f(12)=12f(8)=8,f(9)=9,f(10)=10,f(11)=10,f(12)=12
+
+

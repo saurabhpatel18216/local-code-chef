@@ -1,0 +1,1240 @@
+Chef and String - XYSTR
+Count Subarrays - SUBINC
+Alternating subarray prefix - ALTARAY
+Chef and Wedding Arrangements - CHEFWED
+Chef and Frogs - FROGV
+Watching CPL - WIPL
+N different palindromes - NDIFFPAL
+(CH) Bear and Sorted Rows - SORTROW
+Gravity Guy - GRGUY
+Decomposition Reaction - DCP
+Chef and String - CHRL2
+Sherlock and the Grid - GRID
+Count Substrings - STRSUB
+XOR with Subset - XORSUB
+Subtree Removal - SUBREM
+Pizza Delivery - DBOY
+Car-pal Tunnel - CARPTUN
+Dessert Wizard - DELISH
+Billiards - CDQU5
+Chef and Good Subsequences - GDSUB
+Delivery Man - TADELIVE
+Choosing Problems - MCO16503
+Way Out - WOUT
+String Merging - STRMRG
+Aujasvit and the Circle Game - CIRCLEGAME
+Polo the Penguin and the Test - PPTEST
+Total Diamonds - VK18
+Chef and Way - CHRL4
+Bhallaladeva - AMR15D
+Little Elephant and T-Shirts - TSHIRTS
+Art in Digital Age - SMPAINT
+Byteland Tours - TOURBUS
+Spheres - KSPHERES
+Barcelona Gameplay Tactics - FCBARCA
+Merging Binary Strings - MERGEBS
+Count Sequences - CSEQ
+Subtraction Game 2 - AMSGAME2
+K-Subarrays - CHESUB
+Alok-nath and His Sanskars - SANSKAR
+Subarray LCM - SUBLCM
+Steady tables - STDYTAB
+Chef and Big Soccer - CHEFSOC2
+Chef and Strange Addition - CHEFADD
+Save The Princess - SHIRO
+MasterChef - MCHEF
+Break Up - ZCO15001
+Maxim and Progressions - MAXPR
+Chef and Rectangle Array - CHSQARR
+Maximum Topological Sort - MAXTOPO
+Boolean Game - BOOLGAME
+W String - WSTRING
+Swapping - SFRV
+Washing Windows - APARTS
+Random decreasing function - RDF
+Subsequence Frequency Counting - SUBSFREQ
+Little Elephant and Painting - LEPAINT
+List Editing - EDITLIST
+Player - RRPLAYER
+Circular Merging - CIRMERGE
+Tree Permutations - TREEPERM
+Beautiful Bricks - BBRICKS
+Gift and Chef - GIFTCHEF
+Encoding - ENCODING
+Finding Hardest Sum Value - KOL15B
+The Number Of Solutions - CNTSOLS
+Lock-Free Stack - LFSTACK
+Smallest Beautiful Number - LSTBTF
+Chef and Filters - CHEFFILT
+Little Elephant and Mouses - LEMOUSE
+Bamboo Art - ZCO16002
+Chef and Bitwise OR Operation - CHEFAOR
+Choosing from Buckets - BUCKETS
+Launch Tower - ACM14AM3
+Chef and Words - CHEFWORD
+Change the Signs - CHSIGN
+Chef and math - CHEFMATH
+Chef and Magic Arrays - MARRAYS
+Chef And Fibonacci Array - CHEFFA
+Hiring Workers - HIRINGWO
+Need More Diamonds - DIAMOND
+Online Shopping - COUPON
+Inversion sorting - CARLOS
+Insanely Hard School Exams - ACCBIP
+Chef and Bracket-Pairs - CHEFBR
+Chef and Segments - CHSGMNTS
+(Challenge) Nanobots - NBOTS
+Lucky Driving - LUKYDRIV
+Construct Array - CARR
+Strategy for the World Cup - WORLDCUP
+Beautiful Subsequence - BEAUSUB
+Cards, bags and coins - ANUCBC
+Mountain Holidays 2 - MOU2H
+Chef and Gift - CHGIFT1
+The Lost Arithmetic Sequences - TAASEQ
+Mex Subsequence - MEXSUB
+Family Tree - FAMTREE
+Expected Change - EXPCH
+Matrix - MATRIX2
+Little Elephant and Balloons - LEBALONS
+Chef and Two String - CHEFTWOS
+Empire Business  - SOLDVAL
+Music & Lyrics - LYRC
+Churu and lost string - CLOST
+Kira Loves Palindromes - KLPM
+Longest Increasing Subsequences - MAKELIS
+Time to Study Graphs with Chef - CHEFGRPH
+Puppy and Board - TUZGMBR
+Meteor - METEORAK
+Domino Solitaire - DOMSOL
+Coloring A Tree - COLTREE
+Mr Thakkar want to go dream land - COAD03
+Divide Candies - EQDIV
+Chef and Inflation - CHINFL
+Sereja and LCM - SEALCM
+Fibonacci concatenation - FIBOSEQ
+Even Sequence - EVSTR
+Counting Strings - TACNTSTR
+Purify It - PRFYIT
+(Challenge) Dynamic Hull - DYNHUL
+Robot Walk - RWALK
+Celebrity In Trouble - SCC5
+Digits Cannot Separate - DIGITSEP
+Sereja and Arrays - SEARRAYS
+Nuttela Path Unit - ENOC1
+Chef and Roads - CL16BF
+Sequence Containment - KGP14B
+Hit the Coconuts - CCC
+Jeremy gets a gift - CLLEXO
+Book Game with Chef - ANUBGC
+Maximum Plus - PLUS
+Super Hashing - AUHASH
+Chef and Numbers - CHRL3
+Chef and Soccer - CHEFSOC
+Method Resolution Order - MRO
+Two Coins - TWOCOINS
+Little Elephant and Blocks - LEBLOCKS
+Chefs Homework Dilemma - HMWPRB
+Telephone Network - TELNET
+Music Shopping - SONGSHOP
+Candy Collecting Game - CANDYGAM
+Fill The Boxes - FILLBOX
+Parenthesis with Maximum Sum Subarray - SUBARRAY
+Jump mission - JUMP
+Total Palindromic Numbers - AOPN
+Dividing Products - DIVPRO
+Sealing up - SEALUP
+Reign 2 - REIGN2
+Array Operation - SPIT04
+Marble Game - ENC2020A
+Completing favorite game - FAVGAME
+Sereja and Equality - SEAEQ
+Akshay and Teacher - ATCH
+Too Much Sweetness - ABX02
+Matching Parenthesis - COCA2003
+CAO Stage-3 - CAOS3
+Sereja and Tree 2 - SEATR2
+Xor Decomposition - XDCOMP
+Learning Dishes - UPDOTR
+Tennis Tournament - TOURNAM
+Chef and Girls - CHEFGIRL
+Array Division - DIVIDEARR
+Inverse Knapsack - INVSACK
+Subarray Sum - SUMSUB
+Grid Path - GRIDPA
+Girl Friend and String Gift - CHGLSTGT
+Visiting Friends - MCO16405
+Polo the Penguin and the Tree - PPTREE
+Professor on a Trip - PROFTRIP
+Sereja and Game - SEAGM
+Jimma and Chingam - CHN15C
+Expected GCD - EXPGCD
+Cosmic Temple - COSTEMP
+The In-XOR-able Task - XOXO
+Knight Covering - KNICOV
+Cardinality - CARDINAL
+Random Rudreshwar - ANURRZ
+Chefina on a Trip - CHEFTRIP
+Permutation Split - PERMSPL
+Tree Upshot - TREUPS
+Sereja and GCD 2 - SEAGCD2
+The Christmas Gift - KOL1502
+Maximise the Minimum - MAXMINK
+Chef And Hungry Birds - HBIRD
+Jealous Numbers - NUMSET
+Inversions in Permutations - KPERM
+Lazy Chozi - SS1
+Polynomial Partition Function - PARPOLY
+Ish Food Distribution - ISHGRAPH
+Escape One - CHEFZRON
+Number of Paths - NUMPATH
+Favourite Numbers - FAVNUM
+Flash vs QuickSilver - FLAASH
+Maximize the Tax - MAXTAX
+TWO SACKS OF HAPPINESS - TSOH
+Chef and Pepperoni Pizza Again - PEPPERA
+Tree Height - MCO16403
+Up for a Game - CLGAME
+How to Write a Message - STRAB
+Abdullah and Toll Discounts - ABDTOLL
+Maximum Score - MAXSCOR
+Little Elephant and Magic - LEMAGIC
+Mathison and the teleportation game - MATTEG
+Traveling Plan - TABUS
+Lucky Fives - LFIVES
+Node Codon - CODON
+Vaibhav and Ministers - VAIMIN
+FastFood Combos - FFCOMB
+The Minimum Game - TREEMIN
+Interview Scheduling - KGP14D
+Reach The Temple - TEMPLE
+Optimal Partition - KGP16F
+Minimalistic - RDC2
+Chef and Combinatorics - GERALD05
+Profitable Paths 2 - PRT2
+Company and Club Hierarchies - COMPCLUB
+Make array great again - MAGA
+Hopscotch - GIFTPAIRS
+Chef And Division - CEFDIV
+Binary Land - BINLAND
+Battle Royale - BTTLRYL
+Node Marking - NDMRK
+Teddy and his Mission - LAEDDIS
+Sereja and Bubble Sort - SEABUB
+Campus Drive - CPC4
+Is it Sorted or Not, That is the Question - GRUSORT
+Blackjack - BLKJK
+Fluffy and Flippy Bird - MCO16303
+Chef and Amazingness of Numbers - CHEFNUM
+Exploring Undiscovered Planets - TRIPPY
+Torque and edges - TRANDED
+Wanderer - WNDR
+Prefix And - ANDPREF
+Neil and his Binary Tree - GOODBINTREE
+Samosa Bhai and his Courier Company - KOL1506
+Candidate walk - LCH15CD
+Counting Lights - MCO16105
+Zombinatorial - FOMBRO
+Partition into Permutations - PERMPART
+Jump & Reach - JUMPLS1
+Tree Distance Sum - TREEDIST
+Fluffy has a Robot - MCO16402
+Animesh practices some programming contests - CHN03
+Spectacular Activity Selection - SPECTAC
+Chef Queries - CDVA1605
+K-Tuple Tree - KTTREE
+Permutations - DIVPERMS
+Devu and Locks - DEVLOCK
+Snakes capturing the Mongoose Cities - CAPTCITI
+Joined Subarrays on Tree - JTSARTR
+After the War, Aid - SOPC011
+Sereja and Stones - SEASTONE
+Maximizing Marks - EXAM
+Chess Kings Chasing Game - CKCGAME
+And Tuples - ANDTUPLE
+Tree Unattractiveness - TREEUNAT
+Chef Rami and Inventions - CHEFRAMI
+Grumpy Granny - GRUMPMA
+Black and Red vertices of Tree - BLREDSET
+Little Elephant and Colored Coins - LECOINS
+Chef and Average on a Tree - L56AVG
+Lazy Machine - LAZYMACHINE
+Updating Edges on Trees - UPDTREE
+Chef and Chefness - CSUBSEQ
+Chef and Jail - CHFOP
+Shinigami and Apples - SHINAPP
+Dakimakura Distribition - DAKIMAKU
+Agents on mission - PERRY
+Chef and Gordon Ramsay 2 - CHGORAM2
+Lousy Game - BUG2K16C
+Game of Length - LENGAME
+Knight Moving - KNGHTMOV
+Andrew and the Balls - AMBALLS
+Devus and their voting system - DEVVOTE
+git - AMGIT
+Chef and Sad Pairs - SADPAIRS
+Playing World War II - KOL16A
+Disconnecting Cities - DICITIES
+Hiring Chefs - HIRING
+Magical Subsequence - MSUB121
+Mumbai N00B - VIACST
+Queries with GCD - GQR
+Count The Arrays - COUARR
+Cool Dude Laxman - ACM14KG5
+Dearrangement Error - DEARRERR
+Valet Parking - VALET
+Pilgrimage - KGP14H
+Arrays Sum - ARRAYSUM
+Tree and Extra Edge - TREEDGE
+GCD Partitions - ECJAND
+Drawing Lines - DLINE
+Alice And The Coin Game - COINGME
+Chef and a New Home - COCR103
+Numbers Game - LIKECS04
+XOR Sum - AMXOR
+Party Planning - INVITES
+Elevator - ELEVATR
+Weasel finds Staircase - WEASELSC
+Sereja and BOX - SEABOX
+Deja Vu - DEJAVU
+Bear and Bribing Tree - BRIBETR
+Misha and Gym - MGCHGYM
+Pyramid of string - PATTERNG
+Linear Combination - MODPARRS
+Digit Bounded Numbers - INTERVCH
+Will and Closed Set - CHEFCLOS
+Reap What You Sow - SOPC012
+Slingshot - SLING
+Hard Disk - KAN13A
+Solving the Practice Contest - ACM14KN2
+Three Bikes - THREEBIKES
+Modular Circular Permutations - MODCIRC
+Kejriwal ki Jhadu - CRANBROM
+Power Sums - POWSUMS
+Weird Coins - SPAR3
+Gun Distribution - GUNDIS
+Partitioning Vijju - VIJJUPAR
+Saitama got a date! - ECJAN20G
+Sequence Transmission - AMSEQT
+Stand Up - STANDUP
+Chef and LCS - CHEFKLCS
+Lenient Vertex Cover
+Moving Chips
+Dog Walking
+Binary String
+Robots
+Minimums and Maximums
+Formalism for Formalism
+Typical Party in Dorm
+Toss a Coin to Your Graph...
+Rooks Defenders
+Stone Age Problem
+AvtoBus
+Tokitsukaze and Good 01-String (hard version)
+Tokitsukaze and Good 01-String (easy version)
+Tokitsukaze and All Zero Sequence
+Tokitsukaze and Gems
+Tokitsukaze and Beautiful Subsegments
+Tokitsukaze and Permutations
+Tokitsukaze and Two Colorful Tapes
+Tokitsukaze and Meeting
+Tokitsukaze and Strange Inequality
+Maximum Crossings (Hard Version)
+Maximum Crossings (Easy Version)
+White-Black Balanced Subtrees
+Longest Strike
+Eating Queries
+X-Sum
+Most Similar Words
+Equal Candies
+Lucky?
+Sorting Pancakes
+Vlad and Unfinished Business
+Replace With the Previous, Minimize
+Vertical Paths
+Detective Task
+Make It Increasing
+Food for Animals
+Remove Directed Edges
+Desktop Rearrangement
+Breaking the Wall
+A-B-C Sort
+Infinite Replacement
+Dictionary
+Number Transformation
+Anti-Theft Road Planning
+Power or XOR?
+Lost Arithmetic Progression
+Palindrome Basis
+A Perfectly Balanced String?
+Subtle Substring Subtraction
+PermutationForces
+Zigu Zagu
+Cross Xor
+Checker for Array Shuffling
+Array Shuffling
+notepad.exe
+Cyclic Rotation
+Unequal Array
+I love AAAB
+Log Chopping
+Permutation Counting
+Preorder
+Insert a Progression
+Dolce Vita
+Consecutive Points Segment
+String Building
+Jee, You See?
+Hemose on the Tree
+Very Suspicious
+Where is the Pizza?
+Dorms War
+Prof. Slim
+Maximal AND
+Fall Down
+Eating Candies
+2-Letter Strings
+Colorful Stamp
+Odd/Even Increments
+Triple
+Division?
+Social Distance
+Direction Change
+Yin Yang
+Centroid Probabilities
+Edge Elimination
+Half Queen Cover
+Optimal Partition
+Make it Increasing
+Labyrinth
+Kingdom Partition
+Job Lookup
+Interactive Treasure Hunt
+Heroes of Might
+Global Warming
+Fancy Stack
+Even Split
+Deletive Editing
+Connect the Points
+Budget Distribution
+Admissible Map
+MinimizOR
+GCD Guess
+Tree Infection
+Array Cloning Technique
+GCD vs LCM
+Cross-Language Program
+Six Characters
+In Every Generation...
+Are You Safe?
+Is it rated - 3
+Pōja Verdon
+Mike's Sequence
+Who Tested?
+Circular Maze
+Drone Photo
+Bottle Arrangements
+Il Derby della Madonnina
+Pandemic Restrictions
+Training Camp
+Ice Cream Shop
+Boundary
+Gastronomic Event
+Antennas
+Round Table
+Evolution of Weasels
+European Trip
+Toys
+Organizing SWERC
+Teleporters
+Narrow Components
+Progressions Covering
+Water the Trees
+Getting Zero
+Array Balancing
+Promising String (hard version)
+Promising String (easy version)
+Matrix and Shifts
+Maximum Product Strikes Back
+Get an Even String
+Vlad and Candies
+Vasya and Coins
+Tree and Permutation Game
+AND-MEX Walk
+Reverse Sort Sum
+Line Empire
+Bit Flipping
+Red Versus Blue
+Juju and Binary String
+Gojou and Matrix Game
+388535 (Hard Version)
+388535 (Easy Version)
+Shinju and the Lost Permutation
+Marin and Anti-coprime Permutation
+Marin and Photoshoot
+Words on Tree
+Star MST
+For Gamers. By Gamers.
+Bracket Sequence Deletion
+XY Sequence
+Integer Moves
+Neighbour Ordering
+Equal LCM Subsets
+Cycle Palindrome
+Parametric MST
+Equal Tree Sums
+K-good
+Make Equal With Mod
+Subtract Operation
+Good Pairs
+Three Minimums
+Snowy Mountain
+Minimal String Xoration
+Arithmetic Operations
+Potion Brewing Class
+Alice and the Cake
+Prefix Removals
+Maximum Cake Tastiness
+Tower Defense
+Sum of Matchings
+Nearest Excluded Points
+Fault-tolerant Network
+Prove Him Wrong
+Playoff
+Counting Shortcuts
+Vitaly and Advanced Useless Algorithms
+Rescheduling the Exam
+Twist the Permutation
+Weight of the System of Nested Segments
+DIV + MOD
+Deletions of Two Adjacent Letters
+Game of Ball Passing
+Game
+Two Avenues
+Air Reform
+Serious Business
+Tyler and Strings
+Integral Array
+Weird Sum
+Madoka and Laziness
+Madoka and the Sixth-graders
+Madoka and the Best School in Russia
+Madoka and Childish Pranks
+Madoka and the Elegant Gift
+Madoka and Math Dad
+Playing Around the Table
+Power Board
+Weight the Tree
+Factorials and Powers of Two
+Quality vs Quantity
+Square Counting
+Basis
+Expand the Path
+Cross Coloring
+Increase Subarray Sums
+Anti-Fibonacci Permutation
+Doors and Keys
+Power Walking
+Hard Way
+Covering Circle
+Special Positions
+Two Arrays
+Anonymity Is Important
+Repetitions Decoding
+Great Sequence
+Treasure Hunt
+Treasure Hunt
+Treasure Hunt
+Treasure Hunt
+Treasure Hunt
+Treasure Hunt
+Treasure Hunt
+Treasure Hunt
+Treasure Hunt
+Treasure Hunt
+Treasure Hunt
+Two Posters
+Colorful Operations
+Big Brush
+Inversion Graph
+Odd Swap Sort
+Reverse
+Minimize Inversions Number
+Birthday
+Towers
+Best Pair
+Yet Another Minimization Problem
+Andrew and Stones
+MEX and Array
+Sorting Parts
+Closest Pair
+Cars
+Infinite Set
+Differential Sorting
+Avoid Local Maximums
+Min Or Sum
+Fibonacci Additions
+Fair Share
+Finding Zero
+OKEA
+Fortune Telling
+Reverse and Concatenate
+Perfect Matching
+Spanning Tree Queries
+Make Them Equal
+Kill the Monster
+Minority
+Div. 7
+Distance Tree (hard version)
+Distance Tree (easy version)
+New Year Concert
+Strange Test
+Roof Construction
+ABC
+Fun with Even Subarrays
+Min Max Swap
+Making It Bipartite
+Expected Components
+Flipping Range
+Paint the Middle
+Range and Partition
+And Matching
+GCD Arrays
+Download More RAM
+Spaceship Crisis Management
+Groceries in Meteor Town
+Game on Sum (Hard Version)
+Game on Sum (Easy Version)
+Grid Xor
+Peculiar Movie Preferences
+Meximum Array
+Not Splitting
+Not Escaping
+Not Adding
+Not Assigning
+Not Sitting
+Not Shading
+A Random Code Problem
+Black and White Tree
+Martial Arts Tournament
+Monsters And Spells
+Minor Reduction
+Equidistant Letters
+Cats on the Upgrade (hard version)
+Cats on the Upgrade (easy version)
+Binary Spiders
+Road Optimization
+Elementary Particles
+Ancient Civilization
+MinOr Tree
+Interacdive Problem
+Masha-forgetful
+Palindromes Coloring
+Division by Two and Permutation
+Make AP
+Plus One on the Subset
+Middle Duplication
+Robot Cleaner Revisit
+Balanced Stone Heaps
+Game on Ranges
+Robot Cleaner
+Quadratic Set
+Math Test
+Shuffle
+Set or Decrease
+Berland Music
+Construct a Rectangle
+Two Sequences
+Trains and Airplanes
+Weighted Increasing Subsequences
+Strange Instructions
+New School
+The Winter Hike
+Hidden Permutations
+Integers Shop
+Stable Arrangement of Rooks
+Subsequences Galore
+Bipartite Array
+Replace the Numbers
+Exact Change
+BA-String
+Triangles on a Rectangle
+Equal or Not Equal
+Permutation and Queries
+Escape The Maze (hard version)
+Escape The Maze (easy version)
+Weights Assignment For Tree Edges
+Polycarp Recovers the Permutation
+Team Composition: Programmers and Mathematicians
+Make Even
+Mashtali vs AtCoder
+Squid Game
+AmShZ Wins a Bet
+Mashtali: a Space Oddysey
+AmShZ and G.O.A.T.
+Not Quite Lee
+Keshi Is Throwing a Party
+Kalindrome Array
+Anti Light's Cell Guessing
+Pushing Robots
+A Stroll Around the Matrix
+Interesting Sections
+William The Oblivious
+Social Network
+Complex Market Analysis
+William the Vigilant
+Divide and Multiply
+Alphabetic Tree
+MEX counting
+The Cells on the Paper
+Dominoes
+Game Master
+Build the Permutation
+Find Array
+Banquet Preparations 2
+Banquet Preparations 1
+Robot on the Board 2
+Robot on the Board 1
+Blue-Red Permutation
+Minimum Extraction
+Odd Grasshopper
+Linear Keyboard
+Tree Queries
+Arena
+Red-Blue Matrix
+Banknotes
+Update Files
+AB Balance
+PalindORme
+Array Equalizer
+Treelabeling
+Dominant Character
+Reverse Sort
+A.M. Deviation
+XOR Specia-LIS-t
+Era
+October 18, 2017
+A Perfect Problem
+Artistic Partition
+Extreme Extension
+Moderate Modular Mode
+Di-visible Confusion
+Divine Array
+Two Subsequences
+Two Sorts
+Phys Ed Online
+Difficult Mountain
+Optimal Insertion
+Frog Traveler
+Array Elimination
+Robot Factory
+Party Organization
+Array Game
+Bob's Beautiful Array
+Desert
+Hidden Fortress
+Shortest path
+Mars
+Two Arrays
+Bubble Popping
+Bubble Strike
+Restaurant Game
+Weights
+The Sum of Good Numbers
+RBS
+Staircases
+Training Session
+Delete Two Elements
+Groups
+Computer Game
+Ideal Farm
+Rubik's Cube Coloring (hard version)
+Rubik's Cube Coloring (easy version)
+The Number of Imposters
+Make Them Equal
+Special Numbers
+Consecutive Sum Riddle
+Changing Brackets
+Red-Black Number
+Gardener and Tree
+Half of Same
+All are Same
+Save More Mice
+Make it Divisible by 25
+Elections
+Alice and Recoloring 2
+Alice and Recoloring 1
+Bored Bakry
+Hemose in ICPC ?
+Bakry and Partitioning
+Hemose Shopping
+Gamer Hemose
+Jumping Through the Array
+Omkar and Mosaic
+Poachers
+Non-equal Neighbours
+Frequency Queries
+Yet Another Sorting Problem
+Minimize Distance
+Array Eversion
+Life of a Flower
+Eligible Segments
+Strange LCS
+Game with Stones
+Guess the Permutation
+Two Arrays
+Coloring Rectangles
+Mathematical Addition
+Omkar and Tours
+Omkar and Time Travel
+Defender of Childhood Dreams
+Moment of Bloom
+Omkar and the Meaning of Life
+Omkar and Determination
+Omkar and Heavenly Tree
+Windblume Ode
+Kuzya and Homework
+Korney Korneevich and XOR (hard version)
+Korney Korneevich and XOR (easy version)
+Pchelyonok and Segments
+Vupsen, Pupsen and 0
+Grandma Capa Knits a Scarf
+Luntik and Subsequences
+Luntik and Concerts
+Diameter of Graph
+CQXYM Count Permutations
+Problems for Codeforces
+Railway Construction
+Subsequence
+Train Maintenance
+Mathematics Curriculum
+Portal
+Minimal Coverage
+Array Stabilization (AND version)
+Array Optimization by Deque
+Permutation Minimization by Deque
+Productive Meeting
+Ticks
+Shifting Sort
+Casimir's String Solitaire
+The Mind
+Labyrinth
+Kingdom of Islands
+Just Kingdom
+Interactive Rays
+Higher Order Functions
+Game of Chance
+Framing Pictures
+Easy Scheduling
+Dragon Curve
+Cactus Lady and her Cing
+Building Forest Trails
+Anti-Tetris
+Communication Routing Challenge
+Managing Telephone Poles
+Longest Array Deconstruction
+Knitting Batik
+Jeopardy of Dropped Balls
+Illusions of the Desert
+Holiday Wall Ornaments
+GCD Festival
+A Battle Against a Dragon
+Kotlinforces
+Fix the String
+Sweepstake
+Rhyme
+Epic Novel
+Sequence of Comparisons
+Palindromic Hamiltonian Path
+Playoff Restoration
+Inconvenient Pairs
+Jury Meeting
+Chess Tournament
+Balanced Substring
+One-Four Overload
+Non-Decreasing Dilemma
+Expression Evaluation Error
+Carrying Conundrum
+MEXor Mixup
+Domino Disaster
+Xor-quiz
+Four Vertices
+Points Movement
+Buds Re-hanging
+Seating Arrangements (hard version)
+Seating Arrangements (easy version)
+MAX-MEX Cut
+MIN-MEX Cut
+Median Maximization
+Tubular Bells
+Rescue Niwen!
+Two Hundred Twenty One (hard version)
+Two Hundred Twenty One (easy version)
+Rings
+Scenes From a Memory
+The Miracle and the Sleeper
+Up the Strip (simplified version)
+Deep Down Below
+Simply Strange Sort
+Nearest Beautiful Number (hard version)
+Nearest Beautiful Number (easy version)
+Polycarp and String Transformation
+Make a Power of Two
+Infinity Table
+Who's Opposite?
+Dislike of Threes
+Mocha and Stars
+Mocha and Diana (Hard Version)
+Mocha and Diana (Easy Version)
+Mocha and Hiking
+Mocha and Red and Blue
+Mocha and Math
+Strange Sort
+Down Below
+Top-Notch Insertions
+Bottom-Tier Reversals
+Up the Strip
+Charmed by the Game
+Assiut Chess
+Ezzat and Grid
+Moamen and XOR
+Moamen and k-subarrays
+Ezzat and Two Subsequences
+DIY Tree
+Gates to Another World
+Sports Betting
+Equilibrium
+Take a Guess
+Compressed Bracket Sequence
+Take Your Places!
+A Variety of Operations
+Good Graph
+Boring Segments
+Say No to Palindromes
+Coin Rows
+Two Tables
+PizzaForces
+You
+Diane
+Mikasa
+Cobb
+Cherry
+Stairs
+XOR and Distance
+Common Divisor Graph
+Pairwise Modulo
+Permutation Shift
+Backspace
+Penalty
+Reverse String
+Digits Sum
+Organizing a Music Festival
+Guess the Perimeter
+A Serious Referee
+Telepanting
+Colors and Intervals
+Array Differentiation
+Maximize the Intersections
+Running for Gold
+Subsequence Permutation
+Equidistant Vertices
+Fixed Points
+Domino (hard version)
+Domino (easy version)
+Interesting Story
+Wonderful Coloring - 2
+Wonderful Coloring - 1
+Polycarp and Coins
+Jumping Around
+Stringforces
+Excellent Arrays
+Manhattan Subarrays
+Maximum Cost Deletion
+Find The Array
+Gregor and the Pawn Game
+Gregor and Cryptography
+Gregor and the Two Painters
+Gregor and the Odd Cows (Hard)
+Gregor and the Odd Cows (Easy)
+The Three Little Pigs
+Integers Have Friends
+Web of Lies
+How Many Paths?
+Array Stabilization (GCD version)
+Air Conditioners
+Co-growing Sequence
+Pair Programming
+Alphabetical Strings
+Shortest Path with Obstacle
+AquaMoon and Stolen String
+AquaMoon and Two Arrays
+AquaMoon and Potatoes
+AquaMoon and Time Stop (hard version)
+AquaMoon and Time Stop (easy version)
+AquaMoon and Wrong Coordinate
+AquaMoon and Permutations
+AquaMoon and Chess
+AquaMoon and Strange Sort
+The Final Pursuit
+RPD and Rap Sheet (Hard Version)
+RPD and Rap Sheet (Easy Version)
+Need for Pink Slips
+Customising the Track
+Exciting Bets
+Abnormal Permutation Pairs (hard version)
+Abnormal Permutation Pairs (easy version)
+Priority Queue
+Strange Function
+Plus and Multiply
+Odd Set
+Pleasant Pairs
+Pretty Permutations
+Tasty Dishes
+Inverse Inversions
+Converging Array (Hard Version)
+Converging Array (Easy Version)
+Tree Array
+Great Graphs
+Strange Array
+Game with Cards
+PriceFixed
+Stable Groups
+Love Song
+Contest Start
+Gift Set
+Interesting Function
+Funny Substrings
+Another Problem About Dividing Numbers
+Number of Pairs
+Friends and Candies
+Stone Game
+Figure Fixing
+Erase and Extend (Hard Version)
+Erase and Extend (Easy Version)
+Deleting Divisors
+Challenging Cliffs
+Bad Boy
+Arithmetic Array
+Omkar and Akmar
+Omkar and Forest
+Omkar and Medians
+Diluc and Kaeya
+Prinzessin der Verurteilung
+Omkar and Bad Story
+String Distance
+Gold Transfer
+Playoff Tournament
+Unstable String
+Array Reodering
+Fair Playoff
+Lost Nodes
+A New Beginning
+Falling Sand (Hard Version)
+Falling Sand (Easy Version)
+Lost Array
+Lost Tree
+Little Alawn's Puzzle
+Histogram Ugliness
+Colour the Flag
+Pawns
+Excursions
+Submatrices
+Biome Map
+Binary String Partition
+Chess Team Forming
+String Searching
+Sweets
+Nearest Point Function
+Travel to Bertown
+Prefixes and Suffixes
+Good Array
+Teams Forming
+Uniform String
+Frog Jumping
+A+B (Trial Problem)
+Сортировка слиянием
+Сортировка слиянием
+Сортировка слиянием
+Редактируем Зингер | color
+Симметричный амфитеатр
+Мониторинг
+Мониторинг
+Зингер | color
+Turing's Award
+What a Reversal
+Bingo
+Minimax
+Secret Santa
+Pursuit
+Putting Plates
+Binary Decimal
+Sifid and Strange Subsequences
+Eshag Loves Big Arrays
+AmShZ Farm
+Mashtali and Hagh Trees
+It's a bird! No, it's a plane! No, it's AaParsa!
+Trees of Tranquillity
+Kavi on Pairing Duty
+Parsa's Humongous Tree
+Partition Game
+MEX Tree
+Sequence Pair Weight
+Palindrome Game (hard version)
+Palindrome Game (easy version)
+And Then There Were K
+Median Queries
+Oolimry and Suffix Array
+Kill Anton
+Potions (Hard Version)
+Potions (Easy Version)
+I Hate 1111
+Mean Inequality
+Goblins And Gnomes
+Assimilation IV
+Armchairs
+Robot Collisions
+Permutation Sort
+Potion-making
+Hopping Around the Array
+Try Booking
+Favorite Game
+Crypto Lights
+Love-Hate
+Compression and Expansion
+Lord of the Values
+Game of Life
+Nastia and a Beautiful Matrix
+Nastia Plays with a Tree
+Nastia and a Hidden Permutation
+Nastia and a Good Array
+Nastia and Nearly Good Numbers
+To Go Or Not To Go?
+Guess the K-th Zero (Hard version)
+Guess the K-th Zero (Easy version)
+Arranging The Sheep
+Same Differences
+Not Adjacent Matrix
+Ordinary Numbers
+Do Not Be Distracted!
+Chests and Keys
+Off by One
+Maximum Sum of Products
+Berland Regional
+The Cake Is a Lie
+Red and Blue Beans
+Fly Around the World
+Starry Night Camping
+Reunion
+Group Photo
+Explorer Space
+Fillomino 2
+Morning Jogging
+Sum of 2050
+Baby Ehab Plays with Permutations
+Cut
+Baby Ehab Partitions Again
+AGAGA XOOORRR
+Tit for Tat
+Phoenix and Diamonds
+Phoenix and Bits
+Phoenix and Odometers
+Phoenix and Earthquake
+Phoenix and Computers
+Phoenix and Socks
+Phoenix and Towers
+Phoenix and Puzzle
+Phoenix and Gold
+Baby Ehab's Hyper Apartment
+Cut and Stick
+Product 1 Modulo N
+AND 0, Sum Big
+Perfectly Imperfect Array
+Swapping Problem
+Cost Equilibrium
+GCD and MST
+Add One
+AND Sequences
+Array and Peaks
+Short Task
+Education
+Permutation by Sum
+Corrupted Array
+A-B Palindrome
+Almost Rectangle
+Spy Detected!
+Chips on a Board
+Chainword
+Colorings and Dominoes
+Min Cost String
+Yet Another Card Deck
+GCD Length
+Review Site
+King's Task
+Japanese Game
+Is It Rated?
+Hard Optimization
+Guide
+Fiber Shape
+Equilibrium Point /\textbackslash/\textbackslash
+Digits
+Cactus Not Enough
+Button Lock
+ASCII Automata Art
+The Sports Festival
+TMT Document
+Average Height
+Optimal Encoding
+Tree Calendar
+Swap Pass
+Complete the MST
+Almost Sorted
+Binary Literature
+Maximize the Remaining String
+Triangular Paths
+Restoring the Permutation
+Epic Transformation
+Double-ended Strings
+Partial Replacement
+Strange Table
+Mysterious language again, seriously?
+L BREAK into program
+Encoded message
+Math
+Cakewalk
+Xenolith? Hippodrome?
+Fibonacci Words
+DMCA
+Is it rated - 2
+Flip the Bits
+Déjà Vu
+Balance the Cards
+2-Coloring
+Flip the Cards
+Travelling Salesman Problem
+3-Coloring
+Balance the Bits
+Napoleon Cake
+Alexey and Train
+Cupboards Jumps
+Subset Trick
+Tiles for Bathroom
+Matrix Sorting
+Two chandeliers
+Going Home
+Graph Coloring
+Diameter Cuts
+Chaotic Merge
+The Number of Pairs
+Minimum Grid Path
+Binary Removals
+Domino on Windowsill
+Christmas Game
+Two Houses
+Bananas in a Microwave
+Planar Reflections
+Box Fitting
+GCD Sum
+Square-free division (hard version)
+Square-free division (easy version)
+Genius
+k-LCM (hard version)

@@ -1,0 +1,21 @@
+This is an interactive problem.There are nn words in a text editor. The ii-th word has length lili (1≤li≤20001≤li≤2000). The array ll is hidden and only known by the grader. The text editor displays words in lines, splitting each two words in a line with at least one space. Note that a line does not have to end with a space. Let the height of the text editor refer to the number of lines used. For the given width, the text editor will display words in such a way that the height is minimized.More formally, suppose that the text editor has width ww. Let aa be an array of length k+1k+1 where 1=a1<a2<…<ak+1=n+11=a1<a2<…<ak+1=n+1. aa is a valid array if for all 1≤i≤k1≤i≤k, lai+1+lai+1+1+…+1+lai+1−1≤wlai+1+lai+1+1+…+1+lai+1−1≤w. Then the height of the text editor is the minimum kk over all valid arrays.Note that if w<max(li)w<max(li), the text editor cannot display all the words properly and will crash, and the height of the text editor will be 00 instead.You can ask n+30n+30 queries. In one query, you provide a width ww. Then, the grader will return the height hwhw of the text editor when its width is ww.Find the minimum area of the text editor, which is the minimum value of w⋅hww⋅hw over all ww for which hw≠0hw≠0.The lengths are fixed in advance. In other words, the interactor is not adaptive.
+InputThe first and only line of input contains a single integer nn (1≤n≤20001≤n≤2000)  — the number of words on the text editor.It is guaranteed that the hidden lengths lili satisfy 1≤li≤20001≤li≤2000.
+InteractionBegin the interaction by reading nn.To make a query, print "? ww" (without quotes, 1≤w≤1091≤w≤109). Then you should read our response from standard input, that is, hwhw.If your program has made an invalid query or has run out of tries, the interactor will terminate immediately and your program will get a verdict Wrong answer. To give the final answer, print "! areaarea" (without the quotes). Note that giving this answer is not counted towards the limit of n+30n+30 queries.After printing a query do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use:  fflush(stdout) or cout.flush() in C++;  System.out.flush() in Java;  flush(output) in Pascal;  stdout.flush() in Python;  see documentation for other languages.  HacksThe first line of input must contain a single integer nn (1≤n≤20001≤n≤2000) — the number of words in the text editor.The second line of input must contain exactly nn space-separated integers l1,l2,…,lnl1,l2,…,ln (1≤li≤20001≤li≤2000).
+ExampleInputCopy6
+
+0
+
+4
+
+2
+
+OutputCopy
+? 1
+
+? 9
+
+? 16
+
+! 32
+
+NoteIn the first test case, the words are {glory,to,ukraine,and,anton,trygub}{glory,to,ukraine,and,anton,trygub}, so l={5,2,7,3,5,6}l={5,2,7,3,5,6}. If w=1w=1, then the text editor is not able to display all words properly and will crash. The height of the text editor is h1=0h1=0, so the grader will return 00.If w=9w=9, then a possible way that the words will be displayed on the text editor is:   glory__toglory__to  ukraine__ukraine__  and_antonand_anton  __trygub___trygub_ The height of the text editor is h9=4h9=4, so the grader will return 44.If w=16w=16, then a possible way that the words will be displayed on the text editor is:   glory_to_ukraineglory_to_ukraine  and_anton_tryguband_anton_trygub The height of the text editor is h16=2h16=2, so the grader will return 22.We have somehow figured out that the minimum area of the text editor is 3232, so we answer it.

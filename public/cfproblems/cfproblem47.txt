@@ -1,0 +1,30 @@
+Long ago, you thought of two finite arithmetic progressions AA and BB. Then you found out another sequence CC containing all elements common to both AA and BB. It is not hard to see that CC is also a finite arithmetic progression. After many years, you forgot what AA was but remember BB and CC. You are, for some reason, determined to find this lost arithmetic progression. Before you begin this eternal search, you want to know how many different finite arithmetic progressions exist which can be your lost progression AA. Two arithmetic progressions are considered different if they differ in their first term, common difference or number of terms.It may be possible that there are infinitely many such progressions, in which case you won't even try to look for them! Print −1−1 in all such cases. Even if there are finite number of them, the answer might be very large. So, you are only interested to find the answer modulo 109+7109+7.
+InputThe first line of input contains a single integer tt (1≤t≤1001≤t≤100) denoting the number of testcases.The first line of each testcase contains three integers bb, qq and yy (−109≤b≤109−109≤b≤109, 1≤q≤1091≤q≤109, 2≤y≤1092≤y≤109) denoting the first term, common difference and number of terms of BB respectively.The second line of each testcase contains three integers cc, rr and zz (−109≤c≤109−109≤c≤109, 1≤r≤1091≤r≤109, 2≤z≤1092≤z≤109) denoting the first term, common difference and number of terms of CC respectively.
+OutputFor each testcase, print a single line containing a single integer.If there are infinitely many finite arithmetic progressions which could be your lost progression AA, print −1−1.Otherwise, print the number of finite arithmetic progressions which could be your lost progression AA modulo 109+7109+7. In particular, if there are no such finite arithmetic progressions, print 00.
+ExampleInputCopy8
+-3 1 7
+-1 2 4
+-9 3 11
+0 6 3
+2 5 5
+7 5 4
+2 2 11
+10 5 3
+0 2 9
+2 4 3
+-11 4 12
+1 12 2
+-27 4 7
+-17 8 2
+-8400 420 1000000000
+0 4620 10
+OutputCopy0
+10
+-1
+0
+-1
+21
+0
+273000
+
+NoteFor the first testcase, B={−3,−2,−1,0,1,2,3}B={−3,−2,−1,0,1,2,3} and C={−1,1,3,5}C={−1,1,3,5}. There is no such arithmetic progression which can be equal to AA because 55 is not present in BB and for any AA, 55 should not be present in CC also. For the second testcase, B={−9,−6,−3,0,3,6,9,12,15,18,21}B={−9,−6,−3,0,3,6,9,12,15,18,21} and C={0,6,12}C={0,6,12}. There are 1010 possible arithmetic progressions which can be AA:   {0,6,12}{0,6,12}  {0,2,4,6,8,10,12}{0,2,4,6,8,10,12}  {0,2,4,6,8,10,12,14}{0,2,4,6,8,10,12,14}  {0,2,4,6,8,10,12,14,16}{0,2,4,6,8,10,12,14,16}  {−2,0,2,4,6,8,10,12}{−2,0,2,4,6,8,10,12}  {−2,0,2,4,6,8,10,12,14}{−2,0,2,4,6,8,10,12,14}  {−2,0,2,4,6,8,10,12,14,16}{−2,0,2,4,6,8,10,12,14,16}  {−4,−2,0,2,4,6,8,10,12}{−4,−2,0,2,4,6,8,10,12}  {−4,−2,0,2,4,6,8,10,12,14}{−4,−2,0,2,4,6,8,10,12,14}  {−4,−2,0,2,4,6,8,10,12,14,16}{−4,−2,0,2,4,6,8,10,12,14,16} For the third testcase, B={2,7,12,17,22}B={2,7,12,17,22} and C={7,12,17,22}C={7,12,17,22}. There are infinitely many arithmetic progressions which can be AA like:   {7,12,17,22}{7,12,17,22}  {7,12,17,22,27}{7,12,17,22,27}  {7,12,17,22,27,32}{7,12,17,22,27,32}  {7,12,17,22,27,32,37}{7,12,17,22,27,32,37}  {7,12,17,22,27,32,37,42}{7,12,17,22,27,32,37,42}  …… 

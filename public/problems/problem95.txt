@@ -1,0 +1,50 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+
+Ridbit is given an array a1,a2,…,aNa1,a2,…,aN. He needs to find the number of ways to divide the array into contiguous subarrays such that:
+
+Each element of the sequence aa belongs to exactly one of the subarrays.
+There is an integer mm such that the MEX of every subarray is equal to mm. The MEX of a sequence is the smallest non-negative integer which does not occur in this sequence.
+
+Help Ridbit with this task.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains NN space-separated integers a1,a2,…,aNa1,a2,…,aN.
+
+Output
+
+For each test case, print a single line containing one integer ― the number of ways to divide the sequence, modulo 109+7109+7.
+
+Constraints
+
+1≤T≤101≤T≤10
+1≤N≤100,0001≤N≤100,000
+0≤ai≤N0≤ai≤N for each valid ii
+
+Sample Input 1
+
+2
+6
+1 0 0 1 0 1
+3
+1 2 3
+
+Sample Output 1
+
+5
+4
+
+Explanation
+
+Example case 1: The five valid ways to divide the sequence are:
+
+[1,0,0,1,0,1][1,0,0,1,0,1]
+[1,0],[0,1,0,1][1,0],[0,1,0,1]
+[1,0,0],[1,0,1][1,0,0],[1,0,1]
+[1,0,0,1],[0,1][1,0,0,1],[0,1]
+[1,0],[0,1],[0,1][1,0],[0,1],[0,1]
+
+

@@ -1,0 +1,39 @@
+Petya once wrote a sad love song and shared it to Vasya. The song is a string consisting of lowercase English letters. Vasya made up qq questions about this song. Each question is about a subsegment of the song starting from the ll-th letter to the rr-th letter. Vasya considers a substring made up from characters on this segment and repeats each letter in the subsegment kk times, where kk is the index of the corresponding letter in the alphabet. For example, if the question is about the substring "abbcb", then Vasya repeats letter 'a' once, each of the letters 'b' twice, letter 'c" three times, so that the resulting string is "abbbbcccbb", its length is 1010. Vasya is interested about the length of the resulting string.Help Petya find the length of each string obtained by Vasya.
+InputThe first line contains two integers nn and qq (1≤n≤1000001≤n≤100000, 1≤q≤1000001≤q≤100000) — the length of the song and the number of questions. The second line contains one string ss — the song, consisting of nn lowercase letters of English letters.Vasya's questions are contained in the next qq lines. Each line contains two integers ll and rr (1≤l≤r≤n1≤l≤r≤n) — the bounds of the question.
+OutputPrint qq lines: for each question print the length of the string obtained by Vasya.
+ExamplesInputCopy7 3
+abacaba
+1 3
+2 5
+1 7
+OutputCopy4
+7
+11
+InputCopy7 4
+abbabaa
+1 3
+5 7
+6 6
+2 4
+OutputCopy5
+4
+1
+5
+InputCopy13 7
+sonoshikumiwo
+1 5
+2 10
+7 7
+1 13
+4 8
+2 5
+3 9
+OutputCopy82
+125
+9
+191
+62
+63
+97
+
+NoteIn the first example Vasya is interested in three questions. In the first question Vasya considers the substring "aba", that transforms to "abba", so the answer is equal to 44. In the second question Vasya considers "baca", that transforms to "bbaccca", so the answer is 77. In the third question Vasya considers the string "abacaba",that transforms to "abbacccabba" of length 1111.

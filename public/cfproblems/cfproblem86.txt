@@ -1,0 +1,15 @@
+You are given a board with nn rows and nn columns, numbered from 11 to nn. The intersection of the aa-th row and bb-th column is denoted by (a,b)(a,b).A half-queen attacks cells in the same row, same column, and on one diagonal. More formally, a half-queen on (a,b)(a,b) attacks the cell (c,d)(c,d) if a=ca=c or b=db=d or a−b=c−da−b=c−d.  The blue cells are under attack.  What is the minimum number of half-queens that can be placed on that board so as to ensure that each square is attacked by at least one half-queen?Construct an optimal solution.
+InputThe first line contains a single integer nn (1≤n≤1051≤n≤105) — the size of the board.
+OutputIn the first line print a single integer kk — the minimum number of half-queens.In each of the next kk lines print two integers aiai, bibi (1≤ai,bi≤n1≤ai,bi≤n) — the position of the ii-th half-queen.If there are multiple solutions, print any.
+ExamplesInputCopy1
+OutputCopy1
+1 1
+InputCopy2
+OutputCopy1
+1 1
+InputCopy3
+OutputCopy2
+1 1
+1 2
+
+NoteExample 11: one half-queen is enough. Note: a half-queen on (1,1)(1,1) attacks (1,1)(1,1).Example 22: one half-queen is enough too. (1,2)(1,2) or (2,1)(2,1) would be wrong solutions, because a half-queen on (1,2)(1,2) does not attack the cell (2,1)(2,1) and vice versa. (2,2)(2,2) is also a valid solution.Example 33: it is impossible to cover the board with one half queen. There are multiple solutions for 22 half-queens; you can print any of them.

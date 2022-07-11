@@ -1,0 +1,15 @@
+Tokitsukaze has a permutation pp. She performed the following operation to pp exactly kk times: in one operation, for each ii from 11 to n−1n−1 in order, if pipi > pi+1pi+1, swap pipi, pi+1pi+1. After exactly kk times of operations, Tokitsukaze got a new sequence aa, obviously the sequence aa is also a permutation.After that, Tokitsukaze wrote down the value sequence vv of aa on paper. Denote the value sequence vv of the permutation aa of length nn as vi=∑i−1j=1[ai<aj]vi=∑j=1i−1[ai<aj], where the value of [ai<aj][ai<aj] define as if ai<ajai<aj, the value is 11, otherwise is 00 (in other words, vivi is equal to the number of elements greater than aiai that are to the left of position ii). Then Tokitsukaze went out to work.There are three naughty cats in Tokitsukaze's house. When she came home, she found the paper with the value sequence vv to be bitten out by the cats, leaving several holes, so that the value of some positions could not be seen clearly. She forgot what the original permutation pp was. She wants to know how many different permutations pp there are, so that the value sequence vv of the new permutation aa after exactly kk operations is the same as the vv written on the paper (not taking into account the unclear positions).Since the answer may be too large, print it modulo 998244353998244353.
+InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases. Each test case consists of two lines.The first line contains two integers nn and kk (1≤n≤1061≤n≤106; 0≤k≤n−10≤k≤n−1) — the length of the permutation and the exactly number of operations.The second line contains nn integers v1,v2,…,vnv1,v2,…,vn (−1≤vi≤i−1−1≤vi≤i−1) — the value sequence vv. vi=−1vi=−1 means the ii-th position of vv can't be seen clearly.It is guaranteed that the sum of nn over all test cases does not exceed 106106.
+OutputFor each test case, print a single integer — the number of different permutations modulo 998244353998244353.
+ExampleInputCopy3
+5 0
+0 1 2 3 4
+5 2
+-1 1 2 0 0
+5 2
+0 1 1 0 0
+OutputCopy1
+6
+6
+
+NoteIn the first test case, only permutation p=[5,4,3,2,1]p=[5,4,3,2,1] satisfies the constraint condition.In the second test case, there are 66 permutations satisfying the constraint condition, which are:  [3,4,5,2,1][3,4,5,2,1] →→ [3,4,2,1,5][3,4,2,1,5] →→ [3,2,1,4,5][3,2,1,4,5]  [3,5,4,2,1][3,5,4,2,1] →→ [3,4,2,1,5][3,4,2,1,5] →→ [3,2,1,4,5][3,2,1,4,5]  [4,3,5,2,1][4,3,5,2,1] →→ [3,4,2,1,5][3,4,2,1,5] →→ [3,2,1,4,5][3,2,1,4,5]  [4,5,3,2,1][4,5,3,2,1] →→ [4,3,2,1,5][4,3,2,1,5] →→ [3,2,1,4,5][3,2,1,4,5]  [5,3,4,2,1][5,3,4,2,1] →→ [3,4,2,1,5][3,4,2,1,5] →→ [3,2,1,4,5][3,2,1,4,5]  [5,4,3,2,1][5,4,3,2,1] →→ [4,3,2,1,5][4,3,2,1,5] →→ [3,2,1,4,5][3,2,1,4,5] So after exactly 22 times of swap they will all become a=[3,2,1,4,5]a=[3,2,1,4,5], whose value sequence is v=[0,1,2,0,0]v=[0,1,2,0,0].

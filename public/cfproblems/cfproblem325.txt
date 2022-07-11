@@ -1,0 +1,18 @@
+Berland Music is a music streaming service built specifically to support Berland local artist. Its developers are currently working on a song recommendation module.So imagine Monocarp got recommended nn songs, numbered from 11 to nn. The ii-th song had its predicted rating equal to pipi, where 1≤pi≤n1≤pi≤n and every integer from 11 to nn appears exactly once. In other words, pp is a permutation.After listening to each of them, Monocarp pressed either a like or a dislike button. Let his vote sequence be represented with a string ss, such that si=0si=0 means that he disliked the ii-th song, and si=1si=1 means that he liked it.Now the service has to re-evaluate the song ratings in such a way that:  the new ratings q1,q2,…,qnq1,q2,…,qn still form a permutation (1≤qi≤n1≤qi≤n; each integer from 11 to nn appears exactly once);  every song that Monocarp liked should have a greater rating than every song that Monocarp disliked (formally, for all i,ji,j such that si=1si=1 and sj=0sj=0, qi>qjqi>qj should hold). Among all valid permutations qq find the one that has the smallest value of ∑i=1n|pi−qi|∑i=1n|pi−qi|, where |x||x| is an absolute value of xx.Print the permutation q1,q2,…,qnq1,q2,…,qn. If there are multiple answers, you can print any of them.
+InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of testcases.The first line of each testcase contains a single integer nn (1≤n≤2⋅1051≤n≤2⋅105) — the number of songs.The second line of each testcase contains nn integers p1,p2,…,pnp1,p2,…,pn (1≤pi≤n1≤pi≤n) — the permutation of the predicted ratings.The third line contains a single string ss, consisting of nn characters. Each character is either a 00 or a 11. 00 means that Monocarp disliked the song, and 11 means that he liked it.The sum of nn over all testcases doesn't exceed 2⋅1052⋅105.
+OutputFor each testcase, print a permutation qq — the re-evaluated ratings of the songs. If there are multiple answers such that ∑i=1n|pi−qi|∑i=1n|pi−qi| is minimum possible, you can print any of them.
+ExampleInputCopy3
+2
+1 2
+10
+3
+3 1 2
+111
+8
+2 3 1 8 5 4 7 6
+01110001
+OutputCopy2 1
+3 1 2
+1 6 5 8 3 2 4 7
+
+NoteIn the first testcase, there exists only one permutation qq such that each liked song is rating higher than each disliked song: song 11 gets rating 22 and song 22 gets rating 11. ∑i=1n|pi−qi|=|1−2|+|2−1|=2∑i=1n|pi−qi|=|1−2|+|2−1|=2.In the second testcase, Monocarp liked all songs, so all permutations could work. The permutation with the minimum sum of absolute differences is the permutation equal to pp. Its cost is 00.

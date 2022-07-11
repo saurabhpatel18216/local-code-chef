@@ -1,0 +1,11 @@
+There are nn computers in a row, all originally off, and Phoenix wants to turn all of them on. He will manually turn on computers one at a time. At any point, if computer i−1i−1 and computer i+1i+1 are both on, computer ii (2≤i≤n−1)(2≤i≤n−1) will turn on automatically if it is not already on. Note that Phoenix cannot manually turn on a computer that already turned on automatically.If we only consider the sequence of computers that Phoenix turns on manually, how many ways can he turn on all the computers? Two sequences are distinct if either the set of computers turned on manually is distinct, or the order of computers turned on manually is distinct. Since this number may be large, please print it modulo MM.
+InputThe first line contains two integers nn and MM (3≤n≤4003≤n≤400; 108≤M≤109108≤M≤109) — the number of computers and the modulo. It is guaranteed that MM is prime.
+OutputPrint one integer — the number of ways to turn on the computers modulo MM.
+ExamplesInputCopy3 100000007
+OutputCopy6
+InputCopy4 100000007
+OutputCopy20
+InputCopy400 234567899
+OutputCopy20914007
+
+NoteIn the first example, these are the 66 orders in which Phoenix can turn on all computers:   [1,3][1,3]. Turn on computer 11, then 33. Note that computer 22 turns on automatically after computer 33 is turned on manually, but we only consider the sequence of computers that are turned on manually.  [3,1][3,1]. Turn on computer 33, then 11.  [1,2,3][1,2,3]. Turn on computer 11, 22, then 33.  [2,1,3][2,1,3]  [2,3,1][2,3,1]  [3,2,1][3,2,1] 

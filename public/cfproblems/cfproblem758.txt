@@ -1,0 +1,31 @@
+Parsa has a humongous tree on nn vertices.On each vertex vv he has written two integers lvlv and rvrv.To make Parsa's tree look even more majestic, Nima wants to assign a number avav (lv≤av≤rvlv≤av≤rv) to each vertex vv such that the beauty of Parsa's tree is maximized.Nima's sense of the beauty is rather bizarre. He defines the beauty of the tree as the sum of |au−av||au−av| over all edges (u,v)(u,v) of the tree.Since Parsa's tree is too large, Nima can't maximize its beauty on his own. Your task is to find the maximum possible beauty for Parsa's tree.
+InputThe first line contains an integer tt (1≤t≤250)(1≤t≤250) — the number of test cases. The description of the test cases follows.The first line of each test case contains a single integer nn (2≤n≤105)(2≤n≤105) — the number of vertices in Parsa's tree.The ii-th of the following nn lines contains two integers lili and riri (1≤li≤ri≤109)(1≤li≤ri≤109).Each of the next n−1n−1 lines contains two integers uu and vv (1≤u,v≤n,u≠v)(1≤u,v≤n,u≠v) meaning that there is an edge between the vertices uu and vv in Parsa's tree.It is guaranteed that the given graph is a tree.It is guaranteed that the sum of nn over all test cases doesn't exceed 2⋅1052⋅105.
+OutputFor each test case print the maximum possible beauty for Parsa's tree.
+ExampleInputCopy3
+2
+1 6
+3 8
+1 2
+3
+1 3
+4 6
+7 9
+1 2
+2 3
+6
+3 14
+12 20
+12 19
+2 12
+10 17
+3 17
+3 2
+6 5
+1 5
+2 6
+4 6
+OutputCopy7
+8
+62
+
+NoteThe trees in the example:  In the first test case, one possible assignment is a={1,8}a={1,8} which results in |1−8|=7|1−8|=7.In the second test case, one of the possible assignments is a={1,5,9}a={1,5,9} which results in a beauty of |1−5|+|5−9|=8|1−5|+|5−9|=8

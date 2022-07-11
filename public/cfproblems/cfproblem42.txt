@@ -1,0 +1,15 @@
+You are given a string ss, consisting only of Latin letters 'a', and a string tt, consisting of lowercase Latin letters.In one move, you can replace any letter 'a' in the string ss with a string tt. Note that after the replacement string ss might contain letters other than 'a'.You can perform an arbitrary number of moves (including zero). How many different strings can you obtain? Print the number, or report that it is infinitely large.Two strings are considered different if they have different length, or they differ at some index.
+InputThe first line contains a single integer qq (1≤q≤1041≤q≤104) — the number of testcases.The first line of each testcase contains a non-empty string ss, consisting only of Latin letters 'a'. The length of ss doesn't exceed 5050.The second line contains a non-empty string tt, consisting of lowercase Latin letters. The length of tt doesn't exceed 5050.
+OutputFor each testcase, print the number of different strings ss that can be obtained after an arbitrary amount of moves (including zero). If the number is infinitely large, print -1. Otherwise, print the number.
+ExampleInputCopy3
+aaaa
+a
+aa
+abc
+a
+b
+OutputCopy1
+-1
+2
+
+NoteIn the first example, you can replace any letter 'a' with the string "a", but that won't change the string. So no matter how many moves you make, you can't obtain a string other than the initial one.In the second example, you can replace the second letter 'a' with "abc". String ss becomes equal to "aabc". Then the second letter 'a' again. String ss becomes equal to "aabcbc". And so on, generating infinitely many different strings.In the third example, you can either leave string ss as is, performing zero moves, or replace the only 'a' with "b". String ss becomes equal to "b", so you can't perform more moves on it.

@@ -1,0 +1,15 @@
+Moamen has an array of nn distinct integers. He wants to sort that array in non-decreasing order by doing the following operations in order exactly once:  Split the array into exactly kk non-empty subarrays such that each element belongs to exactly one subarray.  Reorder these subarrays arbitrary.  Merge the subarrays in their new order. A sequence aa is a subarray of a sequence bb if aa can be obtained from bb by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.Can you tell Moamen if there is a way to sort the array in non-decreasing order using the operations written above?
+InputThe first line contains a single integer tt (1≤t≤1031≤t≤103) — the number of test cases. The description of the test cases follows.The first line of each test case contains two integers nn and kk (1≤k≤n≤1051≤k≤n≤105).The second line contains nn integers a1,a2,…,ana1,a2,…,an (0≤|ai|≤1090≤|ai|≤109). It is guaranteed that all numbers are distinct.It is guaranteed that the sum of nn over all test cases does not exceed 3⋅1053⋅105.
+OutputFor each test case, you should output a single string.If Moamen can sort the array in non-decreasing order, output "YES" (without quotes). Otherwise, output "NO" (without quotes).You can print each letter of "YES" and "NO" in any case (upper or lower).
+ExampleInputCopy3
+5 4
+6 3 4 2 1
+4 2
+1 -4 0 -2
+5 1
+1 2 3 4 5
+OutputCopyYes
+No
+Yes
+
+NoteIn the first test case, a=[6,3,4,2,1]a=[6,3,4,2,1], and k=4k=4, so we can do the operations as follows:   Split aa into {[6],[3,4],[2],[1]}{[6],[3,4],[2],[1]}.  Reorder them: {[1],[2],[3,4],[6]}{[1],[2],[3,4],[6]}.  Merge them: [1,2,3,4,6][1,2,3,4,6], so now the array is sorted. In the second test case, there is no way to sort the array by splitting it into only 22 subarrays.As an example, if we split it into {[1,−4],[0,−2]}{[1,−4],[0,−2]}, we can reorder them into {[1,−4],[0,−2]}{[1,−4],[0,−2]} or {[0,−2],[1,−4]}{[0,−2],[1,−4]}. However, after merging the subarrays, it is impossible to get a sorted array.

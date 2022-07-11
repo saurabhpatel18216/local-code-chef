@@ -1,0 +1,34 @@
+During the hypnosis session, Nicholas suddenly remembered a positive integer nn, which doesn't contain zeros in decimal notation. Soon, when he returned home, he got curious: what is the maximum number of digits that can be removed from the number so that the number becomes not prime, that is, either composite or equal to one?For some numbers doing so is impossible: for example, for number 5353 it's impossible to delete some of its digits to obtain a not prime integer. However, for all nn in the test cases of this problem, it's guaranteed that it's possible to delete some of their digits to obtain a not prime number.Note that you cannot remove all the digits from the number.A prime number is a number that has no divisors except one and itself. A composite is a number that has more than two divisors. 11 is neither a prime nor a composite number.
+InputEach test contains multiple test cases.The first line contains one positive integer tt (1≤t≤1031≤t≤103), denoting the number of test cases. Description of the test cases follows.The first line of each test case contains one positive integer kk (1≤k≤501≤k≤50) — the number of digits in the number.The second line of each test case contains a positive integer nn, which doesn't contain zeros in decimal notation (10k−1≤n<10k10k−1≤n<10k). It is guaranteed that it is always possible to remove less than kk digits to make the number not prime.It is guaranteed that the sum of kk over all test cases does not exceed 104104.
+OutputFor every test case, print two numbers in two lines. In the first line print the number of digits, that you have left in the number. In the second line print the digits left after all delitions. If there are multiple solutions, print any.
+ExampleInputCopy7
+3
+237
+5
+44444
+3
+221
+2
+35
+3
+773
+1
+4
+30
+626221626221626221626221626221
+OutputCopy2
+27
+1
+4
+1
+1
+2
+35
+2
+77
+1
+4
+1
+6
+
+NoteIn the first test case, you can't delete 22 digits from the number 237237, as all the numbers 22, 33, and 77 are prime. However, you can delete 11 digit, obtaining a number 27=3327=33.In the second test case, you can delete all digits except one, as 4=224=22 is a composite number.

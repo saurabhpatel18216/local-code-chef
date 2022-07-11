@@ -1,0 +1,21 @@
+In fact, the problems E1 and E2 do not have much in common. You should probably think of them as two separate problems.A permutation pp of size nn is given. A permutation of size nn is an array of size nn in which each integer from 11 to nn occurs exactly once. For example, [1,4,3,2][1,4,3,2] and [4,2,1,3][4,2,1,3] are correct permutations while [1,2,4][1,2,4] and [1,2,2][1,2,2] are not.Let us consider an empty deque (double-ended queue). A deque is a data structure that supports adding elements to both the beginning and the end. So, if there are elements [1,5,2][1,5,2] currently in the deque, adding an element 44 to the beginning will produce the sequence [4,1,5,2][4,1,5,2], and adding same element to the end will produce [1,5,2,4][1,5,2,4].The elements of the permutation are sequentially added to the initially empty deque, starting with p1p1 and finishing with pnpn. Before adding each element to the deque, you may choose whether to add it to the beginning or the end.For example, if we consider a permutation p=[3,1,2,4]p=[3,1,2,4], one of the possible sequences of actions looks like this:  1.add 33 to the end of the deque:deque has a sequence [3][3] in it; 2.add 11 to the beginning of the deque:deque has a sequence [1,3][1,3] in it; 3.add 22 to the end of the deque:deque has a sequence [1,3,2][1,3,2] in it; 4.add 44 to the end of the deque:deque has a sequence [1,3,2,4][1,3,2,4] in it;Find the lexicographically smallest possible sequence of elements in the deque after the entire permutation has been processed. A sequence [x1,x2,…,xn][x1,x2,…,xn] is lexicographically smaller than the sequence [y1,y2,…,yn][y1,y2,…,yn] if there exists such i≤ni≤n that x1=y1x1=y1, x2=y2x2=y2, ……, xi−1=yi−1xi−1=yi−1 and xi<yixi<yi. In other words, if the sequences xx and yy have some (possibly empty) matching prefix, and the next element of the sequence xx is strictly smaller than the corresponding element of the sequence yy. For example, the sequence [1,3,2,4][1,3,2,4] is smaller than the sequence [1,3,4,2][1,3,4,2] because after the two matching elements [1,3][1,3] in the start the first sequence has an element 22 which is smaller than the corresponding element 44 in the second sequence.
+InputThe first line contains an integer tt (1≤t≤10001≤t≤1000) — the number of test cases.The next 2t2t lines contain descriptions of the test cases. The first line of each test case description contains an integer nn (1≤n≤2⋅1051≤n≤2⋅105) — permutation size. The second line of the description contains nn space-separated integers pipi (1≤pi≤n1≤pi≤n; all pipi are all unique) — elements of the permutation.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputPrint tt lines, each line containing the answer to the corresponding test case. The answer to a test case should contain nn space-separated integer numbers — the elements of the lexicographically smallest permutation that is possible to find in the deque after executing the described algorithm.
+ExampleInputCopy5
+4
+3 1 2 4
+3
+3 2 1
+3
+3 1 2
+2
+1 2
+2
+2 1
+OutputCopy1 3 2 4 
+1 2 3 
+1 3 2 
+1 2 
+1 2 
+
+NoteOne of the ways to get a lexicographically smallest permutation [1,3,2,4][1,3,2,4] from the permutation [3,1,2,4][3,1,2,4] (the first sample test case) is described in the problem statement.

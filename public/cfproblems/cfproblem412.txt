@@ -1,0 +1,12 @@
+Alice and Bob are playing a game. They are given an array AA of length NN. The array consists of integers. They are building a sequence together. In the beginning, the sequence is empty. In one turn a player can remove a number from the left or right side of the array and append it to the sequence. The rule is that the sequence they are building must be strictly increasing. The winner is the player that makes the last move. Alice is playing first. Given the starting array, under the assumption that they both play optimally, who wins the game?
+InputThe first line contains one integer NN (1≤N≤2∗1051≤N≤2∗105) - the length of the array AA.The second line contains NN integers A1A1, A2A2,...,ANAN (0≤Ai≤1090≤Ai≤109)
+OutputThe first and only line of output consists of one string, the name of the winner. If Alice won, print "Alice", otherwise, print "Bob".
+ExamplesInputCopy1
+5
+OutputCopyAlice
+InputCopy3
+5 4 5
+OutputCopyAlice
+InputCopy6
+5 8 2 1 10 9
+OutputCopyBob

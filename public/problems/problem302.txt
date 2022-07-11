@@ -1,0 +1,49 @@
+
+Omy and Ish were learning the pattern printing. In order to learn they give themselves a task. In this task they are given a string and they have to form a pyramid with the pattern as follows:
+RowNumber are one based indexed.
+
+If (RowNumber % 3 == 0) then string is written in left to right while in other cases it is written in right to left order.
+if the string end it will be started again and end of the pyramid need not to be the end of string.
+
+For eg: string is “CODINGCODING” and height of pyramid is “55”
+
+C
+         D O
+        I N G
+       I D O C
+      D O C G N
+
+Omi will be asked QQ queries and he has to tell the frequency of a character  C in that particular row RR of pyramid.
+
+Input:
+
+First line will contain NN, height of pyramid.
+Next line contain a string consists only of Uppercase English Alphabets, length not exceed 106106
+Third line contain a single integer QQ, the number of queries to be asked.
+Each query contain two space separated integers, RR and CC, where RR is the row number and CC is the character.
+
+Output:
+
+For each query, output in a single line the frequency of the alphabet in the given row.
+
+Constraints:
+
+11 ≤≤ NN ≤≤ 1010^1818
+11 ≤≤ QQ ≤≤ 5000050000
+1≤R≤N1≤R≤N
+A≤C≤ZA≤C≤Z
+
+Sample Input:
+
+5
+ CODING
+ 2
+ 1 C
+ 2 D
+
+Sample Output:
+
+1
+ 1
+
+

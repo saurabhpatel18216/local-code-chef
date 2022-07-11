@@ -1,0 +1,14 @@
+It has finally been decided to build a roof over the football field in School 179. Its construction will require placing nn consecutive vertical pillars. Furthermore, the headmaster wants the heights of all the pillars to form a permutation pp of integers from 00 to n−1n−1, where pipi is the height of the ii-th pillar from the left (1≤i≤n)(1≤i≤n).As the chief, you know that the cost of construction of consecutive pillars is equal to the maximum value of the bitwise XOR of heights of all pairs of adjacent pillars. In other words, the cost of construction is equal to max1≤i≤n−1pi⊕pi+1max1≤i≤n−1pi⊕pi+1, where ⊕⊕ denotes the bitwise XOR operation.Find any sequence of pillar heights pp of length nn with the smallest construction cost.In this problem, a permutation is an array consisting of nn distinct integers from 00 to n−1n−1 in arbitrary order. For example, [2,3,1,0,4][2,3,1,0,4] is a permutation, but [1,0,1][1,0,1] is not a permutation (11 appears twice in the array) and [1,0,3][1,0,3] is also not a permutation (n=3n=3, but 33 is in the array).
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤1041≤t≤104). Description of the test cases follows.The only line for each test case contains a single integer nn (2≤n≤2⋅1052≤n≤2⋅105) — the number of pillars for the construction of the roof.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case print nn integers p1p1, p2p2, ……, pnpn — the sequence of pillar heights with the smallest construction cost.If there are multiple answers, print any of them.
+ExampleInputCopy4
+2
+3
+5
+10
+OutputCopy0 1
+2 0 1
+3 2 1 0 4
+4 6 3 2 0 8 9 1 7 5
+
+NoteFor n=2n=2 there are 22 sequences of pillar heights:   [0,1][0,1] — cost of construction is 0⊕1=10⊕1=1.  [1,0][1,0] — cost of construction is 1⊕0=11⊕0=1. For n=3n=3 there are 66 sequences of pillar heights:   [0,1,2][0,1,2] — cost of construction is max(0⊕1,1⊕2)=max(1,3)=3max(0⊕1,1⊕2)=max(1,3)=3.  [0,2,1][0,2,1] — cost of construction is max(0⊕2,2⊕1)=max(2,3)=3max(0⊕2,2⊕1)=max(2,3)=3.  [1,0,2][1,0,2] — cost of construction is max(1⊕0,0⊕2)=max(1,2)=2max(1⊕0,0⊕2)=max(1,2)=2.  [1,2,0][1,2,0] — cost of construction is max(1⊕2,2⊕0)=max(3,2)=3max(1⊕2,2⊕0)=max(3,2)=3.  [2,0,1][2,0,1] — cost of construction is max(2⊕0,0⊕1)=max(2,1)=2max(2⊕0,0⊕1)=max(2,1)=2.  [2,1,0][2,1,0] — cost of construction is max(2⊕1,1⊕0)=max(3,1)=3max(2⊕1,1⊕0)=max(3,1)=3. 

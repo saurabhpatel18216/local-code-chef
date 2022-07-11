@@ -1,0 +1,15 @@
+Let's denote the size of the maximum matching in a graph GG as MM(G)MM(G).You are given a bipartite graph. The vertices of the first part are numbered from 11 to nn, the vertices of the second part are numbered from n+1n+1 to 2n2n. Each vertex's degree is 22.For a tuple of four integers (l,r,L,R)(l,r,L,R), where 1≤l≤r≤n1≤l≤r≤n and n+1≤L≤R≤2nn+1≤L≤R≤2n, let's define G′(l,r,L,R)G′(l,r,L,R) as the graph which consists of all vertices of the given graph that are included in the segment [l,r][l,r] or in the segment [L,R][L,R], and all edges of the given graph such that each of their endpoints belongs to one of these segments. In other words, to obtain G′(l,r,L,R)G′(l,r,L,R) from the original graph, you have to remove all vertices ii such that i∉[l,r]i∉[l,r] and i∉[L,R]i∉[L,R], and all edges incident to these vertices.Calculate the sum of MM(G(l,r,L,R))MM(G(l,r,L,R)) over all tuples of integers (l,r,L,R)(l,r,L,R) having 1≤l≤r≤n1≤l≤r≤n and n+1≤L≤R≤2nn+1≤L≤R≤2n.
+InputThe first line contains one integer nn (2≤n≤15002≤n≤1500) — the number of vertices in each part.Then 2n2n lines follow, each denoting an edge of the graph. The ii-th line contains two integers xixi and yiyi (1≤xi≤n1≤xi≤n; n+1≤yi≤2nn+1≤yi≤2n) — the endpoints of the ii-th edge.There are no multiple edges in the given graph, and each vertex has exactly two incident edges.
+OutputPrint one integer — the sum of MM(G(l,r,L,R))MM(G(l,r,L,R)) over all tuples of integers (l,r,L,R)(l,r,L,R) having 1≤l≤r≤n1≤l≤r≤n and n+1≤L≤R≤2nn+1≤L≤R≤2n.
+ExampleInputCopy5
+4 6
+4 9
+2 6
+3 9
+1 8
+5 10
+2 7
+3 7
+1 10
+5 8
+OutputCopy314

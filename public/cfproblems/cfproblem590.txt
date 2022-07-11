@@ -1,0 +1,18 @@
+  William has two numbers aa and bb initially both equal to zero. William mastered performing three different operations with them quickly. Before performing each operation some positive integer kk is picked, which is then used to perform one of the following operations: (note, that for each operation you can choose a new positive integer kk)  add number kk to both aa and bb, or  add number kk to aa and subtract kk from bb, or  add number kk to bb and subtract kk from aa. Note that after performing operations, numbers aa and bb may become negative as well.William wants to find out the minimal number of operations he would have to perform to make aa equal to his favorite number cc and bb equal to his second favorite number dd.
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤1041≤t≤104). Description of the test cases follows.The only line of each test case contains two integers cc and dd (0≤c,d≤109)(0≤c,d≤109), which are William's favorite numbers and which he wants aa and bb to be transformed into.
+OutputFor each test case output a single number, which is the minimal number of operations which William would have to perform to make aa equal to cc and bb equal to dd, or −1−1 if it is impossible to achieve this using the described operations.
+ExampleInputCopy6
+1 2
+3 5
+5 3
+6 6
+8 0
+0 0
+OutputCopy-1
+2
+2
+1
+2
+0
+
+NoteLet us demonstrate one of the suboptimal ways of getting a pair (3,5)(3,5):  Using an operation of the first type with k=1k=1, the current pair would be equal to (1,1)(1,1).  Using an operation of the third type with k=8k=8, the current pair would be equal to (−7,9)(−7,9).  Using an operation of the second type with k=7k=7, the current pair would be equal to (0,2)(0,2).  Using an operation of the first type with k=3k=3, the current pair would be equal to (3,5)(3,5). 

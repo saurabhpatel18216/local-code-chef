@@ -1,0 +1,16 @@
+A robot cleaner is placed on the floor of a rectangle room, surrounded by walls. The floor consists of nn rows and mm columns. The rows of the floor are numbered from 11 to nn from top to bottom, and columns of the floor are numbered from 11 to mm from left to right. The cell on the intersection of the rr-th row and the cc-th column is denoted as (r,c)(r,c). The initial position of the robot is (rb,cb)(rb,cb).In one second, the robot moves by drdr rows and dcdc columns, that is, after one second, the robot moves from the cell (r,c)(r,c) to (r+dr,c+dc)(r+dr,c+dc). Initially dr=1dr=1, dc=1dc=1. If there is a vertical wall (the left or the right walls) in the movement direction, dcdc is reflected before the movement, so the new value of dcdc is −dc−dc. And if there is a horizontal wall (the upper or lower walls), drdr is reflected before the movement, so the new value of drdr is −dr−dr.Each second (including the moment before the robot starts moving), the robot cleans every cell lying in the same row or the same column as its position. There is only one dirty cell at (rd,cd)(rd,cd). The job of the robot is to clean that dirty cell.  Illustration for the first example. The blue arc is the robot. The red star is the target dirty cell. Each second the robot cleans a row and a column, denoted by yellow stripes. Given the floor size nn and mm, the robot's initial position (rb,cb)(rb,cb) and the dirty cell's position (rd,cd)(rd,cd), find the time for the robot to do its job.
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤1041≤t≤104). Description of the test cases follows.A test case consists of only one line, containing six integers nn, mm, rbrb, cbcb, rdrd, and cdcd (1≤n,m≤1001≤n,m≤100, 1≤rb,rd≤n1≤rb,rd≤n, 1≤cb,cd≤m1≤cb,cd≤m) — the sizes of the room, the initial position of the robot and the position of the dirt cell.
+OutputFor each test case, print an integer — the time for the robot to clean the dirty cell. We can show that the robot always cleans the dirty cell eventually.
+ExampleInputCopy5
+10 10 6 1 2 8
+10 10 9 9 1 1
+9 8 5 6 2 1
+6 9 2 2 5 8
+2 2 1 1 2 1
+OutputCopy7
+10
+9
+3
+0
+
+NoteIn the first example, the floor has the size of 10×1010×10. The initial position of the robot is (6,1)(6,1) and the position of the dirty cell is (2,8)(2,8). See the illustration of this example in the problem statement.In the second example, the floor is the same, but the initial position of the robot is now (9,9)(9,9), and the position of the dirty cell is (1,1)(1,1). In this example, the robot went straight to the dirty cell and clean it.   In the third example, the floor has the size 9×89×8. The initial position of the robot is (5,6)(5,6), and the position of the dirty cell is (2,1)(2,1).   In the fourth example, the floor has the size 6×96×9. The initial position of the robot is (2,2)(2,2) and the position of the dirty cell is (5,8)(5,8).   In the last example, the robot was already standing in the same column as the dirty cell, so it can clean the cell right away.   

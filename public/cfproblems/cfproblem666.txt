@@ -1,0 +1,26 @@
+You are given a sequence AA, where its elements are either in the form + x or -, where xx is an integer.For such a sequence SS where its elements are either in the form + x or -, define f(S)f(S) as follows:  iterate through SS's elements from the first one to the last one, and maintain a multiset TT as you iterate through it.  for each element, if it's in the form + x, add xx to TT; otherwise, erase the smallest element from TT (if TT is empty, do nothing).  after iterating through all SS's elements, compute the sum of all elements in TT. f(S)f(S) is defined as the sum. The sequence bb is a subsequence of the sequence aa if bb can be derived from aa by removing zero or more elements without changing the order of the remaining elements. For all AA's subsequences BB, compute the sum of f(B)f(B), modulo 998244353998244353.
+InputThe first line contains an integer nn (1≤n≤5001≤n≤500) — the length of AA.Each of the next nn lines begins with an operator + or -. If the operator is +, then it's followed by an integer xx (1≤x<9982443531≤x<998244353). The ii-th line of those nn lines describes the ii-th element in AA.
+OutputPrint one integer, which is the answer to the problem, modulo 998244353998244353.
+ExamplesInputCopy4
+-
++ 1
++ 2
+-
+OutputCopy16InputCopy15
++ 2432543
+-
++ 4567886
++ 65638788
+-
++ 578943
+-
+-
++ 62356680
+-
++ 711111
+-
++ 998244352
+-
+-
+OutputCopy750759115
+NoteIn the first example, the following are all possible pairs of BB and f(B)f(B):  B=B= {}, f(B)=0f(B)=0.  B=B= {-}, f(B)=0f(B)=0.  B=B= {+ 1, -}, f(B)=0f(B)=0.  B=B= {-, + 1, -}, f(B)=0f(B)=0.  B=B= {+ 2, -}, f(B)=0f(B)=0.  B=B= {-, + 2, -}, f(B)=0f(B)=0.  B=B= {-}, f(B)=0f(B)=0.  B=B= {-, -}, f(B)=0f(B)=0.  B=B= {+ 1, + 2}, f(B)=3f(B)=3.  B=B= {+ 1, + 2, -}, f(B)=2f(B)=2.  B=B= {-, + 1, + 2}, f(B)=3f(B)=3.  B=B= {-, + 1, + 2, -}, f(B)=2f(B)=2.  B=B= {-, + 1}, f(B)=1f(B)=1.  B=B= {+ 1}, f(B)=1f(B)=1.  B=B= {-, + 2}, f(B)=2f(B)=2.  B=B= {+ 2}, f(B)=2f(B)=2. The sum of these values is 1616.

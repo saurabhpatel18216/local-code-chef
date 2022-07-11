@@ -1,0 +1,15 @@
+To AmShZ, all arrays are equal, but some arrays are more-equal than others. Specifically, the arrays consisting of nn elements from 11 to nn that can be turned into permutations of numbers from 11 to nn by adding a non-negative integer to each element.Mashtali who wants to appear in every problem statement thinks that an array bb consisting of kk elements is compatible with a more-equal array aa consisting of nn elements if for each 1≤i≤k1≤i≤k we have 1≤bi≤n1≤bi≤n and also ab1=ab2=…=abkab1=ab2=…=abk.Find the number of pairs of arrays aa and bb such that aa is a more-equal array consisting of nn elements and bb is an array compatible with aa consisting of kk elements modulo 998244353998244353.Note that the elements of bb are not necessarily distinct, same holds for aa.
+InputThe first line of input contains two integers nn and kk (1≤n≤109,1≤k≤105)(1≤n≤109,1≤k≤105).
+OutputPrint a single integer — the answer to the problem modulo 998244353998244353.
+ExamplesInputCopy1 1
+OutputCopy1
+InputCopy2 2
+OutputCopy8
+InputCopy5 4
+OutputCopy50400
+InputCopy20 100
+OutputCopy807645526
+InputCopy10000000 10000
+OutputCopy883232350
+
+NoteThere are eight possible pairs for the second example:   a={1,1},b={1,1}a={1,1},b={1,1}  a={1,1},b={1,2}a={1,1},b={1,2}  a={1,1},b={2,1}a={1,1},b={2,1}  a={1,1},b={2,2}a={1,1},b={2,2}  a={1,2},b={1,1}a={1,2},b={1,1}  a={1,2},b={2,2}a={1,2},b={2,2}  a={2,1},b={1,1}a={2,1},b={1,1}  a={2,1},b={2,2}a={2,1},b={2,2} 

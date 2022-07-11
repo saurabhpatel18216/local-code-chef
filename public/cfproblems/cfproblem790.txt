@@ -1,0 +1,14 @@
+Nastia has 22 positive integers AA and BB. She defines that:  The integer is good if it is divisible by A⋅BA⋅B;  Otherwise, the integer is nearly good, if it is divisible by AA. For example, if A=6A=6 and B=4B=4, the integers 2424 and 7272 are good, the integers 66, 660660 and 1212 are nearly good, the integers 1616, 77 are neither good nor nearly good.Find 33 different positive integers xx, yy, and zz such that exactly one of them is good and the other 22 are nearly good, and x+y=zx+y=z.
+InputThe first line contains a single integer tt (1≤t≤100001≤t≤10000) — the number of test cases.The first line of each test case contains two integers AA and BB (1≤A≤1061≤A≤106, 1≤B≤1061≤B≤106) — numbers that Nastia has.
+OutputFor each test case print:   "YES" and 33 different positive integers xx, yy, and zz (1≤x,y,z≤10181≤x,y,z≤1018) such that exactly one of them is good and the other 22 are nearly good, and x+y=zx+y=z.  "NO" if no answer exists.  You can print each character of "YES" or "NO" in any case.If there are multiple answers, print any.
+ExampleInputCopy3
+5 3
+13 2
+7 11
+OutputCopyYES
+10 50 60
+YES
+169 39 208
+YES
+28 154 182
+NoteIn the first test case: 6060 — good number; 1010 and 5050 — nearly good numbers.In the second test case: 208208 — good number; 169169 and 3939 — nearly good numbers.In the third test case: 154154 — good number; 2828 and 182182 — nearly good numbers.

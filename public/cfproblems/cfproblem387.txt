@@ -1,0 +1,13 @@
+You are given a string ss of length nn consisting of characters a and/or b.Let AB(s)AB⁡(s) be the number of occurrences of string ab in ss as a substring. Analogically, BA(s)BA⁡(s) is the number of occurrences of ba in ss as a substring.In one step, you can choose any index ii and replace sisi with character a or b.What is the minimum number of steps you need to make to achieve AB(s)=BA(s)AB⁡(s)=BA⁡(s)?Reminder:The number of occurrences of string dd in ss as substring is the number of indices ii (1≤i≤|s|−|d|+11≤i≤|s|−|d|+1) such that substring sisi+1…si+|d|−1sisi+1…si+|d|−1 is equal to dd. For example, AB(AB⁡(aabbbabaa)=2)=2 since there are two indices ii: i=2i=2 where aabbbabaa and i=6i=6 where aabbbabaa.
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤10001≤t≤1000). Description of the test cases follows.The first and only line of each test case contains a single string ss (1≤|s|≤1001≤|s|≤100, where |s||s| is the length of the string ss), consisting only of characters a and/or b.
+OutputFor each test case, print the resulting string ss with AB(s)=BA(s)AB⁡(s)=BA⁡(s) you'll get making the minimum number of steps.If there are multiple answers, print any of them.
+ExampleInputCopy4
+b
+aabbbabaa
+abbb
+abbaab
+OutputCopyb
+aabbbabaa
+bbbb
+abbaaa
+NoteIn the first test case, both AB(s)=0AB⁡(s)=0 and BA(s)=0BA⁡(s)=0 (there are no occurrences of ab (ba) in b), so can leave ss untouched.In the second test case, AB(s)=2AB⁡(s)=2 and BA(s)=2BA⁡(s)=2, so you can leave ss untouched. In the third test case, AB(s)=1AB⁡(s)=1 and BA(s)=0BA⁡(s)=0. For example, we can change s1s1 to b and make both values zero.In the fourth test case, AB(s)=2AB⁡(s)=2 and BA(s)=1BA⁡(s)=1. For example, we can change s6s6 to a and make both values equal to 11.

@@ -1,0 +1,42 @@
+
+Chefland consists of nn cities numbered 11, 22, …n…n. The cities numbered 11, 22, …k…k are special cities. For each unordered pair i,ji,j, there exists a bidirectional road, destroying which has a cost of wi,jwi,j. Find the minimum cost of destroying some subset of roads so that no two special cities have a path between them after the removal of these roads.
+
+Input
+
+There are multiple independent testcases.
+
+First line will contain TT, number of testcases.
+The first line of each testcase contains nn and kk, the number of cities and the number of special cities respectively.
+The jthjth integer in ithith of the next nn lines is wijwij.
+
+Output
+
+For each testcase, output the minimum cost of destroying some subset of roads so that no two special cities have a path between them after the removal of these roads.
+
+Constraints
+
+1≤T≤51≤T≤5
+3≤n≤203≤n≤20
+3≤k≤n3≤k≤n
+The sum of nn over all testcases doesn't exceed 2020.
+For all ii, wii=0wii=0
+For all i≠ji≠j, wij=wjiwij=wji, 1≤wij≤1061≤wij≤106
+
+Example Input
+
+1
+4 3
+0 1 4 2
+1 0 2 2
+4 2 0 3
+2 2 3 0
+
+Example Output
+
+11
+
+Explanation
+
+Remove the roads (1,2)(1,2), (1,3)(1,3), (1,4)(1,4), (2,3)(2,3), (2,4)(2,4) to get a cost of 1+4+2+2+2=111+4+2+2+2=11.
+
+

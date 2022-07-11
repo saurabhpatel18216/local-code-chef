@@ -1,0 +1,15 @@
+Dasha has 1010010100 coins. Recently, she found a binary string ss of length nn and some operations that allows to change this string (she can do each operation any number of times):  Replace substring 00 of ss by 0 and receive aa coins.  Replace substring 11 of ss by 1 and receive bb coins.  Remove 0 from any position in ss and pay cc coins. It turned out that while doing this operations Dasha should follow the rule:  It is forbidden to do two operations with the same parity in a row. Operations are numbered by integers 11-33 in the order they are given above. Please, calculate what is the maximum profit Dasha can get by doing these operations and following this rule.
+InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of test cases.The first line of each test case contains four integers nn, aa, bb, cc (1≤n≤105,1≤a,b,c≤1091≤n≤105,1≤a,b,c≤109).The second line of each test case contains a binary string ss of length nn.It is guaranteed that the total sum of nn over all test cases doesn't exceed 2⋅1052⋅105.
+OutputFor each test case print the answer.
+ExampleInputCopy3
+5 2 2 1
+01101
+6 4 3 5
+110001
+6 3 2 1
+011110
+OutputCopy3
+11
+4
+
+NoteIn the first test case one of the optimal sequences of operations is 01101 →→ 0101 →→ 011 →→ 01. This sequence of operations consists of operations 22, 33 and 22 in this order. It satisfies all rules and gives profit 33. It can be shown that it is impossible to achieve higher profit in this test case, so the answer is 33.In the second test case one of the optimal sequences of operations is 110001 →→ 11001 →→ 1001 →→ 101.In the third test case one of the optimal sequences of operations is 011110 →→ 01110 →→ 1110 →→ 110 →→ 11 →→ 1.

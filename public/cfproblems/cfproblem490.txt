@@ -1,0 +1,13 @@
+Let c1,c2,…,cnc1,c2,…,cn be a permutation of integers 1,2,…,n1,2,…,n. Consider all subsegments of this permutation containing an integer xx. Given an integer mm, we call the integer xx good if there are exactly mm different values of maximum on these subsegments.Cirno is studying mathematics, and the teacher asks her to count the number of permutations of length nn with exactly kk good numbers.Unfortunately, Cirno isn't good at mathematics, and she can't answer this question. Therefore, she asks you for help.Since the answer may be very big, you only need to tell her the number of permutations modulo pp.A permutation is an array consisting of nn distinct integers from 11 to nn in arbitrary order. For example, [2,3,1,5,4][2,3,1,5,4] is a permutation, but [1,2,2][1,2,2] is not a permutation (22 appears twice in the array) and [1,3,4][1,3,4] is also not a permutation (n=3n=3 but there is 44 in the array).A sequence aa is a subsegment of a sequence bb if aa can be obtained from bb by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.
+InputThe first line contains four integers n,m,k,pn,m,k,p (1≤n≤100,1≤m≤n,1≤k≤n,1≤p≤1091≤n≤100,1≤m≤n,1≤k≤n,1≤p≤109).
+OutputOutput the number of permutations modulo pp.
+ExamplesInputCopy4 3 2 10007
+OutputCopy4
+InputCopy6 4 1 769626776
+OutputCopy472
+InputCopy66 11 9 786747482
+OutputCopy206331312
+InputCopy99 30 18 650457567
+OutputCopy77365367
+
+NoteIn the first test case, there are four permutations: [1,3,2,4][1,3,2,4], [2,3,1,4][2,3,1,4], [4,1,3,2][4,1,3,2] and [4,2,3,1][4,2,3,1].Take permutation [1,3,2,4][1,3,2,4] as an example:For number 11, all subsegments containing it are: [1][1], [1,3][1,3], [1,3,2][1,3,2] and [1,3,2,4][1,3,2,4], and there're three different maxima 11, 33 and 44.Similarly, for number 33, there're two different maxima 33 and 44. For number 22, there're three different maxima 22, 33 and 44. And for number 44, there're only one, that is 44 itself.

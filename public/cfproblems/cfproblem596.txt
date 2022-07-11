@@ -1,0 +1,16 @@
+PizzaForces is Petya's favorite pizzeria. PizzaForces makes and sells pizzas of three sizes: small pizzas consist of 66 slices, medium ones consist of 88 slices, and large pizzas consist of 1010 slices each. Baking them takes 1515, 2020 and 2525 minutes, respectively.Petya's birthday is today, and nn of his friends will come, so he decided to make an order from his favorite pizzeria. Petya wants to order so much pizza that each of his friends gets at least one slice of pizza. The cooking time of the order is the total baking time of all the pizzas in the order.Your task is to determine the minimum number of minutes that is needed to make pizzas containing at least nn slices in total. For example:   if 1212 friends come to Petya's birthday, he has to order pizzas containing at least 1212 slices in total. He can order two small pizzas, containing exactly 1212 slices, and the time to bake them is 3030 minutes;  if 1515 friends come to Petya's birthday, he has to order pizzas containing at least 1515 slices in total. He can order a small pizza and a large pizza, containing 1616 slices, and the time to bake them is 4040 minutes;  if 300300 friends come to Petya's birthday, he has to order pizzas containing at least 300300 slices in total. He can order 1515 small pizzas, 1010 medium pizzas and 1313 large pizzas, in total they contain 15⋅6+10⋅8+13⋅10=30015⋅6+10⋅8+13⋅10=300 slices, and the total time to bake them is 15⋅15+10⋅20+13⋅25=75015⋅15+10⋅20+13⋅25=750 minutes;  if only one friend comes to Petya's birthday, he can order a small pizza, and the time to bake it is 1515 minutes. 
+InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of testcases.Each testcase consists of a single line that contains a single integer nn (1≤n≤10161≤n≤1016) — the number of Petya's friends.
+OutputFor each testcase, print one integer — the minimum number of minutes that is needed to bake pizzas containing at least nn slices in total.
+ExampleInputCopy6
+12
+15
+300
+1
+9999999999999999
+3
+OutputCopy30
+40
+750
+15
+25000000000000000
+15

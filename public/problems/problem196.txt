@@ -1,0 +1,41 @@
+
+Flippy the bird has a tree with NN nodes. Each edge has a weight wiwi. We can choose one of the vertices as the root of the tree, say rr. Then, the height of the node uu would be the sum of the weights on the path from rr to uu.
+
+Suppose we take the node uu as the root. What is the sum of the heights of all nodes? Answer this question for all possible nodes uu.
+
+Input
+
+The first line contains a single integer NN, the number of nodes of the tree.
+The next n−1n−1 lines contain three space-separated integers, uu, vv, ww, denoting the endpoints of the edge and the weight of the edge respectively.
+
+Output
+
+Output nn space-separated integers. The ithith integer denotes the sum of heights of all vertices if node ii is chosen as root.
+
+Constraints
+
+2≤n≤3⋅1052≤n≤3⋅105
+1≤wi≤1081≤wi≤108
+
+Subtasks
+
+Subtask 1 (28 points): 2≤n≤50002≤n≤5000
+
+Subtask 2 (72 points): Original Constraints
+
+Example Input
+
+4
+1 2 3
+2 3 5
+2 4 6
+
+Example Output
+
+20 14 24 26
+
+Explanation
+
+The heights of the nodes when the root is 11 are 00, 33, 88, 99 respectively. So, the sum is 0+3+8+9=200+3+8+9=20. Similarly, you can calculate this value for the case when other nodes are chosen as root as well.
+
+

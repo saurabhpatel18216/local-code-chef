@@ -1,0 +1,22 @@
+The difference between the versions is in the costs of operations. Solution for one version won't work for another!Alice has a grid of size n×mn×m, initially all its cells are colored white. The cell on the intersection of ii-th row and jj-th column is denoted as (i,j)(i,j). Alice can do the following operations with this grid:Choose any subrectangle containing cell (1,1)(1,1), and flip the colors of all its cells. (Flipping means changing its color from white to black or from black to white). This operation costs 11 coin.Choose any subrectangle containing cell (n,1)(n,1), and flip the colors of all its cells. This operation costs 22 coins.Choose any subrectangle containing cell (1,m)(1,m), and flip the colors of all its cells. This operation costs 44 coins.Choose any subrectangle containing cell (n,m)(n,m), and flip the colors of all its cells. This operation costs 33 coins. As a reminder, subrectangle is a set of all cells (x,y)(x,y) with x1≤x≤x2x1≤x≤x2, y1≤y≤y2y1≤y≤y2 for some 1≤x1≤x2≤n1≤x1≤x2≤n, 1≤y1≤y2≤m1≤y1≤y2≤m.Alice wants to obtain her favorite coloring with these operations. What's the smallest number of coins that she would have to spend? It can be shown that it's always possible to transform the initial grid into any other.
+InputThe first line of the input contains 22 integers n,mn,m (1≤n,m≤5001≤n,m≤500) — the dimensions of the grid.The ii-th of the next nn lines contains a string sisi of length mm, consisting of letters W and B. The jj-th character of string sisi is W if the cell (i,j)(i,j) is colored white in the favorite coloring of Alice, and B if it's colored black.
+OutputOutput the smallest number of coins Alice would have to spend to achieve her favorite coloring.
+ExamplesInputCopy3 3
+WWW
+WBB
+WBB
+OutputCopy3
+InputCopy10 15
+WWWBBBWBBBBBWWW
+BBBBWWWBBWWWBBB
+BBBWWBWBBBWWWBB
+BBWBWBBWWWBBWBW
+BBBBWWWBBBWWWBB
+BWBBWWBBBBBBWWW
+WBWWBBBBWWBBBWW
+WWBWWWWBBWWBWWW
+BWBWWBWWWWWWBWB
+BBBWBWBWBBBWWBW
+OutputCopy74
+
+NoteIn the first sample, it's optimal to just apply the fourth operation once to the rectangle containing cells (2,2),(2,3),(3,2),(3,3)(2,2),(2,3),(3,2),(3,3). This would cost 33 coins.

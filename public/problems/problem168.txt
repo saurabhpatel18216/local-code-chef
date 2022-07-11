@@ -1,0 +1,57 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+
+The Professor is going on a trip with his family this weekend. The country where they live is a federation of NN states (numbered 11 through NN) with RR bidirectional interstate roads connecting them. For each road, we know the amount of fuel the Professor needs to traverse it; travelling within a state consumes no fuel. For each ii, the price of fuel in state ii is fixed at FiFi units of money per litre.
+
+Despite Professor's outstanding talent and his great scientific prowess, he has some bad habits as well: he is too penny-wise, so he carries huge barrels in his car in order to store extra petrol and avoid buying petrol in expensive states. Therefore, he is able to carry any amount of fuel he wants at any moment during the trip, and he is also fine with visiting the same state more than once on the trip if it saves him money. The Professor starts the trip without any fuel.
+
+Help the Professor find the minimum possible amount of money he should spend on fuel in order to travel from state PP to state QQ.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains two space-separated integers NN and RR.
+Each of the next RR lines contains three space-separated integers uu, vv and ww denoting that states uu and vv are connected by a road and it takes ww litres of fuel to traverse that road.
+The next line contains NN space-separated integers F1,F2,…,FNF1,F2,…,FN.
+The next line contains two space-separated integers PP and QQ.
+
+Output
+
+For each test case, print a single line containing one integer ― the minimum amount of money the Professor has to spend.
+
+Constraints
+
+1≤T≤51≤T≤5
+1≤N≤3001≤N≤300
+1≤R≤N⋅(N−1)/21≤R≤N⋅(N−1)/2
+1≤u,v,P,Q≤N1≤u,v,P,Q≤N
+each road connects two different states
+no two roads connect the same pair of states
+1≤w≤1061≤w≤106
+1≤Fi≤1091≤Fi≤109 for each valid ii
+
+Subtasks
+
+Subtask #1 (40 points): N≤50N≤50
+
+Subtask #2 (60 points): original constraints
+
+Sample Input 1
+
+1
+4 3
+1 2 3
+2 3 1
+2 4 7
+3 6 2 2
+1 4
+
+Sample Output 1
+
+28
+
+Explanation
+
+Example case 1: The Professor can buy 1010 litres of petrol in state 11, travel to state 22 and then to state 44. This way, he spends 3030 units of money. However, the optimal solution is to buy 44 litres of petrol in state 11, travel to state 22, then to state 33, buy 88 litres of petrol in state 33 and then travel to state 44, since this costs only 2828 units of money.
+
+

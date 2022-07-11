@@ -1,0 +1,18 @@
+You are given an undirected graph of nn vertices indexed from 11 to nn, where vertex ii has a value aiai assigned to it and all values aiai are different. There is an edge between two vertices uu and vv if either auau divides avav or avav divides auau.Find the minimum number of vertices to remove such that the remaining graph is bipartite, when you remove a vertex you remove all the edges incident to it.
+InputThe input consists of multiple test cases. The first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of test cases. Description of the test cases follows.The first line of each test case contains a single integer nn (1≤n≤5⋅1041≤n≤5⋅104) — the number of vertices in the graph.The second line of each test case contains nn integers, the ii-th of them is the value aiai (1≤ai≤5⋅1041≤ai≤5⋅104) assigned to the ii-th vertex, all values aiai are different.It is guaranteed that the sum of nn over all test cases does not exceed 5⋅1045⋅104.
+OutputFor each test case print a single integer — the minimum number of vertices to remove such that the remaining graph is bipartite.
+ExampleInputCopy4
+4
+8 4 2 1
+4
+30 2 3 5
+5
+12 4 6 2 3
+10
+85 195 5 39 3 13 266 154 14 2
+OutputCopy2
+0
+1
+2
+
+NoteIn the first test case if we remove the vertices with values 11 and 22 we will obtain a bipartite graph, so the answer is 22, it is impossible to remove less than 22 vertices and still obtain a bipartite graph. BeforeAfter test case #1 In the second test case we do not have to remove any vertex because the graph is already bipartite, so the answer is 00. BeforeAfter test case #2 In the third test case we only have to remove the vertex with value 1212, so the answer is 11. BeforeAfter test case #3 In the fourth test case we remove the vertices with values 22 and 195195, so the answer is 22. BeforeAfter test case #4 

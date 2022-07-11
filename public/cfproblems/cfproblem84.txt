@@ -1,0 +1,11 @@
+Consider every tree (connected undirected acyclic graph) with nn vertices (nn is odd, vertices numbered from 11 to nn), and for each 2≤i≤n2≤i≤n the ii-th vertex is adjacent to exactly one vertex with a smaller index.For each ii (1≤i≤n1≤i≤n) calculate the number of trees for which the ii-th vertex will be the centroid. The answer can be huge, output it modulo 998244353998244353.A vertex is called a centroid if its removal splits the tree into subtrees with at most (n−1)/2(n−1)/2 vertices each.
+InputThe first line contains an odd integer nn (3≤n<2⋅1053≤n<2⋅105, nn is odd) — the number of the vertices in the tree.
+OutputPrint nn integers in a single line, the ii-th integer is the answer for the ii-th vertex (modulo 998244353998244353).
+ExamplesInputCopy3
+OutputCopy1 1 0 
+InputCopy5
+OutputCopy10 10 4 0 0 
+InputCopy7
+OutputCopy276 276 132 36 0 0 0 
+
+NoteExample 11: there are two possible trees: with edges (1−2)(1−2), and (1−3)(1−3) — here the centroid is 11; and with edges (1−2)(1−2), and (2−3)(2−3) — here the centroid is 22. So the answer is 1,1,01,1,0.Example 22: there are 2424 possible trees, for example with edges (1−2)(1−2), (2−3)(2−3), (3−4)(3−4), and (4−5)(4−5). Here the centroid is 33.

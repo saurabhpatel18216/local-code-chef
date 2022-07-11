@@ -1,0 +1,16 @@
+We say that a positive integer nn is kk-good for some positive integer kk if nn can be expressed as a sum of kk positive integers which give kk distinct remainders when divided by kk.Given a positive integer nn, find some k≥2k≥2 so that nn is kk-good or tell that such a kk does not exist.
+InputThe input consists of multiple test cases. The first line contains a single integer tt (1≤t≤1051≤t≤105) — the number of test cases.Each test case consists of one line with an integer nn (2≤n≤10182≤n≤1018).
+OutputFor each test case, print a line with a value of kk such that nn is kk-good (k≥2k≥2), or −1−1 if nn is not kk-good for any kk. If there are multiple valid values of kk, you can print any of them.
+ExampleInputCopy5
+2
+4
+6
+15
+20
+OutputCopy-1
+-1
+3
+3
+5
+
+Note66 is a 33-good number since it can be expressed as a sum of 33 numbers which give different remainders when divided by 33: 6=1+2+36=1+2+3.1515 is also a 33-good number since 15=1+5+915=1+5+9 and 1,5,91,5,9 give different remainders when divided by 33.2020 is a 55-good number since 20=2+3+4+5+620=2+3+4+5+6 and 2,3,4,5,62,3,4,5,6 give different remainders when divided by 55.

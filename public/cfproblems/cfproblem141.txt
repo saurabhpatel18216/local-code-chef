@@ -1,0 +1,16 @@
+Vasya decided to go to the grocery store. He found in his wallet aa coins of 11 burle and bb coins of 22 burles. He does not yet know the total cost of all goods, so help him find out ss (s>0s>0): the minimum positive integer amount of money he cannot pay without change or pay at all using only his coins.For example, if a=1a=1 and b=1b=1 (he has one 11-burle coin and one 22-burle coin), then:  he can pay 11 burle without change, paying with one 11-burle coin,  he can pay 22 burle without change, paying with one 22-burle coin,  he can pay 33 burle without change by paying with one 11-burle coin and one 22-burle coin,  he cannot pay 44 burle without change (moreover, he cannot pay this amount at all). So for a=1a=1 and b=1b=1 the answer is s=4s=4.
+InputThe first line of the input contains an integer tt (1≤t≤1041≤t≤104) — the number of test cases in the test.The description of each test case consists of one line containing two integers aiai and bibi (0≤ai,bi≤1080≤ai,bi≤108) — the number of 11-burle coins and 22-burles coins Vasya has respectively.
+OutputFor each test case, on a separate line print one integer ss (s>0s>0): the minimum positive integer amount of money that Vasya cannot pay without change or pay at all.
+ExampleInputCopy5
+1 1
+4 0
+0 2
+0 0
+2314 2374
+OutputCopy4
+5
+1
+1
+7063
+
+Note  The first test case of the example is clarified into the main part of the statement.  In the second test case, Vasya has only 11 burle coins, and he can collect either any amount from 11 to 44, but 55 can't.  In the second test case, Vasya has only 22 burle coins, and he cannot pay 11 burle without change.  In the fourth test case you don't have any coins, and he can't even pay 11 burle. 

@@ -1,0 +1,42 @@
+
+Motu is playing a game. In this game he has given NN boxes. First box contains exactly PP ball(s) and last box contains exactly QQ ball(s). He needs to fill the rest boxes with the following conditions :
+
+a) Each box contain balls between 11 to KK (inclusive)
+
+b) Adjacent boxes must contain distinctdistinct number of balls
+
+As Motu is only good in eating, so he is not able to find the number of ways to fill the boxes. Help him in calculating the number of ways to fill the boxes with given conditions. 
+You are given N, K, P, Q.
+
+Input:
+
+-The first line of input contain a single integer TT denoting the number of test cases.
+
+-For each test case there are four space-separated integers NN, KK ,PP and QQ.
+
+Output:
+
+For each testcase, output in a single line , the number of ways to fill the boxes modulo 10000000071000000007.
+
+Constraints
+
+1≤T≤1001≤T≤100
+3≤N≤1053≤N≤105
+2≤K≤1052≤K≤105
+1≤P≤K1≤P≤K
+1≤Q≤K1≤Q≤K
+
+Sample Input:
+
+1
+4 3 2 3
+
+Sample Output:
+
+3
+
+EXPLANATION:
+
+For N=4,K=3,P=2,Q=3N=4,K=3,P=2,Q=3,  ways re [2,1,2,3][2,1,2,3], [2,3,1,3][2,3,1,3], [2,3,2,3][2,3,2,3]
+
+

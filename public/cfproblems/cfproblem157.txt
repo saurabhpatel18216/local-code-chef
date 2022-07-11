@@ -1,0 +1,38 @@
+Monocarp is playing a strategy game. In the game, he recruits a squad to fight monsters. Before each battle, Monocarp has CC coins to spend on his squad.Before each battle starts, his squad is empty. Monocarp chooses one type of units and recruits no more units of that type than he can recruit with CC coins.There are nn types of units. Every unit type has three parameters:   cici — the cost of recruiting one unit of the ii-th type;  didi — the damage that one unit of the ii-th type deals in a second;  hihi — the amount of health of one unit of the ii-th type. Monocarp has to face mm monsters. Every monster has two parameters:   DjDj — the damage that the jj-th monster deals in a second;  HjHj — the amount of health the jj-th monster has. Monocarp has to fight only the jj-th monster during the jj-th battle. He wants all his recruited units to stay alive. Both Monocarp's squad and the monster attack continuously (not once per second) and at the same time. Thus, Monocarp wins the battle if and only if his squad kills the monster strictly faster than the monster kills one of his units. The time is compared with no rounding.For each monster, Monocarp wants to know the minimum amount of coins he has to spend to kill that monster. If this amount is greater than CC, then report that it's impossible to kill that monster.
+InputThe first line contains two integers nn and CC (1≤n≤3⋅1051≤n≤3⋅105; 1≤C≤1061≤C≤106) — the number of types of units and the amount of coins Monocarp has before each battle.The ii-th of the next nn lines contains three integers ci,dici,di and hihi (1≤ci≤C1≤ci≤C; 1≤di,hi≤1061≤di,hi≤106).The next line contains a single integer mm (1≤m≤3⋅1051≤m≤3⋅105) — the number of monsters that Monocarp has to face.The jj-th of the next mm lines contains two integers DjDj and HjHj (1≤Dj≤1061≤Dj≤106; 1≤Hj≤10121≤Hj≤1012).
+OutputPrint mm integers. For each monster, print the minimum amount of coins Monocarp has to spend to kill that monster. If this amount is greater than CC, then print −1−1.
+ExamplesInputCopy3 10
+3 4 6
+5 5 5
+10 3 4
+3
+8 3
+5 4
+10 15
+OutputCopy5 3 -1 
+InputCopy5 15
+14 10 3
+9 2 2
+10 4 3
+7 3 5
+4 3 1
+6
+11 2
+1 1
+4 7
+2 1
+1 14
+3 3
+OutputCopy14 4 14 4 7 7 
+InputCopy5 13
+13 1 9
+6 4 5
+12 18 4
+9 13 2
+5 4 5
+2
+16 3
+6 2
+OutputCopy12 5 
+
+NoteConsider the first monster of the first example.Monocarp can't recruit one unit of the first type, because it will take both him and the monster 0.750.75 seconds to kill each other. He can recruit two units for the cost of 66 coins and kill the monster in 0.3750.375 second.Monocarp can recruit one unit of the second type, because he kills the monster in 0.60.6 seconds, and the monster kills him in 0.6250.625 seconds. The unit is faster. Thus, 55 coins is enough.Monocarp will need at least three units of the third type to kill the first monster, that will cost 3030 coins.Monocarp will spend the least coins if he chooses the second type of units and recruits one unit of that type.

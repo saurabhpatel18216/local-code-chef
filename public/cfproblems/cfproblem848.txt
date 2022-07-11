@@ -1,0 +1,8 @@
+Let's define the cost of a string ss as the number of index pairs ii and jj (1≤i<j<|s|1≤i<j<|s|) such that si=sjsi=sj and si+1=sj+1si+1=sj+1.You are given two positive integers nn and kk. Among all strings with length nn that contain only the first kk characters of the Latin alphabet, find a string with minimum possible cost. If there are multiple such strings with minimum cost — find any of them.
+InputThe only line contains two integers nn and kk (1≤n≤2⋅105;1≤k≤261≤n≤2⋅105;1≤k≤26).
+OutputPrint the string ss such that it consists of nn characters, each its character is one of the kk first Latin letters, and it has the minimum possible cost among all these strings. If there are multiple such strings — print any of them.
+ExamplesInputCopy9 4
+OutputCopyaabacadbb
+InputCopy5 1
+OutputCopyaaaaaInputCopy10 26
+OutputCopycodeforces

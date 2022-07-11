@@ -1,0 +1,20 @@
+You have a large rectangular board which is divided into n×mn×m cells (the board has nn rows and mm columns). Each cell is either white or black.You paint each white cell either red or blue. Obviously, the number of different ways to paint them is 2w2w, where ww is the number of white cells.After painting the white cells of the board, you want to place the maximum number of dominoes on it, according to the following rules:  each domino covers two adjacent cells;  each cell is covered by at most one domino;  if a domino is placed horizontally (it covers two adjacent cells in one of the rows), it should cover only red cells;  if a domino is placed vertically (it covers two adjacent cells in one of the columns), it should cover only blue cells. Let the value of the board be the maximum number of dominoes you can place. Calculate the sum of values of the board over all 2w2w possible ways to paint it. Since it can be huge, print it modulo 998244353998244353.
+InputThe first line contains two integers nn and mm (1≤n,m≤3⋅1051≤n,m≤3⋅105; nm≤3⋅105nm≤3⋅105) — the number of rows and columns, respectively.Then nn lines follow, each line contains a string of mm characters. The jj-th character in the ii-th string is * if the jj-th cell in the ii-th row is black; otherwise, that character is o.
+OutputPrint one integer — the sum of values of the board over all 2w2w possible ways to paint it, taken modulo 998244353998244353.
+ExamplesInputCopy3 4
+**oo
+oo*o
+**oo
+OutputCopy144
+InputCopy3 4
+**oo
+oo**
+**oo
+OutputCopy48
+InputCopy2 2
+oo
+o*
+OutputCopy4
+InputCopy1 4
+oooo
+OutputCopy9

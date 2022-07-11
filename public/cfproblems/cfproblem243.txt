@@ -1,0 +1,11 @@
+Vitaly gave Maxim nn numbers 1,2,…,n1,2,…,n for his 1616-th birthday. Maxim was tired of playing board games during the celebration, so he decided to play with these numbers. In one step Maxim can choose two numbers xx and yy from the numbers he has, throw them away, and add two numbers x+yx+y and |x−y||x−y| instead. He wants all his numbers to be equal after several steps and the sum of the numbers to be minimal.Help Maxim to find a solution. Maxim's friends don't want to wait long, so the number of steps in the solution should not exceed 20n20n. It is guaranteed that under the given constraints, if a solution exists, then there exists a solution that makes all numbers equal, minimizes their sum, and spends no more than 20n20n moves.
+InputThe first line contains a single integer tt (1≤t≤250001≤t≤25000) — the number of test cases.Each test case contains a single integer nn (2≤n≤5⋅1042≤n≤5⋅104) — the number of integers given to Maxim.It is guaranteed that the total sum of nn doesn't exceed 5⋅1045⋅104.
+OutputFor each test case print −1−1 if it's impossible to make all numbers equal.Otherwise print a single integer ss (0≤s≤20n0≤s≤20n) — the number of steps. Then print ss lines. The ii-th line must contain two integers xixi and yiyi — numbers that Maxim chooses on the ii-th step. The numbers must become equal after all operations.Don't forget that you not only need to make all numbers equal, but also minimize their sum. It is guaranteed that under the given constraints, if a solution exists, then there exists a solution that makes all numbers equal, minimizes their sum, and spends no more than 20n20n moves.
+ExampleInputCopy2
+2
+3
+OutputCopy-1
+3
+1 3
+2 2
+4 0

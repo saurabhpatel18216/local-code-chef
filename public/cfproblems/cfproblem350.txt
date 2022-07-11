@@ -1,0 +1,32 @@
+After many unsuccessful tries, Mashtali decided to copy modify an AtCoder problem. So here is his copied new problem:There is a tree with nn vertices and some non-empty set of the vertices are pinned to the ground.Two players play a game against each other on the tree. They alternately perform the following action:  Remove an edge from the tree, then remove every connected component that has no pinned vertex.The player who cannot move loses(every edge has been deleted already). You are given the tree, but not the set of the pinned vertices. Your task is to determine, for each kk, the winner of the game, if only the vertices 1,2,3,…,k1,2,3,…,k are pinned and both players play optimally.
+InputThe first line of input contains an integer nn — the number of vertices (1≤n≤3⋅1051≤n≤3⋅105).The ii-th of the following n−1n−1 lines contains two integers ui,viui,vi (1≤ui,vi≤n1≤ui,vi≤n, ui≠viui≠vi) — the endpoints of the ii-th edge. It's guaranteed that these edges form a tree.
+OutputPrint a string of length nn. The ii-th character should be '1' if the first player wins the ii-th scenario, and '2' otherwise.
+ExamplesInputCopy5
+1 2
+2 3
+2 4
+4 5
+OutputCopy11122
+InputCopy5
+1 2
+2 3
+1 4
+4 5
+OutputCopy21122
+InputCopy6
+1 2
+2 4
+5 1
+6 3
+3 2
+OutputCopy111111
+InputCopy7
+1 2
+3 7
+4 6
+2 3
+2 4
+1 5
+OutputCopy2212222
+
+NoteBelow you can see the tree in the first sample :  If k=1k=1 then the first player can cut the edge (1,2)(1,2).If k=2k=2 or k=3k=3, the first player can cut the edge (2,4)(2,4), after that only the edges (1,2)(1,2) and (2,3)(2,3) remain. After the second players move, there will be a single edge left for the first player to cut. So first player wins.

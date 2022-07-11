@@ -1,0 +1,12 @@
+We will consider the numbers aa and bb as adjacent if they differ by exactly one, that is, |a−b|=1|a−b|=1.We will consider cells of a square matrix n×nn×n as adjacent if they have a common side, that is, for cell (r,c)(r,c) cells (r,c−1)(r,c−1), (r,c+1)(r,c+1), (r−1,c)(r−1,c) and (r+1,c)(r+1,c) are adjacent to it.For a given number nn, construct a square matrix n×nn×n such that:   Each integer from 11 to n2n2 occurs in this matrix exactly once;  If (r1,c1)(r1,c1) and (r2,c2)(r2,c2) are adjacent cells, then the numbers written in them must not be adjacent. 
+InputThe first line contains one integer tt (1≤t≤1001≤t≤100). Then tt test cases follow.Each test case is characterized by one integer nn (1≤n≤1001≤n≤100).
+OutputFor each test case, output:   -1, if the required matrix does not exist;  the required matrix, otherwise (any such matrix if many of them exist). The matrix should be outputted as nn lines, where each line contains nn integers.
+ExampleInputCopy3
+1
+2
+3
+OutputCopy1
+-1
+2 9 7
+4 6 3
+1 8 5

@@ -1,0 +1,21 @@
+  William has array of nn numbers a1,a2,…,ana1,a2,…,an. He can perform the following sequence of operations any number of times:   Pick any two items from array aiai and ajaj, where aiai must be a multiple of 22  ai=ai2ai=ai2  aj=aj⋅2aj=aj⋅2 Help William find the maximal sum of array elements, which he can get by performing the sequence of operations described above.
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤1041≤t≤104). Description of the test cases follows.The first line of each test case contains an integer nn (1≤n≤15)(1≤n≤15), the number of elements in William's array.The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai<16)(1≤ai<16), the contents of William's array.
+OutputFor each test case output the maximal sum of array elements after performing an optimal sequence of operations.
+ExampleInputCopy5
+3
+6 4 2
+5
+1 2 3 4 5
+1
+10
+3
+2 3 4
+15
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8
+OutputCopy50
+46
+10
+26
+35184372088846
+
+NoteIn the first example test case the optimal sequence would be:   Pick i=2i=2 and j=1j=1. After performing a sequence of operations a2=42=2a2=42=2 and a1=6⋅2=12a1=6⋅2=12, making the array look as: [12, 2, 2].  Pick i=2i=2 and j=1j=1. After performing a sequence of operations a2=22=1a2=22=1 and a1=12⋅2=24a1=12⋅2=24, making the array look as: [24, 1, 2].  Pick i=3i=3 and j=1j=1. After performing a sequence of operations a3=22=1a3=22=1 and a1=24⋅2=48a1=24⋅2=48, making the array look as: [48, 1, 1]. The final answer 48+1+1=5048+1+1=50.In the third example test case there is no way to change the sum of elements, so the answer is 1010.

@@ -1,0 +1,36 @@
+You are given nn words of equal length mm, consisting of lowercase Latin alphabet letters. The ii-th word is denoted sisi.In one move you can choose any position in any single word and change the letter at that position to the previous or next letter in alphabetical order. For example:  you can change 'e' to 'd' or to 'f';  'a' can only be changed to 'b';  'z' can only be changed to 'y'. The difference between two words is the minimum number of moves required to make them equal. For example, the difference between "best" and "cost" is 1+10+0+0=111+10+0+0=11.Find the minimum difference of sisi and sjsj such that (i<j)(i<j). In other words, find the minimum difference over all possible pairs of the nn words.
+InputThe first line of the input contains a single integer tt (1≤t≤1001≤t≤100) — the number of test cases. The description of test cases follows.The first line of each test case contains 22 integers nn and mm (2≤n≤502≤n≤50, 1≤m≤81≤m≤8) — the number of strings and their length respectively.Then follows nn lines, the ii-th of which containing a single string sisi of length mm, consisting of lowercase Latin letters.
+OutputFor each test case, print a single integer — the minimum difference over all possible pairs of the given strings.
+ExampleInputCopy6
+2 4
+best
+cost
+6 3
+abb
+zba
+bef
+cdu
+ooo
+zzz
+2 7
+aaabbbc
+bbaezfe
+3 2
+ab
+ab
+ab
+2 8
+aaaaaaaa
+zzzzzzzz
+3 1
+a
+u
+y
+OutputCopy11
+8
+35
+0
+200
+4
+
+NoteFor the second test case, one can show that the best pair is ("abb","bef"), which has difference equal to 88, which can be obtained in the following way: change the first character of the first string to 'b' in one move, change the second character of the second string to 'b' in 33 moves and change the third character of the second string to 'b' in 44 moves, thus making in total 1+3+4=81+3+4=8 moves.For the third test case, there is only one possible pair and it can be shown that the minimum amount of moves necessary to make the strings equal is 3535.For the fourth test case, there is a pair of strings which is already equal, so the answer is 00.

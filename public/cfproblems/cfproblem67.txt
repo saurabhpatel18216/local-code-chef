@@ -1,0 +1,13 @@
+During their training for the ICPC competitions, team "Jee You See" stumbled upon a very basic counting problem. After many "Wrong answer" verdicts, they finally decided to give up and destroy turn-off the PC. Now they want your help in up-solving the problem.You are given 4 integers nn, ll, rr, and zz. Count the number of arrays aa of length nn containing non-negative integers such that:  l≤a1+a2+…+an≤rl≤a1+a2+…+an≤r, and  a1⊕a2⊕…⊕an=za1⊕a2⊕…⊕an=z, where ⊕⊕ denotes the bitwise XOR operation. Since the answer can be large, print it modulo 109+7109+7.
+InputThe only line contains four integers nn, ll, rr, zz (1≤n≤10001≤n≤1000, 1≤l≤r≤10181≤l≤r≤1018, 1≤z≤10181≤z≤1018).
+OutputPrint the number of arrays aa satisfying all requirements modulo 109+7109+7.
+ExamplesInputCopy3 1 5 1
+OutputCopy13
+InputCopy4 1 3 2
+OutputCopy4
+InputCopy2 1 100000 15629
+OutputCopy49152
+InputCopy100 56 89 66
+OutputCopy981727503
+
+NoteThe following arrays satisfy the conditions for the first sample:  [1,0,0][1,0,0];  [0,1,0][0,1,0];  [3,2,0][3,2,0];  [2,3,0][2,3,0];  [0,0,1][0,0,1];  [1,1,1][1,1,1];  [2,2,1][2,2,1];  [3,0,2][3,0,2];  [2,1,2][2,1,2];  [1,2,2][1,2,2];  [0,3,2][0,3,2];  [2,0,3][2,0,3];  [0,2,3][0,2,3]. The following arrays satisfy the conditions for the second sample:  [2,0,0,0][2,0,0,0];  [0,2,0,0][0,2,0,0];  [0,0,2,0][0,0,2,0];  [0,0,0,2][0,0,0,2]. 

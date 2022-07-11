@@ -1,0 +1,28 @@
+Let us denote by d(n)d(n) the sum of all divisors of the number nn, i.e. d(n)=∑k|nkd(n)=∑k|nk.For example, d(1)=1d(1)=1, d(4)=1+2+4=7d(4)=1+2+4=7, d(6)=1+2+3+6=12d(6)=1+2+3+6=12.For a given number cc, find the minimum nn such that d(n)=cd(n)=c.
+InputThe first line contains one integer tt (1≤t≤1041≤t≤104). Then tt test cases follow.Each test case is characterized by one integer cc (1≤c≤1071≤c≤107).
+OutputFor each test case, output:   "-1" if there is no such nn that d(n)=cd(n)=c;  nn, otherwise. 
+ExampleInputCopy12
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+39
+691
+OutputCopy1
+-1
+2
+3
+-1
+5
+4
+7
+-1
+-1
+18
+-1

@@ -1,0 +1,13 @@
+Once upon a time, Oolimry saw a suffix array. He wondered how many strings can produce this suffix array. More formally, given a suffix array of length nn and having an alphabet size kk, count the number of strings that produce such a suffix array. Let ss be a string of length nn. Then the ii-th suffix of ss is the substring s[i…n−1]s[i…n−1]. A suffix array is the array of integers that represent the starting indexes of all the suffixes of a given string, after the suffixes are sorted in the lexicographic order. For example, the suffix array of oolimry is [3,2,4,1,0,5,6][3,2,4,1,0,5,6] as the array of sorted suffixes is [imry,limry,mry,olimry,oolimry,ry,y][imry,limry,mry,olimry,oolimry,ry,y]. A string xx is lexicographically smaller than string yy, if either xx is a prefix of yy (and x≠yx≠y), or there exists such ii that xi<yixi<yi, and for any 1≤j<i1≤j<i , xj=yjxj=yj.
+InputThe first line contain 2 integers nn and kk (1≤n≤200000,1≤k≤2000001≤n≤200000,1≤k≤200000) — the length of the suffix array and the alphabet size respectively.The second line contains nn integers s0,s1,s2,…,sn−1s0,s1,s2,…,sn−1 (0≤si≤n−10≤si≤n−1) where sisi is the ii-th element of the suffix array i.e. the starting position of the ii-th lexicographically smallest suffix. It is guaranteed that for all 0≤i<j≤n−10≤i<j≤n−1, si≠sjsi≠sj.
+OutputPrint how many strings produce such a suffix array. Since the number can be very large, print the answer modulo 998244353998244353.
+ExamplesInputCopy3 2
+0 2 1
+OutputCopy1InputCopy5 1
+0 1 2 3 4
+OutputCopy0InputCopy6 200000
+0 1 2 3 4 5
+OutputCopy822243495InputCopy7 6
+3 2 4 1 0 5 6
+OutputCopy36
+NoteIn the first test case, "abb" is the only possible solution. In the second test case, it can be easily shown no possible strings exist as all the letters have to be equal. In the fourth test case, one possible string is "ddbacef".Please remember to print your answers modulo 998244353998244353.

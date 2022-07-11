@@ -1,0 +1,11 @@
+Lee couldn't sleep lately, because he had nightmares. In one of his nightmares (which was about an unbalanced global round), he decided to fight back and propose a problem below (which you should solve) to balance the round, hopefully setting him free from the nightmares.A non-empty array b1,b2,…,bmb1,b2,…,bm is called good, if there exist mm integer sequences which satisfy the following properties:  The ii-th sequence consists of bibi consecutive integers (for example if bi=3bi=3 then the ii-th sequence can be (−1,0,1)(−1,0,1) or (−5,−4,−3)(−5,−4,−3) but not (0,−1,1)(0,−1,1) or (1,2,3,4)(1,2,3,4)).  Assuming the sum of integers in the ii-th sequence is sumisumi, we want sum1+sum2+…+summsum1+sum2+…+summ to be equal to 00. You are given an array a1,a2,…,ana1,a2,…,an. It has 2n−12n−1 nonempty subsequences. Find how many of them are good.As this number can be very large, output it modulo 109+7109+7.An array cc is a subsequence of an array dd if cc can be obtained from dd by deletion of several (possibly, zero or all) elements.
+InputThe first line contains a single integer nn (2≤n≤2⋅1052≤n≤2⋅105) — the size of array aa.The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1091≤ai≤109) — elements of the array.
+OutputPrint a single integer — the number of nonempty good subsequences of aa, modulo 109+7109+7.
+ExamplesInputCopy4
+2 2 4 7
+OutputCopy10
+InputCopy10
+12391240 103904 1000000000 4142834 12039 142035823 1032840 49932183 230194823 984293123
+OutputCopy996
+
+NoteFor the first test, two examples of good subsequences are [2,7][2,7] and [2,2,4,7][2,2,4,7]:For b=[2,7]b=[2,7] we can use (−3,−4)(−3,−4) as the first sequence and (−2,−1,…,4)(−2,−1,…,4) as the second. Note that subsequence [2,7][2,7] appears twice in [2,2,4,7][2,2,4,7], so we have to count it twice.  Green circles denote (−3,−4)(−3,−4) and orange squares denote (−2,−1,…,4)(−2,−1,…,4). For b=[2,2,4,7]b=[2,2,4,7] the following sequences would satisfy the properties: (−1,0)(−1,0), (−3,−2)(−3,−2), (0,1,2,3)(0,1,2,3) and (−3,−2,…,3)(−3,−2,…,3)

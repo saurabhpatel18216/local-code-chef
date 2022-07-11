@@ -1,0 +1,17 @@
+Phoenix has collected nn pieces of gold, and he wants to weigh them together so he can feel rich. The ii-th piece of gold has weight wiwi. All weights are distinct. He will put his nn pieces of gold on a weight scale, one piece at a time. The scale has an unusual defect: if the total weight on it is exactly xx, it will explode. Can he put all nn gold pieces onto the scale in some order, without the scale exploding during the process? If so, help him find some possible order. Formally, rearrange the array ww so that for each ii (1≤i≤n)(1≤i≤n), ∑j=1iwj≠x∑j=1iwj≠x.
+InputThe input consists of multiple test cases. The first line contains an integer tt (1≤t≤10001≤t≤1000) — the number of test cases.The first line of each test case contains two integers nn and xx (1≤n≤1001≤n≤100; 1≤x≤1041≤x≤104) — the number of gold pieces that Phoenix has and the weight to avoid, respectively. The second line of each test case contains nn space-separated integers (1≤wi≤100)(1≤wi≤100) — the weights of the gold pieces. It is guaranteed that the weights are pairwise distinct.
+OutputFor each test case, if Phoenix cannot place all nn pieces without the scale exploding, print NO. Otherwise, print YES followed by the rearranged array ww. If there are multiple solutions, print any.
+ExampleInputCopy3
+3 2
+3 2 1
+5 3
+1 2 3 4 8
+1 5
+5
+OutputCopyYES
+3 2 1
+YES
+8 1 2 3 4
+NO
+
+NoteIn the first test case, Phoenix puts the gold piece with weight 33 on the scale first, then the piece with weight 22, and finally the piece with weight 11. The total weight on the scale is 33, then 55, then 66. The scale does not explode because the total weight on the scale is never 22.In the second test case, the total weight on the scale is 88, 99, 1111, 1414, then 1818. It is never 33.In the third test case, Phoenix must put the gold piece with weight 55 on the scale, and the scale will always explode.

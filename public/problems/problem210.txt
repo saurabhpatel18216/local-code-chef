@@ -1,0 +1,43 @@
+
+J.D.  a travel freak guy in NIT goes to hills in Nepal. JD want to take  exactly kk  steps to reach to the top and in  each step he climb aa or bb or cc  height above his initial position. Given height of hill as  HH and you have to find no of ways he can climb to the top of hill taking exactly kk steps.
+Finally output the answer modulo 10^9+7(1000000007).
+Read about modulo from here.  modulo_arithmetic
+
+Input:
+
+First line will contain HH 
+Next Line contain space separated integers the value of a, b, c
+Last contain value of and KK.
+
+Output:
+
+No of ways to reach the top of hill (can be 0 ).
+
+Constraints
+
+1≤H≤100001≤H≤10000
+1≤K≤1001≤K≤100
+1≤a,b,c≤100001≤a,b,c≤10000
+
+Subtasks
+
+50 points : 1≤a,b,c,k,n≤101≤a,b,c,k,n≤10
+50 points : Original Constraints
+
+Sample Input:
+
+6
+1 2 3
+3
+
+Sample Output:
+
+7
+
+EXPLANATION:
+
+The total ways can be 1+2+3=6 , 1+3+2=6 , 2+1+3=6  ,2+3+1=6 ,  3+1+2=6  , 3+2+1=6 ,  2+2+2=6 .
+Hence total answer is 7.
+Best of Luck!!
+
+

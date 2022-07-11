@@ -1,0 +1,15 @@
+There are nn people, numbered from 11 to nn, sitting at a round table. Person i+1i+1 is sitting to the right of person ii (with person 11 sitting to the right of person nn).You have come up with a better seating arrangement, which is given as a permutation p1,p2,…,pnp1,p2,…,pn. More specifically, you want to change the seats of the people so that at the end person pi+1pi+1 is sitting to the right of person pipi (with person p1p1 sitting to the right of person pnpn). Notice that for each seating arrangement there are nn permutations that describe it (which can be obtained by rotations).In order to achieve that, you can swap two people sitting at adjacent places; but there is a catch: for all 1≤x≤n−11≤x≤n−1 you cannot swap person xx and person x+1x+1 (notice that you can swap person nn and person 11). What is the minimum number of swaps necessary? It can be proven that any arrangement can be achieved.
+InputEach test contains multiple test cases. The first line contains an integer tt (1≤t≤100001≤t≤10000) — the number of test cases. The descriptions of the tt test cases follow.The first line of each test case contains a single integer nn (3≤n≤2000003≤n≤200000) — the number of people sitting at the table. The second line contains nn distinct integers p1,p2,…,pnp1,p2,…,pn (1≤pi≤n1≤pi≤n, pi≠pjpi≠pj for i≠ji≠j) — the desired final order of the people around the table.The sum of the values of nn over all test cases does not exceed 200000200000.
+OutputFor each test case, print the minimum number of swaps necessary to achieve the desired order.
+ExampleInputCopy3
+4
+2 3 1 4
+5
+5 4 3 2 1
+7
+4 1 6 5 3 7 2
+OutputCopy1
+10
+22
+
+NoteIn the first test case, we can swap person 44 and person 11 (who are adjacent) in the initial configuration and get the order [4,2,3,1][4,2,3,1] which is equivalent to the desired one. Hence in this case a single swap is sufficient.

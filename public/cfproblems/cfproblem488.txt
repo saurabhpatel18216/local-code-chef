@@ -1,0 +1,17 @@
+Alice has an integer sequence aa of length nn and all elements are different. She will choose a subsequence of aa of length mm, and defines the value of a subsequence ab1,ab2,…,abmab1,ab2,…,abm as ∑i=1m(m⋅abi)−∑i=1m∑j=1mf(min(bi,bj),max(bi,bj)),∑i=1m(m⋅abi)−∑i=1m∑j=1mf(min(bi,bj),max(bi,bj)), where f(i,j)f(i,j) denotes min(ai,ai+1,…,aj)min(ai,ai+1,…,aj).Alice wants you to help her to maximize the value of the subsequence she choose.A sequence ss is a subsequence of a sequence tt if ss can be obtained from tt by deletion of several (possibly, zero or all) elements.
+InputThe first line contains two integers nn and mm (1≤m≤n≤40001≤m≤n≤4000).The second line contains nn distinct integers a1,a2,…,ana1,a2,…,an (1≤ai<2311≤ai<231).
+OutputPrint the maximal value Alice can get.
+ExamplesInputCopy6 4
+15 2 18 12 13 4
+OutputCopy100
+InputCopy11 5
+9 3 7 1 8 12 10 20 15 18 5
+OutputCopy176
+InputCopy1 1
+114514
+OutputCopy0
+InputCopy2 1
+666 888
+OutputCopy0
+
+NoteIn the first example, Alice can choose the subsequence [15,2,18,13][15,2,18,13], which has the value 4⋅(15+2+18+13)−(15+2+2+2)−(2+2+2+2)−(2+2+18+12)−(2+2+12+13)=1004⋅(15+2+18+13)−(15+2+2+2)−(2+2+2+2)−(2+2+18+12)−(2+2+12+13)=100. In the second example, there are a variety of subsequences with value 176176, and one of them is [9,7,12,20,18][9,7,12,20,18].

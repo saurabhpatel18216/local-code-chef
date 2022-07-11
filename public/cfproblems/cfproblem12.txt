@@ -1,0 +1,14 @@
+Spring has come, and the management of the AvtoBus bus fleet has given the order to replace winter tires with summer tires on all buses.You own a small bus service business and you have just received an order to replace nn tires. You know that the bus fleet owns two types of buses: with two axles (these buses have 44 wheels) and with three axles (these buses have 66 wheels).You don't know how many buses of which type the AvtoBus bus fleet owns, so you wonder how many buses the fleet might have. You have to determine the minimum and the maximum number of buses that can be in the fleet if you know that the total number of wheels for all buses is nn.
+InputThe first line contains an integer tt (1≤t≤10001≤t≤1000) — the number of test cases. The following lines contain description of test cases.The only line of each test case contains one integer nn (1≤n≤10181≤n≤1018) — the total number of wheels for all buses.
+OutputFor each test case print the answer in a single line using the following format.Print two integers xx and yy (1≤x≤y1≤x≤y) — the minimum and the maximum possible number of buses that can be in the bus fleet.If there is no suitable number of buses for the given nn, print the number −1−1 as the answer.
+ExampleInputCopy4
+4
+7
+24
+998244353998244352
+OutputCopy1 1
+-1
+4 6
+166374058999707392 249561088499561088
+
+NoteIn the first test case the total number of wheels is 44. It means that there is the only one bus with two axles in the bus fleet.In the second test case it's easy to show that there is no suitable number of buses with 77 wheels in total.In the third test case the total number of wheels is 2424. The following options are possible:  Four buses with three axles.  Three buses with two axles and two buses with three axles.  Six buses with two axles. So the minimum number of buses is 44 and the maximum number of buses is 66.

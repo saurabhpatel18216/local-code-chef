@@ -1,0 +1,18 @@
+You like numbers, don't you? Nastia has a lot of numbers and she wants to share them with you! Isn't it amazing?Let aiai be how many numbers ii (1≤i≤k1≤i≤k) you have.An n×nn×n matrix is called beautiful if it contains all the numbers you have, and for each 2×22×2 submatrix of the original matrix is satisfied:   The number of occupied cells doesn't exceed 33;  The numbers on each diagonal are distinct. Make a beautiful matrix of minimum size.
+InputThe first line contains a single integer tt (1≤t≤100001≤t≤10000) — the number of test cases.The first line of each test case contains 22 integers mm and kk (1≤m,k≤1051≤m,k≤105) — how many numbers Nastia gave you and the length of the array aa, respectively.The second line of each test case contains kk integers a1,a2,…,aka1,a2,…,ak (0≤ai≤m0≤ai≤m, a1+a2+…+ak=ma1+a2+…+ak=m), where aiai is how many numbers ii you have.It's guaranteed that the sum of mm and kk in one test doesn't exceed 2⋅1052⋅105.
+OutputFor each tt test case print a single integer nn — the size of the beautiful matrix.In the next nn lines print nn integers bi,jbi,j (0≤bi,j≤k0≤bi,j≤k; if position is empty, print bi,j=0bi,j=0) — the beautiful matrix bb you made up. 
+ExampleInputCopy2
+3 4
+2 0 0 1
+15 4
+2 4 8 1
+OutputCopy2
+4 1
+0 1
+5
+3 0 0 2 2
+3 2 3 3 0
+0 1 0 4 0
+3 0 0 0 0
+2 1 3 3 3
+NoteNote that 00 in this problem represents a blank, not a number.Examples of possible answers for the first test case:141011404101114014104011Examples of not beautiful matrices for the first test case:140147111400104141711040The example of the not beautiful matrix for the second test case:33032421010300323003200033402232330010003000021333Everything is okay, except the left-top submatrix contains 44 numbers.

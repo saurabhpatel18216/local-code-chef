@@ -1,0 +1,21 @@
+Let's call a positive integer good if there is no digit 0 in its decimal representation.For an array of a good numbers aa, one found out that the sum of some two neighboring elements is equal to xx (i.e. x=ai+ai+1x=ai+ai+1 for some ii). xx had turned out to be a good number as well.Then the elements of the array aa were written out one after another without separators into one string ss. For example, if a=[12,5,6,133]a=[12,5,6,133], then s=1256133s=1256133.You are given a string ss and a number xx. Your task is to determine the positions in the string that correspond to the adjacent elements of the array that have sum xx. If there are several possible answers, you can print any of them.
+InputThe first line contains the string ss (2≤|s|≤5⋅1052≤|s|≤5⋅105).The second line contains an integer xx (2≤x<102000002≤x<10200000).An additional constraint on the input: the answer always exists, i.e you can always select two adjacent substrings of the string ss so that if you convert these substrings to integers, their sum is equal to xx.
+OutputIn the first line, print two integers l1l1, r1r1, meaning that the first term of the sum (aiai) is in the string ss from position l1l1 to position r1r1.In the second line, print two integers l2l2, r2r2, meaning that the second term of the sum (ai+1ai+1) is in the string ss from position l2l2 to position r2r2.
+ExamplesInputCopy1256133
+17
+OutputCopy1 2
+3 3
+InputCopy9544715561
+525
+OutputCopy2 3
+4 6
+InputCopy239923
+5
+OutputCopy1 1
+2 2
+InputCopy1218633757639
+976272
+OutputCopy2 7
+8 13
+
+NoteIn the first example s[1;2]=12s[1;2]=12 and s[3;3]=5s[3;3]=5, 12+5=1712+5=17.In the second example s[2;3]=54s[2;3]=54 and s[4;6]=471s[4;6]=471, 54+471=52554+471=525.In the third example s[1;1]=2s[1;1]=2 and s[2;2]=3s[2;2]=3, 2+3=52+3=5.In the fourth example s[2;7]=218633s[2;7]=218633 and s[8;13]=757639s[8;13]=757639, 218633+757639=976272218633+757639=976272.

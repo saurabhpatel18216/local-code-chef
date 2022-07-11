@@ -1,0 +1,18 @@
+There are nn heaps of stone. The ii-th heap has hihi stones. You want to change the number of stones in the heap by performing the following process once:   You go through the heaps from the 33-rd heap to the nn-th heap, in this order.  Let ii be the number of the current heap.  You can choose a number dd (0≤3⋅d≤hi0≤3⋅d≤hi), move dd stones from the ii-th heap to the (i−1)(i−1)-th heap, and 2⋅d2⋅d stones from the ii-th heap to the (i−2)(i−2)-th heap.  So after that hihi is decreased by 3⋅d3⋅d, hi−1hi−1 is increased by dd, and hi−2hi−2 is increased by 2⋅d2⋅d.  You can choose different or same dd for different operations. Some heaps may become empty, but they still count as heaps. What is the maximum number of stones in the smallest heap after the process?
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤2⋅1051≤t≤2⋅105). Description of the test cases follows.The first line of each test case contains a single integer nn (3≤n≤2⋅1053≤n≤2⋅105).The second lines of each test case contains nn integers h1,h2,h3,…,hnh1,h2,h3,…,hn (1≤hi≤1091≤hi≤109).It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case, print the maximum number of stones that the smallest heap can contain.
+ExampleInputCopy4
+4
+1 2 10 100
+4
+100 100 100 1
+5
+5 1 1 1 8
+6
+1 2 3 4 5 6
+OutputCopy7
+1
+1
+3
+
+NoteIn the first test case, the initial heap sizes are [1,2,10,100][1,2,10,100]. We can move the stones as follows.   move 33 stones and 66 from the 33-rd heap to the 22-nd and 11 heap respectively. The heap sizes will be [7,5,1,100][7,5,1,100];  move 66 stones and 1212 stones from the last heap to the 33-rd and 22-nd heap respectively. The heap sizes will be [7,17,7,82][7,17,7,82]. In the second test case, the last heap is 11, and we can not increase its size.In the third test case, it is better not to move any stones.In the last test case, the final achievable configuration of the heaps can be [3,5,3,4,3,3][3,5,3,4,3,3].

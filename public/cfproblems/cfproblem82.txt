@@ -1,0 +1,18 @@
+You are given a grid with nn rows and mm columns. Rows and columns are numbered from 11 to nn, and from 11 to mm. The intersection of the aa-th row and bb-th column is denoted by (a,b)(a,b). Initially, you are standing in the top left corner (1,1)(1,1). Your goal is to reach the bottom right corner (n,m)(n,m).You can move in four directions from (a,b)(a,b): up to (a−1,b)(a−1,b), down to (a+1,b)(a+1,b), left to (a,b−1)(a,b−1) or right to (a,b+1)(a,b+1).You cannot move in the same direction in two consecutive moves, and you cannot leave the grid. What is the minimum number of moves to reach (n,m)(n,m)?
+InputThe input consists of multiple test cases. The first line contains a single integer tt (1≤t≤1031≤t≤103) — the number of the test cases. The description of the test cases follows.The first line of each test case contains two integers nn and mm (1≤n,m≤1091≤n,m≤109) — the size of the grid.
+OutputFor each test case, print a single integer: −1−1 if it is impossible to reach (n,m)(n,m) under the given conditions, otherwise the minimum number of moves.
+ExampleInputCopy6
+1 1
+2 1
+1 3
+4 2
+4 6
+10 5
+OutputCopy0
+1
+-1
+6
+10
+17
+
+NoteTest case 11: n=1n=1, m=1m=1, and initially you are standing in (1,1)(1,1) so 00 move is required to reach (n,m)=(1,1)(n,m)=(1,1).Test case 22: you should go down to reach (2,1)(2,1).Test case 33: it is impossible to reach (1,3)(1,3) without moving right two consecutive times, or without leaving the grid.Test case 44: an optimal moving sequence could be: (1,1)→(1,2)→(2,2)→(2,1)→(3,1)→(3,2)→(4,2)(1,1)→(1,2)→(2,2)→(2,1)→(3,1)→(3,2)→(4,2). It can be proved that this is the optimal solution. So the answer is 66.

@@ -1,0 +1,12 @@
+You are given an integer nn. You have to change the minimum number of digits in it in such a way that the resulting number does not have any leading zeroes and is divisible by 77.If there are multiple ways to do it, print any of them. If the given number is already divisible by 77, leave it unchanged.
+InputThe first line contains one integer tt (1≤t≤9901≤t≤990) — the number of test cases.Then the test cases follow, each test case consists of one line containing one integer nn (10≤n≤99910≤n≤999).
+OutputFor each test case, print one integer without any leading zeroes — the result of your changes (i. e. the integer that is divisible by 77 and can be obtained by changing the minimum possible number of digits in nn).If there are multiple ways to apply changes, print any resulting number. If the given number is already divisible by 77, just print it.
+ExampleInputCopy3
+42
+23
+377
+OutputCopy42
+28
+777
+
+NoteIn the first test case of the example, 4242 is already divisible by 77, so there's no need to change it.In the second test case of the example, there are multiple answers — 2828, 2121 or 6363.In the third test case of the example, other possible answers are 357357, 371371 and 378378. Note that you cannot print 077077 or 7777.

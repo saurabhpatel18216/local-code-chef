@@ -1,0 +1,15 @@
+You have a malfunctioning microwave in which you want to put some bananas. You have nn time-steps before the microwave stops working completely. At each time-step, it displays a new operation.Let kk be the number of bananas in the microwave currently. Initially, k=0k=0. In the ii-th operation, you are given three parameters titi, xixi, yiyi in the input. Based on the value of titi, you must do one of the following:Type 1: (ti=1ti=1, xixi, yiyi) — pick an aiai, such that 0≤ai≤yi0≤ai≤yi, and perform the following update aiai times: k:=⌈(k+xi)⌉k:=⌈(k+xi)⌉.Type 2: (ti=2ti=2, xixi, yiyi) — pick an aiai, such that 0≤ai≤yi0≤ai≤yi, and perform the following update aiai times: k:=⌈(k⋅xi)⌉k:=⌈(k⋅xi)⌉.Note that xixi can be a fractional value. See input format for more details. Also, ⌈x⌉⌈x⌉ is the smallest integer ≥x≥x.At the ii-th time-step, you must apply the ii-th operation exactly once.For each jj such that 1≤j≤m1≤j≤m, output the earliest time-step at which you can create exactly jj bananas. If you cannot create exactly jj bananas, output −1−1.
+InputThe first line contains two space-separated integers nn (1≤n≤200)(1≤n≤200) and mm (2≤m≤105)(2≤m≤105).Then, nn lines follow, where the ii-th line denotes the operation for the ii-th timestep. Each such line contains three space-separated integers titi, x′ixi′ and yiyi (1≤ti≤21≤ti≤2, 1≤yi≤m1≤yi≤m).Note that you are given x′ixi′, which is 105⋅xi105⋅xi. Thus, to obtain xixi, use the formula xi=x′i105xi=xi′105.For type 1 operations, 1≤x′i≤105⋅m1≤xi′≤105⋅m, and for type 2 operations, 105<x′i≤105⋅m105<xi′≤105⋅m.
+OutputPrint mm integers, where the ii-th integer is the earliest time-step when you can obtain exactly ii bananas (or −1−1 if it is impossible).
+ExamplesInputCopy3 20
+1 300000 2
+2 400000 2
+1 1000000 3
+OutputCopy-1 -1 1 -1 -1 1 -1 -1 -1 3 -1 2 3 -1 -1 3 -1 -1 -1 3 
+InputCopy3 20
+1 399999 2
+2 412345 2
+1 1000001 3
+OutputCopy-1 -1 -1 1 -1 -1 -1 1 -1 -1 3 -1 -1 -1 3 -1 2 -1 3 -1 
+
+NoteIn the first sample input, let us see how to create 1616 number of bananas in three timesteps. Initially, k=0k=0.  In timestep 1, we choose a1=2a1=2, so we apply the type 1 update — k:=⌈(k+3)⌉k:=⌈(k+3)⌉ — two times. Hence, kk is now 6.  In timestep 2, we choose a2=0a2=0, hence value of kk remains unchanged.  In timestep 3, we choose a3=1a3=1, so we are applying the type 1 update k:=⌈(k+10)⌉k:=⌈(k+10)⌉ once. Hence, kk is now 16. It can be shown that k=16k=16 cannot be reached in fewer than three timesteps with the given operations.In the second sample input, let us see how to create 1717 number of bananas in two timesteps. Initially, k=0k=0.  In timestep 1, we choose a1=1a1=1, so we apply the type 1 update — k:=⌈(k+3.99999)⌉k:=⌈(k+3.99999)⌉ — once. Hence, kk is now 4.  In timestep 2, we choose a2=1a2=1, so we apply the type 2 update — k:=⌈(k⋅4.12345)⌉k:=⌈(k⋅4.12345)⌉ — once. Hence, kk is now 17. It can be shown that k=17k=17 cannot be reached in fewer than two timesteps with the given operations.

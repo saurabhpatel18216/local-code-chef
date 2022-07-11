@@ -1,0 +1,16 @@
+Not so long ago, Vlad came up with an interesting function: fa(x)=⌊xa⌋+xmodafa(x)=⌊xa⌋+xmoda, where ⌊xa⌋⌊xa⌋ is xaxa, rounded down, xmodaxmoda — the remainder of the integer division of xx by aa.For example, with a=3a=3 and x=11x=11, the value f3(11)=⌊113⌋+11mod3=3+2=5f3(11)=⌊113⌋+11mod3=3+2=5.The number aa is fixed and known to Vlad. Help Vlad find the maximum value of fa(x)fa(x) if xx can take any integer value from ll to rr inclusive (l≤x≤rl≤x≤r).
+InputThe first line of input data contains an integer tt (1≤t≤1041≤t≤104) — the number of input test cases.This is followed by tt lines, each of which contains three integers lili, riri and aiai (1≤li≤ri≤109,1≤ai≤1091≤li≤ri≤109,1≤ai≤109) — the left and right boundaries of the segment and the fixed value of aa.
+OutputFor each test case, output one number on a separate line — the maximum value of the function on a given segment for a given aa.
+ExampleInputCopy5
+1 4 3
+5 8 4
+6 10 6
+1 1000000000 1000000000
+10 12 8
+OutputCopy2
+4
+5
+999999999
+5
+
+NoteIn the first sample:  f3(1)=⌊13⌋+1mod3=0+1=1f3(1)=⌊13⌋+1mod3=0+1=1,  f3(2)=⌊23⌋+2mod3=0+2=2f3(2)=⌊23⌋+2mod3=0+2=2,  f3(3)=⌊33⌋+3mod3=1+0=1f3(3)=⌊33⌋+3mod3=1+0=1,  f3(4)=⌊43⌋+4mod3=1+1=2f3(4)=⌊43⌋+4mod3=1+1=2 As an answer, obviously, f3(2)f3(2) and f3(4)f3(4) are suitable.

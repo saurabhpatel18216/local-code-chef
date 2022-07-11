@@ -1,0 +1,20 @@
+This is an interactive problem.There is a secret permutation pp (11-indexed) of numbers from 11 to nn. More formally, for 1≤i≤n1≤i≤n, 1≤p[i]≤n1≤p[i]≤n and for 1≤i<j≤n1≤i<j≤n, p[i]≠p[j]p[i]≠p[j]. It is known that p[1]<p[2]p[1]<p[2].In 11 query, you give 33 distinct integers a,b,ca,b,c (1≤a,b,c≤n1≤a,b,c≤n), and receive the median of {|p[a]−p[b]|,|p[b]−p[c]|,|p[a]−p[c]|}{|p[a]−p[b]|,|p[b]−p[c]|,|p[a]−p[c]|}.In this case, the median is the 22-nd element (11-indexed) of the sequence when sorted in non-decreasing order. The median of {4,6,2}{4,6,2} is 44 and the median of {0,123,33}{0,123,33} is 3333.Can you find the secret permutation in not more than 2n+4202n+420 queries?Note: the grader is not adaptive: the permutation is fixed before any queries are made.
+InputThe first line of input contains a single integer tt (1≤t≤1000)(1≤t≤1000) — the number of testcases.The first line of each testcase consists of a single integer nn (20≤n≤100000)(20≤n≤100000) — the length of the secret permutation.It is guaranteed that the sum of nn over all test cases does not exceed 100000100000.
+InteractionFor each testcase, you begin the interaction by reading nn.To perform a query, output "? a b c" where a,b,ca,b,c is the 33 indices you want to use for the query.Numbers have to satisfy 1≤a,b,c≤n1≤a,b,c≤n and a≠ba≠b,b≠cb≠c,a≠ca≠c.For each query, you will receive a single integer xx: the median of {|p[a]−p[b]|,|p[b]−p[c]|,|p[a]−p[c]|}{|p[a]−p[b]|,|p[b]−p[c]|,|p[a]−p[c]|}.In case your query is invalid or you asked more than 2n+4202n+420 queries, the interactor will print "−1" and will finish interaction. You will receive Wrong answer verdict. Make sure to exit immediately to avoid getting other verdicts.When you have determined the secret permutation, output "! p[1] p[2] ... p[n]". If the secret permutation is correct, the interactor will print "1". Otherwise, the interactor will print "-1" and will finish interaction. You will receive Wrong answer verdict. Make sure to exit immediately to avoid getting other verdicts.After printing a query do not forget to output the end of line and flush the output. Otherwise, you will get Idleness limit exceeded verdict.To do this, use: fflush(stdout) or cout.flush() in C++; System.out.flush() in Java; flush(output) in Pascal; stdout.flush() in Python; see documentation for other languages.Hacks:To hack, use the following format of test: The first line should contain a single integer tt (1≤t≤10001≤t≤1000) — the number of testcases.The first line of each testcase should contain a single integer nn (20≤n≤10000020≤n≤100000) — the length of the secret permutation.The following line of should contain nn integers p[1],p[2],p[3],…,p[n]p[1],p[2],p[3],…,p[n]. p[1]<p[2]p[1]<p[2] and pp must be a permutation of integers from 11 to nn.You must ensure that the sum of nn over all testcases does not exceed 100000100000.
+ExampleInputCopy1
+20
+
+6
+
+9
+
+1OutputCopy
+
+? 1 5 2
+
+? 20 19 2
+
+! 9 10 19 7 16 18 11 14 15 6 20 8 17 4 5 3 12 2 13 1
+
+
+NoteThe secret permutation is {9,10,19,7,16,18,11,14,15,6,20,8,17,4,5,3,12,2,13,1}{9,10,19,7,16,18,11,14,15,6,20,8,17,4,5,3,12,2,13,1}.For the first query, the values of (a,b,c)(a,b,c) is (1,5,2)(1,5,2). Since p[1]=9p[1]=9, p[5]=16p[5]=16 and p[2]=10p[2]=10. The return value is the median of {|9−16|,|16−10|,|9−10|}{|9−16|,|16−10|,|9−10|} which is 66.For the second query, the values of (a,b,c)(a,b,c) is (20,19,2)(20,19,2). Since p[20]=1p[20]=1, p[19]=13p[19]=13 and p[2]=10p[2]=10. The return value is the median of {|1−13|,|13−10|,|1−10|}{|1−13|,|13−10|,|1−10|} which is 99.By some miracle, we have figured out that the secret permutation is {9,10,19,7,16,18,11,14,15,6,20,8,17,4,5,3,12,2,13,1}{9,10,19,7,16,18,11,14,15,6,20,8,17,4,5,3,12,2,13,1}. We output it and receive 11 from the interactor, meaning that we have guessed the secret permutation correctly.

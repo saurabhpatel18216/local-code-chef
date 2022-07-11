@@ -1,0 +1,16 @@
+A sequence of nn integers is called a permutation if it contains all integers from 11 to nn exactly once.Given two integers nn and kk, construct a permutation aa of numbers from 11 to nn which has exactly kk peaks. An index ii of an array aa of size nn is said to be a peak if 1<i<n1<i<n and ai>ai−1ai>ai−1 and ai>ai+1ai>ai+1. If such permutation is not possible, then print −1−1.
+InputThe first line contains an integer tt (1≤t≤1001≤t≤100) — the number of test cases.Then tt lines follow, each containing two space-separated integers nn (1≤n≤1001≤n≤100) and kk (0≤k≤n0≤k≤n) — the length of an array and the required number of peaks.
+OutputOutput tt lines. For each test case, if there is no permutation with given length and number of peaks, then print −1−1. Otherwise print a line containing nn space-separated integers which forms a permutation of numbers from 11 to nn and contains exactly kk peaks. If there are multiple answers, print any.
+ExampleInputCopy5
+1 0
+5 2
+6 6
+2 1
+6 1
+OutputCopy1 
+2 4 1 5 3 
+-1
+-1
+1 3 6 5 4 2
+
+NoteIn the second test case of the example, we have array a=[2,4,1,5,3]a=[2,4,1,5,3]. Here, indices i=2i=2 and i=4i=4 are the peaks of the array. This is because (a2>a1(a2>a1, a2>a3)a2>a3) and (a4>a3(a4>a3, a4>a5)a4>a5). 

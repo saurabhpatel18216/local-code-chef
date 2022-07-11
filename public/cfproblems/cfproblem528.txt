@@ -1,0 +1,37 @@
+You are given a simple undirected graph with nn vertices, nn is even. You are going to write a letter on each vertex. Each letter should be one of the first kk letters of the Latin alphabet.A path in the graph is called Hamiltonian if it visits each vertex exactly once. A string is called palindromic if it reads the same from left to right and from right to left. A path in the graph is called palindromic if the letters on the vertices in it spell a palindromic string without changing the order.A string of length nn is good if:   each letter is one of the first kk lowercase Latin letters;  if you write the ii-th letter of the string on the ii-th vertex of the graph, there will exist a palindromic Hamiltonian path in the graph. Note that the path doesn't necesserily go through the vertices in order 1,2,…,n1,2,…,n.Count the number of good strings.
+InputThe first line contains three integers nn, mm and kk (2≤n≤122≤n≤12; nn is even; 0≤m≤n⋅(n−1)20≤m≤n⋅(n−1)2; 1≤k≤121≤k≤12) — the number of vertices in the graph, the number of edges in the graph and the number of first letters of the Latin alphabet that can be used.Each of the next mm lines contains two integers vv and uu (1≤v,u≤n1≤v,u≤n; v≠uv≠u) — the edges of the graph. The graph doesn't contain multiple edges and self-loops.
+OutputPrint a single integer — number of good strings.
+ExamplesInputCopy4 3 3
+1 2
+2 3
+3 4
+OutputCopy9
+InputCopy4 6 3
+1 2
+1 3
+1 4
+2 3
+2 4
+3 4
+OutputCopy21
+InputCopy12 19 12
+1 3
+2 6
+3 6
+3 7
+4 8
+8 5
+8 7
+9 4
+5 9
+10 1
+10 4
+10 6
+9 10
+11 1
+5 11
+7 11
+12 2
+12 5
+12 11
+OutputCopy456165084

@@ -1,0 +1,63 @@
+
+"We’ve already come too far to end this now".
+
+NN players advance to the fifth round and the game is going to be Hopscotch. Every player has to select one mannequin before the start of the game.
+
+Players are numbered 11 to NN. You are given an array AA of size NN, where
+
+If Ai=iAi=i, the ithith player selects their own mannequin.
+If Ai=jAi=j where j≠ij≠i, the ithith player decides the mannequin for the jthjth player.
+If Ai=0Ai=0, the ithith player hasn’t decided yet.
+
+The VIPs want to know the number of ways that the undecided players can select mannequins such that everyone gets a mannequin, and no undecided players select their own mannequin.
+
+It is guaranteed that every (non-zero) element in AA is unique, i.e, if 1≤i,j≤N1≤i,j≤N are such that i≠j,Ai>0i≠j,Ai>0, and Aj>0Aj>0, then Ai≠AjAi≠Aj.
+
+Since the answer can be very large, print it modulo 109+7109+7.
+
+Input Format
+
+The first line of input contains a single integer TT, denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN denoting the number of players.    
+The second line contains NN space-separated integers, the ithith of which is AiAi as described in the statement above.
+
+Output Format
+
+For every test case, print one line containing the number of ways undecided players can select mannequins for others such that everyone receives a mannequin, modulo 109+7109+7.
+
+Constraints
+
+1≤T≤1031≤T≤103
+1≤N≤1031≤N≤103
+0≤Ai≤N0≤Ai≤N
+The non-zero elements of AA are distinct.
+
+Sample Input 1
+
+3    
+5    
+1 2 3 4 5    
+6    
+3 6 1 0 0 0    
+10    
+0 0 0 0 0 0 0 0 0 0
+
+Sample Output 1
+
+0    
+3    
+1334961
+
+Explanation
+
+Test Case 1: There is no undecided player, so the number of ways is 00.
+
+Test Case 2: There are 33 ways for the last 33 players to decide mannequins, all of which are listed below:
+
+4→2,5→4,6→54→2,5→4,6→5
+4→5,5→4,6→24→5,5→4,6→2
+4→5,5→2,6→44→5,5→2,6→4
+
+where a→ba→b means that aa selects the mannequin for bb.
+
+

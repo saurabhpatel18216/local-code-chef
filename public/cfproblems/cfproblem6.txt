@@ -1,0 +1,20 @@
+An array is beautiful if both of the following two conditions meet:  there are at least l1l1 and at most r1r1 elements in the array equal to its minimum;  there are at least l2l2 and at most r2r2 elements in the array equal to its maximum. For example, the array [2,3,2,4,4,3,2][2,3,2,4,4,3,2] has 33 elements equal to its minimum (11-st, 33-rd and 77-th) and 22 elements equal to its maximum (44-th and 55-th).Another example: the array [42,42,42][42,42,42] has 33 elements equal to its minimum and 33 elements equal to its maximum.Your task is to calculate the minimum possible number of elements in a beautiful array.
+InputThe first line contains one integer tt (1≤t≤50001≤t≤5000) — the number of test cases.Each test case consists of one line containing four integers l1l1, r1r1, l2l2 and r2r2 (1≤l1≤r1≤501≤l1≤r1≤50; 1≤l2≤r2≤501≤l2≤r2≤50).
+OutputFor each test case, print one integer — the minimum possible number of elements in a beautiful array.
+ExampleInputCopy7
+3 5 4 6
+5 8 5 5
+3 3 10 12
+1 5 3 3
+1 1 2 2
+2 2 1 1
+6 6 6 6
+OutputCopy4
+5
+13
+3
+3
+3
+6
+
+NoteOptimal arrays in the test cases of the example:  [1,1,1,1][1,1,1,1], it has 44 minimums and 44 maximums;  [4,4,4,4,4][4,4,4,4,4], it has 55 minimums and 55 maximums;  [1,2,1,2,2,1,2,2,2,2,2,2,2][1,2,1,2,2,1,2,2,2,2,2,2,2], it has 33 minimums and 1010 maximums;  [8,8,8][8,8,8], it has 33 minimums and 33 maximums;  [4,6,6][4,6,6], it has 11 minimum and 22 maximums;  [3,4,3][3,4,3], it has 22 minimums and 11 maximum;  [5,5,5,5,5,5][5,5,5,5,5,5], it has 66 minimums and 66 maximums. 

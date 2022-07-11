@@ -1,0 +1,23 @@
+Imagine a board with nn pins put into it, the ii-th pin is located at (xi,yi)(xi,yi). For simplicity, we will restrict the problem to the case where the pins are placed in vertices of a convex polygon.Then, take a non-stretchable string of length ll, and put it around all the pins. Place a pencil inside the string and draw a curve around the pins, trying to pull the string in every possible direction. The picture below shows an example of a string tied around the pins and pulled by a pencil (a point PP).  Your task is to find an area inside this curve. Formally, for a given convex polygon SS and a length ll let's define a fiber shape F(S,l)F(S,l) as a set of points tt such that the perimeter of the convex hull of S∪{t}S∪{t} does not exceed ll. Find an area of F(S,l)F(S,l).
+InputThe first line contains two integers nn and ll (3≤n≤1043≤n≤104; 1≤l≤8⋅1051≤l≤8⋅105) — the number of vertices of the polygon SS and the length of the string. Next nn lines contain integers xixi and yiyi (−105≤xi,yi≤105−105≤xi,yi≤105) — coordinates of polygon's vertices in counterclockwise order. All internal angles of the polygon are strictly less than ππ. The length ll exceeds the perimeter of the polygon by at least 10−310−3.
+OutputOutput a single floating-point number — the area of the fiber shape F(S,l)F(S,l). Your answer will be considered correct if its absolute or relative error doesn't exceed 10−610−6. 
+ExamplesInputCopy3 4
+0 0
+1 0
+0 1
+OutputCopy3.012712585980357
+InputCopy4 5
+0 0
+1 0
+1 1
+0 1
+OutputCopy5.682061989789656
+InputCopy5 17
+0 0
+2 -1
+3 0
+4 3
+-1 4
+OutputCopy37.719371276930820
+
+NoteThe following pictures illustrate the example tests.   

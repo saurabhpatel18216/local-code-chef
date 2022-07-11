@@ -1,0 +1,23 @@
+Polycarp is coaching a team for an upcoming game at the chess tournament. A complete team for the tournament should consist of n+1n+1 members.There are nn members in his team, the ii-th member's skill value is aiai. Polycarp is yet to choose the final member for the team.The opposing team has n+1n+1 members, the jj-th member's skill value is bjbj.Polycarp has mm options for the final player of the team. The kk-th of them has a skill value ckck.Before the game starts, Polycarp pairs up the members of his team with the members of the opposing team. Every member of both teams is in exactly one pair. The difficulty of a game for a certain player is the difference between his paired opponent's skill and his own skill. So if the ii-th player of the Polycarp's team is paired up with the jj-th member of the opposing team, then the difficulty is equal to bj−aibj−ai. The difficulty of the game for a team is the maximum difficulty of all its players.So, before the game starts, Polycarp wants to pair up the players in such a way that the difficulty of the game for his team is minimized.For each of the mm options for the final player print the smallest difficulty of the game for the team Polycarp can achieve.
+InputThe first line contains a single integer nn (1≤n≤2⋅1051≤n≤2⋅105) — the number of members in the Polycarp's team.The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1091≤ai≤109), where aiai is the skill value of the ii-th player of the Polycarp's team.The third line contains n+1n+1 integers b1,b2,…,bn+1b1,b2,…,bn+1 (1≤bj≤1091≤bj≤109), where bjbj is the skill value of the jj-th player of the opposing team.The fourth line contains a single integer mm (1≤m≤2⋅1051≤m≤2⋅105) — the number of options for the final player.The fifth line contains mm integers c1,c2,…,cmc1,c2,…,cm (1≤ck≤1091≤ck≤109), where ckck is the skill value of the kk-th of the options for the final player of the Polycarp's team.
+OutputPrint mm integers — the kk-th of them should be equal to the smallest difficulty of the game for the team Polycarp can achieve if he picks the kk-th option player as the final one.
+ExamplesInputCopy5
+10 3 4 6 1
+9 4 2 5 9 8
+5
+1 7 6 4 8
+OutputCopy4 2 3 4 2
+InputCopy3
+5 1 8
+8 2 10 1
+10
+1 2 3 4 5 6 7 8 9 10
+OutputCopy3 3 3 3 3 2 2 2 1 0
+InputCopy1
+10
+10 5
+2
+5 15
+OutputCopy0 -5
+
+NoteIn the first example the optimal pairings for the first three options are the following. Note that there might be multiple valid pairing for the minimum answer.First option:Polycarp's team: 6 1 3 1 10 4Opposing team:  9 4 2 5  9 8The respective difficulties of the game for each player are: 3, 3, -1, 4, -1, 4. The maximum is 4, thus it's the difficulty of the game for the team.Second option:Polycarp's team: 10 4 1 3 7 6Opposing team:   9 4 2 5 9 8Third option:Polycarp's team: 6 3 1 4 10 6Opposing team:  9 4 2 5  9 8

@@ -1,0 +1,25 @@
+There is a grid with rr rows and cc columns, where the square on the ii-th row and jj-th column has an integer ai,jai,j written on it. Initially, all elements are set to 00. We are allowed to do the following operation:  Choose indices 1≤i≤r1≤i≤r and 1≤j≤c1≤j≤c, then replace all values on the same row or column as (i,j)(i,j) with the value xor 11. In other words, for all ax,yax,y where x=ix=i or y=jy=j or both, replace ax,yax,y with ax,yax,y xor 11. You want to form grid bb by doing the above operations a finite number of times. However, some elements of bb are missing and are replaced with '?' instead.Let kk be the number of '?' characters. Among all the 2k2k ways of filling up the grid bb by replacing each '?' with '0' or '1', count the number of grids, that can be formed by doing the above operation a finite number of times, starting from the grid filled with 00. As this number can be large, output it modulo 998244353998244353.
+InputThe first line contains two integers rr and cc (1≤r,c≤20001≤r,c≤2000)  — the number of rows and columns of the grid respectively.The ii-th of the next rr lines contain cc characters bi,1,bi,2,…,bi,cbi,1,bi,2,…,bi,c (bi,j∈{0,1,?}bi,j∈{0,1,?}).
+OutputPrint a single integer representing the number of ways to fill up grid bb modulo 998244353998244353.
+ExamplesInputCopy3 3
+?10
+1??
+010
+OutputCopy1
+InputCopy2 3
+000
+001
+OutputCopy0
+InputCopy1 1
+?
+OutputCopy2
+InputCopy6 9
+1101011?0
+001101?00
+101000110
+001011010
+0101?01??
+00?1000?0
+OutputCopy8
+
+NoteIn the first test case, the only way to fill in the ??s is to fill it in as such: 010111010 This can be accomplished by doing a single operation by choosing (i,j)=(2,2)(i,j)=(2,2).In the second test case, it can be shown that there is no sequence of operations that can produce that grid.

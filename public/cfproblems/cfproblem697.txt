@@ -1,0 +1,18 @@
+An array bb of length kk is called good if its arithmetic mean is equal to 11. More formally, if b1+⋯+bkk=1.b1+⋯+bkk=1.Note that the value b1+⋯+bkkb1+⋯+bkk is not rounded up or down. For example, the array [1,1,1,2][1,1,1,2] has an arithmetic mean of 1.251.25, which is not equal to 11.You are given an integer array aa of length nn. In an operation, you can append a non-negative integer to the end of the array. What's the minimum number of operations required to make the array good?We have a proof that it is always possible with finitely many operations.
+InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases. Then tt test cases follow.The first line of each test case contains a single integer nn (1≤n≤501≤n≤50) — the length of the initial array aa.The second line of each test case contains nn integers a1,…,ana1,…,an (−104≤ai≤104−104≤ai≤104), the elements of the array.
+OutputFor each test case, output a single integer — the minimum number of non-negative integers you have to append to the array so that the arithmetic mean of the array will be exactly 11.
+ExampleInputCopy4
+3
+1 1 1
+2
+1 2
+4
+8 4 6 2
+1
+-2
+OutputCopy0
+1
+16
+1
+
+NoteIn the first test case, we don't need to add any element because the arithmetic mean of the array is already 11, so the answer is 00.In the second test case, the arithmetic mean is not 11 initially so we need to add at least one more number. If we add 00 then the arithmetic mean of the whole array becomes 11, so the answer is 11.In the third test case, the minimum number of elements that need to be added is 1616 since only non-negative integers can be added.In the fourth test case, we can add a single integer 44. The arithmetic mean becomes −2+42−2+42 which is equal to 11.

@@ -1,0 +1,43 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+
+You are given three integers NN, KK and XX. Is it possible to find a sequence of non-negative integers A1,A2,…,ANA1,A2,…,AN such that the number of pairs of indices (i,j)(i,j) (1≤i≤j≤N1≤i≤j≤N) satisfying Ai⊕Aj=XAi⊕Aj=X is equal to KK? Here, ⊕⊕ is the bitwise XOR operator.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first and only line of each test case contains three space-separated integers NN, KK and XX.
+
+Output
+
+For each query, print a single line containing the string "YES" if it is possible to find a sequence satisfying the given condition or "NO" if it is impossible (without quotes).
+
+Constraints
+
+1≤T≤4⋅1051≤T≤4⋅105
+1≤N,K,X≤3⋅1051≤N,K,X≤3⋅105
+
+Sample Input 1
+
+5
+4 3 3
+5 8 1
+10 8 2
+19 100 34
+69 100 45
+
+Sample Output 1
+
+YES
+NO
+YES
+NO
+YES
+
+Explanation
+
+Example case 1: For example, A=[2,2,1,2]A=[2,2,1,2] satisfies the given condition, since there are exactly 33 pairs (i,j)(i,j) such that Ai⊕Aj=3Ai⊕Aj=3.
+
+Example case 3: For example, A=[8,12,3,14,8,15,10,10,8,14]A=[8,12,3,14,8,15,10,10,8,14] satisfies the given condition, since there are exactly 88 pairs with XOR equal to 22.
+
+

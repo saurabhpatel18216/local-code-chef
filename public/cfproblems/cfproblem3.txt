@@ -1,0 +1,21 @@
+You are walking with your dog, and now you are at the promenade. The promenade can be represented as an infinite line. Initially, you are in the point 00 with your dog. You decided to give some freedom to your dog, so you untied her and let her run for a while. Also, you watched what your dog is doing, so you have some writings about how she ran. During the ii-th minute, the dog position changed from her previous position by the value aiai (it means, that the dog ran for aiai meters during the ii-th minute). If aiai is positive, the dog ran aiai meters to the right, otherwise (if aiai is negative) she ran aiai meters to the left.During some minutes, you were chatting with your friend, so you don't have writings about your dog movement during these minutes. These values aiai equal zero.You want your dog to return to you after the end of the walk, so the destination point of the dog after nn minutes should be 00.Now you are wondering: what is the maximum possible number of different integer points of the line your dog could visit on her way, if you replace every 00 with some integer from −k−k to kk (and your dog should return to 00 after the walk)? The dog visits an integer point if she runs through that point or reaches in it at the end of any minute. Point 00 is always visited by the dog, since she is initially there.If the dog cannot return to the point 00 after nn minutes regardless of the integers you place, print -1.
+InputThe first line of the input contains two integers nn and kk (1≤n≤3000;1≤k≤1091≤n≤3000;1≤k≤109) — the number of minutes and the maximum possible speed of your dog during the minutes without records.The second line of the input contains nn integers a1,a2,…,ana1,a2,…,an (−109≤ai≤109−109≤ai≤109), where aiai is the number of meters your dog ran during the ii-th minutes (to the left if aiai is negative, to the right otherwise). If ai=0ai=0 then this value is unknown and can be replaced with any integer from the range [−k;k][−k;k].
+OutputIf the dog cannot return to the point 00 after nn minutes regardless of the set of integers you place, print -1. Otherwise, print one integer — the maximum number of different integer points your dog could visit if you fill all the unknown values optimally and the dog will return to the point 00 at the end of the walk.
+ExamplesInputCopy3 2
+5 0 -4
+OutputCopy6
+InputCopy6 4
+1 -2 0 3 -4 5
+OutputCopy7
+InputCopy3 1000000000
+0 0 0
+OutputCopy1000000001
+InputCopy5 9
+-7 -3 8 12 0
+OutputCopy-1
+InputCopy5 3
+-1 0 3 3 0
+OutputCopy7
+InputCopy5 4
+0 2 0 3 0
+OutputCopy9

@@ -1,0 +1,41 @@
+
+Read problems statements Mandarin , Bengali , Hindi , Russian and Vietnamese as well.
+
+There are NN buckets numbered 11 through NN. The buckets contain balls; each ball has a color between 11 and KK. Let's denote the number of balls with color jj that are initially in bucket ii by ai,jai,j.
+
+For each ii from 11 to N−1N−1 (in this order), someone draws a ball uniformly at random from bucket ii and puts it into bucket i+1i+1, then continues to draw the next ball. After putting a ball in bucket NN, this person draws a ball, again uniformly at random, from bucket NN.
+
+For each color from 11 to KK, find the probability that the ball drawn from bucket NN has this color.
+
+Input
+
+The first line of the input contains two space-separated integers NN and KK. 
+NN lines follow. For each ii (1≤i≤N1≤i≤N), the ii-th of these lines contains KK space-separated integers ai,1,ai,2,…,ai,Kai,1,ai,2,…,ai,K.
+
+Output
+
+Print a single line containing KK space-separated real numbers. For each valid ii, the ii-th of these numbers should denote the probability that the last drawn ball has color ii. your answer will be considered correct if absolute or relative error does not exceed 10−610−6
+
+Constraints
+
+1≤N,K≤1,0001≤N,K≤1,000
+0≤ai,j≤100≤ai,j≤10 for each valid i,ji,j
+initially, there is at least one ball in bucket 11
+
+Subtasks
+
+Subtask #1 (30 points): 1≤N,K≤1001≤N,K≤100
+
+Subtask #2 (70 points): original constraints
+
+Sample Input 1
+
+2 2
+0 1
+1 1
+
+Sample Output 1
+
+0.333333 0.666667
+
+

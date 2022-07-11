@@ -1,0 +1,18 @@
+You are given two arrays of integers a1,a2,…,ana1,a2,…,an and b1,b2,…,bnb1,b2,…,bn.Let's define a transformation of the array aa:  Choose any non-negative integer kk such that 0≤k≤n0≤k≤n.  Choose kk distinct array indices 1≤i1<i2<…<ik≤n1≤i1<i2<…<ik≤n.  Add 11 to each of ai1,ai2,…,aikai1,ai2,…,aik, all other elements of array aa remain unchanged.  Permute the elements of array aa in any order. Is it possible to perform some transformation of the array aa exactly once, so that the resulting array is equal to bb?
+InputThe first line contains a single integer tt (1≤t≤1001≤t≤100) — the number of test cases. Descriptions of test cases follow.The first line of each test case contains a single integer nn (1≤n≤1001≤n≤100) — the size of arrays aa and bb.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (−100≤ai≤100−100≤ai≤100).The third line of each test case contains nn integers b1,b2,…,bnb1,b2,…,bn (−100≤bi≤100−100≤bi≤100).
+OutputFor each test case, print "YES" (without quotes) if it is possible to perform a transformation of the array aa, so that the resulting array is equal to bb. Print "NO" (without quotes) otherwise.You can print each letter in any case (upper or lower).
+ExampleInputCopy3
+3
+-1 1 0
+0 0 2
+1
+0
+2
+5
+1 2 3 4 5
+1 2 3 4 5
+OutputCopyYES
+NO
+YES
+
+NoteIn the first test case, we can make the following transformation:  Choose k=2k=2.  Choose i1=1i1=1, i2=2i2=2.  Add 11 to a1a1 and a2a2. The resulting array is [0,2,0][0,2,0].  Swap the elements on the second and third positions. In the second test case there is no suitable transformation.In the third test case we choose k=0k=0 and do not change the order of elements.

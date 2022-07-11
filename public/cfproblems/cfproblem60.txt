@@ -1,0 +1,12 @@
+There are nn logs, the ii-th log has a length of aiai meters. Since chopping logs is tiring work, errorgorn and maomao90 have decided to play a game.errorgorn and maomao90 will take turns chopping the logs with errorgorn chopping first. On his turn, the player will pick a log and chop it into 22 pieces. If the length of the chosen log is xx, and the lengths of the resulting pieces are yy and zz, then yy and zz have to be positive integers, and x=y+zx=y+z must hold. For example, you can chop a log of length 33 into logs of lengths 22 and 11, but not into logs of lengths 33 and 00, 22 and 22, or 1.51.5 and 1.51.5.The player who is unable to make a chop will be the loser. Assuming that both errorgorn and maomao90 play optimally, who will be the winner?
+InputEach test contains multiple test cases. The first line contains a single integer tt (1≤t≤1001≤t≤100)  — the number of test cases. The description of the test cases follows.The first line of each test case contains a single integer nn (1≤n≤501≤n≤50)  — the number of logs.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤501≤ai≤50)  — the lengths of the logs.Note that there is no bound on the sum of nn over all test cases.
+OutputFor each test case, print "errorgorn" if errorgorn wins or "maomao90" if maomao90 wins. (Output without quotes).
+ExampleInputCopy2
+4
+2 4 2 1
+1
+1
+OutputCopyerrorgorn
+maomao90
+
+NoteIn the first test case, errorgorn will be the winner. An optimal move is to chop the log of length 44 into 22 logs of length 22. After this there will only be 44 logs of length 22 and 11 log of length 11.After this, the only move any player can do is to chop any log of length 22 into 22 logs of length 11. After 44 moves, it will be maomao90's turn and he will not be able to make a move. Therefore errorgorn will be the winner.In the second test case, errorgorn will not be able to make a move on his first turn and will immediately lose, making maomao90 the winner.

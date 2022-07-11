@@ -1,0 +1,62 @@
+
+Consider an array AA with NN positive integers.
+
+Let BB be defined as an array of NN integers such that for each 1≤i≤N1≤i≤N:
+
+Bi=Ai−1Bi=Ai−1, if AiAi is even.
+Bi=Ai+1Bi=Ai+1, if AiAi is odd.
+
+You are given an array CC of size 2⋅N2⋅N which is formed by taking all the elements of the arrays AA and BB and rearranging them.
+You need to find the number of distinct arrays AA whose sum of elements is KK, from which CC can be obtained.
+
+Note: Two arrays XX and YY are considered to be distinct if there exists no rearrangement of XX which is the same as YY.
+
+Since the final answer can be very large, print the answer modulo 109+7109+7.
+
+Input Format
+
+The first line contains a single integer TT - the number of test cases. Then the test cases follow.
+The first line of each test case contains two space-separated integers NN and KK - the parameters mentioned in the statement.
+The second line of each test case contains 2⋅N2⋅N space-separated integers C1,C2,…,C2NC1,C2,…,C2N denoting the array CC.
+
+Output Format
+
+For each test case, output the number of distinct arrays AA such that the sum of its elements is KK. Print the answer modulo (109+7109+7).
+
+Constraints
+
+1≤T≤1031≤T≤103
+1≤N≤1031≤N≤103
+1≤Ci≤2⋅1031≤Ci≤2⋅103
+1≤K≤2⋅1061≤K≤2⋅106
+Sum of NN over all the test cases does not exceed 103103.
+
+Subtasks
+
+Sample Input 1
+
+2
+2 4
+1 2 3 4
+2 5
+1 2 3 4
+
+Sample Output 1
+
+1
+2
+
+Explanation
+
+Test case 1: If A=[1,3]A=[1,3], then B=[2,4]B=[2,4]. C=[1,2,3,4]C=[1,2,3,4] can be obtained by rearranging the elements of AA and BB. It can be proven that A=[1,3]A=[1,3] is the only such distinct array whose elements sum to 44. Thus the answer is 11.
+
+Note that arrays [1,3][1,3] and [3,1][3,1] are not distinct.
+
+Test case 2:
+
+If A=[2,3]A=[2,3], then B=[1,4]B=[1,4]. C=[1,2,3,4]C=[1,2,3,4] can be obtained by rearranging the elements of AA and BB.
+If A=[1,4]A=[1,4], then B=[2,3]B=[2,3]. C=[1,2,3,4]C=[1,2,3,4] can be obtained by rearranging the elements of AA and BB.
+
+It can be proven that [2,3][2,3] and [1,4][1,4] are the only such distinct arrays whose elements sum to 55. Thus the answer is 22.
+
+

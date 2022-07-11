@@ -1,0 +1,18 @@
+Tokitsukaze has two colorful tapes. There are nn distinct colors, numbered 11 through nn, and each color appears exactly once on each of the two tapes. Denote the color of the ii-th position of the first tape as caicai, and the color of the ii-th position of the second tape as cbicbi.Now Tokitsukaze wants to select each color an integer value from 11 to nn, distinct for all the colors. After that she will put down the color values in each colored position on the tapes. Denote the number of the ii-th position of the first tape as numainumai, and the number of the ii-th position of the second tape as numbinumbi.  For example, for the above picture, assuming that the color red has value xx (1≤x≤n1≤x≤n), it appears at the 11-st position of the first tape and the 33-rd position of the second tape, so numa1=numb3=xnuma1=numb3=x.Note that each color ii from 11 to nn should have a distinct value, and the same color which appears in both tapes has the same value. After labeling each color, the beauty of the two tapes is calculated as ∑i=1n|numai−numbi|.∑i=1n|numai−numbi|.Please help Tokitsukaze to find the highest possible beauty. 
+InputThe first contains a single positive integer tt (1≤t≤1041≤t≤104) — the number of test cases.For each test case, the first line contains a single integer nn (1≤n≤1051≤n≤105) — the number of colors.The second line contains nn integers ca1,ca2,…,canca1,ca2,…,can (1≤cai≤n1≤cai≤n) — the color of each position of the first tape. It is guaranteed that caca is a permutation.The third line contains nn integers cb1,cb2,…,cbncb1,cb2,…,cbn (1≤cbi≤n1≤cbi≤n) — the color of each position of the second tape. It is guaranteed that cbcb is a permutation.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case, print a single integer — the highest possible beauty.
+ExampleInputCopy3
+6
+1 5 4 3 2 6
+5 3 1 4 6 2
+6
+3 5 4 6 2 1
+3 6 4 5 2 1
+1
+1
+1
+OutputCopy18
+10
+0
+
+NoteAn optimal solution for the first test case is shown in the following figure:  The beauty is |4−3|+|3−5|+|2−4|+|5−2|+|1−6|+|6−1|=18|4−3|+|3−5|+|2−4|+|5−2|+|1−6|+|6−1|=18.An optimal solution for the second test case is shown in the following figure:  The beauty is |2−2|+|1−6|+|3−3|+|6−1|+|4−4|+|5−5|=10|2−2|+|1−6|+|3−3|+|6−1|+|4−4|+|5−5|=10.

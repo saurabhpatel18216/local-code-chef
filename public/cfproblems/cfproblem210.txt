@@ -1,0 +1,14 @@
+Luis has a sequence of n+1n+1 integers a1,a2,…,an+1a1,a2,…,an+1. For each i=1,2,…,n+1i=1,2,…,n+1 it is guaranteed that 0≤ai<n0≤ai<n, or ai=n2ai=n2. He has calculated the sum of all the elements of the sequence, and called this value ss. Luis has lost his sequence, but he remembers the values of nn and ss. Can you find the number of elements in the sequence that are equal to n2n2?We can show that the answer is unique under the given constraints.
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤2⋅1041≤t≤2⋅104). Description of the test cases follows.The only line of each test case contains two integers nn and ss (1≤n<1061≤n<106, 0≤s≤10180≤s≤1018). It is guaranteed that the value of ss is a valid sum for some sequence satisfying the above constraints.
+OutputFor each test case, print one integer — the number of elements in the sequence which are equal to n2n2.
+ExampleInputCopy4
+7 0
+1 1
+2 12
+3 12
+OutputCopy0
+1
+3
+1
+
+NoteIn the first test case, we have s=0s=0 so all numbers are equal to 00 and there isn't any number equal to 4949.In the second test case, we have s=1s=1. There are two possible sequences: [0,1][0,1] or [1,0][1,0]. In both cases, the number 11 appears just once. In the third test case, we have s=12s=12, which is the maximum possible value of ss for this case. Thus, the number 44 appears 33 times in the sequence.

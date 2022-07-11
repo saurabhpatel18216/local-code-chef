@@ -1,0 +1,21 @@
+This is the easy version of the problem. The only difference between the two versions is that the harder version asks additionally for a minimum number of subsegments.Tokitsukaze has a binary string ss of length nn, consisting only of zeros and ones, nn is even.Now Tokitsukaze divides ss into the minimum number of contiguous subsegments, and for each subsegment, all bits in each subsegment are the same. After that, ss is considered good if the lengths of all subsegments are even.For example, if ss is "11001111", it will be divided into "11", "00" and "1111". Their lengths are 22, 22, 44 respectively, which are all even numbers, so "11001111" is good. Another example, if ss is "1110011000", it will be divided into "111", "00", "11" and "000", and their lengths are 33, 22, 22, 33. Obviously, "1110011000" is not good.Tokitsukaze wants to make ss good by changing the values of some positions in ss. Specifically, she can perform the operation any number of times: change the value of sisi to '0' or '1'(1≤i≤n1≤i≤n). Can you tell her the minimum number of operations to make ss good?
+InputThe first contains a single positive integer tt (1≤t≤100001≤t≤10000) — the number of test cases.For each test case, the first line contains a single integer nn (2≤n≤2⋅1052≤n≤2⋅105) — the length of ss, it is guaranteed that nn is even.The second line contains a binary string ss of length nn, consisting only of zeros and ones.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case, print a single line with one integer — the minimum number of operations to make ss good.
+ExampleInputCopy5
+10
+1110011000
+8
+11001111
+2
+00
+2
+11
+6
+100110
+OutputCopy3
+0
+0
+0
+3
+
+NoteIn the first test case, one of the ways to make ss good is the following.Change s3s3, s6s6 and s7s7 to '0', after that ss becomes "1100000000", it can be divided into "11" and "00000000", which lengths are 22 and 88 respectively. There are other ways to operate 33 times to make ss good, such as "1111110000", "1100001100", "1111001100".In the second, third and fourth test cases, ss is good initially, so no operation is required.

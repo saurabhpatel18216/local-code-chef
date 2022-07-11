@@ -1,0 +1,20 @@
+You are given an array aa of length nn. Let cntxcntx be the number of elements from the array which are equal to xx. Let's also define f(x,y)f(x,y) as (cntx+cnty)⋅(x+y)(cntx+cnty)⋅(x+y).Also you are given mm bad pairs (xi,yi)(xi,yi). Note that if (x,y)(x,y) is a bad pair, then (y,x)(y,x) is also bad.Your task is to find the maximum value of f(u,v)f(u,v) over all pairs (u,v)(u,v), such that u≠vu≠v, that this pair is not bad, and also that uu and vv each occur in the array aa. It is guaranteed that such a pair exists.
+InputThe first line contains a single integer tt (1≤t≤100001≤t≤10000) — the number of test cases.The first line of each test case contains two integers nn and mm (2≤n≤3⋅1052≤n≤3⋅105, 0≤m≤3⋅1050≤m≤3⋅105) — the length of the array and the number of bad pairs.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1091≤ai≤109) — elements of the array.The ii-th of the next mm lines contains two integers xixi and yiyi (1≤xi<yi≤1091≤xi<yi≤109), which represent a bad pair. It is guaranteed that no bad pair occurs twice in the input. It is also guaranteed that cntxi>0cntxi>0 and cntyi>0cntyi>0.It is guaranteed that for each test case there is a pair of integers (u,v)(u,v), u≠vu≠v, that is not bad, and such that both of these numbers occur in aa.It is guaranteed that the total sum of nn and the total sum of mm don't exceed 3⋅1053⋅105.
+OutputFor each test case print a single integer — the answer to the problem.
+ExampleInputCopy3
+6 1
+6 3 6 7 3 3
+3 6
+2 0
+3 4
+7 4
+1 2 2 3 1 5 1
+1 5
+3 5
+1 3
+2 5
+OutputCopy40
+14
+15
+
+NoteIn the first test case 33, 66, 77 occur in the array.   f(3,6)=(cnt3+cnt6)⋅(3+6)=(3+2)⋅(3+6)=45f(3,6)=(cnt3+cnt6)⋅(3+6)=(3+2)⋅(3+6)=45. But (3,6)(3,6) is bad so we ignore it.  f(3,7)=(cnt3+cnt7)⋅(3+7)=(3+1)⋅(3+7)=40f(3,7)=(cnt3+cnt7)⋅(3+7)=(3+1)⋅(3+7)=40.  f(6,7)=(cnt6+cnt7)⋅(6+7)=(2+1)⋅(6+7)=39f(6,7)=(cnt6+cnt7)⋅(6+7)=(2+1)⋅(6+7)=39. The answer to the problem is max(40,39)=40max(40,39)=40.

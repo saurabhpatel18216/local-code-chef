@@ -1,0 +1,19 @@
+Polycarp has nn friends, the ii-th of his friends has aiai candies. Polycarp's friends do not like when they have different numbers of candies. In other words they want all aiai to be the same. To solve this, Polycarp performs the following set of actions exactly once:   Polycarp chooses kk (0≤k≤n0≤k≤n) arbitrary friends (let's say he chooses friends with indices i1,i2,…,iki1,i2,…,ik);  Polycarp distributes their ai1+ai2+…+aikai1+ai2+…+aik candies among all nn friends. During distribution for each of ai1+ai2+…+aikai1+ai2+…+aik candies he chooses new owner. That can be any of nn friends. Note, that any candy can be given to the person, who has owned that candy before the distribution process. Note that the number kk is not fixed in advance and can be arbitrary. Your task is to find the minimum value of kk.For example, if n=4n=4 and a=[4,5,2,5]a=[4,5,2,5], then Polycarp could make the following distribution of the candies:   Polycarp chooses k=2k=2 friends with indices i=[2,4]i=[2,4] and distributes a2+a4=10a2+a4=10 candies to make a=[4,4,4,4]a=[4,4,4,4] (two candies go to person 33). Note that in this example Polycarp cannot choose k=1k=1 friend so that he can redistribute candies so that in the end all aiai are equal.For the data nn and aa, determine the minimum value kk. With this value kk, Polycarp should be able to select kk friends and redistribute their candies so that everyone will end up with the same number of candies.
+InputThe first line contains one integer tt (1≤t≤1041≤t≤104). Then tt test cases follow.The first line of each test case contains one integer nn (1≤n≤2⋅1051≤n≤2⋅105).The second line contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤1040≤ai≤104).It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case output:   the minimum value of kk, such that Polycarp can choose exactly kk friends so that he can redistribute the candies in the desired way;  "-1" if no such value kk exists. 
+ExampleInputCopy5
+4
+4 5 2 5
+2
+0 4
+5
+10 8 5 1 4
+1
+10000
+7
+1 1 1 1 1 1 1
+OutputCopy2
+1
+-1
+0
+0

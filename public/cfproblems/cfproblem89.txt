@@ -1,0 +1,26 @@
+Leslie and Leon entered a labyrinth. The labyrinth consists of nn halls and mm one-way passages between them. The halls are numbered from 11 to nn.Leslie and Leon start their journey in the hall ss. Right away, they quarrel and decide to explore the labyrinth separately. However, they want to meet again at the end of their journey.To help Leslie and Leon, your task is to find two different paths from the given hall ss to some other hall tt, such that these two paths do not share halls other than the staring hall ss and the ending hall tt. The hall tt has not been determined yet, so you can choose any of the labyrinth's halls as tt except ss.Leslie's and Leon's paths do not have to be the shortest ones, but their paths must be simple, visiting any hall at most once. Also, they cannot visit any common halls except ss and tt during their journey, even at different times.
+InputThe first line contains three integers nn, mm, and ss, where nn (2≤n≤2⋅1052≤n≤2⋅105) is the number of vertices, mm (0≤m≤2⋅1050≤m≤2⋅105) is the number of edges in the labyrinth, and ss (1≤s≤n1≤s≤n) is the starting hall.Then mm lines with descriptions of passages follow. Each description contains two integers uiui, vivi (1≤ui,vi≤n1≤ui,vi≤n; ui≠viui≠vi), denoting a passage from the hall uiui to the hall vivi. The passages are one-way. Each tuple (ui,vi)(ui,vi) is present in the input at most once. The labyrinth can contain cycles and is not necessarily connected in any way.
+OutputIf it is possible to find the desired two paths, output "Possible", otherwise output "Impossible".If the answer exists, output two path descriptions. Each description occupies two lines. The first line of the description contains an integer hh (2≤h≤n2≤h≤n) — the number of halls in a path, and the second line contains distinct integers w1,w2,…,whw1,w2,…,wh (w1=sw1=s; 1≤wj≤n1≤wj≤n; wh=twh=t) — the halls in the path in the order of passing. Both paths must end at the same vertex tt. The paths must be different, and all intermediate halls in these paths must be distinct.
+ExamplesInputCopy5 5 1
+1 2
+2 3
+1 4
+4 3
+3 5
+OutputCopyPossible
+3
+1 2 3
+3
+1 4 3
+InputCopy5 5 1
+1 2
+2 3
+3 4
+2 5
+5 4
+OutputCopyImpossible
+InputCopy3 3 2
+1 2
+2 3
+3 1
+OutputCopyImpossible

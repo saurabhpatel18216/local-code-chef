@@ -1,0 +1,27 @@
+ Morning desert sun horizonRise above the sands of time...Fates Warning, "Exodus"After crossing the Windswept Wastes, Ori has finally reached the Windtorn Ruins to find the Heart of the Forest! However, the ancient repository containing this priceless Willow light did not want to open!Ori was taken aback, but the Voice of the Forest explained to him that the cunning Gorleks had decided to add protection to the repository.The Gorleks were very fond of the "string expansion" operation. They were also very fond of increasing subsequences.Suppose a string s1s2s3…sns1s2s3…sn is given. Then its "expansion" is defined as the sequence of strings s1s1, s1s2s1s2, ..., s1s2…sns1s2…sn, s2s2, s2s3s2s3, ..., s2s3…sns2s3…sn, s3s3, s3s4s3s4, ..., sn−1snsn−1sn, snsn. For example, the "expansion" the string 'abcd' will be the following sequence of strings: 'a', 'ab', 'abc', 'abcd', 'b', 'bc', 'bcd', 'c', 'cd', 'd'. To open the ancient repository, Ori must find the size of the largest increasing subsequence of the "expansion" of the string ss. Here, strings are compared lexicographically.Help Ori with this task!A string aa is lexicographically smaller than a string bb if and only if one of the following holds: aa is a prefix of bb, but a≠ba≠b; in the first position where aa and bb differ, the string aa has a letter that appears earlier in the alphabet than the corresponding letter in bb.
+InputEach test contains multiple test cases.The first line contains one positive integer tt (1≤t≤1031≤t≤103), denoting the number of test cases. Description of the test cases follows.The first line of each test case contains one positive integer nn (1≤n≤50001≤n≤5000) — length of the string.The second line of each test case contains a non-empty string of length nn, which consists of lowercase latin letters.It is guaranteed that the sum of nn over all test cases does not exceed 104104.
+OutputFor every test case print one non-negative integer — the answer to the problem.
+ExampleInputCopy7
+5
+acbac
+8
+acabacba
+12
+aaaaaaaaaaaa
+10
+abacabadac
+8
+dcbaabcd
+3
+cba
+6
+sparky
+OutputCopy9
+17
+12
+29
+14
+3
+9
+
+NoteIn first test case the "expansion" of the string is: 'a', 'ac', 'acb', 'acba', 'acbac', 'c', 'cb', 'cba', 'cbac', 'b', 'ba', 'bac', 'a', 'ac', 'c'. The answer can be, for example, 'a', 'ac', 'acb', 'acba', 'acbac', 'b', 'ba', 'bac', 'c'.

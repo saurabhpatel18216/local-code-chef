@@ -1,0 +1,15 @@
+Tokitsukaze has a sequence aa of length nn. For each operation, she selects two numbers aiai and ajaj (i≠ji≠j; 1≤i,j≤n1≤i,j≤n).   If ai=ajai=aj, change one of them to 00.  Otherwise change both of them to min(ai,aj)min(ai,aj). Tokitsukaze wants to know the minimum number of operations to change all numbers in the sequence to 00. It can be proved that the answer always exists.
+InputThe first line contains a single positive integer tt (1≤t≤10001≤t≤1000) — the number of test cases.For each test case, the first line contains a single integer nn (2≤n≤1002≤n≤100) — the length of the sequence aa.The second line contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤1000≤ai≤100) — the sequence aa.
+OutputFor each test case, print a single integer — the minimum number of operations to change all numbers in the sequence to 00.
+ExampleInputCopy3
+3
+1 2 3
+3
+1 2 2
+3
+1 2 0
+OutputCopy4
+3
+2
+
+NoteIn the first test case, one of the possible ways to change all numbers in the sequence to 00:In the 11-st operation, a1<a2a1<a2, after the operation, a2=a1=1a2=a1=1. Now the sequence aa is [1,1,3][1,1,3].In the 22-nd operation, a1=a2=1a1=a2=1, after the operation, a1=0a1=0. Now the sequence aa is [0,1,3][0,1,3].In the 33-rd operation, a1<a2a1<a2, after the operation, a2=0a2=0. Now the sequence aa is [0,0,3][0,0,3].In the 44-th operation, a2<a3a2<a3, after the operation, a3=0a3=0. Now the sequence aa is [0,0,0][0,0,0].So the minimum number of operations is 44.

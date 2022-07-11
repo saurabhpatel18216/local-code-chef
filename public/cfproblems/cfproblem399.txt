@@ -1,0 +1,18 @@
+For an array bb of nn integers, the extreme value of this array is the minimum number of times (possibly, zero) the following operation has to be performed to make bb non-decreasing:   Select an index ii such that 1≤i≤|b|1≤i≤|b|, where |b||b| is the current length of bb.  Replace bibi with two elements xx and yy such that xx and yy both are positive integers and x+y=bix+y=bi.  This way, the array bb changes and the next operation is performed on this modified array. For example, if b=[2,4,3]b=[2,4,3] and index 22 gets selected, then the possible arrays after this operation are [2,1–,3–,3][2,1_,3_,3], [2,2–,2–,3][2,2_,2_,3], or [2,3–,1–,3][2,3_,1_,3]. And consequently, for this array, this single operation is enough to make it non-decreasing: [2,4,3]→[2,2–,2–,3][2,4,3]→[2,2_,2_,3].It's easy to see that every array of positive integers can be made non-decreasing this way.YouKn0wWho has an array aa of nn integers. Help him find the sum of extreme values of all nonempty subarrays of aa modulo 998244353998244353. If a subarray appears in aa multiple times, its extreme value should be counted the number of times it appears.An array dd is a subarray of an array cc if dd can be obtained from cc by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.
+InputThe first line contains a single integer tt (1≤t≤100001≤t≤10000) — the number of test cases.The first line of each test case contains a single integer nn (1≤n≤1051≤n≤105).The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1051≤ai≤105).It is guaranteed that the sum of nn over all test cases doesn't exceed 105105.
+OutputFor each test case, print a single integer  — the sum of extreme values of all subarrays of aa modulo 998244353998244353.
+ExampleInputCopy4
+3
+5 4 3
+4
+3 2 1 4
+1
+69
+8
+7264 40515 28226 92776 35285 21709 75124 48163
+OutputCopy5
+9
+0
+117
+
+NoteLet f(l,r)f(l,r) denote the extreme value of [al,al+1,…,ar][al,al+1,…,ar].In the first test case,   f(1,3)=3f(1,3)=3, because YouKn0wWho can perform the following operations on the subarray [5,4,3][5,4,3] (the newly inserted elements are underlined):[5,4,3]→[3–,2–,4,3]→[3,2,2–,2–,3]→[1–,2–,2,2,2,3][5,4,3]→[3_,2_,4,3]→[3,2,2_,2_,3]→[1_,2_,2,2,2,3]; f(1,2)=1f(1,2)=1, because [5,4]→[2–,3–,4][5,4]→[2_,3_,4]; f(2,3)=1f(2,3)=1, because [4,3]→[1–,3–,3][4,3]→[1_,3_,3]; f(1,1)=f(2,2)=f(3,3)=0f(1,1)=f(2,2)=f(3,3)=0, because they are already non-decreasing. So the total sum of extreme values of all subarrays of a=3+1+1+0+0+0=5a=3+1+1+0+0+0=5.

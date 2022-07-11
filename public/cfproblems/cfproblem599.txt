@@ -1,0 +1,16 @@
+You are given two integers nn and mm. Find the MEXMEX of the sequence n⊕0,n⊕1,…,n⊕mn⊕0,n⊕1,…,n⊕m. Here, ⊕⊕ is the bitwise XOR operator.MEXMEX of the sequence of non-negative integers is the smallest non-negative integer that doesn't appear in this sequence. For example, MEX(0,1,2,4)=3MEX⁡(0,1,2,4)=3, and MEX(1,2021)=0MEX⁡(1,2021)=0. 
+InputThe first line contains a single integer tt (1≤t≤300001≤t≤30000)  — the number of test cases.The first and only line of each test case contains two integers nn and mm (0≤n,m≤1090≤n,m≤109).
+OutputFor each test case, print a single integer  — the answer to the problem.
+ExampleInputCopy5
+3 5
+4 6
+3 2
+69 696
+123456 654321
+OutputCopy4
+3
+0
+640
+530866
+
+NoteIn the first test case, the sequence is 3⊕0,3⊕1,3⊕2,3⊕3,3⊕4,3⊕53⊕0,3⊕1,3⊕2,3⊕3,3⊕4,3⊕5, or 3,2,1,0,7,63,2,1,0,7,6. The smallest non-negative integer which isn't present in the sequence i. e. the MEXMEX of the sequence is 44.In the second test case, the sequence is 4⊕0,4⊕1,4⊕2,4⊕3,4⊕4,4⊕5,4⊕64⊕0,4⊕1,4⊕2,4⊕3,4⊕4,4⊕5,4⊕6, or 4,5,6,7,0,1,24,5,6,7,0,1,2. The smallest non-negative integer which isn't present in the sequence i. e. the MEXMEX of the sequence is 33.In the third test case, the sequence is 3⊕0,3⊕1,3⊕23⊕0,3⊕1,3⊕2, or 3,2,13,2,1. The smallest non-negative integer which isn't present in the sequence i. e. the MEXMEX of the sequence is 00.

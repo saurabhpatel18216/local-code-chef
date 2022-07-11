@@ -1,0 +1,18 @@
+You are given a rooted tree of 2n−12n−1 vertices. Every vertex of this tree has either 00 children, or 22 children. All leaves of this tree have the same distance from the root, and for every non-leaf vertex, one of its children is the left one, and the other child is the right one. Formally, you are given a perfect binary tree.The vertices of the tree are numbered in the following order:  the root has index 11;  if a vertex has index xx, then its left child has index 2x2x, and its right child has index 2x+12x+1. Every vertex of the tree has a letter written on it, either A or B. Let's define the character on the vertex xx as sxsx.Let the preorder string of some vertex xx be defined in the following way:  if the vertex xx is a leaf, then the preorder string of xx be consisting of only one character sxsx;  otherwise, the preorder string of xx is sx+f(lx)+f(rx)sx+f(lx)+f(rx), where ++ operator defines concatenation of strings, f(lx)f(lx) is the preorder string of the left child of xx, and f(rx)f(rx) is the preorder string of the right child of xx. The preorder string of the tree is the preorder string of its root.Now, for the problem itself...You have to calculate the number of different strings that can be obtained as the preorder string of the given tree, if you are allowed to perform the following operation any number of times before constructing the preorder string of the tree:  choose any non-leaf vertex xx, and swap its children (so, the left child becomes the right one, and vice versa). 
+InputThe first line contains one integer nn (2≤n≤182≤n≤18).The second line contains a sequence of 2n−12n−1 characters s1,s2,…,s2n−1s1,s2,…,s2n−1. Each character is either A or B. The characters are not separated by spaces or anything else.
+OutputPrint one integer — the number of different strings that can be obtained as the preorder string of the given tree, if you can apply any number of operations described in the statement. Since it can be very large, print it modulo 998244353998244353.
+ExamplesInputCopy4
+BAAAAAAAABBABAB
+OutputCopy16
+InputCopy2
+BAA
+OutputCopy1
+InputCopy2
+ABA
+OutputCopy2
+InputCopy2
+AAB
+OutputCopy2
+InputCopy2
+AAA
+OutputCopy1

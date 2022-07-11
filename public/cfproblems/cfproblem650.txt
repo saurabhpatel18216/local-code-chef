@@ -1,0 +1,30 @@
+AquaMoon and Cirno are playing an interesting game with arrays. Cirno has prepared two arrays aa and bb, both consist of nn non-negative integers. AquaMoon can perform the following operation an arbitrary number of times (possibly zero):  She chooses two indices ii and jj (1≤i,j≤n1≤i,j≤n), then decreases the ii-th element of array aa by 11, and increases the jj-th element of array aa by 11. The resulting values at ii-th and jj-th index of array aa are ai−1ai−1 and aj+1aj+1, respectively. Each element of array aa must be non-negative after each operation. If i=ji=j this operation doesn't change the array aa. AquaMoon wants to make some operations to make arrays aa and bb equal. Two arrays aa and bb are considered equal if and only if ai=biai=bi for all 1≤i≤n1≤i≤n.Help AquaMoon to find a sequence of operations that will solve her problem or find, that it is impossible to make arrays aa and bb equal.Please note, that you don't have to minimize the number of operations.
+InputThe input consists of multiple test cases. The first line contains a single integer tt (1≤t≤1001≤t≤100) — the number of test cases.The first line of each test case contains a single integer nn (1≤n≤1001≤n≤100).The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤1000≤ai≤100). The sum of all aiai does not exceed 100100.The third line of each test case contains nn integers b1,b2,…,bnb1,b2,…,bn (0≤bi≤1000≤bi≤100). The sum of all bibi does not exceed 100100.
+OutputFor each test case print "-1" on the only line if it is impossible to make two arrays equal with some sequence of operations.Otherwise, print an integer mm (0≤m≤1000≤m≤100) in the first line — the number of operations. Then print mm lines, each line consists of two integers ii and jj — the indices you choose for the operation.It can be proven that if it is possible to make two arrays equal with some sequence of operations, there exists a sequence with m≤100m≤100.If there are multiple possible solutions, you can print any.
+ExampleInputCopy4
+4
+1 2 3 4
+3 1 2 4
+2
+1 3
+2 1
+1
+0
+0
+5
+4 3 2 1 0
+0 1 2 3 4
+OutputCopy2
+2 1
+3 1
+-1
+0
+6
+1 4
+1 4
+1 5
+1 5
+2 5
+2 5
+
+NoteIn the first example, we do the following operations:  i=2i=2, j=1j=1: [1,2,3,4]→[2,1,3,4][1,2,3,4]→[2,1,3,4];  i=3i=3, j=1j=1: [2,1,3,4]→[3,1,2,4][2,1,3,4]→[3,1,2,4]; In the second example, it's impossible to make two arrays equal.

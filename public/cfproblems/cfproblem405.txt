@@ -1,0 +1,17 @@
+Students of one unknown college don't have PE courses. That's why qq of them decided to visit a gym nearby by themselves. The gym is open for nn days and has a ticket system. At the ii-th day, the cost of one ticket is equal to aiai. You are free to buy more than one ticket per day.You can activate a ticket purchased at day ii either at day ii or any day later. Each activated ticket is valid only for kk days. In other words, if you activate ticket at day tt, it will be valid only at days t,t+1,…,t+k−1t,t+1,…,t+k−1. You know that the jj-th student wants to visit the gym at each day from ljlj to rjrj inclusive. Each student will use the following strategy of visiting the gym at any day ii (lj≤i≤rjlj≤i≤rj):  person comes to a desk selling tickets placed near the entrance and buy several tickets with cost aiai apiece (possibly, zero tickets);  if the person has at least one activated and still valid ticket, they just go in. Otherwise, they activate one of tickets purchased today or earlier and go in. Note that each student will visit gym only starting ljlj, so each student has to buy at least one ticket at day ljlj.Help students to calculate the minimum amount of money they have to spend in order to go to the gym.
+InputThe first line contains three integers nn, qq and kk (1≤n,q≤3000001≤n,q≤300000; 1≤k≤n1≤k≤n) — the number of days, the number of students and the number of days each ticket is still valid. The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1091≤ai≤109) — the cost of one ticket at the corresponding day.Each of the next qq lines contains two integers lili and riri (1≤li≤ri≤n1≤li≤ri≤n) — the segment of days the corresponding student want to visit the gym.
+OutputFor each student, print the minimum possible amount of money they have to spend in order to go to the gym at desired days.
+ExampleInputCopy7 5 2
+2 15 6 3 7 5 6
+1 2
+3 7
+5 5
+7 7
+3 5
+OutputCopy2
+12
+7
+6
+9
+
+NoteLet's see how each student have to spend their money:   The first student should buy one ticket at day 11.  The second student should buy one ticket at day 33 and two tickets at day 44. Note that student can keep purchased tickets for the next days.  The third student should buy one ticket at day 55.  The fourth student should buy one ticket at day 77.  The fifth student should buy one ticket at day 33 and one at day 44. 

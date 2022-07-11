@@ -1,0 +1,16 @@
+You are given an integer nn. You have to apply mm operations to it.In a single operation, you must replace every digit dd of the number with the decimal representation of integer d+1d+1. For example, 19121912 becomes 2102321023 after applying the operation once.You have to find the length of nn after applying mm operations. Since the answer can be very large, print it modulo 109+7109+7.
+InputThe first line contains a single integer tt (1≤t≤2⋅1051≤t≤2⋅105) — the number of test cases.The only line of each test case contains two integers nn (1≤n≤1091≤n≤109) and mm (1≤m≤2⋅1051≤m≤2⋅105) — the initial number and the number of operations. 
+OutputFor each test case output the length of the resulting number modulo 109+7109+7.
+ExampleInputCopy5
+1912 1
+5 6
+999 1
+88 2
+12 100
+OutputCopy5
+2
+6
+4
+2115
+
+NoteFor the first test, 19121912 becomes 2102321023 after 11 operation which is of length 55.For the second test, 55 becomes 2121 after 66 operations which is of length 22.For the third test, 999999 becomes 101010101010 after 11 operation which is of length 66.For the fourth test, 8888 becomes 10101010 after 22 operations which is of length 44.

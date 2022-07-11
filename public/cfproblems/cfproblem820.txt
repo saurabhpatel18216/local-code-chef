@@ -1,0 +1,28 @@
+In Fire City, there are nn intersections and mm one-way roads. The ii-th road goes from intersection aiai to bibi and has length lili miles. There are qq cars that may only drive along those roads. The ii-th car starts at intersection vivi and has an odometer that begins at sisi, increments for each mile driven, and resets to 00 whenever it reaches titi. Phoenix has been tasked to drive cars along some roads (possibly none) and return them to their initial intersection with the odometer showing 00.For each car, please find if this is possible. A car may visit the same road or intersection an arbitrary number of times. The odometers don't stop counting the distance after resetting, so odometers may also be reset an arbitrary number of times.
+InputThe first line of the input contains two integers nn and mm (2≤n≤2⋅1052≤n≤2⋅105; 1≤m≤2⋅1051≤m≤2⋅105) — the number of intersections and the number of roads, respectively.Each of the next mm lines contain three integers aiai, bibi, and lili (1≤ai,bi≤n1≤ai,bi≤n; ai≠biai≠bi; 1≤li≤1091≤li≤109) — the information about the ii-th road. The graph is not necessarily connected. It is guaranteed that between any two intersections, there is at most one road for each direction.The next line contains an integer qq (1≤q≤2⋅1051≤q≤2⋅105) — the number of cars.Each of the next qq lines contains three integers vivi, sisi, and titi (1≤vi≤n1≤vi≤n; 0≤si<ti≤1090≤si<ti≤109) — the initial intersection of the ii-th car, the initial number on the ii-th odometer, and the number at which the ii-th odometer resets, respectively.
+OutputPrint qq answers. If the ii-th car's odometer may be reset to 00 by driving through some roads (possibly none) and returning to its starting intersection vivi, print YES. Otherwise, print NO.
+ExamplesInputCopy4 4
+1 2 1
+2 3 1
+3 1 2
+1 4 3
+3
+1 1 3
+1 2 4
+4 0 1
+OutputCopyYES
+NO
+YES
+InputCopy4 5
+1 2 1
+2 3 1
+3 1 2
+1 4 1
+4 3 2
+2
+1 2 4
+4 3 5
+OutputCopyYES
+YES
+
+NoteThe illustration for the first example is below:  In the first query, Phoenix can drive through the following cities: 11 →→ 22 →→ 33 →→ 11 →→ 22 →→ 33 →→ 11. The odometer will have reset 33 times, but it displays 00 at the end.In the second query, we can show that there is no way to reset the odometer to 00 and return to intersection 11.In the third query, the odometer already displays 00, so there is no need to drive through any roads.Below is the illustration for the second example:   

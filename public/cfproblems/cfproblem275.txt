@@ -1,0 +1,18 @@
+You are given two arrays aa and bb of nn positive integers each. You can apply the following operation to them any number of times:  Select an index ii (1≤i≤n1≤i≤n) and swap aiai with bibi (i. e. aiai becomes bibi and vice versa). Find the minimum possible value of max(a1,a2,…,an)⋅max(b1,b2,…,bn)max(a1,a2,…,an)⋅max(b1,b2,…,bn) you can get after applying such operation any number of times (possibly zero). 
+InputThe input consists of multiple test cases. The first line contains a single integer tt (1≤t≤1001≤t≤100) — the number of test cases. Description of the test cases follows.The first line of each test case contains an integer nn (1≤n≤1001≤n≤100) — the length of the arrays.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤100001≤ai≤10000) where aiai is the ii-th element of the array aa.The third line of each test case contains nn integers b1,b2,…,bnb1,b2,…,bn (1≤bi≤100001≤bi≤10000) where bibi is the ii-th element of the array bb.
+OutputFor each test case, print a single integer, the minimum possible value of max(a1,a2,…,an)⋅max(b1,b2,…,bn)max(a1,a2,…,an)⋅max(b1,b2,…,bn) you can get after applying such operation any number of times.
+ExampleInputCopy3
+6
+1 2 6 5 1 2
+3 4 3 2 2 5
+3
+3 3 3
+3 3 3
+2
+1 2
+2 1
+OutputCopy18
+9
+2
+
+NoteIn the first test, you can apply the operations at indices 22 and 66, then a=[1,4,6,5,1,5]a=[1,4,6,5,1,5] and b=[3,2,3,2,2,2]b=[3,2,3,2,2,2], max(1,4,6,5,1,5)⋅max(3,2,3,2,2,2)=6⋅3=18max(1,4,6,5,1,5)⋅max(3,2,3,2,2,2)=6⋅3=18.In the second test, no matter how you apply the operations, a=[3,3,3]a=[3,3,3] and b=[3,3,3]b=[3,3,3] will always hold, so the answer is max(3,3,3)⋅max(3,3,3)=3⋅3=9max(3,3,3)⋅max(3,3,3)=3⋅3=9.In the third test, you can apply the operation at index 11, then a=[2,2]a=[2,2], b=[1,1]b=[1,1], so the answer is max(2,2)⋅max(1,1)=2⋅1=2max(2,2)⋅max(1,1)=2⋅1=2.

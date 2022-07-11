@@ -1,0 +1,18 @@
+You are given a string ss, consisting of nn letters, each letter is either 'a' or 'b'. The letters in the string are numbered from 11 to nn.s[l;r]s[l;r] is a continuous substring of letters from index ll to rr of the string inclusive. A string is called balanced if the number of letters 'a' in it is equal to the number of letters 'b'. For example, strings "baba" and "aabbab" are balanced and strings "aaab" and "b" are not.Find any non-empty balanced substring s[l;r]s[l;r] of string ss. Print its ll and rr (1≤l≤r≤n1≤l≤r≤n). If there is no such substring, then print −1−1 −1−1.
+InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000) — the number of testcases.Then the descriptions of tt testcases follow.The first line of the testcase contains a single integer nn (1≤n≤501≤n≤50) — the length of the string.The second line of the testcase contains a string ss, consisting of nn letters, each letter is either 'a' or 'b'.
+OutputFor each testcase print two integers. If there exists a non-empty balanced substring s[l;r]s[l;r], then print ll rr (1≤l≤r≤n1≤l≤r≤n). Otherwise, print −1−1 −1−1.
+ExampleInputCopy4
+1
+a
+6
+abbaba
+6
+abbaba
+9
+babbabbaa
+OutputCopy-1 -1
+1 6
+3 6
+2 5
+
+NoteIn the first testcase there are no non-empty balanced subtrings.In the second and third testcases there are multiple balanced substrings, including the entire string "abbaba" and substring "baba".

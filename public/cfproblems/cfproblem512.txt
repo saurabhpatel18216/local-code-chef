@@ -1,0 +1,29 @@
+Let us consider the game "Sticky Tetris". In this game, there is a field of n×mn×m squares. Tiles appear on the field and the player can move the tiles. Each tile is a 44-connected set of at most 77 squares.Each new tile appears in any position that fits inside the field, does not intersect any other tile, and the top cell of the tile is at the top row of the field. The player can move the tile left, right, and down, and at any moment the tile must still entirely fit inside the field and must not intersect other tiles. The player can stop the tile at any position at any time. After that, it cannot be moved. Since this is "Sticky Tetris," the tile will not fall once stopped.You are given a final configuration of a "Sticky Tetris" game. You need to restore a sequence of steps that leads to that configuration if it exists.
+InputThe first line contains two integers nn and mm (1≤n,m≤501≤n,m≤50) — the size of the playing field.The next nn lines contain a string of mm characters each. Each character could be either a '.', or lowercase English letter. Connected components of the same letter correspond to a single tile. Each tile consists of at most 77 squares.
+OutputIf there is no solution, print −1−1.Otherwise, print kk — the number of different tiles that are placed on the field.On the next kk lines print the sequence of steps for each of the tiles in the order they are placed. Each line consists of a number xx followed by a string with steps. xx (1≤x≤m1≤x≤m) is the starting column of the leftmost square in the top row of the tile. The string consists of characters 'L' (for left), 'R' (for right), and 'D' (for down), describing the path of that tile, ending with a single character 'S' (for stop). The final position of the tile determines which tile is being placed. The string with steps can have at most n⋅m+1n⋅m+1 characters.
+ExamplesInputCopy3 2
+aa
+ab
+aa
+OutputCopy2
+2 DS
+1 S
+InputCopy5 6
+....dd
+.ccccd
+.cbbdd
+.aab.a
+aabbaa
+OutputCopy5
+2 DDDS
+4 DDLS
+6 DDDS
+2 DS
+5 S
+InputCopy5 3
+...
+aab
+abb
+aab
+.bb
+OutputCopy-1

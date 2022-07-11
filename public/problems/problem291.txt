@@ -1,0 +1,50 @@
+
+A fair is organized in the village. There are N shops in the village fair. All the shops can be classified as a BadBad shop or a GoodGood shop. Each shop has certain number of coins (AiAi) assigned to it. If someone visits a Good shop, they will get AiAi coins and if someone visits a Bad shop they will have to deposit AiAi coins.
+
+A Good shop will have positive AiAi (including 0) and a Bad shop will have negative AiAi.
+
+Alice is playing a game. The rule of the game is simple. Alice has to move across ContiguousContiguous shops in the market lane, if she visits a Bad shop, she have to deposit the number of coins assigned to that shop and if she visits a Good shop, she gets the coins assigned to that shop, the only Restriction being that she can only visit contiguous shops. Formally, Alice can choose any i and j  such that 1≤i≤j≤N1≤i≤j≤N and visits all the shops between i and j (both inclusive).
+
+Initially Alice has 0 coins. Alice can also opt NotNot to visit any shop and ends up having 0 coins only. Alice wants to know the maximum coins she can collect. She alone cannot calculate this and asked for your help!. Are you able to tell the maximum number of coins Alice can collect if she plays optimally ?
+
+Input:
+
+First line of input will contain TT, number of testcases. Then the testcases follow. 
+First line of testcase contains a single integer NN, total number of shops in the village.   
+Second line of testcase contains NN space separated integers, AiAi the number of coins associated with the itithh shop.
+
+Output:
+
+For each testcase, output a single line integer the maximum number of coins Alice can collect.
+
+Constraints
+
+1≤T≤101≤T≤10
+1≤N≤1051≤N≤105 
+−100≤Ai≤100−100≤Ai≤100
+
+Sample Input:
+
+3
+9
+4 -2 -3 4 -1 -2 1 5 -3
+3
+-2 -3 -17
+5
+-1 -5 7 0 1
+
+Sample Output:
+
+7
+0
+8
+
+EXPLANATION:
+
+Case #1Case #1 : here optimum continuous shops to visit are 4,-1,-2,1,5 i.e.  i=4 to j=8. Choosing any other continuous shops will give you sum less than 7.
+
+Case #2Case #2 : As all shops are Bad, so Alice will not visit any shop and ends up having 0 coins only.
+
+Case #3Case #3 : Here Alice will visits shops 7,0,1 i.e. from i=3 to j=5.
+
+

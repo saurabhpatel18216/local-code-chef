@@ -1,0 +1,28 @@
+A regular bracket sequence is a bracket sequence that can be transformed into a correct arithmetic expression by inserting characters "1" and "+" between the original characters of the sequence. For example:  bracket sequences "()()" and "(())" are regular (the resulting expressions are: "(1)+(1)" and "((1+1)+1)");  bracket sequences ")(", "(" and ")" are not. You are given two strings ss and aa, the string ss has length nn, the string aa has length n−3n−3. The string ss is a bracket sequence (i. e. each element of this string is either an opening bracket character or a closing bracket character). The string aa is a binary string (i. e. each element of this string is either 1 or 0).The string aa imposes some constraints on the string ss: for every ii such that aiai is 1, the string sisi+1si+2si+3sisi+1si+2si+3 should be a regular bracket sequence. Characters of aa equal to 0 don't impose any constraints.Initially, the string ss may or may not meet these constraints. You can perform the following operation any number of times: replace some character of ss with its inverse (i. e. you can replace an opening bracket with a closing bracket, or vice versa).Determine if it is possible to change some characters in ss so that it meets all of the constraints, and if it is possible, calculate the minimum number of characters to be changed.
+InputThe first line contains one integer tt (1≤t≤1041≤t≤104) — the number of test cases.Each test case consists of three lines. The first line contains one integer nn (4≤n≤2⋅1054≤n≤2⋅105). The second line contains the string ss, consisting of exactly nn characters; each character of ss is either '(' or ')'. The third line contains the string aa, consisting of exactly n−3n−3 characters; each character of aa is either '1' or '0'.Additional constraint on the input: the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case, print one integer: the minimum number of characters that need to be changed in ss, or −1−1 if it is impossible.
+ExampleInputCopy6
+4
+))((
+1
+4
+))((
+0
+4
+()()
+0
+6
+))(()(
+101
+6
+))(()(
+001
+5
+(((((
+11
+OutputCopy2
+0
+0
+4
+1
+-1

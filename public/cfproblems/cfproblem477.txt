@@ -1,0 +1,13 @@
+This is a harder version of the problem with bigger constraints.Korney Korneevich dag up an array aa of length nn. Korney Korneevich has recently read about the operation bitwise XOR, so he wished to experiment with it. For this purpose, he decided to find all integers x≥0x≥0 such that there exists an increasing subsequence of the array aa, in which the bitwise XOR of numbers is equal to xx.It didn't take a long time for Korney Korneevich to find all such xx, and he wants to check his result. That's why he asked you to solve this problem!A sequence ss is a subsequence of a sequence bb if ss can be obtained from bb by deletion of several (possibly, zero or all) elements.A sequence s1,s2,…,sms1,s2,…,sm is called increasing if s1<s2<…<sms1<s2<…<sm.
+InputThe first line contains a single integer nn (1≤n≤1061≤n≤106).The second line contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤50000≤ai≤5000) — the elements of the array aa.
+OutputIn the first line print a single integer kk — the number of found xx values.In the second line print kk integers in increasing order x1,x2,…xkx1,x2,…xk (0≤x1<…<xk0≤x1<…<xk) — found xx values.
+ExamplesInputCopy4
+4 2 2 4
+OutputCopy4
+0 2 4 6 
+InputCopy8
+1 0 1 7 12 5 3 2
+OutputCopy12
+0 1 2 3 4 5 6 7 10 11 12 13 
+
+NoteIn the first test case:  To get value x=0x=0 it is possible to choose and empty subsequence  To get value x=2x=2 it is possible to choose a subsequence [2][2]  To get value x=4x=4 it is possible to choose a subsequence [4][4]  To get value x=6x=6 it is possible to choose a subsequence [2,4][2,4] 

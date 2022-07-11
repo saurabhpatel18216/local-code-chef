@@ -1,0 +1,57 @@
+You are given a tree consisting of nn vertices, and qq triples (xi,yi,si)(xi,yi,si), where xixi and yiyi are integers from 11 to nn, and sisi is a string with length equal to the number of vertices on the simple path from xixi to yiyi.You want to write a lowercase Latin letter on each vertex in such a way that, for each of qq given triples, at least one of the following conditions holds:  if you write out the letters on the vertices on the simple path from xixi to yiyi in the order they appear on this path, you get the string sisi;  if you write out the letters on the vertices on the simple path from yiyi to xixi in the order they appear on this path, you get the string sisi. Find any possible way to write a letter on each vertex to meet these constraints, or report that it is impossible.
+InputThe first line contains two integers nn and qq (2≤n≤4⋅1052≤n≤4⋅105; 1≤q≤4⋅1051≤q≤4⋅105) — the number of vertices in the tree and the number of triples, respectively.Then n−1n−1 lines follow; the ii-th of them contains two integers uiui and vivi (1≤ui,vi≤n1≤ui,vi≤n; ui≠viui≠vi) — the endpoints of the ii-th edge. These edges form a tree.Then qq lines follow; the jj-th of them contains two integers xjxj and yjyj, and a string sjsj consisting of lowercase Latin letters. The length of sjsj is equal to the number of vertices on the simple path between xjxj and yjyj.Additional constraint on the input: ∑j=1q|sj|≤4⋅105∑j=1q|sj|≤4⋅105.
+OutputIf there is no way to meet the conditions on all triples, print NO. Otherwise, print YES in the first line, and a string of nn lowercase Latin letters in the second line; the ii-th character of the string should be the letter you write on the ii-th vertex. If there are multiple answers, print any of them.
+ExamplesInputCopy3 2
+2 3
+2 1
+2 1 ab
+2 3 bc
+OutputCopyYES
+abcInputCopy3 2
+2 3
+2 1
+2 1 ab
+2 3 cd
+OutputCopyNO
+InputCopy10 10
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+1 2 ab
+1 3 ab
+1 4 ab
+1 5 ab
+1 6 ab
+1 7 ab
+1 8 ab
+1 9 ab
+1 10 ab
+10 2 aba
+OutputCopyYES
+baaaaaaaaaInputCopy10 10
+1 2
+1 3
+1 4
+1 5
+1 6
+1 7
+1 8
+1 9
+1 10
+1 2 ab
+1 3 ab
+1 4 aa
+1 5 ab
+1 6 ab
+1 7 ab
+1 8 ab
+1 9 ab
+1 10 ab
+10 2 aba
+OutputCopyNO

@@ -1,0 +1,37 @@
+Mihai plans to watch a movie. He only likes palindromic movies, so he wants to skip some (possibly zero) scenes to make the remaining parts of the movie palindromic.You are given a list ss of nn non-empty strings of length at most 33, representing the scenes of Mihai's movie.A subsequence of ss is called awesome if it is non-empty and the concatenation of the strings in the subsequence, in order, is a palindrome.Can you help Mihai check if there is at least one awesome subsequence of ss?A palindrome is a string that reads the same backward as forward, for example strings "z", "aaa", "aba", "abccba" are palindromes, but strings "codeforces", "reality", "ab" are not.A sequence aa is a non-empty subsequence of a non-empty sequence bb if aa can be obtained from bb by deletion of several (possibly zero, but not all) elements.
+InputThe first line of the input contains a single integer tt (1≤t≤1001≤t≤100) — the number of test cases. The description of test cases follows.The first line of each test case contains a single integer nn (1≤n≤1051≤n≤105) — the number of scenes in the movie.Then follows nn lines, the ii-th of which containing a single non-empty string sisi of length at most 33, consisting of lowercase Latin letters.It is guaranteed that the sum of nn over all test cases does not exceed 105105.
+OutputFor each test case, print "YES" if there is an awesome subsequence of ss, or "NO" otherwise (case insensitive).
+ExampleInputCopy6
+5
+zx
+ab
+cc
+zx
+ba
+2
+ab
+bad
+4
+co
+def
+orc
+es
+3
+a
+b
+c
+3
+ab
+cd
+cba
+2
+ab
+ab
+OutputCopyYES
+NO
+NO
+YES
+YES
+NO
+
+NoteIn the first test case, an awesome subsequence of ss is [ab,cc,ba][ab,cc,ba]

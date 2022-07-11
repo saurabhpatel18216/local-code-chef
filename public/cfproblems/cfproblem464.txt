@@ -1,0 +1,36 @@
+This is an interactive problem.Jury initially had a sequence aa of length nn, such that ai=iai=i.The jury chose three integers ii, jj, kk, such that 1≤i<j<k≤n1≤i<j<k≤n, j−i>1j−i>1. After that, Jury reversed subsegments [i,j−1][i,j−1] and [j,k][j,k] of the sequence aa.Reversing a subsegment [l,r][l,r] of the sequence aa means reversing the order of elements al,al+1,…,aral,al+1,…,ar in the sequence, i. e. alal is swapped with arar, al+1al+1 is swapped with ar−1ar−1, etc.You are given the number nn and you should find ii, jj, kk after asking some questions.In one question you can choose two integers ll and rr (1≤l≤r≤n1≤l≤r≤n) and ask the number of inversions on the subsegment [l,r][l,r] of the sequence aa. You will be given the number of pairs (i,j)(i,j) such that l≤i<j≤rl≤i<j≤r, and ai>ajai>aj.Find the chosen numbers ii, jj, kk after at most 4040 questions.The numbers ii, jj, and kk are fixed before the start of your program and do not depend on your queries.
+InputEach test consists of multiple test cases. The first line contains a single integer tt (1≤t≤1001≤t≤100) — the number of test cases. Description of the test cases follows.The single line of each test case contains a single integer nn (4≤n≤1094≤n≤109). After reading it you should start an interaction process by asking questions for that test case. After giving an answer you should:  Terminate your program if that is the last test case.  Proceed to the next test case otherwise. 
+InteractionTo ask number of inversions on a subsegment [l,r][l,r], print "? l r", where (1≤l≤r≤n1≤l≤r≤n). You can ask at most 4040 questions in each test case. As a result you should read a single integer xx.  If x=−1x=−1, your program made an invalid question or you exceeded the number of questions for that test case. Your program should terminate immediately (otherwise it can get any verdict instead of "Wrong Answer").  Otherwise xx is equal to the number of inversions on the subsegment [l,r][l,r] of the sequence aa. To give the answer, print "! i j k", where ii, jj, kk are the numbers you found. You should continue solving the next test cases or terminate the program after that.After printing a question or an answer do not forget to print the end of line and flush the output. Otherwise, you will get an "Idleness limit exceeded" verdict. To do this, use: fflush(stdout) or cout.flush() in C++; System.out.flush() in Java; flush(output) in Pascal; stdout.flush() in Python; See the documentation for other languages.HacksTo make a hack, use the following format:The first line contains a single integer tt (1≤t≤1001≤t≤100) — the number of test cases.Each of the next tt lines contains four integers nn, ii, jj, kk (4≤n≤1094≤n≤109, 1≤i<j<k≤n1≤i<j<k≤n, j−i>1j−i>1).
+ExampleInputCopy2 
+5 
+
+4 
+
+3 
+
+3 
+
+5 
+
+2 
+
+2 
+
+1 OutputCopy
+
+? 1 5
+
+? 2 5
+
+? 3 5
+
+! 1 3 5
+
+? 1 5
+
+? 2 5
+
+? 3 5
+
+! 2 4 5
+NoteIn the first test case, i=1i=1, j=3j=3, k=5k=5, so the sequence aa is [2,1,5,4,3][2,1,5,4,3].In the second test case, i=2i=2, j=4j=4, k=5k=5, so the sequence aa is [1,3,2,5,4][1,3,2,5,4].

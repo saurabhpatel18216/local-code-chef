@@ -1,0 +1,7 @@
+Let's call a string tt consisting of characters 0 and/or 1 beautiful, if either the number of occurrences of character 0 in this string does not exceed kk, or the number of occurrences of characters 1 in this string does not exceed kk (or both). For example, if k=3k=3, the strings 101010, 111, 0, 00000, 1111111000 are beautiful, and the strings 1111110000, 01010101 are not beautiful.You are given a string ss. You have to divide it into the minimum possible number of beautiful strings, i. e., find a sequence of strings t1,t2,…,tmt1,t2,…,tm such that every titi is beautiful, t1+t2+⋯+tm=st1+t2+⋯+tm=s (where ++ is the concatenation operator), and mm is minimum possible.For every kk from 11 to |s||s|, find the minimum possible number of strings such that ss can be divided into them (i. e. the minimum possible mm in the partition).
+InputThe only line contains one string ss (1≤|s|≤2⋅1051≤|s|≤2⋅105). Each character of ss is either 0 or 1.
+OutputPrint |s||s| integers. The ii-th integer should be equal to the minimum number of strings in the partition of ss, when k=ik=i.
+ExamplesInputCopy00100010
+OutputCopy2 1 1 1 1 1 1 1
+InputCopy1001011100
+OutputCopy3 2 2 2 1 1 1 1 1 1

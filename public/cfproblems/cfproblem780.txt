@@ -1,0 +1,14 @@
+  After William is done with work for the day, he enjoys playing his favorite video game.The game happens in a 2D world, starting at turn 00. William can pick any cell in the game world and spawn in it. Then, each turn, William may remain at his current location or move from the current location (x, y) to one of the following locations: (x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1).To accelerate movement the game has nn fast travel towers. ii-th tower is located at location (xai,yaixai,yai). To be able to instantly travel to the tower from any location in the game world it must first be activated. Activation of tower ii happens at the moment when the player is in cell (xai,yaixai,yai) after this the tower remains active throughout the entire game.William also knows that the game has mm quests. ii-th quest can be completed instantly by being at location (xbi,ybixbi,ybi) on turn titi.William wants to find out the maximal number of quests he will be able to complete by optimally traversing the game world.
+InputThe first line contains two integers nn and mm (0≤n≤14,1≤m≤1000≤n≤14,1≤m≤100), which are the number of towers and the number of quests, respectively.Each of the next nn lines contains two integers xai,yaixai,yai (1≤xai,yai≤1061≤xai,yai≤106), which are the coordinates of fast travel towers.Each of the next mm lines contains two integers xbixbi, ybiybi and titi (1≤xbi,ybi≤1061≤xbi,ybi≤106, 1≤ti≤1091≤ti≤109), which are the coordinates of quests and the turn at which it may be completed.It is guaranteed that all locations in a test are different.
+OutputPrint a single number  — the maximal number of quests William will be able to complete.
+ExampleInputCopy3 4
+1 1
+2 3
+5 2
+2 2 12
+5 1 4
+6 2 11
+3 5 10
+OutputCopy3
+
+NoteIn the first sample test one of the possible sequences of William's actions is as follows:   Spawn at (3,2)(3,2)  On turn 11 move to (4,2)(4,2)  On turn 22 move to (5,2)(5,2). By visiting this cell William activates tower number 33.  On turn 33 move to (5,1)(5,1), where he waits for 11 turn to complete the 22nd quest  On turn 55 move to (5,2)(5,2)  On turn 66 move to (5,3)(5,3)  On turn 77 move to (5,4)(5,4)  On turn 88 move to (5,5)(5,5)  On turn 99 move to (4,5)(4,5)  On turn 1010 move to (3,5)(3,5). By moving to this location William will complete the 44th quest  On turn 1010 instantly move to an already activated fast travel tower at (5,2)(5,2)  On turn 1111 move to (6,2)(6,2). By moving to this location William will complete the 33rd quest  William will not be able to complete the quest number 11, because the tower at (2,3)(2,3) was not activated 

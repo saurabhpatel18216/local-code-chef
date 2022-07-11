@@ -1,0 +1,33 @@
+In a certain video game, the player controls a hero characterized by a single integer value: power.On the current level, the hero got into a system of nn caves numbered from 11 to nn, and mm tunnels between them. Each tunnel connects two distinct caves. Any two caves are connected with at most one tunnel. Any cave can be reached from any other cave by moving via tunnels.The hero starts the level in cave 11, and every other cave contains a monster.The hero can move between caves via tunnels. If the hero leaves a cave and enters a tunnel, he must finish his movement and arrive at the opposite end of the tunnel.The hero can use each tunnel to move in both directions. However, the hero can not use the same tunnel twice in a row. Formally, if the hero has just moved from cave ii to cave jj via a tunnel, he can not head back to cave ii immediately after, but he can head to any other cave connected to cave jj with a tunnel.It is known that at least two tunnels come out of every cave, thus, the hero will never find himself in a dead end even considering the above requirement.To pass the level, the hero must beat the monsters in all the caves. When the hero enters a cave for the first time, he will have to fight the monster in it. The hero can beat the monster in cave ii if and only if the hero's power is strictly greater than aiai. In case of beating the monster, the hero's power increases by bibi. If the hero can't beat the monster he's fighting, the game ends and the player loses.After the hero beats the monster in cave ii, all subsequent visits to cave ii won't have any consequences: the cave won't have any monsters, and the hero's power won't change either.Find the smallest possible power the hero must start the level with to be able to beat all the monsters and pass the level.
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤1001≤t≤100). Description of the test cases follows.The first line of each test case contains two integers nn and mm (3≤n≤10003≤n≤1000; n≤m≤min(n(n−1)2,2000)n≤m≤min(n(n−1)2,2000)) — the number of caves and tunnels.The second line contains n−1n−1 integers a2,a3,…,ana2,a3,…,an (1≤ai≤1091≤ai≤109) — values the hero's power are compared to while fighting monsters in caves 2,3,…,n2,3,…,n.The third line contains n−1n−1 integers b2,b3,…,bnb2,b3,…,bn (1≤bi≤1091≤bi≤109) — increases applied to the hero's power for beating monsters in caves 2,3,…,n2,3,…,n.Each of the next mm lines contains two integers uiui and vivi (1≤ui,vi≤n1≤ui,vi≤n; ui≠viui≠vi) — the numbers of caves connected with a tunnel.No two caves are connected with more than one tunnel. Any cave can be reached from any other cave by moving via tunnels. At least two tunnels come out of every cave.It is guaranteed that the sum of nn over all test cases does not exceed 10001000, and the sum of mm over all test cases does not exceed 20002000.
+OutputFor each test case print a single integer — the smallest possible power the hero must start the level with to be able to beat all the monsters and pass the level.
+ExampleInputCopy3
+4 4
+11 22 13
+8 7 5
+1 2
+2 3
+3 4
+4 1
+4 4
+11 22 13
+5 7 8
+1 2
+2 3
+3 4
+4 1
+5 7
+10 40 20 30
+7 2 10 5
+1 2
+1 5
+2 3
+2 4
+2 5
+3 4
+4 5
+OutputCopy15
+15
+19
+
+NoteIn the first test case, the hero can pass the level with initial power 1515 as follows:   move from cave 11 to cave 22: since 15>1115>11, the hero beats the monster, and his power increases to 15+8=2315+8=23;  move from cave 22 to cave 33: since 23>2223>22, the hero beats the monster, and his power increases to 23+7=3023+7=30;  move from cave 33 to cave 44: since 30>1330>13, the hero beats the monster, and his power increases to 30+5=3530+5=35. In the second test case, the situation is similar except that the power increases for beating monsters in caves 22 and 44 are exchanged. The hero can follow a different route, 1→4→3→21→4→3→2, and pass the level with initial power 1515.In the third test case, the hero can pass the level with initial power 1919 as follows:   move from cave 11 to cave 22: since 19>1019>10, the hero beats the monster, and his power increases to 19+7=2619+7=26;  move from cave 22 to cave 44: since 26>2026>20, the hero beats the monster, and his power increases to 26+10=3626+10=36;  move from cave 44 to cave 55: since 36>3036>30, the hero beats the monster, and his power increases to 36+5=4136+5=41;  move from cave 55 to cave 22: there is no monster in this cave anymore, nothing happens;  move from cave 22 to cave 33: since 41>4041>40, the hero beats the monster, and his power increases to 41+2=4341+2=43. 

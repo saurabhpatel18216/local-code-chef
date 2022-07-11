@@ -1,0 +1,10 @@
+Little Fiona has a collection of nn blocks of various sizes a1,a2,…,ana1,a2,…,an, where nn is even. Some of the blocks can be equal in size. She would like to put all these blocks one onto another to form a fancy stack.Let b1,b2,…,bnb1,b2,…,bn be the sizes of blocks in the stack from top to bottom. Since Fiona is using all her blocks, b1,b2,…,bnb1,b2,…,bn must be a permutation of a1,a2,…,ana1,a2,…,an. Fiona thinks the stack is fancy if both of the following conditions are satisfied:   The second block is strictly bigger than the first one, and then each block is alternately strictly smaller or strictly bigger than the previous one. Formally, b1<b2>b3<b4>…>bn−1<bnb1<b2>b3<b4>…>bn−1<bn.  The sizes of the blocks on even positions are strictly increasing. Formally, b2<b4<b6<…<bnb2<b4<b6<…<bn (remember that nn is even).   Two stacks are considered different if their corresponding sequences b1,b2,…,bnb1,b2,…,bn differ in at least one position.Fiona wants to know how many different fancy stacks she can build with all of her blocks. Since large numbers scare Fiona, find this number modulo 998244353998244353.
+InputEach input contains multiple test cases. The first line contains the number of test cases tt (1≤t≤25001≤t≤2500). Description of the test cases follows.The first line of each test case contains a single integer nn — the number of blocks at Fiona's disposal (2≤n≤50002≤n≤5000; nn is even). The second line contains nn integers a1,a2,…,ana1,a2,…,an — the sizes of the blocks in non-decreasing order (1≤a1≤a2≤⋯≤an≤n1≤a1≤a2≤⋯≤an≤n).It is guaranteed that the sum of nn over all test cases does not exceed 50005000.
+OutputFor each test case, print the number of ways to build a fancy stack, modulo 998244353998244353.
+ExampleInputCopy2
+4
+1 2 3 4
+8
+1 1 2 3 4 4 6 7
+OutputCopy2
+4

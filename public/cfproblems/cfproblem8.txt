@@ -1,0 +1,39 @@
+Today is a holiday in the residence hall — Oleh arrived, in honor of which the girls gave him a string. Oleh liked the gift a lot, so he immediately thought up and offered you, his best friend, the following problem.You are given a string ss of length nn, which consists of the first 1717 lowercase Latin letters {aa, bb, cc, ……, pp, qq} and question marks. And qq queries. Each query is defined by a set of pairwise distinct lowercase first 1717 letters of the Latin alphabet, which can be used to replace the question marks in the string ss.The answer to the query is the sum of the number of distinct substrings that are palindromes over all strings that can be obtained from the original string ss by replacing question marks with available characters. The answer must be calculated modulo 998244353998244353.Pay attention! Two substrings are different when their start and end positions in the string are different. So, the number of different substrings that are palindromes for the string aba will be 44: a, b, a, aba.Consider examples of replacing question marks with letters. For example, from the string aba??ee when querying {aa, bb} you can get the strings ababaee or abaaaee but you cannot get the strings pizza,  abaee, abacaba, aba?fee, aba47ee, or abatree.Recall that a palindrome is a string that reads the same from left to right as from right to left.
+InputThe first line contains a single integer nn (1≤n≤10001≤n≤1000) — the length of the string ss.The second line contains the string ss, which consists of nn lowercase Latin letters and question marks. It is guaranteed that all letters in the string belong to the set {aa, bb, cc, ……, pp, qq}.The third line contains a single integer qq (1≤q≤2⋅1051≤q≤2⋅105) — the number of queries.This is followed by qq lines, each containing a single line tt — a set of characters that can replace question marks (1≤|t|≤171≤|t|≤17). It is guaranteed that all letters in the string belong to the set {aa, bb, cc, ……, pp, qq} and occur at most once.
+OutputFor each query print one number — the total numbers of palindromic substrings in all strings that can be obtained from the string ss, modulo 998244353998244353.
+ExamplesInputCopy7
+ab??aba
+8
+a
+b
+ab
+abc
+abcd
+abcde
+abcdef
+abcdefg
+OutputCopy14
+13
+55
+105
+171
+253
+351
+465
+InputCopy11
+???????????
+6
+abcdefghijklmnopq
+ecpnkhbmlidgfjao
+olehfan
+codef
+glhf
+q
+OutputCopy900057460
+712815817
+839861037
+756843750
+70840320
+66
+
+NoteConsider the first example and the first query in it. We can get only one string as a result of replacing the question marks  — abaaaba. It has the following palindrome substrings:   a  — substring [11; 11].  b  — substring [22; 22].  a  — substring [33; 33].  a  — substring [44; 44].  a  — substring [55; 55].  b  — substring [66; 66].  a  — substring [77; 77].  aa  — substring [33; 44].  aa  — substring [44; 55].  aba  — substring [11; 33].  aaa  — substring [33; 55].  aba  — substring [55; 77].  baaab  — substring [22; 66].  abaaaba  — substring [11; 77]. In the third request, we get 4 lines: abaaaba, abababa, abbaaba, abbbaba.

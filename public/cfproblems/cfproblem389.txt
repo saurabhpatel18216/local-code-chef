@@ -1,0 +1,25 @@
+Jeevan has two arrays aa and bb of size nn. He is fond of performing weird operations on arrays. This time, he comes up with two types of operations:  Choose any ii (1≤i≤n1≤i≤n) and increment ajaj by 11 for every jj which is a multiple of ii and 1≤j≤n1≤j≤n.  Choose any ii (1≤i≤n1≤i≤n) and decrement ajaj by 11 for every jj which is a multiple of ii and 1≤j≤n1≤j≤n. He wants to convert array aa into an array bb using the minimum total number of operations. However, Jeevan seems to have forgotten the value of b1b1. So he makes some guesses. He will ask you qq questions corresponding to his qq guesses, the ii-th of which is of the form:   If b1=xib1=xi, what is the minimum number of operations required to convert aa to bb? Help him by answering each question.
+InputThe first line contains a single integer nn (1≤n≤2⋅105)(1≤n≤2⋅105)  — the size of arrays aa and bb.The second line contains nn integers a1,a2,...,ana1,a2,...,an (1≤ai≤106)(1≤ai≤106).The third line contains nn integers b1,b2,...,bnb1,b2,...,bn (1≤bi≤106(1≤bi≤106 for i≠1i≠1; b1=−1b1=−1, representing that the value of b1b1 is unknown)).The fourth line contains a single integer qq (1≤q≤2⋅105)(1≤q≤2⋅105)  — the number of questions.Each of the following qq lines contains a single integer xixi (1≤xi≤106)(1≤xi≤106)  — representing the ii-th question.
+OutputOutput qq integers  — the answers to each of his qq questions.
+ExamplesInputCopy2
+3 7
+-1 5
+3
+1
+4
+3
+OutputCopy2
+4
+2
+InputCopy6
+2 5 4 1 3 6
+-1 4 6 2 3 5
+3
+1
+8
+4
+OutputCopy10
+29
+9
+
+NoteConsider the first test case.  b1=1b1=1: We need to convert [3,7]→[1,5][3,7]→[1,5]. We can perform the following operations:[3,7][3,7] −→−−−decreasei = 1→decreasei = 1 [2,6][2,6] −→−−−decreasei = 1→decreasei = 1 [1,5][1,5]Hence the answer is 22. b1=4b1=4: We need to convert [3,7]→[4,5][3,7]→[4,5]. We can perform the following operations: [3,7][3,7] −→−−−decreasei = 2→decreasei = 2 [3,6][3,6] −→−−−decreasei = 2→decreasei = 2 [3,5][3,5] −→−−−increasei = 1→increasei = 1 [4,6][4,6] −→−−−decreasei = 2→decreasei = 2 [4,5][4,5]Hence the answer is 44. b1=3b1=3: We need to convert [3,7]→[3,5][3,7]→[3,5]. We can perform the following operations:[3,7][3,7] −→−−−decreasei = 2→decreasei = 2 [3,6][3,6] −→−−−decreasei = 2→decreasei = 2 [3,5][3,5]Hence the answer is 22. 

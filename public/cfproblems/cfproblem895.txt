@@ -1,0 +1,19 @@
+A sequence of brackets is called balanced if one can turn it into a valid math expression by adding characters '+' and '1'. For example, sequences '(())()', '()', and '(()(()))' are balanced, while ')(', '(()', and '(()))(' are not.You are given a binary string ss of length nn. Construct two balanced bracket sequences aa and bb of length nn such that for all 1≤i≤n1≤i≤n:   if si=1si=1, then ai=biai=bi  if si=0si=0, then ai≠biai≠bi If it is impossible, you should report about it.
+InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of test cases.The first line of each test case contains a single integer nn (2≤n≤2⋅1052≤n≤2⋅105, nn is even).The next line contains a string ss of length nn, consisting of characters 0 and 1.The sum of nn across all test cases does not exceed 2⋅1052⋅105.
+OutputIf such two balanced bracked sequences exist, output "YES" on the first line, otherwise output "NO". You can print each letter in any case (upper or lower).If the answer is "YES", output the balanced bracket sequences aa and bb satisfying the conditions on the next two lines.If there are multiple solutions, you may print any.
+ExampleInputCopy3
+6
+101101
+10
+1001101101
+4
+1100
+OutputCopyYES
+()()()
+((()))
+YES
+()()((()))
+(())()()()
+NO
+
+NoteIn the first test case, a=a="()()()" and b=b="((()))". The characters are equal in positions 11, 33, 44, and 66, which are the exact same positions where si=1si=1.In the second test case, a=a="()()((()))" and b=b="(())()()()". The characters are equal in positions 11, 44, 55, 77, 88, 1010, which are the exact same positions where si=1si=1.In the third test case, there is no solution.

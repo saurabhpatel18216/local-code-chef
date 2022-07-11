@@ -1,0 +1,45 @@
+This is an interactive problem.As he qualified for IOI this year, Little Ericyi was given a gift from all his friends: a tree of nn nodes!On the flight to IOI Little Ericyi was very bored, so he decided to play a game with Little Yvonne with his new tree. First, Little Yvonne selects two (not necessarily different) nodes aa and bb on the tree (without telling Ericyi), and then gives him a hint ff (which is some node on the path from aa to bb).Then, Little Ericyi is able to ask the following question repeatedly: If I rooted the tree at node rr (Ericyi gets to choose rr), what would be the Lowest Common Ancestor of aa and bb?Little Ericyi's goal is to find the nodes aa and bb, and report them to Little Yvonne.However, Little Yvonne thought this game was too easy, so before he gives the hint ff to Little Ericyi, he also wants him to first find the maximum number of queries required to determine aa and bb over all possibilities of aa, bb, and ff assuming Little Ericyi plays optimally. Little Ericyi defines an optimal strategy as one that makes the minimum number of queries. Of course, once Little Ericyi replies with the maximum number of queries, Little Yvonne will only let him use that many queries in the game.The tree, aa, bb, and ff are all fixed before the start of the game and do not change as queries are made.
+InteractionFirst read a line containing the integer nn (1≤n≤1051≤n≤105), the number of nodes in the tree.The next n−1n−1 lines describe Little Ericyi's tree. These lines contain two integers uu and vv (1≤u,v≤n1≤u,v≤n) denoting an edge between uu and vv (u≠vu≠v). It is guaranteed that these edges form a tree.After that you should output kk, the maximum number of queries needed to determine aa and bb over all possibilities of aa, bb, and ff assuming Little Ericyi plays optimally. You should output end of line and flush the output after printing kk.After that read a line containing the integer ff (1≤f≤n1≤f≤n) — the hint: a node on the path from aa to bb, inclusive.After that, you can start making queries. You will be limited to making at most kk queries, where kk is the number you printed.Each query is made in the format "? r", where rr is an integer 1≤r≤n1≤r≤n denoting the root node you want for the query.You will then receive an integer xx (1≤x≤n1≤x≤n), the Lowest Common Ancestor of aa and bb if the tree was rooted at rr.When your program has found the nodes aa, bb, report the answer in the following format: "! a b", where aa and bb are the two hidden nodes and terminate your program normally immediately after flushing the output stream. You may output aa and bb in any order.After printing a query do not forget to output end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use: fflush(stdout) or cout.flush() in C++;  System.out.flush() in Java;  flush(output) in Pascal;  stdout.flush() in Python;  see documentation for other languages.If at any point you make an invalid output or make more than kk queries, the interaction will terminate and you will receive a Wrong Answer verdict. An invalid output is defined as either an invalid query or a value of kk less than 00 or greater than nn.HacksTo hack a solution, use the following format:The first line contains the integer nn (1≤n≤1051≤n≤105).The next n−1n−1 lines contain two integers uu and vv (1≤u,v≤n1≤u,v≤n) denoting an edge between uu and vv (u≠vu≠v). These n−1n−1 edges must form a tree.The next line of input contains the nodes aa and bb (1≤a,b≤n1≤a,b≤n), separated by a space.The final line of input contains the integer ff (1≤f≤n1≤f≤n). Node ff should be on the simple path from aa to bb (inclusive).
+ExamplesInputCopy4
+3 2
+2 1
+2 4
+
+1
+
+1
+
+2
+
+2
+OutputCopy3
+
+? 1
+
+? 2
+
+? 3
+
+! 4 1InputCopy5
+3 1
+1 4
+4 5
+4 2
+
+1
+
+4
+
+1
+
+4
+OutputCopy3
+
+? 4
+
+? 1
+
+? 5
+
+! 1 4
+NoteHere is the the tree from the first sample interaction. Nodes aa and bb are highlighted.  Notice that aa and bb can be output in any order.Additionally, here are the answers to querying every single node 1,2,…,n1,2,…,n for your convenience: 11: 11  22: 22  33: 22  44: 44__________________________________________Here is the the tree from the second sample interaction. Again, nodes aa and bb are highlighted.  Lastly, here are the answers to querying every single node 1,2,…,n1,2,…,n (in example 22) for your convenience: 11: 11  22: 44  33: 11  44: 44  55: 44

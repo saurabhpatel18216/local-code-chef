@@ -1,0 +1,46 @@
+At the foot of Liyushan Mountain, nn tents will be carefully arranged to provide accommodation for those who are willing to experience the joy of approaching nature, the tranquility of the night, and the bright starry sky.The ii-th tent is located at the point of (xi,yi)(xi,yi) and has a weight of wiwi. A tent is important if and only if both xixi and yiyi are even. You need to remove some tents such that for each remaining important tent (x,y)(x,y), there do not exist 33 other tents (x′1,y′1)(x1′,y1′), (x′2,y′2)(x2′,y2′) and (x′3,y′3)(x3′,y3′) such that both conditions are true:   |x′j−x|,|y′j−y|≤1|xj′−x|,|yj′−y|≤1 for all j∈{1,2,3}j∈{1,2,3}, and  these four tents form a parallelogram (or a rectangle) and one of its sides is parallel to the xx-axis. Please maximize the sum of the weights of the tents that are not removed. Print the maximum value.
+InputThe first line contains a single integer nn (1≤n≤10001≤n≤1000), representing the number of tents.Each of the next nn lines contains three integers xixi, yiyi and wiwi (−109≤xi,yi≤109−109≤xi,yi≤109, 1≤wi≤1091≤wi≤109), representing the coordinate of the ii-th tent and its weight. No two tents are located at the same point.
+OutputA single integer — the maximum sum of the weights of the remaining tents.
+ExamplesInputCopy5
+0 0 4
+0 1 5
+1 0 3
+1 1 1
+-1 1 2
+OutputCopy12
+InputCopy32
+2 2 1
+2 3 1
+3 2 1
+3 3 1
+2 6 1
+2 5 1
+3 6 1
+3 5 1
+2 8 1
+2 9 1
+1 8 1
+1 9 1
+2 12 1
+2 11 1
+1 12 1
+1 11 1
+6 2 1
+7 2 1
+6 3 1
+5 3 1
+6 6 1
+7 6 1
+5 5 1
+6 5 1
+6 8 1
+5 8 1
+6 9 1
+7 9 1
+6 12 1
+5 12 1
+6 11 1
+7 11 1
+OutputCopy24
+
+NoteHere is an illustration of the second example. Black triangles indicate the important tents. This example also indicates all 88 forbidden patterns.  

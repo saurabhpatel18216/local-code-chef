@@ -1,0 +1,18 @@
+Let f(i)f(i) denote the minimum positive integer xx such that xx is not a divisor of ii.Compute ∑ni=1f(i)∑i=1nf(i) modulo 109+7109+7. In other words, compute f(1)+f(2)+⋯+f(n)f(1)+f(2)+⋯+f(n) modulo 109+7109+7.
+InputThe first line contains a single integer tt (1≤t≤1041≤t≤104), the number of test cases. Then tt cases follow.The only line of each test case contains a single integer nn (1≤n≤10161≤n≤1016).
+OutputFor each test case, output a single integer ansans, where ans=∑ni=1f(i)ans=∑i=1nf(i) modulo 109+7109+7.
+ExampleInputCopy6
+1
+2
+3
+4
+10
+10000000000000000
+OutputCopy2
+5
+7
+10
+26
+366580019
+
+NoteIn the fourth test case n=4n=4, so ans=f(1)+f(2)+f(3)+f(4)ans=f(1)+f(2)+f(3)+f(4).  11 is a divisor of 11 but 22 isn't, so 22 is the minimum positive integer that isn't a divisor of 11. Thus, f(1)=2f(1)=2.  11 and 22 are divisors of 22 but 33 isn't, so 33 is the minimum positive integer that isn't a divisor of 22. Thus, f(2)=3f(2)=3.  11 is a divisor of 33 but 22 isn't, so 22 is the minimum positive integer that isn't a divisor of 33. Thus, f(3)=2f(3)=2.  11 and 22 are divisors of 44 but 33 isn't, so 33 is the minimum positive integer that isn't a divisor of 44. Thus, f(4)=3f(4)=3. Therefore, ans=f(1)+f(2)+f(3)+f(4)=2+3+2+3=10ans=f(1)+f(2)+f(3)+f(4)=2+3+2+3=10.

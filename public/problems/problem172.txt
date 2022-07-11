@@ -1,0 +1,44 @@
+
+Nearly 109+7109+7 trillion kilometers far away from the Milkyway, there exists a parallel Universe of Light called the Cosmos of Solon where each planet is called a Temple. There are total NN temples. Unlike humans, the Solomons (Giant aliens of the Light World) can travel from one temple to another through Cosmic Bridges and the distance observed by them between any two temples is 00 units (Interesting? Well, they travel with more than the speed of light)
+
+But the year 20202020, proved to be a curse for Solomons. This year, a Mega Star Urus struck their Universe and damaged many Cosmic Bridges. However the God of Light ensured that for any two distinct temples uu and vv there exists exactly one unique path through Cosmic Bridge(s), but the distance between two directly connected temples through a Bridge has now increased to 11 units.
+
+To prevail the existence of this Universe, the God of Light carved himself into exactly NN Solomons which now rule the NN temples and are independent of each other. One by one, the ithith Solomon (0≤i≤N−10≤i≤N−1) transmits Light pulses through the network of Cosmic Bridges and determines the sum of distances to the remaining N−1N−1 Solomons.
+
+Can you help them find these quantities so they can reunite into God of Light again?
+
+Input Format:
+
+The first line of the input contains NN, the total no. of temples. 
+Each of the next N−1N−1 lines contain two space-separated integers uu and vv (u≠vu≠v) denoting the bidirectional Cosmic Bridge between temples uu and vv.
+
+Output Format:
+
+Print NN space separated integers in a single line where the ithith integer denotes the sum of distances from the ithith (0≤i≤N−10≤i≤N−1) Solomon to the rest of N−1N−1 Solomons.
+
+Constraints:
+
+1≤N≤1061≤N≤106
+0≤u,v≤N−10≤u,v≤N−1
+
+Sample Input:
+
+5
+ 0 2
+ 0 3
+ 1 3
+ 3 4
+
+Sample Output:
+
+6 8 9 5 8
+
+Explanation:
+
+For temple 00 : distance(11) + distance(22) + distance(33) + distance(44) = 2+1+1+2=62+1+1+2=6
+For temple 11 : distance(00) + distance(22) + distance(33) + distance(44) = 2+3+1+2=82+3+1+2=8
+For temple 22 : distance(00) + distance(11) + distance(33) + distance(44) = 1+3+2+3=91+3+2+3=9
+For temple 33 : distance(00) + distance(11) + distance(22) + distance(44) = 1+1+2+1=51+1+2+1=5
+For temple 44 : distance(00) + distance(11) + distance(22) + distance(33) = 2+2+3+1=82+2+3+1=8
+
+

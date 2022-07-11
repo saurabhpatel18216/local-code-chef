@@ -1,0 +1,19 @@
+Alexey is travelling on a train. Unfortunately, due to the bad weather, the train moves slower that it should!Alexey took the train at the railroad terminal. Let's say that the train starts from the terminal at the moment 00. Also, let's say that the train will visit nn stations numbered from 11 to nn along its way, and that Alexey destination is the station nn.Alexey learned from the train schedule nn integer pairs (ai,bi)(ai,bi) where aiai is the expected time of train's arrival at the ii-th station and bibi is the expected time of departure.Also, using all information he has, Alexey was able to calculate nn integers tm1,tm2,…,tmntm1,tm2,…,tmn where tmitmi is the extra time the train need to travel from the station i−1i−1 to the station ii. Formally, the train needs exactly ai−bi−1+tmiai−bi−1+tmi time to travel from station i−1i−1 to station ii (if i=1i=1 then b0b0 is the moment the train leave the terminal, and it's equal to 00).The train leaves the station ii, if both conditions are met:   it's on the station for at least ⌈bi−ai2⌉⌈bi−ai2⌉ units of time (division with ceiling);  current time ≥bi≥bi. Since Alexey spent all his energy on prediction of time delays, help him to calculate the time of arrival at the station nn.
+InputThe first line contains one integer tt (1≤t≤1001≤t≤100) — the number of test cases.The first line of each test case contains the single integer nn (1≤n≤1001≤n≤100) — the number of stations.Next nn lines contain two integers each: aiai and bibi (1≤ai<bi≤1061≤ai<bi≤106). It's guaranteed that bi<ai+1bi<ai+1. Next line contains nn integers tm1,tm2,…,tmntm1,tm2,…,tmn (0≤tmi≤1060≤tmi≤106).
+OutputFor each test case, print one integer — the time of Alexey's arrival at the last station.
+ExampleInputCopy2
+2
+2 4
+10 12
+0 2
+5
+1 4
+7 8
+9 10
+13 15
+19 20
+1 2 3 4 5
+OutputCopy12
+32
+
+NoteIn the first test case, Alexey arrives at station 11 without any delay at the moment a1=2a1=2 (since tm1=0tm1=0). After that, he departs at moment b1=4b1=4. Finally, he arrives at station 22 with tm2=2tm2=2 extra time, or at the moment 1212.In the second test case, Alexey arrives at the first station with tm1=1tm1=1 extra time, or at moment 22. The train, from one side, should stay at the station at least ⌈b1−a12⌉=2⌈b1−a12⌉=2 units of time and from the other side should depart not earlier than at moment b1=4b1=4. As a result, the trains departs right at the moment 44.Using the same logic, we can figure out that the train arrives at the second station at the moment 99 and departs at the moment 1010; at the third station: arrives at 1414 and departs at 1515; at the fourth: arrives at 2222 and departs at 2323. And, finally, arrives at the fifth station at 3232.

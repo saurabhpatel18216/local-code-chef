@@ -1,0 +1,26 @@
+You are given an array aa of size nn. Each element in this array is an integer between 11 and 109109.You can perform several operations to this array. During an operation, you can replace an element in the array with any integer between 11 and 109109. Output the minimum number of operations needed such that the resulting array doesn't contain any local maximums, and the resulting array after the operations.An element aiai is a local maximum if it is strictly larger than both of its neighbors (that is, ai>ai−1ai>ai−1 and ai>ai+1ai>ai+1). Since a1a1 and anan have only one neighbor each, they will never be a local maximum.
+InputEach test contains multiple test cases. The first line will contain a single integer tt (1≤t≤10000)(1≤t≤10000) — the number of test cases. Then tt test cases follow.The first line of each test case contains a single integer nn (2≤n≤2⋅105)(2≤n≤2⋅105) — the size of the array aa.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤109)(1≤ai≤109), the elements of array.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case, first output a line containing a single integer mm — minimum number of operations required. Then ouput a line consist of nn integers — the resulting array after the operations. Note that this array should differ in exactly mm elements from the initial array.If there are multiple answers, print any.
+ExampleInputCopy5
+3
+2 1 2
+4
+1 2 3 1
+5
+1 2 1 2 1
+9
+1 2 1 3 2 3 1 2 1
+9
+2 1 3 1 3 1 3 1 3
+OutputCopy0
+2 1 2
+1
+1 3 3 1
+1
+1 2 2 2 1
+2
+1 2 3 3 2 3 3 2 1
+2
+2 1 3 3 3 1 1 1 3
+
+NoteIn the first example, the array contains no local maximum, so we don't need to perform operations.In the second example, we can change a2a2 to 33, then the array don't have local maximums.

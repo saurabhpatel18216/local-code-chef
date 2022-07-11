@@ -1,0 +1,15 @@
+You are given an array aa of 2n2n distinct integers. You want to arrange the elements of the array in a circle such that no element is equal to the the arithmetic mean of its 22 neighbours.More formally, find an array bb, such that: bb is a permutation of aa.For every ii from 11 to 2n2n, bi≠bi−1+bi+12bi≠bi−1+bi+12, where b0=b2nb0=b2n and b2n+1=b1b2n+1=b1. It can be proved that under the constraints of this problem, such array bb always exists.
+InputThe first line of input contains a single integer tt (1≤t≤1000)(1≤t≤1000) — the number of testcases. The description of testcases follows.The first line of each testcase contains a single integer nn (1≤n≤25)(1≤n≤25).The second line of each testcase contains 2n2n integers a1,a2,…,a2na1,a2,…,a2n (1≤ai≤109)(1≤ai≤109) — elements of the array.Note that there is no limit to the sum of nn over all testcases.
+OutputFor each testcase, you should output 2n2n integers, b1,b2,…b2nb1,b2,…b2n, for which the conditions from the statement are satisfied.
+ExampleInputCopy3
+3
+1 2 3 4 5 6
+2
+123 456 789 10
+1
+6 9
+OutputCopy3 1 4 2 5 6
+123 10 456 789
+9 6
+
+NoteIn the first testcase, array [3,1,4,2,5,6][3,1,4,2,5,6] works, as it's a permutation of [1,2,3,4,5,6][1,2,3,4,5,6], and 3+42≠13+42≠1, 1+22≠41+22≠4, 4+52≠24+52≠2, 2+62≠52+62≠5, 5+32≠65+32≠6, 6+12≠36+12≠3.

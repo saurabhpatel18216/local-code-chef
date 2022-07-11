@@ -1,0 +1,28 @@
+You have an array a1,a2,…,ana1,a2,…,an. Each element initially has value 00 and color 11. You are also given qq queries to perform:   Color ll rr cc: Change the color of elements al,al+1,⋯,aral,al+1,⋯,ar to cc (1≤l≤r≤n1≤l≤r≤n, 1≤c≤n1≤c≤n).  Add cc xx: Add xx to values of all elements aiai (1≤i≤n1≤i≤n) of color cc (1≤c≤n1≤c≤n, −109≤x≤109−109≤x≤109).  Query ii: Print aiai (1≤i≤n1≤i≤n). 
+InputThe first line of input contains two integers nn and qq (1≤n,q≤1061≤n,q≤106) — the length of array aa and the number of queries you have to perform.Each of the next qq lines contains the query given in the form described in the problem statement.
+OutputPrint the answers to the queries of the third type on separate lines.
+ExamplesInputCopy5 8
+Color 2 4 2
+Add 2 2
+Query 3
+Color 4 5 3
+Color 2 2 3
+Add 3 3
+Query 2
+Query 5
+OutputCopy2
+5
+3
+InputCopy2 7
+Add 1 7
+Query 1
+Add 2 4
+Query 2
+Color 1 1 1
+Add 1 1
+Query 2
+OutputCopy7
+7
+8
+
+NoteThe first sample test is explained below. Blue, red and green represent colors 11, 22 and 33 respectively.  

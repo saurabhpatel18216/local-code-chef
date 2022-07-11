@@ -1,0 +1,21 @@
+There are nn players, numbered from 11 to nn sitting around a round table. The (i+1)(i+1)-th player sits to the right of the ii-th player for 1≤i<n1≤i<n, and the 11-st player sits to the right of the nn-th player.There are n2n2 cards, each of which has an integer between 11 and nn written on it. For each integer from 11 to nn, there are exactly nn cards having this number.Initially, all these cards are distributed among all the players, in such a way that each of them has exactly nn cards. In one operation, each player chooses one of his cards and passes it to the player to his right. All these actions are performed simultaneously. Player ii is called solid if all his cards have the integer ii written on them. Their objective is to reach a configuration in which everyone is solid. Find a way to do it using at most (n2−n)(n2−n) operations. You do not need to minimize the number of operations.
+InputThe first line contains a single integer nn (2≤n≤1002≤n≤100).Then nn lines follow. The ii-th of them contains nn integers c1,c2,…,cnc1,c2,…,cn (1≤cj≤n1≤cj≤n) — the initial cards of the ii-th player.It is guaranteed that for each integer ii from 11 to nn, there are exactly nn cards having the number ii.
+OutputIn the first line print an integer kk (0≤k≤(n2−n)0≤k≤(n2−n)) — the numbers of operations you want to make.Then kk lines should follow. In the ii-th of them print nn integers d1,d2,…,dnd1,d2,…,dn (1≤dj≤n1≤dj≤n) where djdj is the number written on the card which jj-th player passes to the player to his right in the ii-th operation.We can show that an answer always exists under the given constraints. If there are multiple answers, print any.
+ExamplesInputCopy2
+2 1
+1 2
+OutputCopy1
+2 1 
+InputCopy3
+1 1 1
+2 2 2
+3 3 3
+OutputCopy6
+1 2 3
+3 1 2
+2 3 1
+1 2 3
+3 1 2
+2 3 1
+
+NoteIn the first test case, if the first player passes a card with number 22 and the second player passes a card with number 11, then the first player has two cards with number 11 and the second player has two cards with number 22. Then, after making this operation, both players are solid.In the second test case, 00 operations would be enough too. Note that you do not need to minimize the number of operations. 

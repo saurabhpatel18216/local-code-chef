@@ -1,0 +1,24 @@
+Cirno gave AquaMoon a chessboard of size 1×n1×n. Its cells are numbered with integers from 11 to nn from left to right. In the beginning, some of the cells are occupied with at most one pawn, and other cells are unoccupied.In each operation, AquaMoon can choose a cell ii with a pawn, and do either of the following (if possible):   Move pawn from it to the (i+2)(i+2)-th cell, if i+2≤ni+2≤n and the (i+1)(i+1)-th cell is occupied and the (i+2)(i+2)-th cell is unoccupied.  Move pawn from it to the (i−2)(i−2)-th cell, if i−2≥1i−2≥1 and the (i−1)(i−1)-th cell is occupied and the (i−2)(i−2)-th cell is unoccupied. You are given an initial state of the chessboard. AquaMoon wants to count the number of states reachable from the initial state with some sequence of operations. But she is not good at programming. Can you help her? As the answer can be large find it modulo 998244353998244353.
+InputThe input consists of multiple test cases. The first line contains a single integer tt (1≤t≤100001≤t≤10000) — the number of test cases.The first line contains a single integer nn (1≤n≤1051≤n≤105) — the size of the chessboard.The second line contains a string of nn characters, consists of characters "0" and "1". If the ii-th character is "1", the ii-th cell is initially occupied; otherwise, the ii-th cell is initially unoccupied.It is guaranteed that the sum of nn over all test cases does not exceed 105105.
+OutputFor each test case, print the number of states that reachable from the initial state with some sequence of operations modulo 998244353998244353.
+ExampleInputCopy6
+4
+0110
+6
+011011
+5
+01010
+20
+10001111110110111000
+20
+00110110100110111101
+20
+11101111011000100010
+OutputCopy3
+6
+1
+1287
+1287
+715
+
+NoteIn the first test case the strings "1100", "0110" and "0011" are reachable from the initial state with some sequence of operations.

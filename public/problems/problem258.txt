@@ -1,0 +1,59 @@
+
+You are given a tree with NN vertices. The vertices are numbered from 11 to NN. Some of the vertices are colored black and some are colored red. Also, some vertices can be uncolored. There is at least one black and at least one red vertex.
+
+Compute the number of subsets of vertices WW such that:
+
+Each vertex in WW is uncolored.
+WW is a connected subgraph of the tree.
+If you remove all the vertices of set WW, there will be at least one pair of vertices (u,v)(u,v) such that uu is black and vv is red, and there is no path from uu to vv.
+
+Output your answer modulo 109+7109+7.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN denoting the number of vertices.
+Each of the next N−1N−1 lines contains two space-separated integers uu and vv denoting an edge between vertices uu and vv.
+The next line contains NN space-separated integers denoting the colors of the vertices. The ithith of these integers is 00 if vertex ii is uncolored, 11 if it's black, or 22 if it's red.
+
+Output
+
+For each test case, print a single line containing one integer denoting the number of ways to select a valid subset WW, modulo 109+7109+7.
+
+Constraints
+
+1≤T≤2⋅1051≤T≤2⋅105
+2≤N≤1052≤N≤105
+1≤u,v≤N1≤u,v≤N
+Sum of N over all test cases doesn't exceed 106106
+
+Example Input
+
+2
+6
+1 2
+1 3
+1 4
+3 5
+3 6
+0 1 0 1 2 0
+6
+1 2
+1 3
+1 4
+3 5
+3 6
+1 0 0 0 2 0
+
+Example Output
+
+5
+2
+
+Explanation
+
+Test Case 1: The possible subsets WW are {1}{1}, {3}{3}, {1,3}{1,3}, {3,6}{3,6} and {1,3,6}{1,3,6}.
+
+Test Case 2: The possible subsets WW are {3}{3} and {3,6}{3,6}.
+
+

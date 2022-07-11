@@ -1,0 +1,76 @@
+
+King of Chefland is very crurcial and coward. Chef is one of the soldiers of the king. Chef is brave and very powerful soldier. This is the reason that king is affraid of Chef. So, he trapped Chef in prison.
+
+Chef is kept in a special jail with tight security. There are MxNMxN(MM rows and NN columns) rooms in the jail and walls the room are made of stone. It is not possible to break the walls. If a person standing in room (i,j)(i,j) then he can walk to room (i,j+1),(i+1,j)(i,j+1),(i+1,j) and (i+1,j+1)(i+1,j+1).
+
+Chef is kept in room (1,1)(1,1) and rest of the rooms having soldiers, it means there are (M∗N−1)(M∗N−1) soldiers in the jail for security. Each soldier SiSi is having some power PiPi. King ordered his soldier that they must kill Chef if he tries to escape. Chef has also some power P0P0. There is a drain in the jail in position (x,y)(x,y). Chef can escape from the jail if he can win all the soldiers which come in the path of Chef. Chef will win and escape only if the sum of power of soldier is less than equal to Chef power in the chosen path.
+ Now you need to find that chef can escape or not.
+
+For example :
+
+10
+1
+3
+10
+
+
+5
+15
+1
+7
+
+
+2
+4
+2
+6
+
+
+9
+8
+6
+7
+
+
+Power of the Chef is
+
+P0=10P0=10
+P_0=10
+and position of the drain is
+
+(x,y)=(3,3)(x,y)=(3,3)
+(x,y)=(3,3)
+. So he can choose either path
+1+3+1+2=7≤101+3+1+2=7≤10. If Chef follow the path (1,2),(1,3),(2,3),(3,3)(1,2),(1,3),(2,3),(3,3)
+ 1+1+2=4≤101+1+2=4≤10. If Chef follow the path (1,2),(2,3),(3,3)(1,2),(2,3),(3,3)
+It means Chef can escape from the jail.
+
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+ First line of each test case will contains M,N,x,yM,N,x,y then MM lines follow
+ ithith of the MM lines contain NN space separated integers denote power PiPi of each individual in jail.
+
+Output:
+
+For each testcase, print "Escape" if chef can escape from the jail or print "Died" if chef is killed by soldiers without quotes.
+
+Constraints
+
+1≤T≤1001≤T≤100
+1≤M,N,x,y≤5001≤M,N,x,y≤500
+ 1≤Pi≤1031≤Pi≤103
+
+Sample Input:
+
+1
+      4    4    3    3
+     10   1    3   10
+      5  15    1   7
+      2    4    2    6
+
+Sample Output:
+
+Escape
+
+

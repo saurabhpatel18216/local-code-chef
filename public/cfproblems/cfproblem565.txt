@@ -1,0 +1,24 @@
+Polycarp doesn't like integers that are divisible by 33 or end with the digit 33 in their decimal representation. Integers that meet both conditions are disliked by Polycarp, too.Polycarp starts to write out the positive (greater than 00) integers which he likes: 1,2,4,5,7,8,10,11,14,16,…1,2,4,5,7,8,10,11,14,16,…. Output the kk-th element of this sequence (the elements are numbered from 11).
+InputThe first line contains one integer tt (1≤t≤1001≤t≤100) — the number of test cases. Then tt test cases follow.Each test case consists of one line containing one integer kk (1≤k≤10001≤k≤1000).
+OutputFor each test case, output in a separate line one integer xx — the kk-th element of the sequence that was written out by Polycarp.
+ExampleInputCopy10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+1000
+OutputCopy1
+2
+4
+5
+7
+8
+10
+11
+14
+1666

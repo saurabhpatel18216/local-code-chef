@@ -1,0 +1,43 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+
+A manufacturing project consists of exactly KK tasks. The board overviewing the project wants to hire KK teams of workers — one for each task. All teams begin working simultaneously.
+
+Obviously, there must be at least one person in each team. For a team of AA workers, it takes exactly AA days to complete the task they are hired for. Each team acts independently, unaware of the status of other teams (whether they have completed their tasks or not), and submits their result for approval on the AA-th day.
+
+However, the board approves the project only if all KK teams complete their tasks on the same day — it rejects everything submitted on any other day. The day after a team finds out that its result was rejected, it resumes work on the same task afresh. Therefore, as long as a team of AA workers keeps getting rejected, it submits a new result of their task for approval on the AA-th, 2A2A-th, 3A3A-th day etc.
+
+The board wants to hire workers in such a way that it takes exactly XX days to complete the project. Find the smallest number of workers it needs to hire.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first and only line of each test case contains two space-separated integers KK and XX.
+
+Output
+
+For each test case, print a single line containing one integer — the smallest required number of workers.
+
+Constraints
+
+1≤T≤401≤T≤40
+2≤K,X≤1062≤K,X≤106
+
+Sample Input 1
+
+2
+2 3
+2 6
+
+Sample Output 1
+
+4
+5
+
+Explanation
+
+Example case 1: We can hire a team of 33 workers for task 11 and 11 worker for task 22. The one-man team working on task 22 completes it and submits the result for approval on each day, but it is rejected on the first and second day. On the third day, the team working on task 11 also completes their task, so the project gets approved after exactly 33 days.
+
+Example case 2: We can hire a team of 33 workers for task 11 and a team of 22 workers for task 22.
+
+

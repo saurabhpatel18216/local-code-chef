@@ -1,0 +1,14 @@
+On the great island of Baltia, there live NN people, numbered from 11 to NN. There are exactly MM pairs of people that are friends with each other. The people of Baltia want to organize a successful party, but they have very strict rules on what a party is and when the party is successful. On the island of Baltia, a party is a gathering of exactly 55 people. The party is considered to be successful if either all the people at the party are friends with each other (so that they can all talk to each other without having to worry about talking to someone they are not friends with) or no two people at the party are friends with each other (so that everyone can just be on their phones without anyone else bothering them). Please help the people of Baltia organize a successful party or tell them that it's impossible to do so.
+InputThe first line contains two integer numbers, NN (5≤N≤2∗1055≤N≤2∗105) and MM (0≤M≤2∗1050≤M≤2∗105) – the number of people that live in Baltia, and the number of friendships. The next MM lines each contains two integers UiUi and ViVi (1≤Ui,Vi≤N1≤Ui,Vi≤N) – meaning that person UiUi is friends with person ViVi. Two friends can not be in the list of friends twice (no pairs are repeated) and a person can be friends with themselves (Ui≠ViUi≠Vi).
+OutputIf it's possible to organize a successful party, print 55 numbers indicating which 55 people should be invited to the party. If it's not possible to organize a successful party, print −1−1 instead. If there are multiple successful parties possible, print any.
+ExamplesInputCopy6 3
+1 4
+4 2
+5 4
+OutputCopy1 2 3 5 6
+InputCopy5 4
+1 2
+2 3
+3 4
+4 5
+OutputCopy-1

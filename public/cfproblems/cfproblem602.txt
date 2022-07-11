@@ -1,0 +1,18 @@
+For a permutation pp of numbers 11 through nn, we define a stair array aa as follows: aiai is length of the longest segment of permutation which contains position ii and is made of consecutive values in sorted order: [x,x+1,…,y−1,y][x,x+1,…,y−1,y] or [y,y−1,…,x+1,x][y,y−1,…,x+1,x] for some x≤yx≤y. For example, for permutation p=[4,1,2,3,7,6,5]p=[4,1,2,3,7,6,5] we have a=[1,3,3,3,3,3,3]a=[1,3,3,3,3,3,3]. You are given the stair array aa. Your task is to calculate the number of permutations which have stair array equal to aa. Since the number can be big, compute it modulo 998244353998244353. Note that this number can be equal to zero.
+InputThe first line of input contains integer nn (1≤n≤1051≤n≤105)  — the length of a stair array aa.The second line of input contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤n1≤ai≤n).
+OutputPrint the number of permutations which have stair array equal to aa. Since the number can be big, compute it modulo 998244353998244353.
+ExamplesInputCopy6
+3 3 3 1 1 1
+OutputCopy6
+InputCopy7
+4 4 4 4 3 3 3
+OutputCopy6
+InputCopy1
+1
+OutputCopy1
+InputCopy8
+2 2 2 2 2 2 1 1
+OutputCopy370
+InputCopy4
+3 2 3 1
+OutputCopy0

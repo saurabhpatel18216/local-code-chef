@@ -1,0 +1,14 @@
+Let's call a string good if its length is at least 22 and all of its characters are AA except for the last character which is BB. The good strings are AB,AAB,AAAB,…AB,AAB,AAAB,…. Note that BB is not a good string.You are given an initially empty string s1s1.You can perform the following operation any number of times:   Choose any position of s1s1 and insert some good string in that position. Given a string s2s2, can we turn s1s1 into s2s2 after some number of operations?
+InputEach test contains multiple test cases. The first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of test cases. The description of the test cases follows.The first line of each test case contains a single string s2s2 (1≤|s2|≤2⋅1051≤|s2|≤2⋅105).It is guaranteed that s2s2 consists of only the characters AA and BB.It is guaranteed that the sum of |s2||s2| over all test cases does not exceed 2⋅1052⋅105.
+OutputFor each test case, print "YES" (without quotes) if we can turn s1s1 into s2s2 after some number of operations, and "NO" (without quotes) otherwise.You can output "YES" and "NO" in any case (for example, strings "yEs", "yes" and "Yes" will be recognized as a positive response).
+ExampleInputCopy4
+AABAB
+ABB
+AAAAAAAAB
+A
+OutputCopyYES
+NO
+YES
+NO
+
+NoteIn the first test case, we transform s1s1 as such: ∅→AAB→AABAB∅→AAB→AABAB.In the third test case, we transform s1s1 as such: ∅→AAAAAAAAB∅→AAAAAAAAB.In the second and fourth test case, it can be shown that it is impossible to turn s1s1 into s2s2.

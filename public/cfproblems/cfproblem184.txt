@@ -1,0 +1,56 @@
+Given an undirected connected graph with nn vertices and mm edges. The graph contains no loops (edges from a vertex to itself) and multiple edges (i.e. no more than one edge between each pair of vertices). The vertices of the graph are numbered from 11 to nn. Find the number of paths from a vertex ss to tt whose length differs from the shortest path from ss to tt by no more than 11. It is necessary to consider all suitable paths, even if they pass through the same vertex or edge more than once (i.e. they are not simple).  Graph consisting of 66 of vertices and 88 of edges For example, let n=6n=6, m=8m=8, s=6s=6 and t=1t=1, and let the graph look like the figure above. Then the length of the shortest path from ss to tt is 11. Consider all paths whose length is at most 1+1=21+1=2.   6→16→1. The length of the path is 11.  6→4→16→4→1. Path length is 22.  6→2→16→2→1. Path length is 22.  6→5→16→5→1. Path length is 22. There is a total of 44 of matching paths.
+InputThe first line of test contains the number tt (1≤t≤1041≤t≤104) —the number of test cases in the test.Before each test case, there is a blank line. The first line of test case contains two numbers n,mn,m (2≤n≤2⋅1052≤n≤2⋅105, 1≤m≤2⋅1051≤m≤2⋅105) —the number of vertices and edges in the graph. The second line contains two numbers ss and tt (1≤s,t≤n1≤s,t≤n, s≠ts≠t) —the numbers of the start and end vertices of the path.The following mm lines contain descriptions of edges: the iith line contains two integers uiui, vivi (1≤ui,vi≤n1≤ui,vi≤n) — the numbers of vertices that connect the iith edge. It is guaranteed that the graph is connected and does not contain loops and multiple edges.It is guaranteed that the sum of values nn on all test cases of input data does not exceed 2⋅1052⋅105. Similarly, it is guaranteed that the sum of values mm on all test cases of input data does not exceed 2⋅1052⋅105.
+OutputFor each test case, output a single number — the number of paths from ss to tt such that their length differs from the length of the shortest path by no more than 11.Since this number may be too large, output it modulo 109+7109+7.
+ExampleInputCopy4
+
+4 4
+1 4
+1 2
+3 4
+2 3
+2 4
+
+6 8
+6 1
+1 4
+1 6
+1 5
+1 2
+5 6
+4 6
+6 3
+2 6
+
+5 6
+1 3
+3 5
+5 4
+3 1
+4 2
+2 1
+1 4
+
+8 18
+5 1
+2 1
+3 1
+4 2
+5 2
+6 5
+7 3
+8 4
+6 4
+8 7
+1 4
+4 7
+1 6
+6 7
+3 8
+8 5
+4 5
+4 3
+8 2
+OutputCopy2
+4
+1
+11

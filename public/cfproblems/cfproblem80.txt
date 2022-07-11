@@ -1,0 +1,20 @@
+Codeforces separates its users into 44 divisions by their rating:  For Division 1: 1900≤rating1900≤rating  For Division 2: 1600≤rating≤18991600≤rating≤1899  For Division 3: 1400≤rating≤15991400≤rating≤1599  For Division 4: rating≤1399rating≤1399 Given a ratingrating, print in which division the ratingrating belongs.
+InputThe first line of the input contains an integer tt (1≤t≤1041≤t≤104) — the number of testcases.The description of each test consists of one line containing one integer ratingrating (−5000≤rating≤5000−5000≤rating≤5000).
+OutputFor each test case, output a single line containing the correct division in the format "Division X", where XX is an integer between 11 and 44 representing the division for the corresponding rating.
+ExampleInputCopy7
+-789
+1299
+1300
+1399
+1400
+1679
+2300
+OutputCopyDivision 4
+Division 4
+Division 4
+Division 4
+Division 3
+Division 2
+Division 1
+
+NoteFor test cases 1−41−4, the corresponding ratings are −789−789, 12991299, 13001300, 13991399, so all of them are in division 44.For the fifth test case, the corresponding rating is 14001400, so it is in division 33.For the sixth test case, the corresponding rating is 16791679, so it is in division 22.For the seventh test case, the corresponding rating is 23002300, so it is in division 11.

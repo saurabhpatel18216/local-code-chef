@@ -1,0 +1,34 @@
+You are the organizer of the famous "Zurich Music Festival". There will be nn singers who will perform at the festival, identified by the integers 11, 22, ……, nn. You must choose in which order they are going to perform on stage. You have mm friends and each of them has a set of favourite singers. More precisely, for each 1≤i≤m1≤i≤m, the ii-th friend likes singers si,1,si,2,…,si,qisi,1,si,2,…,si,qi.A friend of yours is happy if the singers he likes perform consecutively (in an arbitrary order). An ordering of the singers is valid if it makes all your friends happy.Compute the number of valid orderings modulo 998244353998244353.
+InputThe first line contains two integers nn and mm (1≤n,m≤1001≤n,m≤100) — the number of singers and the number of friends correspondingly.The ii-th of the next mm lines contains the integer qiqi (1≤qi≤n1≤qi≤n) — the number of favorite singers of the ii-th friend – followed by the qiqi integers si,1,si,2,…,si,qisi,1,si,2,…,si,qi (1≤si,1<si,2<⋯<si,qi≤n1≤si,1<si,2<⋯<si,qi≤n) — the indexes of his favorite singers.
+OutputPrint the number of valid orderings of the singers modulo 998244353998244353.
+ExamplesInputCopy3 1
+2 1 3
+OutputCopy4
+InputCopy5 5
+2 1 2
+2 2 3
+2 3 4
+2 4 5
+2 1 5
+OutputCopy0
+InputCopy100 1
+1 50
+OutputCopy35305197
+InputCopy5 1
+5 1 2 3 4 5
+OutputCopy120
+InputCopy2 5
+1 2
+1 2
+1 2
+1 1
+1 1
+OutputCopy2
+InputCopy11 4
+5 4 5 7 9 11
+2 2 10
+2 9 11
+7 1 2 3 5 8 10 11
+OutputCopy384
+
+NoteExplanation of the first sample: There are 33 singers and only 11 friend. The friend likes the two singers 11 and 33. Thus, the 44 valid orderings are:   1 3 2  2 1 3  2 3 1  3 1 2 Explanation of the second sample: There are 55 singers and 55 friends. One can show that no ordering is valid.Explanation of the third sample: There are 100100 singers and only 11 friend. The friend likes only singer 5050, hence all the 100!100! possible orderings are valid.Explanation of the fourth sample: There are 55 singers and only 11 friend. The friend likes all the singers, hence all the 5!=1205!=120 possible orderings are valid.

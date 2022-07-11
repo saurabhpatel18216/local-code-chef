@@ -1,0 +1,75 @@
+
+Read problems statements Mandarin , Bengali , Hindi , Russian and Vietnamese as well.
+
+Nadaca is a country with NN cities. These cities are numbered 11 through NN and connected by MM bidirectional roads. Each city can be reached from every other city using these roads.
+
+Initially, Ryan is in city 11. At each of the following KK seconds, he may move from his current city to an adjacent city (a city connected by a road to his current city) or stay at his current city. Ryan also has QQ conditions (a1,b1),(a2,b2),…,(aQ,bQ)(a1,b1),(a2,b2),…,(aQ,bQ) meaning that during this KK-second trip, for each valid ii, he wants to be in city aiai after exactly bibi seconds.
+
+Since you are very good with directions, Ryan asked you to tell him how many different trips he could make while satisfying all conditions. Compute this number modulo 109+7109+7. A trip is a sequence of Ryan's current cities after 1,2,…,K1,2,…,K seconds.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains three space-separated integers NN, MM and KK.
+Each of the next MM lines contains two space-separated integers uu and vv denoting a road between cities uu and vv.
+The next line contains a single integer QQ.
+QQ lines follow. For each ii (1≤i≤Q1≤i≤Q), the ii-th of these lines contains two space-separated integers aiai and bibi.
+
+Output
+
+For each test case, print a single line containing one integer — the number of trips Ryan can make, modulo 109+7109+7.
+
+Constraints
+
+1≤T≤501≤T≤50
+1≤N,M,K,Q≤9,0001≤N,M,K,Q≤9,000
+1≤ui,vi≤N1≤ui,vi≤N for each valid ii
+ui≠viui≠vi for each valid ii
+there is at most one road between each pair of cities
+each city is reachable from every other city
+1≤ai≤N1≤ai≤N for each valid ii
+0≤bi≤K0≤bi≤K for each valid ii
+the sum of NN over all test cases does not exceed 9,0009,000
+the sum of KK over all test cases does not exceed 9,0009,000
+the sum of MM over all test cases does not exceed 9,0009,000
+the sum of QQ over all test cases does not exceed 9,0009,000
+
+Subtasks
+
+Subtask #1 (20 points):
+
+the sum of NN over all test cases does not exceed 400400
+the sum of KK over all test cases does not exceed 400400
+the sum of MM over all test cases does not exceed 400400
+the sum of QQ over all test cases does not exceed 400400
+
+Subtask #2 (80 points): original constraints
+
+Sample Input 1
+
+3
+4 3 3
+1 2
+1 3
+1 4
+0
+4 3 3
+1 2
+1 3
+1 4
+1
+2 2
+4 3 3
+1 2
+1 3
+1 4
+1
+2 1
+
+Sample Output 1
+
+28
+4
+6
+
+

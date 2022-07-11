@@ -1,0 +1,25 @@
+For a sequence of strings [t1,t2,…,tm][t1,t2,…,tm], let's define the function f([t1,t2,…,tm])f([t1,t2,…,tm]) as the number of different strings (including the empty string) that are subsequences of at least one string titi. f([])=0f([])=0 (i. e. the number of such strings for an empty sequence is 00).You are given a sequence of strings [s1,s2,…,sn][s1,s2,…,sn]. Every string in this sequence consists of lowercase Latin letters and is sorted (i. e., each string begins with several (maybe zero) characters a, then several (maybe zero) characters b, ..., ends with several (maybe zero) characters z).For each of 2n2n subsequences of [s1,s2,…,sn][s1,s2,…,sn], calculate the value of the function ff modulo 998244353998244353.
+InputThe first line contains one integer nn (1≤n≤231≤n≤23) — the number of strings.Then nn lines follow. The ii-th line contains the string sisi (1≤|si|≤2⋅1041≤|si|≤2⋅104), consisting of lowercase Latin letters. Each string sisi is sorted.
+OutputSince printing up to 223223 integers would be really slow, you should do the following:For each of the 2n2n subsequences (which we denote as [si1,si2,…,sik][si1,si2,…,sik]), calculate f([si1,si2,…,sik])f([si1,si2,…,sik]), take it modulo 998244353998244353, then multiply it by k⋅(i1+i2+⋯+ik)k⋅(i1+i2+⋯+ik). Print the XOR of all 2n2n integers you get.The indices i1,i2,…,iki1,i2,…,ik in the description of each subsequences are 11-indexed (i. e. are from 11 to nn).
+ExamplesInputCopy3
+a
+b
+c
+OutputCopy92
+InputCopy2
+aa
+a
+OutputCopy21
+InputCopy2
+a
+a
+OutputCopy10
+InputCopy2
+abcd
+aabb
+OutputCopy124
+InputCopy3
+ddd
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaabbbbbbbbbbbcccccccccccciiiiiiiiiiiiiiiiiiiiiiooooooooooqqqqqqqqqqqqqqqqqqvvvvvzzzzzzzzzzzz
+OutputCopy15706243380

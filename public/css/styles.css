@@ -1,0 +1,174 @@
+html, body {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: black;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+h1 {
+  display: block;
+  margin: 0 auto 0px auto;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+}
+
+h2 {
+  display: block;
+  margin: 0 auto 0% auto;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25em;
+  opacity: 0.6;
+  filter:(opacity=50);
+}
+/* index.html css */
+.main-page{
+  background-image: linear-gradient(to top,green,yellow 100%);
+}
+.container {
+  margin: 6% 10% 0 10%;
+}
+/* --  navbar */
+.navbar{
+  padding: 1.5% 4% 1% 4%;
+}
+.navbar-bg{
+  background-color: darkgreen;
+}
+.navbar-brand{
+  margin-right: 2rem;
+}
+.wrapper {
+  width: 100%;
+  max-width: 34rem;
+  margin: 3rem auto 6rem auto;
+}
+/* f */
+.label {
+  font-size: .625rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: +1.3px;
+  margin-bottom: 1rem;
+}
+/* Changing Animation */
+#changing {
+  display: inline;
+}
+
+#changing2 {
+  display: inline;
+}
+ /* -- Search bar  */
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+#searchQueryInput {
+  width: 100%;
+  height: 3.8rem;
+  background: lightyellow;
+  outline: none;
+  border: none;
+  border-radius: 4.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 3rem;
+}
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+#searchQueryInput:hover{
+  box-shadow: 0 0 5px #DBEDF3;
+}
+/* results page css */
+.forms-div{
+  background-color: #291466;
+  padding: 1.5% 2% 1.3% 2%;
+  vertical-align: middle;
+}
+.platforms{
+  text-align: left;
+  background: linear-gradient(90deg, #5462ff, #0084ff, #009eff, #00b4ff, #00c7ff, #00d8f8, #00e7e2, #00f4ce);
+  padding-left: 2%;
+  padding: 0% 5%;
+}
+.top-forms{
+  display: inline;
+}
+.btn-default{
+  padding: 0 1.5% 0.8% 1.5%;
+  border: none;
+  background: none;
+  color: #fff;
+}
+button:hover, button:focus, button:active, button:visited {
+  color: #fff;
+}
+.active {
+    box-shadow: inset 0 0 0 1000px #B38FF0;
+    color:#fff;
+}
+.linebreak {
+    background: #3c4043;
+    height: 1px;
+    width: 100%;
+}
+.problem-container {
+  /* background-color: #FFFFF5; */
+  margin: 0% 5%;
+  padding: 1% 25% 5% 2%;
+  text-align: left;
+
+}
+.results-git{
+  margin: auto 0 auto auto;
+}
+.results-title{
+  text-align: left;
+  font-weight: bold;
+}
+.problem-statement-para{
+  color: black;
+}
+.results-link{
+  color: black;
+  font-family: cursive;
+  font-size: 0.8rem;
+}
+.more-results-div{
+  display: none;
+}
+.more-results-btn {
+    display:inline-block;
+    color:#fff;
+    border:2px solid #0093FF;
+    background: #0093FF;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    vertical-align:middle;
+    padding: 5px;
+    text-align: center;
+}
+.more-results-btn:active {
+    color: green;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+}
+.footer-text{
+    text-align: center;
+    color: black;
+}

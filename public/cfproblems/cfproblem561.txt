@@ -1,0 +1,20 @@
+Polycarp has a string ss. Polycarp performs the following actions until the string ss is empty (tt is initially an empty string):  he adds to the right to the string tt the string ss, i.e. he does t=t+st=t+s, where t+st+s is a concatenation of the strings tt and ss;  he selects an arbitrary letter of ss and removes from ss all its occurrences (the selected letter must occur in the string ss at the moment of performing this action). Polycarp performs this sequence of actions strictly in this order.Note that after Polycarp finishes the actions, the string ss will be empty and the string tt will be equal to some value (that is undefined and depends on the order of removing).E.g. consider ss="abacaba" so the actions may be performed as follows:  tt="abacaba", the letter 'b' is selected, then ss="aacaa";  tt="abacabaaacaa", the letter 'a' is selected, then ss="c";  tt="abacabaaacaac", the letter 'c' is selected, then ss="" (the empty string). You need to restore the initial value of the string ss using only the final value of tt and find the order of removing letters from ss.
+InputThe first line contains one integer TT (1≤T≤1041≤T≤104) — the number of test cases. Then TT test cases follow.Each test case contains one string tt consisting of lowercase letters of the Latin alphabet. The length of tt doesn't exceed 5⋅1055⋅105. The sum of lengths of all strings tt in the test cases doesn't exceed 5⋅1055⋅105.
+OutputFor each test case output in a separate line:  −1−1, if the answer doesn't exist;  two strings separated by spaces. The first one must contain a possible initial value of ss. The second one must contain a sequence of letters — it's in what order one needs to remove letters from ss to make the string tt. E.g. if the string "bac" is outputted, then, first, all occurrences of the letter 'b' were deleted, then all occurrences of 'a', and then, finally, all occurrences of 'c'. If there are multiple solutions, print any one. 
+ExampleInputCopy7
+abacabaaacaac
+nowyouknowthat
+polycarppoycarppoyarppyarppyrpprppp
+isi
+everywherevrywhrvryhrvrhrvhv
+haaha
+qweqeewew
+OutputCopyabacaba bac
+-1
+polycarp lcoayrp
+is si
+everywhere ewyrhv
+-1
+-1
+
+NoteThe first test case is considered in the statement.

@@ -1,0 +1,21 @@
+You have a binary string aa of length nn consisting only of digits 00 and 11. You are given qq queries. In the ii-th query, you are given two indices ll and rr such that 1≤l≤r≤n1≤l≤r≤n. Let s=a[l,r]s=a[l,r]. You are allowed to do the following operation on ss:  Choose two indices xx and yy such that 1≤x≤y≤|s|1≤x≤y≤|s|. Let tt be the substring t=s[x,y]t=s[x,y]. Then for all 1≤i≤|t|−11≤i≤|t|−1, the condition ti≠ti+1ti≠ti+1 has to hold. Note that x=yx=y is always a valid substring.  Delete the substring s[x,y]s[x,y] from ss. For each of the qq queries, find the minimum number of operations needed to make ss an empty string.Note that for a string ss, s[l,r]s[l,r] denotes the subsegment sl,sl+1,…,srsl,sl+1,…,sr.
+InputThe first line contains two integers nn and qq (1≤n,q≤2⋅1051≤n,q≤2⋅105)  — the length of the binary string aa and the number of queries respectively.The second line contains a binary string aa of length nn (ai∈{0,1}ai∈{0,1}).Each of the next qq lines contains two integers ll and rr (1≤l≤r≤n1≤l≤r≤n)  — representing the substring of each query.
+OutputPrint qq lines, the ii-th line representing the minimum number of operations needed for the ii-th query.
+ExamplesInputCopy5 3
+11011
+2 4
+1 5
+3 5
+OutputCopy1
+3
+2
+InputCopy10 3
+1001110110
+1 10
+2 5
+5 10
+OutputCopy4
+2
+3
+
+NoteIn the first test case,   The substring is 101101, so we can do one operation to make the substring empty.  The substring is 1101111011, so we can do one operation on s[2,4]s[2,4] to make 1111, then use two more operations to make the substring empty.  The substring is 011011, so we can do one operation on s[1,2]s[1,2] to make 11, then use one more operation to make the substring empty. 

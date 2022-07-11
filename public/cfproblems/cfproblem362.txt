@@ -1,0 +1,31 @@
+  Before becoming a successful trader William got a university degree. During his education an interesting situation happened, after which William started to listen to homework assignments much more attentively. What follows is a formal description of the homework assignment as William heard it:You are given a string ss of length nn only consisting of characters "a", "b" and "c". There are qq queries of format (pos,cpos,c), meaning replacing the element of string ss at position pospos with character cc. After each query you must output the minimal number of characters in the string, which have to be replaced, so that the string doesn't contain string "abc" as a subsequence. A valid replacement of a character is replacing it with "a", "b" or "c".A string xx is said to be a subsequence of string yy if xx can be obtained from yy by deleting some characters without changing the ordering of the remaining characters.
+InputThe first line contains two integers nn and qq (1≤n,q≤105)(1≤n,q≤105), the length of the string and the number of queries, respectively.The second line contains the string ss, consisting of characters "a", "b" and "c".Each of the next qq lines contains an integer ii and character cc (1≤i≤n)(1≤i≤n), index and the value of the new item in the string, respectively. It is guaranteed that character's cc value is "a", "b" or "c".
+OutputFor each query output the minimal number of characters that would have to be replaced so that the string doesn't contain "abc" as a subsequence.
+ExampleInputCopy9 12
+aaabccccc
+4 a
+4 b
+2 b
+5 a
+1 b
+6 b
+5 c
+2 a
+1 a
+5 a
+6 b
+7 b
+OutputCopy0
+1
+2
+2
+1
+2
+1
+2
+2
+2
+2
+2
+
+NoteLet's consider the state of the string after each query:   s=s="aaaaccccc". In this case the string does not contain "abc" as a subsequence and no replacements are needed. s=s="aaabccccc". In this case 1 replacements can be performed to get, for instance, string s=s="aaaaccccc". This string does not contain "abc" as a subsequence. s=s="ababccccc". In this case 2 replacements can be performed to get, for instance, string s=s=aaaaccccc". This string does not contain "abc" as a subsequence. s=s="ababacccc". In this case 2 replacements can be performed to get, for instance, string s=s="aaaaacccc". This string does not contain "abc" as a subsequence. s=s="bbabacccc". In this case 1 replacements can be performed to get, for instance, string s=s="bbacacccc". This string does not contain "abc" as a subsequence. s=s="bbababccc". In this case 2 replacements can be performed to get, for instance, string s=s="bbacacccc". This string does not contain "abc" as a subsequence. s=s="bbabcbccc". In this case 1 replacements can be performed to get, for instance, string s=s="bbcbcbccc". This string does not contain "abc" as a subsequence. s=s="baabcbccc". In this case 2 replacements can be performed to get, for instance, string s=s="bbbbcbccc". This string does not contain "abc" as a subsequence. s=s="aaabcbccc". In this case 2 replacements can be performed to get, for instance, string s=s="aaacccccc". This string does not contain "abc" as a subsequence. s=s="aaababccc". In this case 2 replacements can be performed to get, for instance, string s=s="aaacacccc". This string does not contain "abc" as a subsequence. s=s="aaababccc". In this case 2 replacements can be performed to get, for instance, string s=s="aaacacccc". This string does not contain "abc" as a subsequence. s=s="aaababbcc". In this case 2 replacements can be performed to get, for instance, string s=s="aaababbbb". This string does not contain "abc" as a subsequence.

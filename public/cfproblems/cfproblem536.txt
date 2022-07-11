@@ -1,0 +1,18 @@
+On the board, Bob wrote nn positive integers in base 1010 with sum ss (i. e. in decimal numeral system). Alice sees the board, but accidentally interprets the numbers on the board as base-1111 integers and adds them up (in base 1111).What numbers should Bob write on the board, so Alice's sum is as large as possible?
+InputThe input consists of multiple test cases. The first line contains an integer tt (1≤t≤1001≤t≤100) — the number of test cases. The description of the test cases follows.The only line of each test case contains two integers ss and nn (1≤s≤1091≤s≤109; 1≤n≤min(100,s)1≤n≤min(100,s)) — the sum and amount of numbers on the board, respectively. Numbers ss and nn are given in decimal notation (base 1010).
+OutputFor each test case, output nn positive integers — the numbers Bob should write on the board, so Alice's sum is as large as possible. If there are multiple answers, print any of them.
+ExampleInputCopy6
+97 2
+17 1
+111 4
+100 2
+10 9
+999999 3
+OutputCopy70 27 
+17 
+3 4 100 4
+10 90
+1 1 2 1 1 1 1 1 1 
+999900 90 9
+
+NoteIn the first test case, 7010+2710=97107010+2710=9710, and Alice's sum is 7011+2711=9711=9⋅11+7=10610.7011+2711=9711=9⋅11+7=10610. (Here xbxb represents the number xx in base bb.) It can be shown that it is impossible for Alice to get a larger sum than 1061010610.In the second test case, Bob can only write a single number on the board, so he must write 1717.In the third test case, 310+410+10010+410=11110310+410+10010+410=11110, and Alice's sum is 311+411+10011+411=11011=1⋅112+1⋅11=13210.311+411+10011+411=11011=1⋅112+1⋅11=13210. It can be shown that it is impossible for Alice to get a larger sum than 1321013210.

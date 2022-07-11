@@ -1,0 +1,10 @@
+You are given two integers xx and yy. You want to choose two strictly positive (greater than zero) integers aa and bb, and then apply the following operation to xx exactly aa times: replace xx with b⋅xb⋅x.You want to find two positive integers aa and bb such that xx becomes equal to yy after this process. If there are multiple possible pairs, you can choose any of them. If there is no such pair, report it.For example:   if x=3x=3 and y=75y=75, you may choose a=2a=2 and b=5b=5, so that xx becomes equal to 3⋅5⋅5=753⋅5⋅5=75;  if x=100x=100 and y=100y=100, you may choose a=3a=3 and b=1b=1, so that xx becomes equal to 100⋅1⋅1⋅1=100100⋅1⋅1⋅1=100;  if x=42x=42 and y=13y=13, there is no answer since you cannot decrease xx with the given operations. 
+InputThe first line contains one integer tt (1≤t≤1041≤t≤104) — the number of test cases.Each test case consists of one line containing two integers xx and yy (1≤x,y≤1001≤x,y≤100).
+OutputIf it is possible to choose a pair of positive integers aa and bb so that xx becomes yy after the aforementioned process, print these two integers. The integers you print should be not less than 11 and not greater than 109109 (it can be shown that if the answer exists, there is a pair of integers aa and bb meeting these constraints). If there are multiple such pairs, print any of them.If it is impossible to choose a pair of integers aa and bb so that xx becomes yy, print the integer 00 twice.
+ExampleInputCopy3
+3 75
+100 100
+42 13
+OutputCopy2 5
+3 1
+0 0

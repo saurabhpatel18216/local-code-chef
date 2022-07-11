@@ -1,0 +1,23 @@
+Diana loves playing with numbers. She's got nn cards with positive integer numbers aiai written on them. She spends her free time multiplying the numbers on the cards. She picks a non-empty subset of the cards and multiplies all the numbers aiai written on them.Diana is happy when the product of the numbers ends with her favorite digit dd. Now she is curious what cards she should pick so that the product of the numbers on them is the largest possible and the last decimal digit of the product is dd. Please, help her.
+InputThe first line contains the integers nn and dd (1≤n≤1051≤n≤105, 0≤d≤90≤d≤9). The second line contains nn integers aiai (1≤ai≤10001≤ai≤1000). 
+OutputOn the first line, print the number of chosen cards kk (1≤k≤n1≤k≤n). On the next line, print the numbers written on the chosen cards in any order. If it is impossible to choose a subset of cards with the product that ends with the digit dd, print the single line with −1−1.
+ExamplesInputCopy6 4
+4 11 8 2 1 13
+OutputCopy5
+1 2 4 11 13 
+InputCopy3 1
+2 4 6
+OutputCopy-1
+InputCopy5 7
+1 3 1 5 3
+OutputCopy-1
+InputCopy6 3
+8 9 4 17 11 5
+OutputCopy3
+9 11 17 
+InputCopy5 6
+2 2 2 2 2
+OutputCopy4
+2 2 2 2 
+
+NoteIn the first example, 1×2×4×11×13=11441×2×4×11×13=1144, which is the largest product that ends with the digit 4. The same set of cards without the number 1 is also a valid answer, as well as a set of 8, 11, and 13 with or without 1 that also has the product of 1144.In the second example, all the numbers on the cards are even and their product cannot end with an odd digit 1.In the third example, the only possible products are 1, 3, 5, 9, 15, and 45, none of which end with the digit 7.In the fourth example, 9×11×17=16839×11×17=1683, which ends with the digit 3. In the fifth example, 2×2×2×2=162×2×2×2=16, which ends with the digit 6.

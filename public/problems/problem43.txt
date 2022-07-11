@@ -1,0 +1,46 @@
+
+Read problems statements in Hindi, Mandarin chinese, Russian, Vietnamese and Bengali as well.
+
+Chef likes to solve difficult tasks. This time, he tried to solve the Big Famous Unsolvable A+B=CA+B=C. One of his friends played a prank on Chef and randomly shuffled the bits in AA and BB (independently in each number). However, the funny thing is that the sum of the resulting numbers remained CC even after shuffling.
+
+Chef is now wondering: in how many ways is it possible to shuffle the bits of AA and the bits of BB such that their sum after shuffling is equal to CC? Let's denote the integers obtained by shuffling the bits of AA and BB by AsAs and BsBs respectively; two ways (As1,Bs1)(As1,Bs1) and (As2,Bs2)(As2,Bs2) are considered distinct if As1≠As2As1≠As2 or Bs1≠Bs2Bs1≠Bs2.
+
+It is allowed to add any number (possibly zero) of leading zeroes, i.e. bits 00, to AA and any number of leading zeroes to BB before shuffling the bits.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first and only line of each test case contains three space-separated integers AA, BB and CC.
+
+Output
+
+For each test case, print a single line containing one integer — the number of ways to shuffle the bits.
+
+Constraints
+
+1≤T≤1,0001≤T≤1,000
+1≤A,B,C≤1091≤A,B,C≤109
+A+B=CA+B=C
+
+Subtasks
+
+Subtask #1 (50 points): 1≤A,B,C≤1051≤A,B,C≤105
+
+Subtask #2 (50 points): original constraints
+
+Example Input
+
+2
+1 2 3
+369 428 797
+
+Example Output
+
+2
+56
+
+Explanation
+
+Example case 1: We can consider A=01A=01 and B=10B=10 in binary. Then, there are two possible ways: swapping the two bits of AA and the two bits of BB (As=10As=10, Bs=01Bs=01 in binary, 22 and 11 in decimal representation) or not shuffling any bits.
+
+

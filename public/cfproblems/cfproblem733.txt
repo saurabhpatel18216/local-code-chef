@@ -1,0 +1,18 @@
+A frog is currently at the point 00 on a coordinate axis OxOx. It jumps by the following algorithm: the first jump is aa units to the right, the second jump is bb units to the left, the third jump is aa units to the right, the fourth jump is bb units to the left, and so on.Formally:   if the frog has jumped an even number of times (before the current jump), it jumps from its current position xx to position x+ax+a;  otherwise it jumps from its current position xx to position x−bx−b. Your task is to calculate the position of the frog after kk jumps.But... One more thing. You are watching tt different frogs so you have to answer tt independent queries.
+InputThe first line of the input contains one integer tt (1≤t≤10001≤t≤1000) — the number of queries.Each of the next tt lines contain queries (one query per line).The query is described as three space-separated integers a,b,ka,b,k (1≤a,b,k≤1091≤a,b,k≤109) — the lengths of two types of jumps and the number of jumps, respectively.
+OutputPrint tt integers. The ii-th integer should be the answer for the ii-th query.
+ExampleInputCopy6
+5 2 3
+100 1 4
+1 10 5
+1000000000 1 6
+1 1 1000000000
+1 1 999999999
+OutputCopy8
+198
+-17
+2999999997
+0
+1
+
+NoteIn the first query frog jumps 55 to the right, 22 to the left and 55 to the right so the answer is 5−2+5=85−2+5=8.In the second query frog jumps 100100 to the right, 11 to the left, 100100 to the right and 11 to the left so the answer is 100−1+100−1=198100−1+100−1=198.In the third query the answer is 1−10+1−10+1=−171−10+1−10+1=−17.In the fourth query the answer is 109−1+109−1+109−1=2999999997109−1+109−1+109−1=2999999997.In the fifth query all frog's jumps are neutralized by each other so the answer is 00.The sixth query is the same as the fifth but without the last jump so the answer is 11.

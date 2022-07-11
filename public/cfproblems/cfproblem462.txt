@@ -1,0 +1,27 @@
+You are given nn strings s1,s2,…,sns1,s2,…,sn, each consisting of lowercase and uppercase English letters. In addition, it's guaranteed that each character occurs in each string at most twice. Find the longest common subsequence of these strings.A string tt is a subsequence of a string ss if tt can be obtained from ss by deletion of several (possibly, zero or all) symbols.
+InputEach test consists of multiple test cases. The first line contains a single integer tt (1≤t≤51≤t≤5) — the number of test cases. Description of the test cases follows.The first line of each test case contains a single integer nn (2≤n≤102≤n≤10) — the number of strings.Each of the next nn lines contains the corresponding string sisi. Each sisi is non-empty, consists only of uppercase and lowercase English letters, and no character appears more than twice in each string.
+OutputFor each test case print the answer in two lines:In the first line print the length of the longest common subsequence. In the second line print the longest common subsequence. If there are multiple such subsequences, print any of them.
+ExampleInputCopy4
+2
+ABC
+CBA
+2
+bacab
+defed
+3
+abcde
+aBcDe
+ace
+2
+codeforces
+technocup
+OutputCopy1
+A
+0
+
+3
+ace
+3
+coc
+
+NoteIn the first test case, the longest common subsequence is "A". There are no common subsequences of length 22.In the second test case, sets of characters of strings don't intersect, so any non-empty string can't be a common subsequence.

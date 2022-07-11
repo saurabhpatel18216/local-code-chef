@@ -1,0 +1,16 @@
+Seiji Maki doesn't only like to observe relationships being unfolded, he also likes to observe sequences of numbers, especially permutations. Today, he has his eyes on almost sorted permutations.A permutation a1,a2,…,ana1,a2,…,an of 1,2,…,n1,2,…,n is said to be almost sorted if the condition ai+1≥ai−1ai+1≥ai−1 holds for all ii between 11 and n−1n−1 inclusive.Maki is considering the list of all almost sorted permutations of 1,2,…,n1,2,…,n, given in lexicographical order, and he wants to find the kk-th permutation in this list. Can you help him to find such permutation?Permutation pp is lexicographically smaller than a permutation qq if and only if the following holds: in the first position where pp and qq differ, the permutation pp has a smaller element than the corresponding element in qq.
+InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases.Each test case consists of a single line containing two integers nn and kk (1≤n≤1051≤n≤105, 1≤k≤10181≤k≤1018).It is guaranteed that the sum of nn over all test cases does not exceed 105105.
+OutputFor each test case, print a single line containing the kk-th almost sorted permutation of length nn in lexicographical order, or −1−1 if it doesn't exist.
+ExampleInputCopy5
+1 1
+1 2
+3 3
+6 5
+3 4
+OutputCopy1 
+-1
+2 1 3 
+1 2 4 3 5 6 
+3 2 1 
+
+NoteFor the first and second test, the list of almost sorted permutations with n=1n=1 is {[1]}{[1]}.For the third and fifth test, the list of almost sorted permutations with n=3n=3 is {[1,2,3],[1,3,2],[2,1,3],[3,2,1]}{[1,2,3],[1,3,2],[2,1,3],[3,2,1]}.

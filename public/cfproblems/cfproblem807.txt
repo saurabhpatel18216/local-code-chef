@@ -1,0 +1,26 @@
+It is reported that the 2050 Conference will be held in Yunqi Town in Hangzhou from April 23 to 25, including theme forums, morning jogging, camping and so on.The relationship between the nn volunteers of the 2050 Conference can be represented by a tree (a connected undirected graph with nn vertices and n−1n−1 edges). The nn vertices of the tree corresponds to the nn volunteers and are numbered by 1,2,…,n1,2,…,n.We define the distance between two volunteers ii and jj, dis(i,j)(i,j) as the number of edges on the shortest path from vertex ii to vertex jj on the tree. dis(i,j)=0(i,j)=0 whenever i=ji=j.Some of the volunteers can attend the on-site reunion while others cannot. If for some volunteer xx and nonnegative integer rr, all volunteers whose distance to xx is no more than rr can attend the on-site reunion, a forum with radius rr can take place. The level of the on-site reunion is defined as the maximum possible radius of any forum that can take place.Assume that each volunteer can attend the on-site reunion with probability 1212 and these events are independent. Output the expected level of the on-site reunion. When no volunteer can attend, the level is defined as −1−1. When all volunteers can attend, the level is defined as nn. 
+InputThe first line contains a single integer nn (2≤n≤3002≤n≤300) denoting the number of volunteers.Each of the next n−1n−1 lines contains two integers aa and bb denoting an edge between vertex aa and vertex bb.
+OutputOutput the expected level modulo 998244353998244353.Formally, let M=998244353M=998244353. It can be shown that the answer can be expressed as an irreducible fraction pqpq, where pp and qq are integers and q≢0(modM)q≢0(modM). Output the integer equal to p⋅q−1modMp⋅q−1modM. In other words, output such an integer xx that 0≤x<M0≤x<M and x⋅q≡p(modM)x⋅q≡p(modM).
+ExamplesInputCopy3
+1 2
+2 3
+OutputCopy499122177
+InputCopy5
+1 2
+2 3
+3 4
+3 5
+OutputCopy249561089
+InputCopy10
+1 2
+2 3
+3 4
+4 5
+5 6
+6 7
+7 8
+8 9
+9 10
+OutputCopy821796866
+
+NoteFor the first example, the following table shows all possible outcomes. yesyes means the volunteer can attend the on-site reunion and nono means he cannot attend. 1yesyesyesyesnononono2yesyesnonoyesyesnono3yesnoyesnoyesnoyesnolevel3100100−1123levelyesyesyes3yesyesno1yesnoyes0yesnono0noyesyes1noyesno0nonoyes0nonono−1 The expected level is 3+1+1+(−1)23=123+1+1+(−1)23=12.

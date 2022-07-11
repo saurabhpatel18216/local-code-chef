@@ -1,0 +1,16 @@
+It is a complicated version of problem F1. The difference between them is the constraints (F1: k≤2k≤2, F2: k≤10k≤10).You are given an integer nn. Find the minimum integer xx such that x≥nx≥n and the number xx is kk-beautiful.A number is called kk-beautiful if its decimal representation having no leading zeroes contains no more than kk different digits. E.g. if k=2k=2, the numbers 34344433434443, 5555055550, 777777 and 2121 are kk-beautiful whereas the numbers 120120, 445435445435 and 998244353998244353 are not.
+InputThe first line contains one integer tt (1≤t≤1041≤t≤104) — the number of test cases. Then tt test cases follow.Each test case consists of one line containing two integers nn and kk (1≤n≤1091≤n≤109, 1≤k≤101≤k≤10).
+OutputFor each test case output on a separate line xx — the minimum kk-beautiful integer such that x≥nx≥n.
+ExampleInputCopy6
+2021 3
+177890 2
+34512 3
+724533 4
+998244353 1
+12345678 10
+OutputCopy2021
+181111
+34533
+724542
+999999999
+12345678

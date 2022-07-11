@@ -1,0 +1,39 @@
+This problem is interactive.We decided to play a game with you and guess the number xx (1≤x<n1≤x<n), where you know the number nn.You can make queries like this: + c: this command assigns x=x+cx=x+c (1≤c<n1≤c<n) and then returns you the value ⌊xn⌋⌊xn⌋ (xx divide by nn and round down).You win if you guess the current number with no more than 1010 queries.
+InteractionThe interaction begins by reading an integer nn (2<n≤10002<n≤1000), which is written in the input data on its own line.Then you can make no more than 1010 queries. To make a query, print on a separate line:  + c: this command will assign x=x+cx=x+c (1≤c<n1≤c<n) and then print ⌊xn⌋⌊xn⌋ (divide xx by nn and round down) on a separate line.  Print the answer, like the queries, on a separate line. The answer doesn't count in number of queries. To output it, use the following format:  ! x: the current value of xx. After that, your program should exit.You have to use a flush operation right after printing each line. For example, in C++ you should use the function fflush(stdout), in Java — System.out.flush(), in Pascal — flush(output) and in Python — sys.stdout.flush().Note that the interactor is not responsive.To make a hack, use the following format: a single line must contain two numbers xx and nn, separated by a space.
+ExamplesInputCopy3
+
+1OutputCopy+ 1
+
+! 3InputCopy5
+
+0
+
+0
+
+1
+OutputCopy+ 1
+
++ 1
+
++ 1
+
+! 5
+InputCopy10
+
+0
+
+0
+
+1
+
+2OutputCopy
++ 2
+
++ 2
+
++ 3
+
++ 8
+
+! 20
+NoteIn the first sample initially x=2x=2. After the first query x=3x=3, ⌊xn⌋=1⌊xn⌋=1.In the second sample also initially x=2x=2. After the first query x=3x=3, ⌊xn⌋=0⌊xn⌋=0. After the second query x=4x=4, ⌊xn⌋=0⌊xn⌋=0. After the third query x=5x=5, ⌊xn⌋=1⌊xn⌋=1.

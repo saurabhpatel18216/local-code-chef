@@ -1,0 +1,44 @@
+
+Aujasvit just came up with a new game to play with his friends. NN people stand in a circle, each assigned an index from 11 to NN in clockwise order. Then the following operation is done N−1N−1 times.
+
+The person with the lowest index holds a coin.
+Then, the coin then moves to the next person clockwise M−1M−1 times.
+Then, the person who is holding the coin is removed from the circle.
+
+The last person remaining after N−1N−1 operations is the winner.
+
+Aujasvit has already decided on the integer MM to be used in the game. Before inviting people to play his game, Aujasvit wants to know the winner if the game has 11 player, 22 players, 33 players, …, XX players. That is, you need to output the winner when N=1,N=2,...,N=XN=1,N=2,...,N=X.
+
+Input Format
+
+The first line of each input contains TT - the number of test cases. The test cases then follow.
+The only line of each test case contains two space-separated integers MM and XX.
+
+Output Format
+
+For each testcase, output XX integers A1,A2,…,AXA1,A2,…,AX, where AiAi is the index of the winner if ii people are playing this game.
+
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤M≤1091≤M≤109
+1≤X≤100001≤X≤10000
+Sum of XX over all testcases is not more than 5⋅1055⋅105
+
+Sample Input 1
+
+1
+2 3
+
+Sample Output 1
+
+1 1 1
+
+Explanation
+
+Test case 11:
+When there is only 11 player, they are the winner. Therefore player 11 wins.
+When there are 22 players, player 22 is removed in the first round. Therefore player 11 wins.
+When there are 33 players, player 22 is removed in the first round, and player 33 is removed in the second round. Therefore player 11 wins.
+
+

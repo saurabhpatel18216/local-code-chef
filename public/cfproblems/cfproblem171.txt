@@ -1,0 +1,62 @@
+There are nn locations on a snowy mountain range (numbered from 11 to nn), connected by n−1n−1 trails in the shape of a tree. Each trail has length 11. Some of the locations are base lodges. The height hihi of each location is equal to the distance to the nearest base lodge (a base lodge has height 00).There is a skier at each location, each skier has initial kinetic energy 00. Each skier wants to ski along as many trails as possible. Suppose that the skier is skiing along a trail from location ii to jj. Skiers are not allowed to ski uphill (i.e., if hi<hjhi<hj). It costs one unit of kinetic energy to ski along flat ground (i.e., if hi=hjhi=hj), and a skier gains one unit of kinetic energy by skiing downhill (i.e., if hi>hjhi>hj). For each location, compute the length of the longest sequence of trails that the skier starting at that location can ski along without their kinetic energy ever becoming negative. Skiers are allowed to visit the same location or trail multiple times.
+InputThe first line contains a single integer nn (2≤n≤2⋅1052≤n≤2⋅105).The second line contains nn integers l1,l2,…,lnl1,l2,…,ln (0≤li≤10≤li≤1). If li=1li=1, location ii is a base lodge; if li=0li=0, location ii is not a base lodge. It is guaranteed that there is at least 11 base lodge.Each of the next n−1n−1 lines contains two integers u,vu,v (1≤u,v≤n1≤u,v≤n, u≠vu≠v), meaning that there is a trail that connects the locations uu and vv. It is guaranteed that the given trails form a tree.
+OutputPrint nn integers: the ii-th integer is equal to the length of the longest sequence of trails that the skier starting at location ii can ski along without their kinetic energy ever becoming negative.
+ExamplesInputCopy6
+1 1 0 0 0 0
+1 3
+2 4
+3 4
+4 5
+5 6
+OutputCopy0 0 1 1 3 5 
+InputCopy9
+0 0 0 0 0 0 1 1 1
+1 3
+2 3
+2 5
+3 6
+4 5
+4 7
+5 8
+6 9
+OutputCopy5 3 2 1 1 1 0 0 0 
+InputCopy14
+0 0 0 0 0 0 0 0 0 1 1 1 1 1
+1 2
+2 5
+3 4
+4 5
+3 6
+4 8
+5 9
+7 8
+6 11
+7 12
+8 13
+9 14
+10 11
+OutputCopy8 5 4 3 2 2 1 1 1 0 0 0 0 0 
+InputCopy20
+0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 1 0 1
+17 3
+11 12
+6 10
+18 19
+8 14
+16 20
+5 3
+2 11
+7 10
+2 15
+8 3
+3 15
+9 16
+7 13
+16 1
+19 2
+2 16
+6 1
+4 17
+OutputCopy2 2 1 5 3 4 8 1 2 6 4 6 10 0 0 0 3 0 1 0 
+
+NoteIn the first test, h=[0,0,1,1,2,3]h=[0,0,1,1,2,3]. The skier starting from 66 can ski along at most 55 trails, in the path 6→5→4→3→4→26→5→4→3→4→2 (notice that a skier can ski multiple times along the same trail and can visit more than once the same location):   at the location 66, the kinetic energy is 00;  at the location 55, the kinetic energy increases by 11 (because h5<h6h5<h6), so it becomes 11;  at the location 44, the kinetic energy increases by 11 (because h4<h5h4<h5), so it becomes 22;  at the location 33, the kinetic energy decreases by 11 (because h3=h4h3=h4), so it becomes 11;  at the location 44, the kinetic energy decreases by 11 (because h4=h3h4=h3), so it becomes 00;  at the location 22, the kinetic energy increases by 11 (because h2<h4h2<h4), so it becomes 11. There isn't any sequence of trails of length greater than 55 such that the kinetic energy is always non-negative.Moreover,   the optimal path for the skier starting from 11 is 11 (no trails);  the optimal path for the skier starting from 22 is 22 (no trails);  the optimal path for the skier starting from 33 is 3→13→1;  the optimal path for the skier starting from 44 is 4→24→2;  the optimal path for the skier starting from 55 is 5→4→3→15→4→3→1. In the second test, h=[3,2,2,1,1,1,0,0,0]h=[3,2,2,1,1,1,0,0,0]. The skier starting from 11 can ski along at most 55 trails, in the path 1→3→2→5→4→71→3→2→5→4→7.   at the location 11, the kinetic energy is 00;  at the location 33, the kinetic energy increases by 11 (because h3<h1h3<h1), so it becomes 11;  at the location 22, the kinetic energy decreases by 11 (because h2=h3h2=h3), so it becomes 00;  at the location 55, the kinetic energy increases by 11 (because h5<h2h5<h2), so it becomes 11;  at the location 44, the kinetic energy decreases by 11 (because h4=h5h4=h5), so it becomes 00;  at the location 77, the kinetic energy increases by 11 (because h7<h4h7<h4), so it becomes 11. There isn't any sequence of trails of length greater than 55 such that the kinetic energy is always non-negative.In the third test, for the skier starting from vertex 11, the optimal path is 1→2→5→4→3→6→11→10→111→2→5→4→3→6→11→10→11.Here are pictures of the first, second, and third test, with the base lodges shown in red:  

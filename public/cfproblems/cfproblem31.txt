@@ -1,0 +1,20 @@
+Nastya baked mm pancakes and spread them on nn dishes. The dishes are in a row and numbered from left to right. She put aiai pancakes on the dish with the index ii.Seeing the dishes, Vlad decided to bring order to the stacks and move some pancakes. In one move, he can shift one pancake from any dish to the closest one, that is, select the dish ii (ai>0ai>0) and do one of the following: if i>1i>1, put the pancake on a dish with the previous index, after this move ai=ai−1ai=ai−1 and ai−1=ai−1+1ai−1=ai−1+1; if i<ni<n, put the pancake on a dish with the following index, after this move ai=ai−1ai=ai−1 and ai+1=ai+1+1ai+1=ai+1+1.Vlad wants to make the array aanon-increasing, after moving as few pancakes as possible. Help him find the minimum number of moves needed for this.The array a=[a1,a2,…,an]a=[a1,a2,…,an] is called non-increasing if ai≥ai+1ai≥ai+1 for all ii from 11 to n−1n−1.
+InputThe first line of the input contains two numbers nn and mm (1≤n,m≤2501≤n,m≤250) — the number of dishes and the number of pancakes, respectively.The second line contains nn numbers aiai (0≤ai≤m0≤ai≤m), the sum of all aiai is equal to mm.
+OutputPrint a single number: the minimum number of moves required to make the array aa non-increasing.
+ExamplesInputCopy6 19
+5 3 2 3 3 3
+OutputCopy2
+InputCopy3 6
+3 2 1
+OutputCopy0
+InputCopy3 6
+2 1 3
+OutputCopy1
+InputCopy6 19
+3 4 3 3 5 1
+OutputCopy3
+InputCopy10 1
+0 0 0 0 0 0 0 0 0 1
+OutputCopy9
+
+NoteIn the first example, you first need to move the pancake from the dish 11, after which a=[4,4,2,3,3,3]a=[4,4,2,3,3,3]. After that, you need to move the pancake from the dish 22 to the dish 33 and the array will become non-growing a=[4,3,3,3,3,3]a=[4,3,3,3,3,3].

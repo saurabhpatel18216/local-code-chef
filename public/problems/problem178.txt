@@ -1,0 +1,59 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+
+For a sequence of positive integers A1,A2,…,AKA1,A2,…,AK, let's define the number of inversions in it as the number of pairs of integers (i,j)(i,j) such that 1≤i<j≤K1≤i<j≤K and Ai>AjAi>Aj.
+
+You are given a permutation P1,P2,…,PNP1,P2,…,PN of the integers 11 through NN. Determine if it is possible to partition this permutation into two subsequences (possibly empty or non-contiguous) such that:
+
+Each element of PP appears in exactly one of these subsequences.
+The numbers of inversions in one subsequence is equal to the number of inversions in the other subsequence.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains NN space-separated integers P1,P2,…,PNP1,P2,…,PN.
+
+Output
+
+For each test case, print a single line containing the string "YES" if it is possible to partition the permutation in a given way or "NO" if it is impossible.
+
+Constraints
+
+1≤N≤1001≤N≤100
+1≤Pi≤N1≤Pi≤N for each valid ii
+P1,P2,…,PNP1,P2,…,PN are pairwise distinct
+the sum of NN over all test cases does not exceed 200200
+
+Subtasks
+
+Subtask #1 (20 points): N≤16N≤16
+
+Subtask #2 (80 points): original constraints
+
+Sample Input 1
+
+4
+1
+1
+3
+3 2 1
+4
+4 3 2 1
+5 
+1 4 3 2 5
+
+Sample Output 1
+
+YES
+NO
+YES
+NO
+
+Explanation
+
+Example case 1: We can split (1)(1) into (1)(1) and ()(). There are 00 inversions in each of these sequences.
+
+Example case 3: We can split (4,3,2,1)(4,3,2,1) into (4,3)(4,3) and (2,1)(2,1). There is 11 inversion in each of them. Note that this is not the only solution ? we could also split the permutation into sequences (4,1)(4,1) and (3,2)(3,2).
+
+

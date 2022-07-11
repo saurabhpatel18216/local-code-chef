@@ -1,0 +1,56 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+
+As we all know, Chefland consists of NN cities (numbered 11 through NN) connected by N−1N−1 roads in such a way that each city is reachable from all other cities. In other words, the cities and roads form a tree. For each valid ii, the ii-th city's height above sea level is AiAi.
+
+A path between two cities is said to be beautiful if the heights of the cities in the path first increase and then decrease. In other words, when we denote the sequence of cities the path passes through by x1,x2,…,xLx1,x2,…,xL, it is beautiful if Ax1<Ax2<…<Axp>…>AxL−1>AxLAx1<Ax2<…<Axp>…>AxL−1>AxL holds for some integer pp (1≤p≤L1≤p≤L).
+
+Chefina is planning a trip along a path in the tree. You should answer QQ queries. In each query, you are given two cities xx and yy and you should tell Chefina if the simple path between these cities is beautiful.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains two space-separated integers NN and QQ.
+Each of the following N−1N−1 lines contains two space-separated integers uu and vv denoting that cities uu and vv are connected by a road.
+The next line contains NN space-separated integers A1,A2,…,ANA1,A2,…,AN.
+Each of the following QQ lines contains two space-separated integers xx and yy describing a query.
+
+Output
+
+For each test case, print a single line containing a string with length QQ. For each valid ii, the ii-th character of this string should be '1' if the path in the ii-th query is beautiful or '0' otherwise.
+
+Constraints
+
+1≤T≤2001≤T≤200
+1≤N,Q≤1051≤N,Q≤105
+1≤u,v≤N1≤u,v≤N
+1≤x,y≤N1≤x,y≤N
+1≤Ai≤1091≤Ai≤109 for each valid ii
+the sum of NN over all test cases does not exceed 106106
+the sum of QQ over all test cases does not exceed 106106
+
+Sample Input 1
+
+1
+5 4
+1 5
+1 2
+4 2
+2 3
+4 6 2 1 5
+1 5
+3 4
+3 2
+5 4
+
+Sample Output 1
+
+1110
+
+Explanation
+
+Example case 1: The sequence of heights of cities on the path from city 11 to city 55 is [4,5][4,5], and 4<54<5 holds, so it is a beautiful path.
+
+Example case 2: The sequence of heights of cities on the path from city 33 to city 44 is [2,6,1][2,6,1], and 2<6>12<6>1, so it is a beautiful path.
+
+

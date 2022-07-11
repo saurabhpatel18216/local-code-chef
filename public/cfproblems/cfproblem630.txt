@@ -1,0 +1,14 @@
+Let's call an integer array a1,a2,…,ana1,a2,…,an good if ai≠iai≠i for each ii.Let F(a)F(a) be the number of pairs (i,j)(i,j) (1≤i<j≤n1≤i<j≤n) such that ai+aj=i+jai+aj=i+j.Let's say that an array a1,a2,…,ana1,a2,…,an is excellent if:   aa is good;  l≤ai≤rl≤ai≤r for each ii;  F(a)F(a) is the maximum possible among all good arrays of size nn. Given nn, ll and rr, calculate the number of excellent arrays modulo 109+7109+7.
+InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases. The first and only line of each test case contains three integers nn, ll, and rr (2≤n≤2⋅1052≤n≤2⋅105; −109≤l≤1−109≤l≤1; n≤r≤109n≤r≤109).It's guaranteed that the sum of nn doesn't exceed 2⋅1052⋅105.
+OutputFor each test case, print the number of excellent arrays modulo 109+7109+7.
+ExampleInputCopy4
+3 0 3
+4 -3 5
+42 -33 55
+69 -42 146
+OutputCopy4
+10
+143922563
+698570404
+
+NoteIn the first test case, it can be proven that the maximum F(a)F(a) among all good arrays aa is equal to 22. The excellent arrays are:   [2,1,2][2,1,2];  [0,3,2][0,3,2];  [2,3,2][2,3,2];  [3,0,1][3,0,1]. 

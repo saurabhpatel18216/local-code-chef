@@ -1,0 +1,21 @@
+On an endless checkered sheet of paper, nn cells are chosen and colored in three colors, where nn is divisible by 33. It turns out that there are exactly n3n3 marked cells of each of three colors! Find the largest such kk that it's possible to choose k3k3 cells of each color, remove all other marked cells, and then select three rectangles with sides parallel to the grid lines so that the following conditions hold:  No two rectangles can intersect (but they can share a part of the boundary). In other words, the area of intersection of any two of these rectangles must be 00. The ii-th rectangle contains all the chosen cells of the ii-th color and no chosen cells of other colors, for i=1,2,3i=1,2,3. 
+InputThe first line of the input contains a single integer nn — the number of the marked cells (3≤n≤1053≤n≤105, nn is divisible by 3).The ii-th of the following nn lines contains three integers xixi, yiyi, cici (|xi|,|yi|≤109|xi|,|yi|≤109; 1≤ci≤31≤ci≤3), where (xi,yi)(xi,yi) are the coordinates of the ii-th marked cell and cici is its color.It's guaranteed that all cells (xi,yi)(xi,yi) in the input are distinct, and that there are exactly n3n3 cells of each color.
+OutputOutput a single integer kk — the largest number of cells you can leave.
+ExamplesInputCopy9
+2 3 1
+4 1 2
+2 1 3
+3 4 1
+5 3 2
+4 4 3
+2 4 1
+5 2 2
+3 5 3
+OutputCopy6
+InputCopy3
+1 1 1
+2 2 2
+3 3 3
+OutputCopy3
+
+NoteIn the first sample, it's possible to leave 66 cells with indexes 1,5,6,7,8,91,5,6,7,8,9.In the second sample, it's possible to leave 33 cells with indexes 1,2,31,2,3.

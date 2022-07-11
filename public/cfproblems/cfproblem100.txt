@@ -1,0 +1,11 @@
+A map is a matrix consisting of symbols from the set of 'U', 'L', 'D', and 'R'.A map graph of a map matrix aa is a directed graph with n⋅mn⋅m vertices numbered as (i,j)(i,j) (1≤i≤n;1≤j≤m1≤i≤n;1≤j≤m), where nn is the number of rows in the matrix, mm is the number of columns in the matrix. The graph has n⋅mn⋅m directed edges (i,j)→(i+diai,j,j+djai,j)(i,j)→(i+diai,j,j+djai,j), where (diU,djU)=(−1,0)(diU,djU)=(−1,0); (diL,djL)=(0,−1)(diL,djL)=(0,−1); (diD,djD)=(1,0)(diD,djD)=(1,0); (diR,djR)=(0,1)(diR,djR)=(0,1). A map graph is valid when all edges point to valid vertices in the graph.An admissible map is a map such that its map graph is valid and consists of a set of cycles.A description of a map aa is a concatenation of all rows of the map — a string a1,1a1,2…a1,ma2,1…an,ma1,1a1,2…a1,ma2,1…an,m.You are given a string ss. Your task is to find how many substrings of this string can constitute a description of some admissible map. A substring of a string s1s2…sls1s2…sl of length ll is defined by a pair of indices pp and qq (1≤p≤q≤l1≤p≤q≤l) and is equal to spsp+1…sqspsp+1…sq. Two substrings of ss are considered different when the pair of their indices (p,q)(p,q) differs, even if they represent the same resulting string.
+InputIn the only input line, there is a string ss, consisting of at least one and at most 2000020000 symbols 'U', 'L', 'D', or 'R'.
+OutputOutput one integer — the number of substrings of ss that constitute a description of some admissible map.
+ExamplesInputCopyRDUL
+OutputCopy2
+InputCopyRDRU
+OutputCopy0
+InputCopyRLRLRL
+OutputCopy6
+
+NoteIn the first example, there are two substrings that can constitute a description of an admissible map — "RDUL" as a matrix of size 2×22×2 (pic. 1) and "DU" as a matrix of size 2×12×1 (pic. 2). In the second example, no substring can constitute a description of an admissible map. E. g. if we try to look at the string "RDRU" as a matrix of size 2×22×2, we can find out that the resulting graph is not a set of cycles (pic. 3).In the third example, three substrings "RL", two substrings "RLRL" and one substring "RLRLRL" can constitute an admissible map, some of them in multiple ways. E. g. here are two illustrations of substring "RLRLRL" as matrices of size 3×23×2 (pic. 4) and 1×61×6 (pic. 5).

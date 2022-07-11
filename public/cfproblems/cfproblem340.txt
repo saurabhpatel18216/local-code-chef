@@ -1,0 +1,15 @@
+You are given an integer kk and a string ss that consists only of characters 'a' (a lowercase Latin letter) and '*' (an asterisk).Each asterisk should be replaced with several (from 00 to kk inclusive) lowercase Latin letters 'b'. Different asterisk can be replaced with different counts of letter 'b'.The result of the replacement is called a BA-string.Two strings aa and bb are different if they either have different lengths or there exists such a position ii that ai≠biai≠bi.A string aa is lexicographically smaller than a string bb if and only if one of the following holds:   aa is a prefix of bb, but a≠ba≠b;  in the first position where aa and bb differ, the string aa has a letter that appears earlier in the alphabet than the corresponding letter in bb. Now consider all different BA-strings and find the xx-th lexicographically smallest of them.
+InputThe first line contains a single integer tt (1≤t≤20001≤t≤2000) — the number of testcases.The first line of each testcase contains three integers nn, kk and xx (1≤n≤20001≤n≤2000; 0≤k≤20000≤k≤2000; 1≤x≤10181≤x≤1018). nn is the length of string ss.The second line of each testcase is a string ss. It consists of nn characters, each of them is either 'a' (a lowercase Latin letter) or '*' (an asterisk).The sum of nn over all testcases doesn't exceed 20002000. For each testcase xx doesn't exceed the total number of different BA-strings. String ss contains at least one character 'a'.
+OutputFor each testcase, print a single string, consisting only of characters 'b' and 'a' (lowercase Latin letters) — the xx-th lexicographically smallest BA-string.
+ExampleInputCopy3
+2 4 3
+a*
+4 1 3
+a**a
+6 3 20
+**a***
+OutputCopyabb
+abba
+babbbbbbbbb
+
+NoteIn the first testcase of the example, BA-strings ordered lexicographically are:   a  ab  abb  abbb  abbbb In the second testcase of the example, BA-strings ordered lexicographically are:   aa  aba  abba Note that string "aba" is only counted once, even though there are two ways to replace asterisks with characters 'b' to get it.

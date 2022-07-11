@@ -1,0 +1,58 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+
+Chef is fond of pepperoni pizza, as we saw here. Once again, he has a pepperoni pizza in the shape of a grid with NN rows (numbered 11 through NN from top to bottom) and NN columns (numbered 11 through NN from left to right). Some cells of this grid contain pepperoni, while other ones do not.
+
+Chef wants to cut the pizza vertically in half and give the two halves to two of his friends. Formally, one friend should get everything in columns 11 through N/2N/2 and the other friend should get everything in the columns N/2+1N/2+1 through NN.
+
+Before cutting the pizza, Chef may perform the following operation any number of times (including zero): choose an integer xx (1≤x≤N1≤x≤N) and reverse the xx-th row of the grid ― in other words, for each valid ii, the cell in the ii-th column and xx-th row is moved to the N+1−iN+1−i-th column in the same row.
+
+After the pizza is cut, let's denote the number of cells containing pepperoni in the first half and in the second half by p1p1 and p2p2 respectively. Chef wants to minimise their absolute difference |p1−p2||p1−p2|, but he is lazy, so he just wants you to perform any valid sequence of operations such that the absolute difference in the final grid is minimized.
+
+You need to find a final grid (the grid after performing all operations) such that |p1−p2||p1−p2| for this grid is the smallest possible. If there are multiple final grids that minimise |p1−p2||p1−p2|, you may find any one.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+NN lines follow. For each ii (1≤i≤N1≤i≤N), the ii-th of these lines contains a string with length NN describing the ii-th row of the grid; for each valid jj, the jj-th character of this string is '1' if the cell in the ii-th row and jj-th column contains pepperoni or '0' if it does not.
+
+Output
+
+For each test case, print NN lines. For each valid ii, the ii-th of these lines should contain a string with length NN describing the ii-th row of the grid after performing all operations, in the same format as on the input. It must be possible to obtain this grid from the initial grid using some valid sequence of operations.
+
+Constraints
+
+1≤T≤301≤T≤30
+2≤N≤1502≤N≤150
+NN is even
+the sum of NN over all test cases does not exceed 300300
+
+Sample Input 1
+
+2
+2
+01
+01
+4
+0111
+0001
+1010
+1010
+
+Sample Output 1
+
+10
+01
+1110
+0001
+1010
+1010
+
+Explanation
+
+Example case 1: We need to reverse either of the rows, leading to |p1−p2|=0|p1−p2|=0. Either of these solutions would be accepted.
+
+Example case 2: It is optimal to reverse the first row, leading to exactly 44 pepperoni on each side (and |p1−p2|=0|p1−p2|=0 again).
+
+

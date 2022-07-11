@@ -1,0 +1,21 @@
+This is an interactive problem!In the last regional contest Hemose, ZeyadKhattab and YahiaSherif — members of the team Carpe Diem — did not qualify to ICPC because of some unknown reasons. Hemose was very sad and had a bad day after the contest, but ZeyadKhattab is very wise and knows Hemose very well, and does not want to see him sad.Zeyad knows that Hemose loves tree problems, so he gave him a tree problem with a very special device.Hemose has a weighted tree with nn nodes and n−1n−1 edges. Unfortunately, Hemose doesn't remember the weights of edges.Let's define Dist(u,v)Dist(u,v) for u≠vu≠v as the greatest common divisor of the weights of all edges on the path from node uu to node vv.Hemose has a special device. Hemose can give the device a set of nodes, and the device will return the largest DistDist between any two nodes from the set. More formally, if Hemose gives the device a set SS of nodes, the device will return the largest value of Dist(u,v)Dist(u,v) over all pairs (u,v)(u,v) with uu, vv ∈∈ SS and u≠vu≠v.Hemose can use this Device at most 1212 times, and wants to find any two distinct nodes aa, bb, such that Dist(a,b)Dist(a,b) is maximum possible. Can you help him?
+InteractionBegin the interaction from reading a single integer nn (2≤n≤1032≤n≤103) — the number of nodes in the tree.Next, read n−1n−1 lines. The ii-th of the next n−1n−1 lines contains two integers uiui and vivi (1≤ui,vi≤n1≤ui,vi≤n, ui≠viui≠vi), which means that there's an edge between nodes uiui and vivi.It's guaranteed that weights of edges were ≤109≤109.It is guaranteed that the given graph is a tree.Now you may begin asking queries. To ask a query about a set of kk nodes v1,v2,…,vkv1,v2,…,vk (2≤k≤n2≤k≤n, 1≤vi≤n1≤vi≤n, all vivi are distinct), output: ? kk v1v1 v2v2 …… vkvkYou will then receive an integer xx, the largest Dist(vi,vj)Dist(vi,vj) over 1≤i,j≤k1≤i,j≤k with i≠ji≠j.When you have found aa and bb (1≤a,b≤n)1≤a,b≤n), a≠ba≠b) such that Dist(a,b)Dist(a,b) is the maximum possible, print the answer in the following format: ! aa bb Outputting answer doesn't count towards the limit of 1212 queries.If there are several pairs (a,b)(a,b) with the same largest Dist(a,b)Dist(a,b), you can output any.After printing a query do not forget to output the end of line and flush the output. Otherwise, you will get Idleness limit exceeded. To do this, use: fflush(stdout) or cout.flush() in C++; System.out.flush() in Java; flush(output) in Pascal; stdout.flush() in Python; see the documentation for other languages.HacksTo hack a solution, use the following format.The first line should contain a single integer nn (2≤n≤103)(2≤n≤103) — the number of nodes.The ii-th of the next n−1n−1 lines should contain three integers uiui, vivi, wiwi (1≤ui,vi≤n1≤ui,vi≤n, ui≠viui≠vi, 1≤w≤1091≤w≤109), which means that there's an edge between nodes uiui and vivi with weight wiwi.These n−1n−1 edges must form a tree.
+ExampleInputCopy6
+1 2
+2 3
+2 4
+1 5
+5 6
+
+10
+
+2
+
+10OutputCopy? 6 1 2 3 4 5 6
+
+? 3 3 1 5
+
+? 2 1 2
+
+! 1 2
+NoteThe tree in the first sample:

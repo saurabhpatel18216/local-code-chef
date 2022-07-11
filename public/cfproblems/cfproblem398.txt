@@ -1,0 +1,14 @@
+For two positive integers ll and rr (l≤rl≤r) let c(l,r)c(l,r) denote the number of integer pairs (i,j)(i,j) such that l≤i≤j≤rl≤i≤j≤r and gcd(i,j)≥lgcd⁡(i,j)≥l. Here, gcd(i,j)gcd⁡(i,j) is the greatest common divisor (GCD) of integers ii and jj.YouKn0wWho has two integers nn and kk where 1≤k≤n1≤k≤n. Let f(n,k)f(n,k) denote the minimum of ∑i=1kc(xi+1,xi+1)∑i=1kc(xi+1,xi+1) over all integer sequences 0=x1<x2<…<xk<xk+1=n0=x1<x2<…<xk<xk+1=n.Help YouKn0wWho find f(n,k)f(n,k). 
+InputThe first line contains a single integer tt (1≤t≤3⋅1051≤t≤3⋅105) — the number of test cases.The first and only line of each test case contains two integers nn and kk (1≤k≤n≤1051≤k≤n≤105). 
+OutputFor each test case, print a single integer — f(n,k)f(n,k).
+ExampleInputCopy4
+6 2
+4 4
+3 1
+10 3
+OutputCopy8
+4
+6
+11
+
+NoteIn the first test case, YouKn0wWho can select the sequence [0,2,6][0,2,6]. So f(6,2)=c(1,2)+c(3,6)=3+5=8f(6,2)=c(1,2)+c(3,6)=3+5=8 which is the minimum possible.

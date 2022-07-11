@@ -1,0 +1,50 @@
+
+You’re given a tree with NN nodes (where each node ii has a value AiAi) and QQ queries in the form uu vv. The answer to each query is the XOR of value of nodes on the shortest path from node uu to vv.
+
+Input
+
+First line will contains a single integer TT, number of test cases.
+First line of each test case contains two space-separated integers - NN and QQ
+Second line of each test case contains NN space separated integers, the ithith of which is AiAi.
+The next N−1N−1 lines contains two space separated integers - uu and vv - denoting that there is an edge from uu to vv and vice-versa
+The next QQ lines each contain two space separated integers uu and vv, denoting a query.
+
+Output
+
+For each query, output the answer on a new line.
+
+Constraints
+
+1≤T≤101≤T≤10
+3≤N≤1053≤N≤105
+1≤Q≤1051≤Q≤105
+1≤Ai≤1081≤Ai≤108
+
+Sample Input
+
+1
+5 2
+1 2 3 4 5
+1 2
+1 3
+2 4
+2 5
+3 5
+4 5
+
+Sample Output
+
+5
+3
+
+EXPLANATION:
+
+The path for (3,5)(3,5) is :
+
+33 → 11 → 22 → 55; therefore, the answer for the query is 55.
+
+The path for (4,5)(4,5) is :
+
+44 → 22 → 55; therefore, the answer for the query is 33.
+
+

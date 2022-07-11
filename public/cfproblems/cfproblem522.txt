@@ -1,0 +1,22 @@
+Kotlinforces is a web platfrom that hosts programming competitions.The staff of Kotlinforces is asked to schedule nn programming competitions on the next mm days. Each competition is held in multiple stages; the regulations of the ii-th competition state that this competition should consist of exactly kiki stages, and each stage, starting from the second one, should be scheduled exactly titi days after the previous stage. In other words, if the first stage of the ii-th competition is scheduled on day xx, the second stage should be scheduled on day x+tix+ti, the third stage — on day x+2tix+2ti, ..., the kiki-th stage (which is the last one) — on day x+(ki−1)tix+(ki−1)ti.All nn competitions should be scheduled in such a way that they start and finish during the next mm days, and on any of these mm days, at most one stage of one competition is held (two stages of different competitions should not be scheduled on the same day).Is it possible to schedule all nn competitions to meet these constraints?
+InputThe first line contains two integers nn and mm (1≤n,m≤50001≤n,m≤5000) — the number of competitions and the number of days, respectively.Then nn lines follow, each describing a competition which should be scheduled. The ii-th line contains two integers kiki and titi (2≤ki≤50002≤ki≤5000; 1≤ti≤21≤ti≤2) — the parameters of the ii-th competition.
+OutputIf it is impossible to schedule all nn competitions on the next mm days so that there is at most one stage during each day, print -1.Otherwise, print nn integers. The ii-th integer should represent the day when the first stage of the ii-th competition is scheduled; days are numbered from 11 to mm. If there are multiple answers, print any of them.
+ExamplesInputCopy3 7
+3 2
+2 2
+2 2
+OutputCopy2 5 1
+InputCopy1 7
+4 2
+OutputCopy1
+InputCopy1 7
+5 2
+OutputCopy-1
+InputCopy2 4
+2 1
+2 2
+OutputCopy-1
+InputCopy2 5
+2 1
+2 2
+OutputCopy4 1

@@ -1,0 +1,21 @@
+There are nn weighted points on the OXOX-axis. The coordinate and the weight of the ii-th point is xixi and wiwi, respectively. All points have distinct coordinates and positive weights. Also, xi<xi+1xi<xi+1 holds for any 1≤i<n1≤i<n. The weighted distance between ii-th point and jj-th point is defined as |xi−xj|⋅(wi+wj)|xi−xj|⋅(wi+wj), where |val||val| denotes the absolute value of valval.You should answer qq queries, where the ii-th query asks the following: Find the minimum weighted distance among all pairs of distinct points among the points in subarray [li,ri][li,ri].
+InputThe first line contains 2 integers nn and qq (2≤n≤3⋅105;1≤q≤3⋅105)(2≤n≤3⋅105;1≤q≤3⋅105) — the number of points and the number of queries.Then, nn lines follows, the ii-th of them contains two integers xixi and wiwi (−109≤xi≤109;1≤wi≤109)(−109≤xi≤109;1≤wi≤109) — the coordinate and the weight of the ii-th point.It is guaranteed that the points are given in the increasing order of xx.Then, qq lines follows, the ii-th of them contains two integers lili and riri (1≤li<ri≤n)(1≤li<ri≤n) — the given subarray of the ii-th query.
+OutputFor each query output one integer, the minimum weighted distance among all pair of distinct points in the given subarray.
+ExampleInputCopy5 5
+-2 2
+0 10
+1 1
+9 2
+12 7
+1 3
+2 3
+1 5
+3 5
+2 4
+OutputCopy9
+11
+9
+24
+11
+
+NoteFor the first query, the minimum weighted distance is between points 11 and 33, which is equal to |x1−x3|⋅(w1+w3)=|−2−1|⋅(2+1)=9|x1−x3|⋅(w1+w3)=|−2−1|⋅(2+1)=9.For the second query, the minimum weighted distance is between points 22 and 33, which is equal to |x2−x3|⋅(w2+w3)=|0−1|⋅(10+1)=11|x2−x3|⋅(w2+w3)=|0−1|⋅(10+1)=11.For the fourth query, the minimum weighted distance is between points 33 and 44, which is equal to |x3−x4|⋅(w3+w4)=|1−9|⋅(1+2)=24|x3−x4|⋅(w3+w4)=|1−9|⋅(1+2)=24.

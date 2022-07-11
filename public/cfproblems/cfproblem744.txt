@@ -1,0 +1,39 @@
+You have two strings aa and bb of equal length nn consisting of characters 0 and 1, and an integer kk.You need to make strings aa and bb equal.In one step, you can choose any substring of aa containing exactly kk characters 1 (and arbitrary number of characters 0) and reverse it. Formally, if a=a1a2…ana=a1a2…an, you can choose any integers ll and rr (1≤l≤r≤n1≤l≤r≤n) such that there are exactly kk ones among characters al,al+1,…,aral,al+1,…,ar, and set aa to a1a2…al−1arar−1…alar+1ar+2…ana1a2…al−1arar−1…alar+1ar+2…an.Find a way to make aa equal to bb using at most 4n4n reversals of the above kind, or determine that such a way doesn't exist. The number of reversals doesn't have to be minimized.
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤20001≤t≤2000). Description of the test cases follows.Each test case consists of three lines. The first line of each test case contains two integers nn and kk (1≤n≤20001≤n≤2000; 0≤k≤n0≤k≤n).The second line contains string aa of length nn.The third line contains string bb of the same length. Both strings consist of characters 0 and 1.It is guaranteed that the sum of nn over all test cases does not exceed 20002000.
+OutputFor each test case, if it's impossible to make aa equal to bb in at most 4n4n reversals, print a single integer −1−1.Otherwise, print an integer mm (0≤m≤4n0≤m≤4n), denoting the number of reversals in your sequence of steps, followed by mm pairs of integers li,rili,ri (1≤li≤ri≤n1≤li≤ri≤n), denoting the boundaries of the substrings of aa to be reversed, in chronological order. Each substring must contain exactly kk ones at the moment of reversal.Note that mm doesn't have to be minimized. If there are multiple answers, print any.
+ExampleInputCopy6
+6 1
+101010
+010101
+6 3
+101010
+010101
+6 0
+101010
+010101
+6 6
+101010
+010101
+4 2
+0000
+1111
+9 2
+011100101
+101001011
+OutputCopy3
+1 2
+3 4
+5 6
+1
+1 6
+-1
+-1
+-1
+5
+4 8
+8 9
+3 6
+1 4
+3 6
+
+NoteIn the first test case, after the first reversal a=a= 011010, after the second reversal a=a= 010110, after the third reversal a=a= 010101.

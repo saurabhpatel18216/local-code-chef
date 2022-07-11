@@ -1,0 +1,68 @@
+
+Read problems statements in Mandarin Chinese, Russian, Vietnamese and Bengali as well.
+
+Chef invented a new game named Quick Battle Royale. NN people play the game. One or more rounds are played until all players except one are eliminated. In each round:
+
+Let there be xx non-eliminated players at the start of the round. Let's number them 11 through xx.
+First, each of these players chooses an integer between 11 and xx inclusive. For each valid ii, let's denote the integer chosen by the ii-th player by pipi. In addition, each player is not allowed to choose pi=ipi=i. Under these conditions, all players choose uniformly randomly and independently.
+Then, the elimination process starts. For each ii from 11 to xx, in this order:
+if the player ii is currently still in the game, the player pipi is eliminated from the game immediately
+if the player ii was already eliminated from the game in this round, nothing happens
+
+Note that it is impossible for all players to be eliminated and in each round, at least one player is eliminated.
+
+For example, a game for N=4N=4 could look like this:
+
+Round 1: The players choose p1=3p1=3, p2=4p2=4, p3=2p3=2, p4=2p4=2. For i=1i=1, since player 11 is still in the game, player pi=3pi=3 is eliminated. For i=2i=2, since player 22 is also in the game, player pi=4pi=4 is eliminated. Since the players 33 and 44 are eliminated, nothing more happens.
+Round 2: Two players remain. The only choice they have is p1=2p1=2 and p2=1p2=1. For i=1i=1, since player 11 is still in the game, player pi=2pi=2 gets eliminated. For i=2i=2, player 22 is eliminated, so nothing happens.
+
+Now there is one player left, so the game ends. It lasted 22 rounds.
+
+You have to find the expected value of the number of rounds the game will last. It can be shown that the expected number of rounds can be written as a fraction pqpq, where pp and qq are positive integers and qq is coprime with 109+7109+7. You have to compute p⋅q−1p⋅q−1 modulo 109+7109+7, where q−1q−1 is the multiplicative inverse of qq modulo 109+7109+7.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first and only line of each test case contains a single integer NN denoting the number of players at the start of the game.
+
+Output
+
+For each test case, print a single line containing one integer p⋅q−1p⋅q−1 modulo 109+7109+7.
+
+Constraints
+
+1≤T≤1001≤T≤100
+2≤N≤1002≤N≤100
+
+Example Input
+
+5
+1
+2
+3
+4
+5
+
+Example Output
+
+0
+1
+500000005
+944444453
+616319451
+
+Explanation
+
+Example case 3: The answer is 3232 modulo (109+7)(109+7). The following cases can happen in the first round (with equal probabilities):
+    - p=[2,1,1]p=[2,1,1], game lasts 11 round
+    - p=[2,1,2]p=[2,1,2], game lasts 22 rounds
+    - p=[2,3,1]p=[2,3,1], game lasts 11 round 
+    - p=[2,3,2]p=[2,3,2], game lasts 22 rounds
+    - p=[3,1,1]p=[3,1,1], game lasts 11 round
+    - p=[3,1,2]p=[3,1,2], game lasts 11 round
+    - p=[3,3,1]p=[3,3,1], game lasts 22 rounds
+    - p=[3,3,2]p=[3,3,2], game lasts 22 rounds
+
+Example case 4: The answer is 35183518 modulo (109+7)(109+7).
+
+

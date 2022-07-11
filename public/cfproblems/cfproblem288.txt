@@ -1,0 +1,22 @@
+Note: The XOR-sum of set {s1,s2,…,sm}{s1,s2,…,sm} is defined as s1⊕s2⊕…⊕sms1⊕s2⊕…⊕sm, where ⊕⊕ denotes the bitwise XOR operation.After almost winning IOI, Victor bought himself an n×nn×n grid containing integers in each cell. nn is an even integer. The integer in the cell in the ii-th row and jj-th column is ai,jai,j.Sadly, Mihai stole the grid from Victor and told him he would return it with only one condition: Victor has to tell Mihai the XOR-sum of all the integers in the whole grid.Victor doesn't remember all the elements of the grid, but he remembers some information about it: For each cell, Victor remembers the XOR-sum of all its neighboring cells.Two cells are considered neighbors if they share an edge — in other words, for some integers 1≤i,j,k,l≤n1≤i,j,k,l≤n, the cell in the ii-th row and jj-th column is a neighbor of the cell in the kk-th row and ll-th column if |i−k|=1|i−k|=1 and j=lj=l, or if i=ki=k and |j−l|=1|j−l|=1.To get his grid back, Victor is asking you for your help. Can you use the information Victor remembers to find the XOR-sum of the whole grid?It can be proven that the answer is unique.
+InputThe first line of the input contains a single integer tt (1≤t≤1001≤t≤100) — the number of test cases. The description of test cases follows.The first line of each test case contains a single even integer nn (2≤n≤10002≤n≤1000) — the size of the grid.Then follows nn lines, each containing nn integers. The jj-th integer in the ii-th of these lines represents the XOR-sum of the integers in all the neighbors of the cell in the ii-th row and jj-th column.It is guaranteed that the sum of nn over all test cases doesn't exceed 10001000 and in the original grid 0≤ai,j≤230−10≤ai,j≤230−1.Hack FormatTo hack a solution, use the following format:The first line should contain a single integer t (1≤t≤1001≤t≤100) — the number of test cases.The first line of each test case should contain a single even integer nn (2≤n≤10002≤n≤1000) — the size of the grid.Then nn lines should follow, each containing nn integers. The jj-th integer in the ii-th of these lines is ai,jai,j in Victor's original grid. The values in the grid should be integers in the range [0,230−1][0,230−1]The sum of nn over all test cases must not exceed 10001000.
+OutputFor each test case, output a single integer — the XOR-sum of the whole grid.
+ExampleInputCopy3
+2
+1 5
+5 1
+4
+1 14 8 9
+3 1 5 9
+4 13 11 1
+1 15 4 11
+4
+2 4 1 6
+3 7 3 10
+15 9 4 2
+12 7 15 1
+OutputCopy4
+9
+5
+
+NoteFor the first test case, one possibility for Victor's original grid is:11332244For the second test case, one possibility for Victor's original grid is:33888855995555115555999988442299For the third test case, one possibility for Victor's original grid is:44332211112233445566778888999911

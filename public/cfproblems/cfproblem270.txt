@@ -1,0 +1,11 @@
+New Year is just around the corner, which means that in School 179, preparations for the concert are in full swing.There are nn classes in the school, numbered from 11 to nn, the ii-th class has prepared a scene of length aiai minutes.As the main one responsible for holding the concert, Idnar knows that if a concert has kk scenes of lengths b1b1, b2b2, ……, bkbk minutes, then the audience will get bored if there exist two integers ll and rr such that 1≤l≤r≤k1≤l≤r≤k and gcd(bl,bl+1,…,br−1,br)=r−l+1gcd(bl,bl+1,…,br−1,br)=r−l+1, where gcd(bl,bl+1,…,br−1,br)gcd(bl,bl+1,…,br−1,br) is equal to the greatest common divisor (GCD) of the numbers blbl, bl+1bl+1, ……, br−1br−1, brbr.To avoid boring the audience, Idnar can ask any number of times (possibly zero) for the tt-th class (1≤t≤k1≤t≤k) to make a new scene dd minutes in length, where dd can be any positive integer. Thus, after this operation, btbt is equal to dd. Note that tt and dd can be different for each operation.For a sequence of scene lengths b1b1, b2b2, ……, bkbk, let f(b)f(b) be the minimum number of classes Idnar has to ask to change their scene if he wants to avoid boring the audience.Idnar hasn't decided which scenes will be allowed for the concert, so he wants to know the value of ff for each non-empty prefix of aa. In other words, Idnar wants to know the values of f(a1)f(a1), f(a1f(a1,a2)a2), ……, f(a1f(a1,a2a2,……,an)an).
+InputThe first line contains a single integer nn (1≤n≤2⋅1051≤n≤2⋅105) — the number of classes in the school.The second line contains nn positive integers a1a1, a2a2, ……, anan (1≤ai≤1091≤ai≤109) — the lengths of the class scenes.
+OutputPrint a sequence of nn integers in a single line — f(a1)f(a1), f(a1f(a1,a2)a2), ……, f(a1f(a1,a2a2,……,an)an).
+ExamplesInputCopy1
+1
+OutputCopy1 InputCopy3
+1 4 2
+OutputCopy1 1 2 InputCopy7
+2 12 4 8 18 3 6
+OutputCopy0 1 1 1 2 2 2 
+NoteIn the first test we can change 11 to 22, so the answer is 11.In the second test:   [1][1] can be changed into [2][2],  [1,4][1,4] can be changed into [3,4][3,4],  [1,4,2][1,4,2] can be changed into [2,3,2][2,3,2]. 

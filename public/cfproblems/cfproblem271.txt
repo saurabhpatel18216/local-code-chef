@@ -1,0 +1,16 @@
+Igor is in 11th grade. Tomorrow he will have to write an informatics test by the strictest teacher in the school, Pavel Denisovich. Igor knows how the test will be conducted: first of all, the teacher will give each student two positive integers aa and bb (a<ba<b). After that, the student can apply any of the following operations any number of times:   a:=a+1a:=a+1 (increase aa by 11),  b:=b+1b:=b+1 (increase bb by 11),  a:=a | ba:=a | b (replace aa with the bitwise OR of aa and bb). To get full marks on the test, the student has to tell the teacher the minimum required number of operations to make aa and bb equal.Igor already knows which numbers the teacher will give him. Help him figure out what is the minimum number of operations needed to make aa equal to bb.
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤1041≤t≤104). Description of the test cases follows.The only line for each test case contains two integers aa and bb (1≤a<b≤1061≤a<b≤106).It is guaranteed that the sum of bb over all test cases does not exceed 106106.
+OutputFor each test case print one integer — the minimum required number of operations to make aa and bb equal.
+ExampleInputCopy5
+1 3
+5 8
+2 5
+3 19
+56678 164422
+OutputCopy1
+3
+2
+1
+23329
+
+NoteIn the first test case, it is optimal to apply the third operation.In the second test case, it is optimal to apply the first operation three times.In the third test case, it is optimal to apply the second operation and then the third operation.

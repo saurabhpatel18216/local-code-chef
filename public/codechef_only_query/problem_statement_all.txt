@@ -1,0 +1,320 @@
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  There are NN students standing in a row and numbered 11 through NN from left to right. You are given
+ Read problems statements in Mandarin Chinese and Russian  Given an array A1,A2,...,ANA1,A2,...,AN, count the number of subarrays of array AA which are non-decreasing. A subarray A[i,j]A[i,j], where 1≤i≤j≤N1≤i≤j≤N is a sequence of integers
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  There's an array A consisting of N non-zero integers A1..N. A subarray of A is called alternating if any two adjacent elements
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese.  There are NN guests (numbered 11 through NN) coming to Chef's wedding. Each guest is part of a family; for each valid
+ Read problems statements in Mandarin Chinese and Russian.  Nobody knows, but NN frogs live in Chef's garden.  Now they are siting on the X-axis and want to speak to each other. One
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Get excited, folks, because it is time for the final match of Codechef Premier League (CPL)!  Mike and Tracy
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  A palindrome is a string that reads same in both directions: forwards and backwards. For example, the strings radar and noon are
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Limak has a grid that consists of N rows and N columns. He randomly wrote all numbers 1 through N2 in the
+ Read problems statements in Mandarin Chinese  and Russian.  Chef likes to play games a lot. Gravity Guy is one such interesting game.  "Gravity Guy is an arcade side-scrolling game in which
+ A thermal decomposition reaction is breakdown of a compound into one or more compounds when heated.  For example, P→a⋅Q+b⋅RP→a⋅Q+b⋅R is a decomposition reaction. Here, 11 unit of PP is converted into aa unit
+ Read problems statements in Russian also.  Chef likes playing with strings. The most interesting game are named "CHEF in string". The move of the game consists of the following: Chef takes a subsequence
+ Read problems statements in English, Mandarin Chinese and Russian as well.  Sherlock is stuck. There is a N X N grid in which some cells are empty (denoted by ‘.’), while some cells
+ Read problems statements in Mandarin Chinese  and Russian.  You are given a string S of length N consisting only of 0s and 1s. You are also given an integer K.  You
+ Read problems statements in Mandarin Chinese  and Russian.  You have an array of integers A1, A2, ..., AN. The function F(P), where P is a subset of A, is defined as the
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  You are given a rooted tree with NN nodes (numbered 11 through NN); node 11 is the root. Each node
+ Chef Po had recently started home delivery service for pizzas. Po has only a single delivery boy that delivers the orders by riding his motorcycle. The motorcycle has an unlimited capacity of fuel tank.
+ Read problems statements in Mandarin chinese, Russian and Vietnamese as well.  There is a straight road that passes through N short tunnels. At the entrance to the first tunnel, there are C cars
+ It's finally summer in Chefland! So our chef is looking forward to prepare some of the best "beat-the-heat" dishes to attract more customers. He summons the Wizard of Dessert to help him with one
+ BILLIARDS is a really interesting game. It is played on a green baize with 3 balls-red, white and yellow. Sheldon and Leonard are playing a game of billiards. Sheldon is playing the game for
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Chef is given a sequence of prime numbers A1,A2,…,ANA1,A2,…,AN. This sequence has exactly 2N2N subsequences. A subsequence of AA is
+ Read problems statements in Mandarin Chinese  and Russian.  Andy and Bob are the only two delivery men of Pizza-chef store. Today, the store received N orders.  It's known that the amount
+   Flippy the Bird has proposed n problems for the MCO qualifiers. He has labelled the problems from 1 to n. Fluffy the Squirrel has reviewed the problems, and assigned a difficulty rating
+ Read problems statements in Mandarin Chinese  and Russian.  Oh, no! Chef’s in trouble. He’s got himself stuck in a cave (we don’t know how) and is looking for a way out. The
+ Read problems statements in Mandarin chinese, Russian and Vietnamese as well.  For a string S, let's define a function F(S) as the minimum number of blocks consisting of consecutive identical characters in S.
+ Aujasvit just came up with a new game to play with his friends. NN people stand in a circle, each assigned an index from 11 to NN in clockwise order. Then the following operation
+ Read problems statements in Russian here  Polo, the Penguin, has a lot of tests tomorrow at the university.  He knows that there are N different questions that will be on the tests.
+ Read problems statements in Mandarin chinese, Russian and Vietnamese as well.  Chef is so good at programming that he won almost all competitions. With all the prizes, Chef bought a new house. The
+ Read problems statements in Russian also.  After visiting a childhood friend, Chef wants to get back to his home. Friend lives at the first street, and Chef himself lives at the N-th (and
+ Bhallaladeva was an evil king who ruled the kingdom of Maahishmati. He wanted to erect a 100ft golden statue of himself and he looted gold from several places for this. He even looted his
+ Read problems statements in Mandarin Chinese  and Russian.  Little Elephant and his friends are going to a party. Each person has his own collection of T-Shirts. There are 100 different kind of
+ Read problems statements in Mandarin Chinese  and Russian.    Being a CS student, Ron really don't understand why he has to take a compulsory course called "Art in Digital Age". 
+ Read problems statements in Mandarin Chinese  and Russian.  As part of a new program to attract tourists to Byteland, Chef has been placed in charge of organizing a series of bus tours
+ Read problems statements in Mandarin Chinese  and Russian  Eugene has a sequence of upper hemispheres and another of lower hemispheres. The first set consists of N upper hemispheres indexed 1 to N
+ As we all know, F.C. Barcelona is the best soccer team of our era! Their entangling and mesmerizing game style usually translates into very high ball possession, consecutive counter-attack plays and goals. Lots of
+ You have two binary strings AA and BB, both of length NN. You have to merge both the binary strings to form a new binary string CC of length 2⋅N2⋅N. The relative order of
+ Read problems statements in Mandarin Chinese  and Russian.  Given three positive integers N, L and R, find the number of non-decreasing sequences of size at least 1 and at most N, such
+ Chef is playing a game on a sequence of NN positive integers, say A1,A2,...ANA1,A2,...AN The game is played as follows.  If all the numbers are equal, the game ends. Otherwise Select two numbers
+ Read problem statements in Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  You are given two integers NN and KK, and an array AA of NN integers. You have to choose KK disjoint
+ Read problems statements in Mandarin Chinese  and Russian.  Alok-nath is man of equality. He needs your help to divide his “sanskars” evenly amongst all his followers. By doing this, Alok-nath can create
+ Read problems statements in English, Mandarin Chinese and Russian as well.  Given an array A1,A2...AN, you have to print the size of the largest contiguous subarray such that  LCM of all integers
+ Read problems statements in Mandarin Chinese  and Russian.  Let's consider a rectangular table R consisting of N rows and M columns. Rows are enumerated from 1  to N from top to
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Chef is a big fan of soccer! He loves soccer so much, that he even invented soccer for his pet dogs! Here
+ Read problems statements in Hindi, Mandarin chinese, Russian, Vietnamese and Bengali as well.  Chef likes to solve difficult tasks. This time, he tried to solve the Big Famous Unsolvable A+B=CA+B=C. One of his
+ Shiro is leading an army to save the princess of his kingdom "Abra". The princess has been made a prisoner by the neighboring kingdom "Kadabra". Kadabra is a magical land and is full of
+ Read problems statements in Mandarin Chinese  and Russian.  Chef loves to prepare delicious dishes. He has prepared N dishes numbered from 1 to N for this year's MasterChef contest. He has presented
+Error Loading Problem
+ Read problems statements in Mandarin Chinese  and Russian.  Maxim likes arithmetic progressions and does not like sequences which are not arithmetic progressions.  Now he is interested in the question: how many
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Chef has a two-dimensional matrix A of dimensions N × M, (N rows and M columns).  He calls the matrix A
+ Read problem statements in Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Chef has a tree GG with NN nodes (numbered 11 through NN) and N−1N−1 undirected edges. For each node uu in
+ Read problem statements in Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Consider NN binary variables x1,x2,…,xNx1,x2,…,xN. For each valid ii, the ii-th of these variables can be xi=0xi=0 or xi=1xi=1; therefore, there
+ Kira likes to play with strings very much. Moreover he likes the shape of 'W' very much. He takes a string and try to make a 'W' shape out of it such that each
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  You are given a sequence A1,A2,…,ANA1,A2,…,AN. You may perform the following operation an arbitrary number of times (including zero): choose
+ Read problem statements in Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  There is a building with NN floors (numbered 11 through NN from bottom to top); on each floor, there are MM
+ Andriy and Serhiy are little students from the Lyceum of Kremenchuk. Yesterday there was a great party in the city - Chef's birthday. There were a lot of famous programmers at the party and,
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Chef has a sequence of integers A1,A2,…,ANA1,A2,…,AN. He takes a sheet of paper and for each non-empty subsequence BB of
+ Read problems statements in Mandarin Chinese  and Russian.  Little Elephant from Zoo of Lviv likes to paint. He has n objects to paint, ordered in a row and numbered form left to
+ At the ACME University, as part of the Graduate course work, each student is required to undergo project work. The authorities always make an effort to find a match among the students’ interests and
+ Read problems statements in Mandarin Chinese and Russian as well.  Petr, Nikita G. and Nikita are the most influential music critics in Saint-Petersburg. They have recently downloaded their favorite band's new album and
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  NN integers A1,A2,…,ANA1,A2,…,AN are placed in a circle in such a way that for each valid ii, AiAi and Ai+1Ai+1
+ Read problem statements in Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  You are given a tree with NN nodes (numbered 11 through NN), rooted at node 11. For each valid ii, node
+ Read problems statements Hindi ,Bengali , Mandarin chinese , Russian and Vietnamese as well.  .  Chef offers delicious food in his restaurant, but he wants to make it a more attractive place
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Last week Penguin Charlie had a birthday. Chef presented him a string S.  Unfortunately, Charlie doesn't like string S, he likes
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Chef is trying to open the oven in his kitchen to cook some cookies. However, the oven is special ―
+ Ramesh, Suresh, Mahesh, and Mukesh are moving to a new city and are looking for apartments to live.  Now this city is not like any other city. This city is a matrix of
+ Little Chief loves math. Most of all, he loves equations. He can solve any equation in the whole world. Recently he found one interesting and easy equation  x1d+x2d+x3d ≡ m (mod N) Where
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Sergey recently studied lock-free data structures. He particularly liked the data structure called Lock-Free Stack.  So, lock-free stack is basically an
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Let's call a positive integer MM a beautiful number if the following conditions are satisfied:  The decimal representation of
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Nobody outside the cooking community knows that Chef is a big fan of Chefgram™ — a social network where chefs and cooks
+ It is well-known that the elephants are afraid of mouses. The Little Elephant from the Zoo of Lviv is not an exception. The Little Elephant is on a board A of n rows and
+Error Loading Problem
+ Read problems statements in Mandarin Chinese  and Russian.  Chef studies very well in his University. There is only one professor who doesn't want to give him the highest grade, A. Chef has
+ Read problems statements Mandarin , Bengali , Hindi , Russian and Vietnamese as well.  There are NN buckets numbered 11 through NN. The buckets contain balls; each ball has a color between 11
+ "The Mars Orbiter Mission probe lifted-off from the First Launch Pad at Satish Dhawan Space Centre (Sriharikota Range SHAR), Andhra Pradesh, using a Polar Satellite Launch Vehicle (PSLV) rocket C25 at 09:08 UTC (14:38
+ Read problems statements in Mandarin Chinese  and Russian.    Nobody knows but Chef can play with words! He has a word. He claps and each letter of the word transform to
+ Read problems statements in Mandarin chinese, Russian and Vietnamese as well.  You are given a sequence of integers A1,A2,…,ANA1,A2,…,AN.  You should choose an arbitrary (possibly empty) subsequence of AA and multiply each
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Chef's team is going to participate at the legendary math battles. One of the main task in the competition is to calculate
+ Read problems statements in mandarin chinese, russian and vietnamese as well.  Yesterday Chef had cooked N very tasty dishes. A dish is prepared of several ingredients. You are given this information by N
+ Read problems statements in mandarin chinese, russian and vietnamese as well.  Chef has an array A = (A1, A2, ..., AN), which has N integers in it initially. Chef found that for i
+ Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.  A manufacturing project consists of exactly KK tasks. The board overviewing the project wants to hire KK teams of workers
+ Alice and Bob have decided to play the following game. Initially there are N diamonds placed in a straight line. Diamonds numbered from 1 to N in consecutive order. Each diamond has a specific
+ Alice likes to shop online. The main reason is that she gets a lot of discounts! There are M online shops from where she purchases her items. The prices of the same item vary
+ Read problems statements in Mandarin Chinese  and Russian.  The Aa'ugld alphabet consists of M letters, which we'll denote by integers from 1 to M in alphabetical order - the smaller number a
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  After failing to clear his school mathematics examination, infinitepro decided to prepare very hard for his upcoming re-exam, starting with
+ Read problems statements in Mandarin Chinese  and Russian.  Chef loves brackets. So much so, that rather than just use plain brackets like (), {}, or [], he has invented his own notation
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Chef has an array A consisting of N elements. He wants to find number of pairs of non-intersecting segments [a, b] and
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  To heal people with virus infections, Ada designed small robots (nanobots) that travel through the bloodstream, scanning all tissues of
+ "Nine is considered a good number in Chinese culture because it sounds the same as the word "long-lasting". Hence many             people want
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  You are given two integers NN and MM. Find the number of sequences A1,A2,…,ANA1,A2,…,AN, where each element is an integer
+ Read problems statements in Mandarin Chinese and Russian as well.  Captain Dehatti from Bawanian village is making strategy to win the Fake Cricket World Cup organised in his village.  He want his
+ Read problems statements in Mandarin Chinese, Russian, Vietnamese and Bengali as well.  An array AA consisting of NN integers is called KK-beautiful if it holds the following property: The number of adjacent indices
+ Read problems statements in Mandarin Chinese  and Russian.  Statement  Yet another game from chef. Chef gives you N cards and M bags. Each of the N cards has an integer written
+ Read problems statements in Mandarin Chinese  and Russian.  Let’s remember the problem Mountain holidays (MOU1H). The story of Mountain holidays is the following. Some time ago, Chef discovered that more and more
+ Chef likes cooking. But more than that, he likes to give gifts. And now he wants to give his girlfriend an unforgettable gift. But unfortunately he forgot the password to the safe where the
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Jem couldn't even finish half of the homework exercises in "Advanced topics in algorithm" class. The teacher is really upset and gives
+ Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.  Ridbit is given an array a1,a2,…,aNa1,a2,…,aN. He needs to find the number of ways to divide the array into contiguous
+ You are given a family tree with NN members numbered 1...N1...N. Every person ii, except for the founder of the family (root) has a parent denoted by P[i]P[i]. P[root]P[root] = -1 by definition. Person
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Chef has a string AA with length NN. It contains only characters '(', ')' and '*'. Chef wants to perform
+ You are given a matrix A that consists of N rows and M columns. Every number in the matrix is either zero or one. Calculate the number of such triples (i, j, h) where
+ Read problems statements in Mandarin Chinese  and Russian.  The Little Elephant from the Zoo of Lviv is going to the Birthday Party of  the Big Hippo tomorrow. Now he wants to
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Chef's loves his dog so much! Once his dog created two strings a and b each of length n consisting of digits
+ “Jesse, you asked me if I was in the meth business, or the money business… Neither. I’m in the empire business.”  Walter’s sold his stack in Gray Matter Technologies, a company which he
+ Chef Sridhar listenes to music while cooking. He realized that the lyrics of many songs contain the same words. He thought of a task to do in his leisure; pick a set of words
+ Read problems statements in Mandarin Chinese  , Russian and Vietnamese  Churu is taking the course called “Introduction to Data Structures”. Yesterday, he learned how to use a stack to check is a
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  You are given a string SS. Find the number of ways to choose an unordered pair of non-overlapping non-empty substrings
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Chef recently learned about the classic Longest Increasing Subsequence problem. However, Chef found out that while the length of the longest increasing
+ Read problems statements in Mandarin Chinese  and Russian.  Consider directed graph which has n + 2 layers numbered from left to right by integers from 0 up to n + 1. The
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Tuzik and Vanya are playing the following game.  They have an N × M board and a chip to indicate the
+ Read problems statements in Mandarin Chinese  and Russian.  A meteor fell on Andrew's house. That's why he decided to build a new home and chose a site where he wanted to build
+ In Domino Solitaire, you have a grid with two rows and NN columns. Each square in the grid contains an integer AA. You are given a supply of rectangular 2×12×1 tiles, each of which
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  You have a tree consisting of n vertices. You want to color each vertex of the tree in one of the k
+   Mr.DBShah is the creater of this beautiful place. So being the creater of these island Mr.DBShah has the power take travels from x to 2x island in return of 2 pound and
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  There are NN heaps of candies (numbered 11 through NN); for each valid ii, the ii-th of them contains exactly
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  A recent glut in Chefland's markets has caused the local currency Peppercorn to devaluate sharply. (Peppercorns are getting cheaper on an average,
+ Read problems statements in Mandarin Chinese  and Russian.  In this problem Sereja is interested in number of arrays A[1], A[2], ..., A[N] (1 ≤ A[i] ≤ M, A[i] - integer)  such
+ Read problem statements in Mandarin Chinese and Bengali.  Let's define Fibonacci concatenation sequence as follows:  f[0]=0f[0]=0, f[1]=1f[1]=1 f[i]=f[i−1]+f[i−2]f[i]=f[i−1]+f[i−2], for every i≥2i≥2  Here f[i]f[i] denotes the ithith Fibonacci concatenation number and ++
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  An even sequence has the following property: each maximal contiguous subsequence which contains only equal integers (i.e. the same integer
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  You are given a string s consisting of upper case Latin alphabets, i.e. from 'A' to 'Z'. Your task is to find
+ Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.  We say that a binary string (a string containing only characters '0' and '1') is pure if it does not
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  There are NN points in a plane (numbered 11 through NN). For each valid ii, the coordinates of the ii-th
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Chef has recently learned robotics and has now been able to construct a robot that's much better than his robots from last
+ A late night party is going on in hotel Taj. There are N persons numbered from 1, 2, 3 ..... N (assume one based indexing) and a celebrity is present in the party. Some
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Mr. Wilson was planning to record his new Progressive Rock music album called "Digits. Cannot. Separate". Xenny and PowerShell, popular pseudo-number-theoreticists from
+ Read problems statements in Mandarin Chinese  and Russian.  Sereja and Arrays  Sereja have an array that consist of n integers a1, a2, ..., an (0 ≤ ai ≤ 1). Sereja can make next operation: 
+ You’re given a tree with NN nodes (where each node ii has a value AiAi) and QQ queries in the form uu vv. The answer to each query is the XOR of value of
+ Chef lives in Chefland. Chefland can be accurately represented by a certain number of intersections and the roads connecting them. Chefland is a strange place, because all the roads there are one-way. Also, for
+ A DNA sequence can be represented by a string of letters T, A, C, and G representing four different amino acids. DNA sequences are often matched to infer structural or functional similarities between living
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Nikki has NN coconuts, she wants to prepare a special coconut soup for her best friend Mansi. In order to
+ Meanwhile, Candace and Stacy are busy planning to attend the concert of the famous Love Händel. Jeremy will also be attending the event. Therefore, Candace plans to offer the best possible gift to Jeremy.
+ Read problems statements in Mandarin Chinese and Russian as well.  Statement  Chef gives you a book with N pages. The pages are numbered from 1 to N.  Chef randomly selects a
+ Read problems statements in Mandarin chinese and Vietnamese as well.  You are given a grid of (not necessarily non-negative) integers GG with NN rows and MM columns. Let's denote the integer in the
+ Hash functions are primarily used to generate fixed-length output data that acts as a shortened reference to the original data. This is useful when the original data is too cumbersome to use in its
+ Read problems statements in Russian also.  Chef plays with the sequence of N numbers. During a single move Chef is able to choose a non-decreasing subsequence of the sequence and to remove it
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Chef is a big fan of soccer! He loves soccer so much that he even invented soccer for dogs! Here
+ Zotlin is an object-oriented programming language that provides features such as Classes and Functions. Zotlin also has the following features:  A function with the same name and same declarations can have different implementations
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  You are given a rooted tree consisting of N nodes. The nodes are numbered from 1 to N, and node 1 is
+ Read problems statements in Mandarin Chinese  and Russian.  Little Elephant from Zoo of Lviv has n (0-based numeration) blocks consisted of 1x1x1 cubes in such way that the size of i-th block
+ Read problem statements in Russian, Mandarin Chinese, Bengali, and Vietnamese as well.  Chef's school semester lasts for nn days. Chef's teacher gives the students some homework every day and it is compulsory to
+ The mayor of Townsville City wants to build a telephone network in the city. The city is represented as a square grid of size NN x NN. Rows and columns of the grid are
+ Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese and Bengali as well.  As everybody knows, Reza Shiri is the favourite Iranian artist. Since we love Reza Shiri and his songs, we never
+ Alice and Bob have come to spend their day in a FunFair which is close to their house. They have played almost all games and seen all the attractions. But there's one game left
+ Motu is playing a game. In this game he has given NN boxes. First box contains exactly PP ball(s) and last box contains exactly QQ ball(s). He needs to fill the rest boxes with
+ Read problems statements in Mandarin Chinese and Russian as well.  You are given a character parenthesis array and an integer array.  You need to find the maximum sum sub-array in the integer
+ Read problems statements in Mandarin Chinese  and Russian  Chef the chief is participating in a hill jumping competition.  There are N hills arranged in a row, and each of them is
+ A number is said to be a palindrome if it remains the same when it is read backwards. Eg. 1202112021 is pallindrome while 2121 is not A number is called total-palindromic if it contains
+ Dr. Bobo, while working in his laboratory, thought of an interesting problem. He has spent considerable time trying to find a solution but in vain. So he turns to you to find the solution
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  January and February are usually very cold in ChefLand. The temperature may reach -20 and even -30 degrees Celsius. Because of that,
+ Read problems statements in Mandarin Chinese and Russian as well.  Crueland is a dangerous region following ancient traditions. Every day, there are confrontations among local rulers, and thus many civilians are forced to
+ Problem is very simple, you're given an array a, consisting of integers . There are m integers   For each integer  Find number of distinct elements among  Input  First line
+ Chef has many friends, but his best friend is Hemant. They both love to watch anime. In fact, their weekends are meant for that only. Also, Hemant is highly into games, of which Chef
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Chef has a nice job. Actually he doesn't even remember what he is supposed to do there, because he just plays video-games
+ Read problems statements in Mandarin Chinese  and Russian. Sereja call two arrays A and B with length n almost equal if for every i (1 <= i <= n) CA(A[i]) = CB(B[i]) .
+ Akshay has been given a problem by his teacher to find the maximum sum of subarray given an array of nn length.  A subarray of an array is an array composed from a
+ Read problems statements in Mandarin chinese, Russian and Vietnamese as well.  Raghav studies in NSIT and is bored of the regular hostel mess food. For a change he went to a sweet shop
+ Shaun was given NN pairs of parenthesis ( )  by his teacher who gave him a difficult task.The task consists of two steps. First,Shaun should colour all NN pairs of parenthesis each with
+ Read problems statements in Mandarin Chinese here  Problem Statement  Past  In the year 2048, the Virtual Reality Massively Multiplayer Online Role-Playing Game (VRMMORPG), Code Art Online (CAO), is released. With the
+ Read problems statements in Mandarin Chinese and Russian.  Sereja has a rooted tree of N nodes with node 1 being the root node. He wants to find the number of ways of assigning
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Chef has a tree with NN nodes (numbered 11 through NN) and a non-negative integer xx. The nodes of the
+ Read problems statements Bengali , Mandarin chinese and Vietnamese as well.  In Chefland, there are NN cities (numbered 11 through NN) connected by N−1N−1 bidirectional roads in such a way that it is
+ Caroline is a huge tennis fan. She loves watching tennis and especially rooting for players of Strangeland, her native country.  Generally, tennis tournaments are played using the Olympic system. Let's consider such a
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Chef has a problem - he likes a girl but she has 32 secrets and N friends (also girls).  Chef has
+ Given a sequence XX of length MM, f(X)f(X) is defined as f(X)=∑M−1i=1|Xi+1−Xi|f(X)=∑i=1M−1|Xi+1−Xi|.  Specifically, if M=1M=1, then f(X)=0f(X)=0.  For e.g., f([3,1,7,2])=|1−3|+|7−1|+|2−7|=13f([3,1,7,2])=|1−3|+|7−1|+|2−7|=13  JJ has an array AA of length NN. He wants to
+ You are given NN and there exists an array of NN items, which only the Chef knows. The i-th item of the array will have a weight (WiWi) and a profit (PiPi) value associated
+ Chef has a sequence of NN integers A1,A2,…,ANA1,A2,…,AN. He defines a function f(i,j)f(i,j) as follows:  f(i,j)=Ai+max(Ai,Ai+1)+max(Ai,Ai+1,Ai+2)+⋯+max(Ai,Ai+1,…,Aj)f(i,j)=Ai+max(Ai,Ai+1)+max(Ai,Ai+1,Ai+2)+⋯+max(Ai,Ai+1,…,Aj)  Chef tries to find the sum of f(i,j)f(i,j) over all (i,j)(i,j) such that 1≤i≤j≤N1≤i≤j≤N (i.e∑i=1n∑j=inf(i,j))(i.e∑i=1n∑j=inf(i,j)), but
+ There is a grid containing NN rows and NN columns. The cell at the ithith row from the top and jthjth column from the left is a passable space if Si,jSi,j is '.' and
+ Read problems statements in Russian here  Chef's Girl Friend has given him a unique gift. She has given him a string S. Chef being a gentleman wants to return her gift in a
+   Fluffy the squirrel lives in a big city, which contains n towns. There are m uni-directional roads in the city. ci people live in town i. For each town i, Fluffy starts
+ Read problems statements in Russian here  Polo, the Penguin, likes the XOR operation. Please read NOTE if you are not familiar with XOR operation.  XOR-sum of a list of numbers is the
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  The Professor is going on a trip with his family this weekend. The country where they live is a federation
+ Read problems statements in Mandarin Chinese  and Russian.  Sereja and Dima play the game. The rules are as follows:  Initially, there are n cards on the table, each card has a
+ Jimma the cat had placed N bowls of cat food in a line. The amount of food in each bowl is an integer and is given to you as the array A[1], A[2], ...
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Chef loves to make dishes. Currently, he has NN ingredients (numbered 11 through NN) which he can use to cook
+ Nearly 109+7109+7 trillion kilometers far away from the Milkyway, there exists a parallel Universe of Light called the Cosmos of Solon where each planet is called a Temple. There are total NN temples. Unlike
+ Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.  You are given three integers NN, KK and XX. Is it possible to find a sequence of non-negative integers A1,A2,…,ANA1,A2,…,AN
+ Read problems statements in mandarin chinese, russian and vietnamese as well.  Given a board of N rows and M columns, place the minimum number of knights such that every cell either contains a
+ You have a set of unique numbers. You are trying to find a subset of this set such that no two numbers in the subset have a common digit. There will of course be
+ Read problems statements in Mandarin Chinese and Russian as well.  Problem description  Rudreshwar likes random numbers and random arrays. Today Rudreshwar started playing with a couple of Arrays A and B, each
+ Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.  As we all know, Chefland consists of NN cities (numbered 11 through NN) connected by N−1N−1 roads in such a
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  For a sequence of positive integers A1,A2,…,AKA1,A2,…,AK, let's define the number of inversions in it as the number of pairs
+ Read problem statements in Mandarin, Russian, and Vietnamese as well.  You are given a tree with NN nodes rooted at node 11, and your task is to color each node of the tree
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Sereja asks you to find out number of arrays A of size N, i.e. A1, A2, ..., AN (1 ≤ Ai ≤
+ CodeChef has received a package of N ingredients from Aloo uncle and Kachori aunty as their Christmas gift. CodeChef decides to make dishes with every possible combination of these N ingredients. (Note: A dish
+ You are given two arrays AA and BB, both of length NN.  You would like to choose exactly KK distinct indices i1,i2,…,iKi1,i2,…,iK such that min(Ai1+Ai2+…+AiK,Bi1+Bi2+…+BiK)min(Ai1+Ai2+…+AiK,Bi1+Bi2+…+BiK) is maximized. Find this maximum value.  Input
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Chef loves to listen bird's chirping. Now Chef is in his office and is missing the chirping of birds after getting bored
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Little Alice likes to play with her collection of N integers. She knows her collection very well, and often likes to come
+ Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.  Note: For the problem KPERM, we have observed that PYPY3 performs better than Python3.  You are given integers NN,
+ Chozi is, as usual, late for his class and is stuck on a staircase where he is being very skeptic about taking them since some of the stairs are wet and Chozi is wearing
+ Chef Ciel is participating in an arithmetic contest now. Why? Because of the top prize for the contest, a limited edition kitchen knife.  But to win the contest she must calculate the values
+ Ish went to a Trikon City where all the houses are triangular in shape. There he saw a lot of food shortage among the people due to the impact of COVID-19. His father is
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Chef has a sequence A1,A2,…,ANA1,A2,…,AN. The sequence is circular, i.e. for each valid ii, elements AiAi and Ai+1Ai+1 are considered
+ Read problems statements in Russian here  The Head Chef is interested in studying interactions between his chefs . There are  N  chefs with ids 1 to N . Each chef trusts
+ Chef likes numbers and number theory, we all know that. There are N digit strings that he particularly likes. He likes them so much that he defines some numbers to be beautiful numbers based
+   Flash and QuickSilver challenge each other to a faceoff. They stand at the top of a huge staircase where the steps are numbered from n down to 1. In a single step,
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Nikitas does not want to study for his exams, so he decided to become a disruptor and get a part-time
+ It is the last day of covid and you are coming back to your home with two empty sacks. On the way to your home, you found Ambani brothers donating all their wealth in
+ Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.  Chef is fond of pepperoni pizza, as we saw here. Once again, he has a pepperoni pizza in the shape
+ Flippy the bird has a tree with NN nodes. Each edge has a weight wiwi. We can choose one of the vertices as the root of the tree, say rr. Then, the height of
+ Chef is again playing a game with his best friend Garry. As usual, the rules of this game are extremely strange and uncommon.  First, they are given a stack of NN discs. Each
+ Read problems statements in Mandarin Chinese and Russian as well.  One day, you decided to write a message to your girl friend consisting of N uppercase English letters.  Your girlfriend's alphabet is
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Abdullah has recently moved to Tolland. In Tolland, there are NN cities (numbered 11 through NN) connected by N−1N−1 bidirectional
+ Chef's college is conducting online exams. Chef has a test tomorrow and he being irresponsible failed to prepare for it on time (just as always). However, fortunately, he now realises the gravity of the
+ The Little Elephant from the Zoo of Lviv believes in magic.  He has a magic board A that consists of N rows and M columns. Each cell of the board contains an integer
+ Read problems statements in mandarin chinese, russian and vietnamese as well.  Mathison and Chef are playing a new teleportation game. This game is played on a R×CR×C board where each cell (i,j)(i,j) contains
+ According to many researches, people can stand on a bus for several hours, but waiting for a bus for more than 30 minutes at a bus station can make us exhausted. The Chef is
+ Read problems statements in Mandarin Chinese and Russian as well.  You are given a sequence a1,a2,…,aNa1,a2,…,aN of non-negative integers. Your task is to process QQ queries of the following format: each query is
+ Read problem statements in Russian, Bengali, and Mandarin Chinese as well.  You are given an undirected graph with NN nodes (numbered 11 through NN) and MM edges. Each edge connects two distinct nodes.
+ Read problems statements in Mandarin chinese, Russian and Vietnamese as well.  Shortly after joining the Parliament, our Chef has been elected as the new Prime Minister. Now, being the PM, he can do
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Sometimes Sergey visits fast food restaurants. Today he is going to visit the one called PizzaKing.  Sergey wants to buy N
+ Alice and Bob have invented a new game. They have a rooted tree having NN nodes (rooted at node 11), and the ithith node has the value AiAi associated with it (11-indexed). The value
+ Professor Calculus wishes to hire graduate engineers for a few open positions in his funded projects. He has called K candidates for interview (numbered from 1 to K), and based on the profile of
+ J.D.  a travel freak guy in NIT goes to hills in Nepal. JD want to take  exactly kk  steps to reach to the top and in  each step he climb
+ Competitive Programmers love concise statements. Today, we have one such problem for you!  You're given an array A with N integers, A1, A2, A3....AN. You have to partition the elements of array A
+ Given a number n in one move you can either divide it by 5(if n%5==0) or subtract it by 3. You need to determine the minimum number of moves to make the n equal
+ Read problems statements in Mandarin Chinese here  Read problems statements in Russian here  Problem Statement  Chef studies combinatorics. He tries to group objects by their rang (a positive integer associated with
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  You are given a tree with NN vertices (numbered 11 through NN) and a sequence of integers A1,A2,…,ANA1,A2,…,AN. You may
+ Read problems statements in mandarin chinese, russian and vietnamese as well.  You are working in a company with N employees numbered from 0 to N - 1, and employee 0 is the director.
+ Read problems statements in Mandarin chinese, Russian and Vietnamese as well.  You are a citizen of Arrayland. Your President (Mr. P) has given you a mundane problem:  You're given an array a
+ "We’ve already come too far to end this now".  NN players advance to the fifth round and the game is going to be Hopscotch. Every player has to select one mannequin before the
+ You are given an array AA of size NN.  A partitioning of the array AA is the splitting of AA into one or more non-empty contiguous subarrays such that each element of AA
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Chefland is a city that always changes. It can be viewed as a grid with a fixed width NN (with
+ Read problems statements in Mandarin Chinese, Russian, Vietnamese and Bengali as well.  Chef invented a new game named Quick Battle Royale. NN people play the game. One or more rounds are played until
+ Read problem statements in Mandarin, Bengali, Russian, and Vietnamese as well.  You are given an integer KK and a tree of size NN, rooted at node 11. In one operation, you can either
+ Teddy Daniels is on a secret mission. He has to collect top secret information from various places to maintain order in the city. And, he has to report everything to his boss. He has
+ Read problems statements in Mandarin Chinese  and Russian.    Sereja has an array A that contains n integers, namely A1, A2, ..., An. A single action consists of performing one of
+ SemCrack is hosting a campus drive for emerging programmers, there are N number of programmers who  attended the drive and their skills are as follows S[0], S[1].....S[N-1] (assume 0 based indexing). Company has
+ Gru has come to Minionland to recruit some minions for his next robbery. There are NN minions available for recruitment and each minion has a skill value associated with it. These skill values are
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Chef is playing a card game called Blackjack. He starts with a deck of NN cards (numbered 11 through NN),
+   Fluffy the Squirrel is playing a game based on his friend Flippy the Bird. The game is called Flippy Bird. Initially, Flippy will be standing on the number 0 on the number
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Chef defined amazingness of a number n as follows. Let array a denote the decimal representation of n. amazingness of n is
+ You took a space craft on rent to visit Planet Stipi. On the way to Stipi, you decided to visit NN planets (numbered from 11 to NN) on the way to the destination (1st
+ Torque and Egdes  Torque (Yes! we don't have Chef today :P), the scientist is performing weird experiment on a tree. His tree contains N vertices and N-1 edges. Each vertex has some integer
+ Read problems statements Mandarin , Bengali , Hindi , Russian and Vietnamese as well.  Nadaca is a country with NN cities. These cities are numbered 11 through NN and connected by MM bidirectional
+ Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.  After learning about the bitwise AND operation, Ridbit challenged Ashishgup to solve the following problem.  Let's denote the bitwise
+ Neil has a perfect binary tree with NN nodes, and an integer MM. He can assign values to nodes. He calls the tree good if the following conditions are met:  Nodes' values are
+ Samosa Bhai got tired of the difficult tasks given by CodeChef along with meagre salary being paid to him. So he moves to Aloo uncle's village and opens a courier company there. In the
+ Read problems statements in Mandarin Chinese  and Russian.  Elections in Bytetown are coming soon!  Candidate Boris is going to have a small walk. Bytetown can be represented as N-dimensional cube with
+   Fluffy the Squirrel has an m times n grid of lights, where some of them are turned on. He thinks a subrectangle of the grid is called beautiful if the number of
+ Read problems statements in Mandarin Chinese and Russian as well.  You are given a function f which is defined as :    Your task is to find the value of 
+ Read problems statements Mandarin , Bengali , Hindi , Russian and Vietnamese as well.  You are given an array of integers [A1,A2,…,AN][A1,A2,…,AN]. Let's call adding an element to this array at any position
+ You can only jump from step−(x)step−(x) to step−(x+1)step−(x+1), step−(x+2)step−(x+2), or step−(x+3)step−(x+3).  You have to solve tt cases.  In each case, you are given an integer nn. You have to find the number
+ You are given a tree consisting of NN nodes. The nodes are numbered from 11 to NN. The tree is rooted at the node 11.  A tree is a connected undirected graph with
+   Fluffy the squirrel has a robot that is standing on some square (i, j) of an m times n grid. Fluffy can give the robot a command of length k, which consists
+ As you know, Malvika has created some n programming contests. Each of the contests has three problems, categorized as easy, medium and hard on difficulty level. For the ith contest, easy problem takes TE[i]
+ Read problems statements in Russian, Vietnamese, Hindi, Mandarin chinese and Bengali as well.  In between cooking lunch and dinner, Chef has decided to take some time off to read about the Activity Selection
+ The auditorium of Stanford University is made up of L*R matrix (assume each coordinate has a chair). On the occasion of an event Chef was called as a chief guest. The auditorium was filled
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Chef opened a chain of restaurants in Chefland and invited his KK friends (numbered 11 through KK) to move there.
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  You are given a set SS, which is a subset of {1,2,…,N}{1,2,…,N}.  Consider a permutation P1,P2,…,PNP1,P2,…,PN of the integers
+ Read problems statements in Mandarin Chinese  and Russian.  Devu likes to play with a lock of N dials. Each dial rotates from numbers 0 to 9 clockwise (i.e. 0 to 1, 2
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  The Mongoose Land consists of N cities and they are connected by N - 1 bidirectional roads in such a manner that
+ Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.  Alice thought of a function FF, which takes an arbitrary array of integers A=(A1,A2,…,AM)A=(A1,A2,…,AM) as the only argument and is
+ Cooper is dangling above Mann’s planet in his lander. Dr Mann has in vain tried to dock with the Endurance, resulting in a huge blast. Cooper is trying to save the Endurance by docking
+ Sereja has N boxes and M stones. There is a parameter energy associated with each empty box, denoted by Ei. He wants to move each stone into some box. After moving all the stones
+ An exam consists of N questions. The marks of the N questions are m1, m2, m3, .. mN respectively. Jam is giving the exam and he wants to maximise his number of marks. However
+ Read problems statements in Russian.  There's an N×NN×N grid where each cell of the grid contains a positive integer. Let Vi,jVi,j be the positive integer on the cell positioned ii-th rows from the
+ Read problems statements in Mandarin Chinese  and Russian.  A pair of non-negative integers (A,B) is called and-pair if A & B = B, i.e., bitwise-and of A and B is equal to
+ Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese and Bengali as well.  You are given a tree with NN vertices (numbered 11 through NN) and a bag with NN markers. There is
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  In Chef Rami's kitchen, there is a long counter divided into NN sections (numbered 11 through NN). For each valid
+ After the death of their mother, Alphonse and Edward now live with Pinako and Winry. Pinako is worried about their obsession with Alchemy, and that they don't give attention to their studies.  So
+ You are given a tree with NN vertices. The vertices are numbered from 11 to NN. Some of the vertices are colored black and some are colored red. Also, some vertices can be uncolored.
+ The Little Elephant from the Zoo of Lviv very likes coins. But most of all he likes colored coins.  He has N types of coins, numbered from 1 to N, inclusive. The coin
+ Read problems statements in Mandarin chinese, Russian and Vietnamese as well.  Chef has a tree with N nodes. Each node of the tree has an integer weight associated with it.  Let's define
+ Read problem statements in Mandarin Chinese, Russian, and Vietnamese as well.  You're given an array AA with NN integers.  Define F(A,i,j)=(A[j]−A[i])⋅(j−i)F(A,i,j)=(A[j]−A[i])⋅(j−i).  Consider the set PP of all pairs (i,j)(i,j) such that
+ Read problems statements in English, Mandarin Chinese and Russian as well.  You have a tree consisting of N vertices numbered 1 to N. Initially each edge has a value equal to zero. You
+ Read problems statements in Mandarin chinese, Russian and Vietnamese as well.  Chef has a string S with length N. As Chef really likes his name, he defines the chefness of a string as
+ King of Chefland is very crurcial and coward. Chef is one of the soldiers of the king. Chef is brave and very powerful soldier. This is the reason that king is affraid of Chef.
+ "This world is rotten. The rotten should die." - Kira. You have "N" shinigamis and "M" apples. You need to give a positive number of apples to every shinigami and also make sure that
+ Read problem statements in Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Only a few centuries later, the Berland government realized what was necessary for the country's prosperity. That's right, a dakimakura for
+ There is an urgent need of NN agents for NN missions. The missions are numbered from 11 to NN. All agents have some intelligence level denoted by their IQ (a positive integer ) .
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  In the original Chef and Gordon Ramsay problem, Chef wanted to close all but three of this restaurants, and used
+ A boy is playing a game on his old computer. The game involves a rectangular piece of land which is divided into m x n cells and an adventurer who is trying to get
+ Alice and Bob are given an array of length of NN. They decide to play a game with it.  Initially, Alice randomly shuffles the array, and then Bob takes NN turns. In each
+ Consider an infinitely large chess table. From the cell (0, 0), our knight has to move to the cell (X, Y) by the rule: our knight could only move from a cell (u, v)
+ Andrew likes colored balls very much.  He has N different colors of balls, all colors are numbered from 1 to N, inclusive. There are C1 balls of the first color, C2 balls of
+ Read problems statements in Mandarin Chinese  and Russian.  Devus are creatures living in Devupur. There are total n Devus in Devupur. ith Devu live in ith house. Houses 1, 2, 3, ,
+ Farzi Coder has been assigned an important coding assignment by his boss Programmer Bhai. Now, Farzi Coder has done coding his project and has to submit it to a central git repository.  
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Chef has recently set up a network between the N residents of the dormitory. Each resident owns a personal computer. There are
+ Enigma: The military machine used by Nazi Germany to encipher messages before and during World War II. The code of Enigma was broken once by Polish Cipher Bureau in 1932 and then again, during
+ Chefland consists of nn cities numbered 11, 22, …n…n. The cities numbered 11, 22, …k…k are special cities. For each unordered pair i,ji,j, there exists a bidirectional road, destroying which has a cost of
+ Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.  Chef Shahhoud wants to hire new chefs for his restaurant. Shahhoud posted a job offer on Chef Rami's paper "Fast
+ You are given an array A=[A1,A2,…,AN]A=[A1,A2,…,AN] containing NN elements. You are also given QQ ordered pairs of integers, where the ii-th pair is denoted (xi,yi)(xi,yi).  A subsequence of AA, say [Ai1,Ai2,…,Aik][Ai1,Ai2,…,Aik], is said
+ The rail system in Mumbai has changed. Now, you can buy a ticket from a station, and go to another station, if there are exactly K tracks on the route, and the route passes
+ Read problems statements in Mandarin chinese, Russian and Vietnamese as well.  You are given a sequence A with N elements and Q queries on this sequence. In each query, you are given two
+ Consider an array AA with NN positive integers.  Let BB be defined as an array of NN integers such that for each 1≤i≤N1≤i≤N:  Bi=Ai−1Bi=Ai−1, if AiAi is even. Bi=Ai+1Bi=Ai+1, if AiAi is
+ Ram brought home N identical crackers, and arranged them in a row. He then numbered all the crackers with positive integer numbers such that product of any two numbers is less than or equal
+ As we all know the formula of dearrangement in the form of the recursive equation but Chef forgot the main equation and wrote down the following:  A(n)=⎧⎩⎨2A(n−1)+3A(n−2),2,1,if n≥2if n=1if n=0A(n)={2A(n−1)+3A(n−2),if n≥22,if n=11,if n=0  One of his friend pointed
+ Read problems statements in Mandarin Chinese, Russian, and Bengali as well.  Your friend works as a valet where NN cars show up in a shift. The ii-th car will arrive TiTi seconds after
+ Professor PariBrajika is in Himalpur and wishes to go to Gyankut to attend a workshop. There are K temples on the way to Gyankut. The temples are numbered from 1 to K, Himalpur is
+ Read problems statements in Mandarin Chinese , Russian and Vietnamese as well.  You are given an array A, consisting of N integers and an array B, consisting of M integers.  The subsequence
+ You have a rooted tree consisting of nn vertices. There are some weights on each edge of the tree denoted by WiWi. The tree root is a vertex with number 11.  In this
+ Default Body   
+ Read problems statements Mandarin , Bengali , Hindi , Russian and Vietnamese as well.  There is an infinite sheet of paper and a pen. At any time, the pen may be placed above
+ A fair is organized in the village. There are N shops in the village fair. All the shops can be classified as a BadBad shop or a GoodGood shop. Each shop has certain number
+ Chef wanted to reach another milestone in his journey. So Chef decided to meet up with Unacademy. Chef was sure Unacademy will support him for eternity. But as tradition goes Unac from  Unacademy
+ Read problems statements in Mandarin chinese, Russian and Vietnamese as well.  Chef Dobby loves playing games, especially games related to numbers. So, today Bhuvan gave him a new game. The description of the
+ WARNING: This problem has large input / output files. Use of faster I/O methods is recommended.  Chef has a sequence of N positive integers { a1, a2, a3, ... aN }. The Sous
+ Bilbo is planning his eleventy first birthday. Yes, he will soon be 111 years old. He has to decide whom all to invite to the Party. There are N families in the Shire (numbered
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  Chef's apartment consists of MM floors (numbered 11 through MM), and there's an elevator that is used to move between
+ Read problems statements in mandarin chinese, russian and vietnamese as well.  Weasel loves histograms. Weasel feels that he is very much out of shape and asks for Chef’s advice. Chef convinced Weasel that
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Sereja has a box A with size N*N*N, where N=2Q for some integer Q. Each cell A(i, j, k) contains some binary
+ You're given a sequence of NN - distinct positive integers, not necessarily sorted in ascending order. Your task is pretty straightforward: sort the sequence in ascending order. At any point of time, you can
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Limak is a big grizzly bear who loves wrestling. He is going to participate in a coming tournament.  There will be
+ Read problems statements in Mandarin Chinese  and Russian  When Misha hits his favorite gym, he comes across an interesting problem with the barbell. In the gym, someone always leaves the weight plates
+ Omy and Ish were learning the pattern printing. In order to learn they give themselves a task. In this task they are given a string and they have to form a pyramid with the
+ Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.  You are given an integer sequence A1,A2,…,ANA1,A2,…,AN. Find the number of integer sequences X1,X2,…,XNX1,X2,…,XN such that  0≤Xi<2390≤Xi<239 for each
+ Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese and Bengali as well.  You are given NN intervals [L1,R1],[L2,R2],…,[LN,RN][L1,R1],[L2,R2],…,[LN,RN]. Consider NN integers x1,x2,…,xNx1,x2,…,xN such that:  xi∈[Li,Ri]xi∈[Li,Ri] for each valid ii all decimal
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.    Will Hunting was learning about Greatest Common Divisor (gcd) of two numbers and properties related to it. He came across
+ In the cursed land of earth where all crops are failing, Tom Cooper is trying to grow nn acres of crop this season, and he can grow one crop in an acre. Tom has
+ You are given a N×MN×M matrix AA, filled with distinct numbers. You can start at any cell. If you are currently at cell (x1,y1)(x1,y1), then you can jump to any other cell (x2,y2)(x2,y2), if
+ Dipu's hard disk crashed last week. He bought a new one and has already installed all necessary software. But he has lost his personal collection of media files. It is just unbearable! How can
+ As we all know that team LaZyProblemSetters with participants V, J and K is gearing up for ICPC 2015, and have decided to solve a problem set to practice for the prelims round. The
+ Chef and two of his friends are going on a biking trip this new year. They decided to rent three bikes from a shop.  The shop has NN bikes, the ii-th of which
+ You are given an array A=[A1,A2,…,AN]A=[A1,A2,…,AN] containing distinct positive integers.  Let BB be a permutation of AA. Define the value of BB to be ∑i=1N(BimodBi+1)∑i=1N(BimodBi+1)  where BN+1BN+1 is treated to be B1B1.
+   Seeing the current political scenario in the city of Delhi,and the clean sweep of the Aam Aadmi Party, you are wondering that its maybe time to change careers and start selling broomsticks.
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Chef has n non-negative integers a1, a2, ..., an. He defined the following function  f(k) = (a1k + a2k + ...
+ You are given a M×NM×N grid and on each cell there is a coin. A coin may have integral value denoted by  C[i][j]C[i][j]. If you're at a cell (i,j)(i,j), then you have to
+ The fight between Sardar Khan and Sultan to control Wasseypur is getting very intensifying. Sultan has asked Ramadhir to supply him with automatic guns in an attempt to dominate the battlefield. The Sardar family
+ Our Lonely Vijju is feeling sooo lonely that Sometimes he talks (rather shouts at god), "Why god, Why me!!!!, Where did i go wrong." The god had blessed him with only one thing ever,
+ Saitama finally got a date! However, his date, Fubuki,  was not impressed by him. She wanted to see how clever Saitama was.  Hence she asked him a question.  Saitama was given
+ WARNING: This problem has large input / output files. Use of faster I/O methods is recommended.  Chef has encrypted the super secret recipe for his bitsoup into a sequence of N unsigned integers
+ A classroom at the Academy of Bit Wizardry contains N rows of chairs. Each row, contains exactly M chairs. Each chair is expected to be filled by exactly one student; you may assume no
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.  Recently, Chef learned how to solve the Longest common subsequence problem. Being a fan of Ekta Kapoor1, he really likes problems which

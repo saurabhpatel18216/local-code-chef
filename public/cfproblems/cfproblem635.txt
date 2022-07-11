@@ -1,0 +1,9 @@
+Gregor is learning about RSA cryptography, and although he doesn't understand how RSA works, he is now fascinated with prime numbers and factoring them.Gregor's favorite prime number is PP. Gregor wants to find two bases of PP. Formally, Gregor is looking for two integers aa and bb which satisfy both of the following properties.  Pmoda=PmodbPmoda=Pmodb, where xmodyxmody denotes the remainder when xx is divided by yy, and  2≤a<b≤P2≤a<b≤P. Help Gregor find two bases of his favorite prime number!
+InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤10001≤t≤1000).Each subsequent line contains the integer PP (5≤P≤1095≤P≤109), with PP guaranteed to be prime.
+OutputYour output should consist of tt lines. Each line should consist of two integers aa and bb (2≤a<b≤P2≤a<b≤P). If there are multiple possible solutions, print any.
+ExampleInputCopy2
+17
+5
+OutputCopy3 5
+2 4
+NoteThe first query is P=17P=17. a=3a=3 and b=5b=5 are valid bases in this case, because 17mod3=17mod5=217mod3=17mod5=2. There are other pairs which work as well.In the second query, with P=5P=5, the only solution is a=2a=2 and b=4b=4.

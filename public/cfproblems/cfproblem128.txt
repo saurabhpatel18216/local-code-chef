@@ -1,0 +1,25 @@
+Gianni, SWERC's chief judge, received a huge amount of high quality problems from the judges and now he has to choose a problem set for SWERC.He received nn problems and he assigned a beauty score and a difficulty to each of them. The ii-th problem has beauty score equal to bibi and difficulty equal to didi. The beauty and the difficulty are integers between 11 and 1010. If there are no problems with a certain difficulty (the possible difficulties are 1,2,…,101,2,…,10) then Gianni will ask for more problems to the judges.Otherwise, for each difficulty between 11 and 1010, he will put in the problem set one of the most beautiful problems with such difficulty (so the problem set will contain exactly 1010 problems with distinct difficulties). You shall compute the total beauty of the problem set, that is the sum of the beauty scores of the problems chosen by Gianni.
+InputEach test contains multiple test cases. The first line contains an integer tt (1≤t≤1001≤t≤100) — the number of test cases. The descriptions of the tt test cases follow.The first line of each test case contains the integer nn (1≤n≤1001≤n≤100) — how many problems Gianni received from the judges.The next nn lines contain two integers each. The ii-th of such lines contains bibi and didi (1≤bi,di≤101≤bi,di≤10) — the beauty score and the difficulty of the ii-th problem.
+OutputFor each test case, print the total beauty of the problem set chosen by Gianni. If Gianni cannot create a problem set (because there are no problems with a certain difficulty) print the string MOREPROBLEMS (all letters are uppercase, there are no spaces).
+ExampleInputCopy2
+3
+8 4
+9 3
+6 7
+12
+3 10
+10 1
+10 2
+10 3
+10 4
+3 10
+10 5
+10 6
+10 7
+10 8
+10 9
+1 10
+OutputCopyMOREPROBLEMS
+93
+
+NoteIn the first test case, Gianni has received only 33 problems, with difficulties 3,4,73,4,7 which are not sufficient to create a problem set (for example because there is not a problem with difficulty 11).In the second test case, Gianni will create a problem set by taking the problems 22, 33, 44, 55, 77, 88, 99, 1010, 1111 (which have beauty equal to 1010 and all difficulties from 11 to 99) and one of the problems 11 and 66 (which have both beauty 33 and difficulty 1010). The total beauty of the resulting problem set is 10⋅9+3=9310⋅9+3=93.

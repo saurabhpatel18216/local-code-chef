@@ -1,0 +1,16 @@
+A dragon curve is a self-similar fractal curve. In this problem, it is a curve that consists of straight-line segments of the same length connected at right angles. A simple way to construct a dragon curve is as follows: take a strip of paper, fold it in half nn times in the same direction, then partially unfold it such that the segments are joined at right angles. This is illustrated here:  In this example, a dragon curve of order 33 is constructed. In general, a dragon curve of a higher order will have a dragon curve of a lower order as its prefix. This allows us to define a dragon curve of infinite order, which is the limit of dragon curves of a finite order as the order approaches infinity.Consider four dragon curves of infinite order. Each starts at the origin (the point (0,0)(0,0)), and the length of each segment is 2–√2. The first segments of the curves end at the points (1,1)(1,1), (−1,1)(−1,1), (−1,−1)(−1,−1) and (1,−1)(1,−1), respectively. The first turn of each curve is left (that is, the second segment of the first curve ends at the point (0,2)(0,2)). In this case, every segment is a diagonal of an axis-aligned unit square with integer coordinates, and it can be proven that there is exactly one segment passing through every such square.Given a point (x,y)(x,y), your task is to find on which of the four curves lies the segment passing through the square with the opposite corners at (x,y)(x,y) and (x+1,y+1)(x+1,y+1), as well as the position of that segment on that curve. The curves are numbered 11 through 44. Curve 11 goes through (1,1)(1,1), 22 through (−1,1)(−1,1), 33 through (−1,−1)(−1,−1), and 44 through (1,−1)(1,−1). The segments are numbered starting with 11.
+InputThe first line contains an integer nn (1≤n≤2⋅1051≤n≤2⋅105) — the number of test cases.Each of the following nn lines contains two integers xx and yy (−109≤x,y≤109−109≤x,y≤109) — the coordinates.
+OutputFor each test case, print a line containing two integers — the first is the index of the curve (an integer between 11 and 44, inclusive), and the second is the position on the curve (the first segment has the position 11).
+ExampleInputCopy5
+0 0
+-2 0
+-7 -7
+5 -9
+9 9
+OutputCopy1 1
+2 2
+3 189
+4 186
+2 68
+
+NoteYou can use this illustration to debug your solution:   

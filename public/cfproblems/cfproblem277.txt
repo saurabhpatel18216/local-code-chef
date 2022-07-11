@@ -1,0 +1,21 @@
+Given a cyclic array aa of size nn, where aiai is the value of aa in the ii-th position, there may be repeated values. Let us define that a permutation of aa is equal to another permutation of aa if and only if their values are the same for each position ii or we can transform them to each other by performing some cyclic rotation. Let us define for a cyclic array bb its number of components as the number of connected components in a graph, where the vertices are the positions of bb and we add an edge between each pair of adjacent positions of bb with equal values (note that in a cyclic array the first and last position are also adjacents).Find the expected value of components of a permutation of aa if we select it equiprobably over the set of all the different permutations of aa.
+InputThe input consists of multiple test cases. The first line contains a single integer tt (1≤t≤1051≤t≤105) — the number of test cases. Description of the test cases follows.The first line of each test case contains a single integer nn (1≤n≤1061≤n≤106) — the size of the cyclic array aa.The second line of each test case contains nn integers, the ii-th of them is the value aiai (1≤ai≤n1≤ai≤n).It is guaranteed that the sum of nn over all test cases does not exceed 106106.It is guaranteed that the total number of different permutations of aa is not divisible by MM
+OutputFor each test case print a single integer — the expected value of components of a permutation of aa if we select it equiprobably over the set of all the different permutations of aa modulo 998244353998244353. Formally, let M=998244353M=998244353. It can be shown that the answer can be expressed as an irreducible fraction pqpq, where pp and qq are integers and q≢0(modM)q≢0(modM). Output the integer equal to p⋅q−1modMp⋅q−1modM. In other words, output such an integer xx that 0≤x<M0≤x<M and x⋅q≡p(modM)x⋅q≡p(modM).
+ExampleInputCopy5
+4
+1 1 1 1
+4
+1 1 2 1
+4
+1 2 1 2
+5
+4 3 2 5 1
+12
+1 3 2 3 2 1 3 3 1 3 3 2
+OutputCopy1
+2
+3
+5
+358642921
+
+NoteIn the first test case there is only 11 different permutation of aa:  [1,1,1,1][1,1,1,1] has 11 component.  Therefore the expected value of components is 11=111=1 In the second test case there are 44 ways to permute the cyclic array aa, but there is only 11 different permutation of aa:  [1,1,1,2][1,1,1,2], [1,1,2,1][1,1,2,1], [1,2,1,1][1,2,1,1] and [2,1,1,1][2,1,1,1] are the same permutation and have 22 components.  Therefore the expected value of components is 21=221=2 In the third test case there are 66 ways to permute the cyclic array aa, but there are only 22 different permutations of aa:  [1,1,2,2][1,1,2,2], [2,1,1,2][2,1,1,2], [2,2,1,1][2,2,1,1] and [1,2,2,1][1,2,2,1] are the same permutation and have 22 components.  [1,2,1,2][1,2,1,2] and [2,1,2,1][2,1,2,1] are the same permutation and have 44 components.  Therefore the expected value of components is 2+42=62=32+42=62=3 In the fourth test case there are 120120 ways to permute the cyclic array aa, but there are only 2424 different permutations of aa:  Any permutation of aa has 55 components.  Therefore the expected value of components is 24⋅524=12024=524⋅524=12024=5 
