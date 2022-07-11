@@ -2,7 +2,8 @@
 const express = require('express');
 const app = express();
 var fs = require('fs');
-app.use(express.static("public"));
+const path=require("path")
+app.use(express.static(path.join(__dirname,"/public")));
 var natural = require('natural');
 natural.PorterStemmer.attach();
 
