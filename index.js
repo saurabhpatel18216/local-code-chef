@@ -5,11 +5,12 @@ const bodyParser = require('body-parser');
 var natural = require('natural');
 natural.PorterStemmer.attach();
 var fs = require('fs');
-
+const path=require("path");
+app.use(express.static(path.join(__dirname,"/public")));
 const port = process.env.PORT || 3000;
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("public"));
+
 
 // Delarations
   let keyWordsAll = [];
